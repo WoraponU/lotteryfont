@@ -1,0 +1,13 @@
+$gutter: 2rem;
+$sm:480px;
+.circle{
+  
+   position: absolute;
+  border-radius: 50%;
+  box-shadow: 19.1px 30.5px 38px 0 rgba(0, 0, 0, 0.14);
+}
+.img-res{
+      display: block;
+    max-width: 100%;
+    height: auto;
+}
