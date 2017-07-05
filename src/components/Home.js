@@ -1,10 +1,9 @@
 import React from 'react';
-// import {Headerhome} from 'Components/Homecommon'
+import {HeaderHome} from 'Components/Homecommon'
 const Home = () => {
   return (
     <div>
- 
-      {/*<Headerhome/>*/}
+      <HeaderHome/>
     </div>
   );
 };

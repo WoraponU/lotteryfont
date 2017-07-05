@@ -1,41 +1,29 @@
 @import '~Theme/variables';
 @import '~Theme/colors';
 
+$navbarColor: $white;
+
 .header {
-  display: flex;
-  padding: 20px;
-  align-items: center;
-  justify-content: space-around;
-  // background: $grape-fruit-dark-color;
+  padding: 15px 0 ;
 
-.tes{
-  text-align: left;
-}
-  
-li:first-child{
-  
+  .navbarDefault { 
+    background-color: $navbarColor;
+    border-color: $navbarColor;
+    
+  }
 
-      border-right: 1px solid gainsboro;
-}
-  .nav-link {
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: $gutter / 4;
-  margin: 0 $gutter;
-  background: $grape-fruit-light-color;
-}
-.auth {
-  display: flex;
+  .Brand {
+    margin-left:0px !important;
+    height: auto; 
+    padding: 0px 0px; 
+  }
 
-  &-link {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 $gutter / 4;
+  li:first-child {
+    border-right: 1px solid $black;
   }
 }
 
-}
+
 
 
 

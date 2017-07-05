@@ -1,36 +1,30 @@
-import React from 'react'
-import { connect } from 'react-redux'
-// import { Link } from 'react-router-dom'
-import { logout } from 'Actions'
+import React, { Component } from 'react';
 import styles from './Header.scss'
+import { Navbar,Nav,NavItem,Image } from 'react-bootstrap';
 
-const Header = ({ isLoggedIn, logout }) => (
-  <header className={styles.header}>
-    <nav className="navbar"> 
-      <div className="container">
-        <div className="navbar-header">
-          <a href="" className="logo">
-              <img src="assets/images/logo.png" alt="Hobbiz"/>
-          </a>
-        </div>
-        <div className="collapse navbar-collapse pull-right">
-          <ul className="list-inline nav navbar-nav navbar-left">
-            <li>
-              <a href="">TH</a>
-            </li>
-            <li>
-              <a href="">EN</a>
-            </li>
-          </ul>
-        </div>
-       </div>
-     </nav>
-  </header>
-)
 
-export default connect(
-  ({ auth }) => ({
-    isLoggedIn: !!auth.token
-  }),
-  { logout }
-)(Header)
+class Header extends Component {
+  render() {
+    return (
+     <header className={styles.header}>
+      <Navbar className={styles.navbarDefault}>
+        <Navbar.Header>
+          <Navbar.Brand>
+              <Image src="assets/images/logo.png" className={styles.Brand}/>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>   
+          <Nav pullRight>
+            <NavItem  href="#">TH</NavItem>
+            <NavItem  href="#">EN</NavItem>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </header>
+    );
+  }
+}
+
+export default Header;
+

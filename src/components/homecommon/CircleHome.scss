@@ -1,0 +1,65 @@
+@import '~Theme/variables';
+@import '~Theme/colors';
+
+.container {
+  position: relative;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+
+  .circlepink {
+    transform: translate(-50%, -50%);
+    background-color: $pink;
+    width: 86px;
+    height: 86px;
+    @extend  .circle;  
+  }
+  .circlepurple {
+    transform: translate(50%, -50%);
+    background-color: $purple;
+    width: 145px;
+    height: 145px;
+    @extend  .circle;  
+  }
+
+  .circleblue {
+    transform: translate(-50%, 50%);
+    background-color: $blue;
+    width: 264px;
+    height: 264px;
+    @extend  .circle;  
+  }
+
+  .circleyellow {
+    transform: translate(50%, 50%);
+    background-color: $yello;
+    width: 86px;
+    height: 86px;
+    @extend  .circle;   
+  }
+
+  .hedyellow {
+    top: 670px;
+    left: 40%;
+  }
+  .hedblue {
+    top: 390px;
+    left: 40%;
+  }
+  .hedpurple {
+    top: 540px;
+    left: 26%;
+  }
+  .hed {
+    top: 417px;
+    left: 22%;
+  }
+  .img-head {
+    position: absolute;
+    left: 30%;
+    @extend  .img-res;
+    @media screen and (max-width: $sm) {
+    left: 30px;
+    }
+  }
+}
