@@ -1,20 +1,20 @@
 @import '~Theme/variables';
 @import '~Theme/colors';
 
-.container {
-  position: relative;
-  color: #FFF;
-  font-weight: bold;
-  text-align: center;
+  // .circle {
+  //   position: absolute;
+  //   border-radius: 50%;
+  //   box-shadow: 19.1px 30.5px 38px 0 $boxshadowblack;
+  // }
 
-  .circlepink {
+  .pink {
     transform: translate(-50%, -50%);
     background-color: $pink;
     width: 86px;
     height: 86px;
     @extend  .circle;  
   }
-  .circlepurple {
+  .purple {
     transform: translate(50%, -50%);
     background-color: $purple;
     width: 145px;
@@ -22,7 +22,7 @@
     @extend  .circle;  
   }
 
-  .circleblue {
+  .blue {
     transform: translate(-50%, 50%);
     background-color: $blue;
     width: 264px;
@@ -30,7 +30,7 @@
     @extend  .circle;  
   }
 
-  .circleyellow {
+  .yellow {
     transform: translate(50%, 50%);
     background-color: $yello;
     width: 86px;
@@ -38,28 +38,21 @@
     @extend  .circle;   
   }
 
-  .hedyellow {
+  .alignyellow {
     top: 670px;
     left: 40%;
   }
-  .hedblue {
-    top: 390px;
-    left: 40%;
+  .alignblue {
+   top: 401px;
+    left: 39%;
+
   }
-  .hedpurple {
+  .alignpurple {
     top: 540px;
     left: 26%;
   }
-  .hed {
+  .alignpink {
     top: 417px;
     left: 22%;
   }
-  .img-head {
-    position: absolute;
-    left: 30%;
-    @extend  .img-res;
-    @media screen and (max-width: $sm) {
-    left: 30px;
-    }
-  }
-}
+ 

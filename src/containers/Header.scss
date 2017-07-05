@@ -5,7 +5,10 @@ $navbarColor: $white;
 
 .header {
   padding: 15px 0 ;
-
+  .position{
+    width: auto;
+        position: absolute;
+  }
   .navbarDefault { 
     background-color: $navbarColor;
     border-color: $navbarColor;
