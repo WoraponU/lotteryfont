@@ -6,8 +6,7 @@ import styles from './Header.scss'
 
 const Header = ({ isLoggedIn, logout }) => (
   <header className={styles.header}>
-    <nav className="navbar">
-  
+    <nav className="navbar"> 
       <div className="container">
         <div className="navbar-header">
           <a href="" className="logo">
@@ -23,17 +22,12 @@ const Header = ({ isLoggedIn, logout }) => (
               <a href="">EN</a>
             </li>
           </ul>
-
         </div>
-    
-
-      </div>
+       </div>
      </nav>
   </header>
 )
- {/*<Link to='/articles' className={styles['nav-link']}>Articles</Link>
-    <Link to='/' className={styles['nav-link']}>หน้าแรก</Link>
-   */}
+
 export default connect(
   ({ auth }) => ({
     isLoggedIn: !!auth.token

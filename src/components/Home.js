@@ -1,10 +1,10 @@
 import React from 'react';
-import {Headerhome} from 'Components/Homecommon'
+// import {Headerhome} from 'Components/Homecommon'
 const Home = () => {
   return (
     <div>
  
-      <Headerhome/>
+      {/*<Headerhome/>*/}
     </div>
   );
 };
