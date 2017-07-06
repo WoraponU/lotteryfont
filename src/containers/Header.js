@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Header.scss'
 import { Navbar,Nav,NavItem,Image,Grid,Col,Row } from 'react-bootstrap';
+import '../../src/lib/liquidButton';
 
 
 class Header extends Component {
