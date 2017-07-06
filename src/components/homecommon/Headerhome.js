@@ -13,7 +13,7 @@ const Headerhome = () => {
         <Circle color="purple" width ="alignpurple"/>            
          <Grid>
           <Row className="show-grid">
-            <Col sm={6} md={6}></Col>
+            <Col sm={6} md={6} ></Col>
             <Col sm={6} md={6}>sds</Col>
           </Row> 
           
