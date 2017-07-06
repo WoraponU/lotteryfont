@@ -1,1 +1,2 @@
-export { default as Headerhome } from './Headerhome'
+export { default as HeaderHome } from './HeaderHome'
+// export { default as Circle } from './CircleHeaderHome'

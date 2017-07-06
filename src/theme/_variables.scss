@@ -1,8 +1,10 @@
 $gutter: 2rem;
 $sm:480px;
+.circleContainer{
+  position: relative;
+}
 .circle{
-  
-   position: absolute;
+  position: absolute;
   border-radius: 50%;
   box-shadow: 19.1px 30.5px 38px 0 rgba(0, 0, 0, 0.14);
 }
