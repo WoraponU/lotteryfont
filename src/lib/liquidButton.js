@@ -1,7 +1,7 @@
-var _createClass = function () { 
+const _createClass = function () { 
   function defineProperties(target, props) { 
-    for (var i = 0; i < props.length; i++) { 
-      var descriptor = props[i]; 
+    for (let i = 0; i < props.length; i++) { 
+      const descriptor = props[i]; 
       descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; 
       if ("value" in descriptor) descriptor.writable = true; 
       Object.defineProperty(target, descriptor.key, descriptor); 
@@ -20,11 +20,11 @@ function _classCallCheck(instance, Constructor) {
   } 
 }
 
-var LiquidButton = function () {
+const LiquidButton = function () {
   function LiquidButton(optionsParam) {
     _classCallCheck(this, LiquidButton);
+    const options = optionsParam || {};
 
-    var options = optionsParam || {};
     this.tension = options.tension || 0.4;
     this.width = options.width || 200;
     this.height = options.width || 50;
@@ -69,27 +69,27 @@ var LiquidButton = function () {
   };
 
   LiquidButton.prototype.update = function update() {
-    for (var layerIndex = 0; layerIndex < this.layers.length; layerIndex++) {
-      var layer = this.layers[layerIndex];
-      var points = layer.points;
-      for (var pointIndex = 0; pointIndex < points.length; pointIndex++) {
-        var point = points[pointIndex];
-        var dx = point.ox - point.x + (Math.random() - 0.5) * this.noise;
-        var dy = point.oy - point.y + (Math.random() - 0.5) * this.noise;
-        var d = Math.sqrt(dx * dx + dy * dy);
-        var f = d * this.forceFactor;
+    for (let layerIndex = 0; layerIndex < this.layers.length; layerIndex++) {
+      const layer = this.layers[layerIndex];
+      const points = layer.points;
+      for (let pointIndex = 0; pointIndex < points.length; pointIndex++) {
+        const point = points[pointIndex];
+        const dx = point.ox - point.x + (Math.random() - 0.5) * this.noise;
+        const dy = point.oy - point.y + (Math.random() - 0.5) * this.noise;
+        const d = Math.sqrt(dx * dx + dy * dy);
+        const f = d * this.forceFactor;
         point.vx += f * (dx / d || 0);
         point.vy += f * (dy / d || 0);
-        for (var touchIndex = 0; touchIndex < this.touches.length; touchIndex++) {
-          var touch = this.touches[touchIndex];
+        for (let touchIndex = 0; touchIndex < this.touches.length; touchIndex++) {
+          const touch = this.touches[touchIndex];
           var mouseForce = layer.mouseForce;
           if (touch.x > this.margin && touch.x < this.margin + this.width && touch.y > this.margin && touch.y < this.margin + this.height) {
             mouseForce *= -this.hoverFactor;
           }
-          var mx = point.x - touch.x;
-          var my = point.y - touch.y;
-          var md = Math.sqrt(mx * mx + my * my);
-          var mf = Math.max(-layer.forceLimit, Math.min(layer.forceLimit, mouseForce * touch.force / md));
+          const mx = point.x - touch.x;
+          const my = point.y - touch.y;
+          const md = Math.sqrt(mx * mx + my * my);
+          const mf = Math.max(-layer.forceLimit, Math.min(layer.forceLimit, mouseForce * touch.force / md));
           point.vx += mf * (mx / md || 0);
           point.vy += mf * (my / md || 0);
         }
@@ -98,18 +98,18 @@ var LiquidButton = function () {
         point.x += point.vx;
         point.y += point.vy;
       }
-      for (var pointIndex = 0; pointIndex < points.length; pointIndex++) {
-        var prev = points[(pointIndex + points.length - 1) % points.length];
-        var point = points[pointIndex];
-        var next = points[(pointIndex + points.length + 1) % points.length];
-        var dPrev = this.distance(point, prev);
-        var dNext = this.distance(point, next);
+      for (let pointIndex = 0; pointIndex < points.length; pointIndex++) {
+        const prev = points[(pointIndex + points.length - 1) % points.length];
+        const point = points[pointIndex];
+        const next = points[(pointIndex + points.length + 1) % points.length];
+        const dPrev = this.distance(point, prev);
+        const dNext = this.distance(point, next);
 
-        var line = {
+        const line = {
           x: next.x - prev.x,
           y: next.y - prev.y
         };
-        var dLine = Math.sqrt(line.x * line.x + line.y * line.y);
+        const dLine = Math.sqrt(line.x * line.x + line.y * line.y);
 
         point.cPrev = {
           x: point.x - line.x / dLine * dPrev * this.tension,
@@ -135,12 +135,12 @@ var LiquidButton = function () {
 
   LiquidButton.prototype.draw = function draw() {
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    for (var layerIndex = 0; layerIndex < this.layers.length; layerIndex++) {
-      var layer = this.layers[layerIndex];
+    for (let layerIndex = 0; layerIndex < this.layers.length; layerIndex++) {
+      const layer = this.layers[layerIndex];
       if (layerIndex === 1) {
         if (this.touches.length > 0) {
-          var gx = this.touches[0].x;
-          var gy = this.touches[0].y;
+          const gx = this.touches[0].x;
+          const gy = this.touches[0].y;
           layer.color = this.context.createRadialGradient(gx, gy, this.height * 2, gx, gy, 0);
           layer.color.addColorStop(0, this.color2);
           layer.color.addColorStop(1, this.color3);
@@ -150,12 +150,12 @@ var LiquidButton = function () {
       } else {
         layer.color = this.color1;
       }
-      var points = layer.points;
+      const points = layer.points;
       this.context.fillStyle = layer.color;
 
       this.context.beginPath();
       this.context.moveTo(points[0].x, points[0].y);
-      for (var pointIndex = 1; pointIndex < points.length; pointIndex += 1) {
+      for (let pointIndex = 1; pointIndex < points.length; pointIndex += 1) {
         this.context.bezierCurveTo(points[(pointIndex + 0) % points.length].cNext.x, points[(pointIndex + 0) % points.length].cNext.y, points[(pointIndex + 1) % points.length].cPrev.x, points[(pointIndex + 1) % points.length].cPrev.y, points[(pointIndex + 1) % points.length].x, points[(pointIndex + 1) % points.length].y);
       }
       this.context.fill();
@@ -173,16 +173,16 @@ var LiquidButton = function () {
   LiquidButton.prototype.drawDebug = function drawDebug() {
     this.context.fillStyle = 'rgba(255, 255, 255, 0.8)';
     this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
-    for (var layerIndex = 0; layerIndex < this.layers.length; layerIndex++) {
-      var layer = this.layers[layerIndex];
-      var points = layer.points;
-      for (var pointIndex = 0; pointIndex < points.length; pointIndex++) {
+    for (let layerIndex = 0; layerIndex < this.layers.length; layerIndex++) {
+      const layer = this.layers[layerIndex];
+      const points = layer.points;
+      for (let pointIndex = 0; pointIndex < points.length; pointIndex++) {
         if (layerIndex === 0) {
           this.context.fillStyle = this.color1;
         } else {
           this.context.fillStyle = this.color2;
         }
-        var point = points[pointIndex];
+        const point = points[pointIndex];
         this.context.fillRect(point.x, point.y, 1, 1);
         this.context.fillStyle = '#000';
         this.context.fillRect(point.cPrev.x, point.cPrev.y, 1, 1);
@@ -211,21 +211,21 @@ var LiquidButton = function () {
   LiquidButton.prototype.initOrigins = function initOrigins() {
     this.canvas.width = this.width + this.margin * 2;
     this.canvas.height = this.height + this.margin * 2;
-    for (var layerIndex = 0; layerIndex < this.layers.length; layerIndex++) {
-      var layer = this.layers[layerIndex];
-      var points = [];
-      for (var x = ~ ~(this.height / 2); x < this.width - ~ ~(this.height / 2); x += this.gap) {
+    for (let layerIndex = 0; layerIndex < this.layers.length; layerIndex++) {
+      const layer = this.layers[layerIndex];
+      const points = [];
+      for (let x = ~ ~(this.height / 2); x < this.width - ~ ~(this.height / 2); x += this.gap) {
         points.push(this.createPoint(x + this.margin, this.margin));
       }
-      for (var alpha = ~ ~(this.height * 1.25); alpha >= 0; alpha -= this.gap) {
-        var angle = Math.PI / ~ ~(this.height * 1.25) * alpha;
+      for (let alpha = ~ ~(this.height * 1.25); alpha >= 0; alpha -= this.gap) {
+        const angle = Math.PI / ~ ~(this.height * 1.25) * alpha;
         points.push(this.createPoint(Math.sin(angle) * this.height / 2 + this.margin + this.width - this.height / 2, Math.cos(angle) * this.height / 2 + this.margin + this.height / 2));
       }
-      for (var x = this.width - ~ ~(this.height / 2) - 1; x >= ~ ~(this.height / 2); x -= this.gap) {
+      for (let x = this.width - ~ ~(this.height / 2) - 1; x >= ~ ~(this.height / 2); x -= this.gap) {
         points.push(this.createPoint(x + this.margin, this.margin + this.height));
       }
-      for (var alpha = 0; alpha <= ~ ~(this.height * 1.25); alpha += this.gap) {
-        var angle = Math.PI / ~ ~(this.height * 1.25) * alpha;
+      for (let alpha = 0; alpha <= ~ ~(this.height * 1.25); alpha += this.gap) {
+        const angle = Math.PI / ~ ~(this.height * 1.25) * alpha;
         points.push(this.createPoint(this.height - Math.sin(angle) * this.height / 2 + this.margin - this.height / 2, Math.cos(angle) * this.height / 2 + this.margin + this.height / 2));
       }
       layer.points = points;
@@ -267,7 +267,7 @@ var LiquidButton = function () {
   return LiquidButton;
 }();
 
-var redraw = function redraw() {
+const redraw = function redraw() {
   button.initOrigins();
 };
 
