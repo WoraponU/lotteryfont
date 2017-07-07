@@ -1,32 +1,28 @@
-import { Component } from 'react';
-import LiquidButton from '../../src/lib/liquidButton';
+import React, { Component } from 'react';
 
-// import '../../src/lib/liquidButton';
+import LiquidButton from '../../src/lib/liquidButton';
 import './LiquidButton.scss'
 
 class liquidButton extends Component {
   componentDidMount() {
-    const { radius, color1, color2, color3 } = this.props;
+    const { id, radius, color1, color2, color3 } = this.props;
     console.log(this.props.radius)
     const params = {
+      id,
       radius,
       color1,
       color2,
       color3,
     };
-    console.log(params);
+
     new LiquidButton(params);
   }
 
   render() {
     return (
-      null
+      <canvas id={`liquidButton${this.props.id}`}></canvas>
     );
   }
 }
-
-// liquidButton.defaultProps = {
-//   name: 'Mary'
-// };
 
 export default liquidButton;

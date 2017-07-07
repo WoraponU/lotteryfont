@@ -27,6 +27,7 @@ const LiquidButton = function () {
     const options = optionsParam || {};
 
     /// ตัวแปรที่ปรับแต่ง ////////
+    this.id = options.id;
     this.width = options.radius || 200;
     this.height = options.radius || 200;
     this.color1 = options.color1 || '#36DFE7';
@@ -54,7 +55,7 @@ const LiquidButton = function () {
       forceLimit: 3
     }];
     this.text = options.text || '';
-    this.canvas = options.canvas || document.createElement('canvas');
+    this.canvas = options.canvas || document.getElementById('liquidButton'+this.id);
     this.context = this.canvas.getContext('2d');
     this.wrapperElement = options.wrapperElement || document.body;
     if (!this.canvas.parentElement) {
