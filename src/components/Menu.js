@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './Menu.scss'
 import { Nav,NavItem,Grid,Col,Row } from 'react-bootstrap';
+
+import styles from './Menu.scss'
 
 const Menu = () => {
   return (

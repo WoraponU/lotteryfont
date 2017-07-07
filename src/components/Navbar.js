@@ -1,6 +1,6 @@
 import React from 'react';
-
 import { Navbar,Nav,NavItem,Image } from 'react-bootstrap';
+
 import styles from './Navbar.scss'
 
 const NavbarHeader = () => {
