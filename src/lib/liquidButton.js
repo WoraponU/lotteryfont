@@ -271,5 +271,4 @@ const LiquidButton = function () {
   return LiquidButton;
 }();
 
-// var button = new LiquidButton();
 export default LiquidButton;

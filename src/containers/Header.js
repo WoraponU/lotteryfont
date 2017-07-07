@@ -9,7 +9,13 @@ class Header extends Component {
     return (
      <header className={styles.header}>
       <Navbar className={styles.navbarDefault}>
-        <LiquidButton />
+        <div>
+          <LiquidButton radius={100} color1="#8F17E1" color2="#93d3d7" color3="#E509E6" />
+        </div>
+        <div>
+        <LiquidButton radius={200} color1="#8F17E1" color2="#93d3d7" color3="#E509E6" />
+
+        </div>
         <Navbar.Header>
           <Navbar.Brand>
               <Image src="assets/images/logo.png" className={styles.Brand}/>
