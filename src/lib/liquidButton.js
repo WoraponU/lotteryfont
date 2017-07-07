@@ -26,10 +26,13 @@ const LiquidButton = function () {
     _classCallCheck(this, LiquidButton);
     const options = optionsParam || {};
 
-    /// ตัวแปรที่ปรับแต่ง
+    /// ตัวแปรที่ปรับแต่ง ////////
     this.width = options.radius || 200;
     this.height = options.radius || 200;
-    ///
+    this.color1 = options.color1 || '#36DFE7';
+    this.color2 = options.color2 || '#8F17E1';
+    this.color3 = options.color3 || '#E509E6';
+    /////////////////////////
 
     this.tension = options.tension || 0.4;
     this.margin = options.margin || 50;
@@ -38,9 +41,6 @@ const LiquidButton = function () {
     this.gap = options.gap || 5;
     this.debug = options.debug || false;
     this.forceFactor = options.forceFactor || 0.2;
-    this.color1 = options.color1 || '#36DFE7';
-    this.color2 = options.color2 || '#8F17E1';
-    this.color3 = options.color3 || '#E509E6';
     this.textColor = options.textColor || '#FFFFFF';
     this.layers = [{
       points: [],

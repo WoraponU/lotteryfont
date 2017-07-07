@@ -7,7 +7,10 @@ import './LiquidButton.scss'
 class liquidButton extends Component {
   componentDidMount() {
     const params = {
-      radius: 300,
+      radius: 200,
+      color1: '#93d3d7',
+      color2: '#8F17E1',
+      color3: '#E509E6',
     };
     new LiquidButton(params);
   }
