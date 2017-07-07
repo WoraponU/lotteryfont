@@ -9,11 +9,13 @@ class Header extends Component {
     return (
      <header className={styles.header}>
         <Col sm={6} md={6} >
-          <LiquidButton id={11} radius={300} color1="#8F17E1" color2="#93d3d7" color3="#E509E6" />
+          <LiquidButton id={1} radius={300} color1="#8F17E1" color2="#93d3d7" color3="#E509E6" />
         </Col>
         <Col sm={6} md={6} >
-        <LiquidButton id={2} radius={200} color1="#8F17E1" color2="#93d3d7" color3="#E509E6" />
-
+          <LiquidButton id={2} radius={200} color1="#8F17E1" color2="#93d3d7" color3="#E509E6" />
+        </Col>
+        <Col sm={6} md={6} >
+          <LiquidButton  id={2} />
         </Col>
       <Navbar className={styles.navbarDefault}>
 
