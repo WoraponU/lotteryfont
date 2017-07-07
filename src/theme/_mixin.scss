@@ -1,0 +1,13 @@
+@mixin border-radius($radius: 10px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($x...){
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+  -ms-transition: $x;
+}

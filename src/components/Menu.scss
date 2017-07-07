@@ -1,0 +1,46 @@
+@import '~Theme/variables';
+@import '~Theme/colors';
+@import '~Theme/mixin';
+
+$colorText: $black;
+$backgroundNav: $white;
+$borderColor: $pink;
+
+li {
+     
+  a {
+    font-weight: bold;
+    color:$colorText;
+ 
+    span {
+      display: inline-block;
+    
+
+      &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: $borderColor;
+        @include transition(opacity .3s ease,width .3s ease);
+      }
+    }
+
+    &:hover {
+      background-color: $backgroundNav !important;
+
+        span {
+          &:after {
+            width: 100%;
+
+        }
+      }
+    }
+  }
+}
+  
+.position {
+  width: auto;
+  position: absolute;
+}
+
