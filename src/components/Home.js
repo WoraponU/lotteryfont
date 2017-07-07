@@ -1,5 +1,6 @@
 import React from 'react';
-import {HeaderHome} from 'Components/Homecommon'
+import { HeaderHome } from 'Components/Homecommon'
+
 const Home = () => {
   return (
     <div>
