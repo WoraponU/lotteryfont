@@ -4,11 +4,8 @@
 $navbarColor: $white;
 
 .header {
-  padding: 15px 0 ;
-  .position{
-    width: auto;
-        position: absolute;
-  }
+    padding-top: 15px;
+
   .navbarDefault { 
     background-color: $navbarColor;
     border-color: $navbarColor;
@@ -25,9 +22,3 @@ $navbarColor: $white;
     border-right: 1px solid $black;
   }
 }
-
-
-
-
-
-
