@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Header.scss'
 import { Navbar,Nav,NavItem,Image,Grid,Col,Row } from 'react-bootstrap';
-import '../../src/lib/liquidButton';
+import LiquidButton from 'Components/LiquidButton';
 
 
 class Header extends Component {
@@ -9,6 +9,7 @@ class Header extends Component {
     return (
      <header className={styles.header}>
       <Navbar className={styles.navbarDefault}>
+        <LiquidButton />
         <Navbar.Header>
           <Navbar.Brand>
               <Image src="assets/images/logo.png" className={styles.Brand}/>
