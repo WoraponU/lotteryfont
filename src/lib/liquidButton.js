@@ -22,12 +22,16 @@ function _classCallCheck(instance, Constructor) {
 
 const LiquidButton = function () {
   function LiquidButton(optionsParam) {
+    
     _classCallCheck(this, LiquidButton);
     const options = optionsParam || {};
 
+    /// ตัวแปรที่ปรับแต่ง
+    this.width = options.radius || 200;
+    this.height = options.radius || 200;
+    ///
+
     this.tension = options.tension || 0.4;
-    this.width = options.width || 200;
-    this.height = options.width || 50;
     this.margin = options.margin || 50;
     this.padding = options.padding || 17;
     this.hoverFactor = options.hoverFactor || -0.1;
@@ -49,7 +53,7 @@ const LiquidButton = function () {
       mouseForce: 150,
       forceLimit: 3
     }];
-    this.text = options.text || '▶';
+    this.text = options.text || '';
     this.canvas = options.canvas || document.createElement('canvas');
     this.context = this.canvas.getContext('2d');
     this.wrapperElement = options.wrapperElement || document.body;
@@ -267,8 +271,5 @@ const LiquidButton = function () {
   return LiquidButton;
 }();
 
-const redraw = function redraw() {
-  button.initOrigins();
-};
-
-var button = new LiquidButton();
+// var button = new LiquidButton();
+export default LiquidButton;
