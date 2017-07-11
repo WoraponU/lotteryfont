@@ -6,12 +6,10 @@ import styles from './Navbar.scss'
 const NavbarHeader = () => {
   return (
     <div className={styles.header}>
-      <Navbar className={styles.navbarDefault}>
-        <Navbar.Header>
-          <Navbar.Brand>
-              <Image src="assets/images/logo.png" className={styles.Brand}/>
-          </Navbar.Brand>
-        </Navbar.Header>
+      <Navbar className={styles.navbarDefault}>      
+        <Navbar.Brand>
+            <Image src="assets/images/logo.png" className={styles.Brand}/>
+        </Navbar.Brand>       
 
         <Navbar.Collapse>   
           <Nav pullRight>

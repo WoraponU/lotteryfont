@@ -9,9 +9,11 @@ $borderColor: $pink;
 .navBar {
   width: auto;
   position: absolute;
-
+}
+.nav{
   li {
     a {
+      padding-left: 0px;
       font-weight: bold;
       color:$colorText;
 

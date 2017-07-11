@@ -1,10 +1,10 @@
 import React from 'react';
-import { HeaderHome } from 'Components/Homecommon'
+import { Section1 } from 'Components/HomeSections'
 
 const Home = () => {
   return (
     <div>
-      <HeaderHome/>
+      <Section1/>
     </div>
   );
 };
