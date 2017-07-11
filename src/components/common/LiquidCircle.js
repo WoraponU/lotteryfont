@@ -2,18 +2,16 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import LiquidButton from 'Lib/liquidButton';
-import './LiquidButton.scss'
+import './LiquidCircle.scss'
 
 class liquidButton extends Component {
   componentDidMount() {
-    const { id, radius, color1, color2, color3 } = this.props;
-
+    const { id, radius, color } = this.props;
+    console.log(radius);
     const params = {
       id,
       radius,
-      color1,
-      color2,
-      color3,
+      color,
     };
 
     new LiquidButton(params);
@@ -26,19 +24,10 @@ class liquidButton extends Component {
   }
 }
 
-liquidButton.defaultProps = {
-  radius: 200,
-  color1: '#36dfe7',
-  color2: '#8f17e1',
-  color3: '#e509e6',
-};
-
 liquidButton.propTypes = {
   id: PropTypes.number,
   radius: PropTypes.number,
-  color1: PropTypes.string,
-  color2: PropTypes.string,
-  color3: PropTypes.string,
+  color: PropTypes.string,
 };
 
 export default liquidButton;
