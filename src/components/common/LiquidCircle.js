@@ -7,7 +7,6 @@ import './LiquidCircle.scss'
 class liquidButton extends Component {
   componentDidMount() {
     const { id, radius, color } = this.props;
-    console.log(radius);
     const params = {
       id,
       radius,

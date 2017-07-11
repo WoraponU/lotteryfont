@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './Home.scss'
-// import classNames from 'classnames'
-import LiquidCircle from 'Components/common/LiquidCircle';
 
 import { Grid,Row,Col } from 'react-bootstrap';
+
+import styles from './Home.scss'
+import LiquidCircle from 'Components/common/LiquidCircle';
 
 const Headerhome = () => {
   return (
