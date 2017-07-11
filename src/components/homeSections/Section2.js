@@ -1,17 +1,30 @@
-import React from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import React, { Component } from 'react';
+// import { Grid, Row, Col } from 'react-bootstrap';
+import Slider from 'react-slick';
 
-import styles from './Section2.scss'
+// import styles from './Section2.scss'
 
-const Section2 = () => {
-  return (
-    <Grid className={styles.section1}>
-      <Row>
-        <Col sm={6} md={6}>ffsddsaf</Col>
-        
-      </Row>
-    </Grid>
-  );
-};
+class Section2 extends Component {
+  render() {
+    const settings = {
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      arrows: true,
+      focusOnSelect: true,
+      lazyLoad: true,
+      pauseOnHover: true,
+      
+    };
+    return (
+      <Slider {...settings}>
+        <img src="assets/images/home/section2/qualy.jpg" alt="qualy"/>
+        <img src="assets/images/home/section2/ygg.png" alt="ygg"/>
+        <img src="assets/images/home/section2/mac5.png" alt="ygg"/>
+      </Slider>
+    );
+  }
+}
 
 export default Section2;
