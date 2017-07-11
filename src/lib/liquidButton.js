@@ -28,11 +28,11 @@ const LiquidButton = function () {
 
     /// ตัวแปรที่ปรับแต่ง ////////
     this.id = options.id;
-    this.width = options.radius;
-    this.height = options.radius;
-    this.color1 = options.color1;
-    this.color2 = options.color2;
-    this.color3 = options.color3;
+    this.width = options.radius - 100;
+    this.height = options.radius - 100;
+    this.color1 = options.color;
+    this.color2 = options.color;
+    this.color3 = options.color;
     /////////////////////////
 
     this.tension = options.tension || 0.4;
@@ -157,6 +157,10 @@ const LiquidButton = function () {
       }
       const points = layer.points;
       this.context.fillStyle = layer.color;
+      this.context.shadowColor = 'rgba(68, 68, 68, 0.3)';
+      this.context.shadowBlur = 30;
+      this.context.shadowOffsetX = 10;
+      this.context.shadowOffsetY = 10;
 
       this.context.beginPath();
       this.context.moveTo(points[0].x, points[0].y);
