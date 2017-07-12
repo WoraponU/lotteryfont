@@ -40,7 +40,7 @@ class Section3 extends Component {
           <Image src="assets/images/Home/section3/img4.png" className="imgfull" />
         </Col>
          <Col md={3} className="img">
-          <Image src="assets/images/Home/section3/img5.png" className="imgfull" />
+          <Image src="assets/images/Home/section3/img5.png" className="imgfull imgshadow" />
         </Col>
         <Col sm={6} md={3} className="img">
          <Image src="assets/images/Home/section3/line.png" className="imgline" />
