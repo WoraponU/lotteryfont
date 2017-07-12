@@ -1,20 +1,32 @@
 @import '~Theme/colors';
+@import '~Theme/common';
 
 .section2 {
-  .pageHeader {
+  .ourWork {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
-  .slickSlider {
+  .slick-slider {
     left: 17%;
     margin-right: 19%;
-
-    img {
-      height: 400px;
-    }
     
-    .slick-prev {
-      background-color: red;
+    .slick-arrow {
+      @extend .buttonMaterial;
+        position: absolute;
+        width: 80px;
+        top: -28px;
+        z-index: 1;
+
+      &.slick-prev {
+        right: 160px;
+      }
+      &.slick-next {
+        right: 50px;
+      }
+    }
+
+    .slick-list {
+      max-height: 400px;
     }
   }
 }
