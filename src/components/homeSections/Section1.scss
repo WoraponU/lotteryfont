@@ -8,14 +8,18 @@ $headerColor : $black2;
   background-repeat: no-repeat;
   background-position: 35% 50%;
   background-size: contain;
-  height: 90vh;
   display: block;
+  padding-bottom: 100px;
+
+  .colHight {
+    height: 320px;
+  }
 
   p {
     text-align: justify;
   }
  
-  .imgRight {
+  hr {
     width: 32px;
     height: 5px;
     object-fit: contain;
@@ -24,7 +28,7 @@ $headerColor : $black2;
     float: right;
   }
 
-  .margin1 {
+  .header {
     margin: 100px 0 20px 0;
     
     h2 {
