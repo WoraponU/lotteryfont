@@ -27,7 +27,7 @@ const Section1 = () => {
         </Col>
       </Row> 
       <Row >
-        <Col xsOffset={6} md={5}>
+        <Col mdOffset={6} md={5}>
           <Button bsStyle="success">Success</Button>
         </Col>
       </Row>

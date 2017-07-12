@@ -3,8 +3,18 @@
 .section2 {
   .pageHeader {
     text-align: center;
+    margin-bottom: 10px;
   }
   .slickSlider {
-    height: auto;
+    left: 17%;
+    margin-right: 19%;
+
+    img {
+      height: 400px;
+    }
+    
+    .slick-prev {
+      background-color: red;
+    }
   }
 }
