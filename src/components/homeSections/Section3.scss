@@ -1,20 +1,25 @@
 @import '~Theme/colors';
 
 $pColor: $pink;
+$pHeader: $gray;
+$header: $black;
+$pBottom: $gray2;
+$pText1: $boxshadowblack;
+$imgShadow: $windWalk;
 
-.sections3 {
+.section3 {
   position: relative;
 
-  .heading {
+  .Header {
     text-align: center !important;
     margin: 56px 0;    
 
-    .bigHead {
+    p {
       font-size: 38px;
       font-weight: bold;
       line-height: 1.11;
       letter-spacing: 1.9px;
-      color: #4a4a4a;
+      color: $pHeader;
 
     }
   }
@@ -22,13 +27,20 @@ $pColor: $pink;
   .positonBotton {
     bottom: 0px;
     position: absolute;
+    padding-right: 15px;
+    padding-left: 0px;
+    
+    .paddingRight {
+      padding-right: 21px;
+      padding-left: 0px;
+    }
 
     .header {
       font-size: 21px;
       font-weight: bold;
       line-height: 1.19;
       text-align: left;
-      color: #000000;
+      color: $header;
       padding-bottom: 20px;
     }
 
@@ -36,7 +48,7 @@ $pColor: $pink;
       font-size: 17px;
       line-height: 1.47;
       text-align: left;
-      color: #7b7b7b;
+      color: $pBottom;
     }    
   }
 
@@ -47,29 +59,32 @@ $pColor: $pink;
       font-weight: bold;
       line-height: 2;    
       color: $pColor;
-      text-shadow: 2.1px 3.4px 5.7px rgba(0, 0, 0, 0.1);
+      text-shadow: 2.1px 3.4px 5.7px $pText1;
 
     }  
 
-  .img {    
+   div[class^="col-"]{    
     position: relative;
     padding-left: 0px;
     padding-right: 0px;
 
     .imgshadow {
-      box-shadow: 0 9px 0px 0px rgba(255, 255, 255, 0),
-      0 -9px 0px 0px rgba(255, 255, 255, 0), 
-      -11px 0px 61px -1px rgba(0, 0, 0, 0.8), 
-      -12px 0 15px -4px rgba(31, 73, 125, 0);
+      box-shadow: 0 9px 0px 0px $imgShadow,
+      0 -9px 0px 0px $imgShadow, 
+      -11px 0px 61px -1px $pText1, 
+      -12px 0 15px -4px $imgShadow;
+
     }
 
     .imgline {
       position: absolute;
       top: 50px;
       left: 159px;
+      max-width: 18px;
+
     }
 
-    .imgfull {
+    img {
       width: 100%;
     }
   }
