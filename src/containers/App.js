@@ -7,6 +7,8 @@ import { Header } from 'Containers'
 import { Home } from 'Components'
 import DevTools from './DevTools'
 
+import './App.scss'
+
 const store = configureStore()
 
 export default () => (
