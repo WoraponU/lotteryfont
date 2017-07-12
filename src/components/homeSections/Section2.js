@@ -15,6 +15,7 @@ class Section2 extends Component {
       focusOnSelect: true,
       lazyLoad: true,
     };
+
     return (
       <div className="section2">
         <Grid>
