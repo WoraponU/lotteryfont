@@ -38,9 +38,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              module: true,
               sourceMap: true,
-              localIdentName: '[path][name]__[local]--[hash:base64:5]'
             }
           },
           'resolve-url-loader',               
@@ -59,9 +57,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              module: true,
               sourceMap: true,
-              localIdentName: '[path][name]__[local]--[hash:base64:5]'
             }
           },
           {
@@ -78,6 +74,10 @@ module.exports = {
             }
           },
         ]
+      },
+      { 
+        test: /\.(jpg|png)$/, 
+        loader: "file-loader" 
       }
     ]
   },

@@ -1,11 +1,10 @@
-@import '~Theme/variables';
 @import '~Theme/colors';
 
 $hrColor : $blue2;
 $headerColor : $black2;
 
 .section1 {
-  background-image:  url("https://www.img.in.th/images/245c4d27b9a8e8d1fb1dc29a50b13ca8.png");
+  background-image:  url("Home/box.png");
   background-repeat: no-repeat;
   background-position: 35% 50%;
   background-size: contain;
@@ -28,7 +27,7 @@ $headerColor : $black2;
   .margin1 {
     margin: 100px 0 20px 0;
     
-    h2{
+    h2 {
       font-size: 38px;
       font-weight: bold;
       line-height: 1.11;
