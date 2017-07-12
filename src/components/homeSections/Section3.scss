@@ -3,8 +3,12 @@
 $pColor: $pink;
 
 .sections3 {
+  position: relative;
+
   .heading {
     text-align: center !important;
+    margin: 56px 0;
+    
 
     .bigHead {
       font-size: 38px;
@@ -16,25 +20,53 @@ $pColor: $pink;
     }
   }
 
+  .positonBotton {
+    bottom: 0px;
+    position: absolute;
+
+    .header{
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1.19;
+      text-align: left;
+      color: #000000;
+      padding-bottom: 20px;
+    }
+
+    p{
+      font-size: 17px;
+      line-height: 1.47;
+      text-align: left;
+      color: #7b7b7b;
+    }    
+  }
+
+  .pText1{
+      padding-top: 70px;
+      padding-left: 20px;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 2;    
+      color: $pColor;
+      text-shadow: 2.1px 3.4px 5.7px rgba(0, 0, 0, 0.1);
+
+    }  
+
   .img{    
+    position: relative;
     padding-left: 0px;
     padding-right: 0px;
+
+    .imgline {
+      position: absolute;
+      top: 50px;
+      left: 159px;
+    }
+
     .imgfull{
       width: 100%;
     }
   }
- p{
-    padding-top: 70px;
-    padding-left: 20px;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 2;
-    
-    color: $pColor;
-    text-shadow: 2.1px 3.4px 5.7px rgba(0, 0, 0, 0.1);
-
-  }
-
 }
   
  

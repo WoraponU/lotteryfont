@@ -1,53 +1,14 @@
 import React, { Component } from 'react';
-
-import _ from 'lodash';
-import {Responsive, WidthProvider } from 'react-grid-layout';
-import PropTypes from 'prop-types';
-
 import { Grid, Row, Col, Image} from 'react-bootstrap';
-import './Section3.scss'
-import './styles.css'
 
-const ResponsiveReactGridLayout = WidthProvider(Responsive);
+import './Section3.scss'
+
+
 
 
 class Section3 extends Component {  
 
-  static propTypes = {
-    onLayoutChange: PropTypes.func.isRequired
-  };
-
-  static defaultProps = {
-    className: "layout",
-    isResizable: false,
-    rowHeight: 30,
-    onLayoutChange: function() {},
-    cols: {lg: 12, md: 12, sm: 6, xs: 4, xxs: 2},
-    
-    
-  };
-   state = {
-    currentBreakpoint: 'lg',
-    mounted: false,
-    
-  };
-
-  componentDidMount() {
-    this.setState({mounted: true});
-  }
-
-  onLayoutChange = (layout) => {
-    this.props.onLayoutChange(layout);
-  };
   
-
-    
-
- onLayoutChange = (layout, layouts) => {
-    this.props.onLayoutChange(layout, layouts);
-  };
-
-
 
  
 
@@ -59,15 +20,41 @@ class Section3 extends Component {
         <Col xs={12} md={12}>
           <p className="bigHead">our moms said, we are the best.</p>
         </Col>      
-        </Row>
-      
+      </Row>
       <Row>
-        <ResponsiveReactGridLayout  layouts={this.state.layouts}  onLayoutChange={this.onLayoutChange} rowHeight={30}>
-          <div key={'1'} data-grid={{x: 0, y: 0, w: 3, h: 9}}><Image src="assets/images/Home/section3/img1.png" className="imgfull" /></div>
-          <div key={'2'} data-grid={{x: 3, y: 0, w: 3, h: 9}}><Image src="assets/images/Home/section3/img2.png" className="imgfull" /></div>
-          <div key={'3'} data-grid={{x: 6, y: 0, w: 3, h: 9}}><Image src="assets/images/Home/section3/img3.png" className="imgfull" /></div>
-          <div key={'4'} data-grid={{x: 10, y: 0, w: 2, h: 2 , static: true}}><p>Transform brands, grow businesses and make people’s lives better.</p></div>
-        </ResponsiveReactGridLayout>
+        <Col sm={6} md={3} className="img">
+        <Image src="assets/images/Home/section3/img1.png" className="imgfull" />
+        </Col>
+        <Col sm={6} md={3} className="img">
+        <Image src="assets/images/Home/section3/img2.png" className="imgfull" />
+        </Col>
+        <Col sm={6} md={3} className="img">
+        <Image src="assets/images/Home/section3/img3.png" className="imgfull" />
+        </Col>
+        <Col sm={6} md={3}>
+        <p className="pText1">Transform brands, grow businesses and make people’s lives better.</p>
+        </Col> 
+      </Row>
+      <Row>
+        <Col md={6} className="img">
+          <Image src="assets/images/Home/section3/img4.png" className="imgfull" />
+        </Col>
+         <Col md={3} className="img">
+          <Image src="assets/images/Home/section3/img5.png" className="imgfull" />
+        </Col>
+        <Col sm={6} md={3} className="img">
+         <Image src="assets/images/Home/section3/line.png" className="imgline" />
+        </Col> 
+        <Col  md={6} className="img">
+        <Image src="assets/images/Home/section3/img6.png" className="imgfull" />
+        </Col> 
+      </Row>
+      <Row className="positonBotton">
+        <Col md={6} >
+          <div className="header">We are a Bangkok based digital agency with global reach.</div>
+          <p>We believe brands are made by the interactions they create. We believe that beautiful and usable are complementary. We believe that everything we put in front of your customers should be interesting and useful to each one of them.</p>       
+          <p>We are LiveArea, the PFS digital experience agency with a boutique approach and world-class capabilities. We meld strategy, creativity, and technology until they disappear beneath perfectly branded commerce experiences for core customers</p>
+        </Col>
       </Row>
     </Grid>
      
