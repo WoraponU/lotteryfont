@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import Slider from 'react-slick';
 
-import styles from './Section2.scss'
-// import './Section2.scss'
+// import styles from './Section2.scss'
+import './Section2.scss'
 
 class Section2 extends Component {
   render() {
@@ -19,7 +19,7 @@ class Section2 extends Component {
       // prevArrow: '<',
     };
     return (
-      <div className={styles.section2}>
+      <div className="section2">
         <Grid>
           <Row>
             <Col sm={12} md={12} lg={12}>
@@ -27,7 +27,7 @@ class Section2 extends Component {
             </Col>
           </Row>
         </Grid>
-        <Slider {...settings} className={styles.slickSlider}>
+        <Slider {...settings} className="slickSlider">
           <img src="assets/images/home/section2/qualy.jpg" alt="qualy"/>
           <img src="assets/images/home/section2/ygg.png" alt="ygg"/>
           <img src="assets/images/home/section2/mac5.png" alt="mac5"/>

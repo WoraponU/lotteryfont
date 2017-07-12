@@ -1,15 +1,15 @@
 import React from 'react';
 import { Nav,NavItem,Grid,Col,Row } from 'react-bootstrap';
 
-import styles from './Menu.scss'
+import './Menu.scss'
 
 const Menu = () => {
   return (
     <div>
       <Grid>
         <Row className="show-grid">
-          <Col sm={6} md={6} className={styles.navBar}>
-            <Nav bsStyle="pills" stacked className={styles.nav} >
+          <Col sm={6} md={6} className="navBar">
+            <Nav bsStyle="pills" stacked className="nav" >
               <NavItem eventKey={1} href="/" title="Item"><span>HOME</span></NavItem>
               <NavItem eventKey={2} href="/" title="Item"><span>OUR WORK</span></NavItem>
               <NavItem eventKey={3} href="/" title="Item"><span>ABOUT US</span></NavItem>

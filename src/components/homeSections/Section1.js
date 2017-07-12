@@ -1,18 +1,19 @@
 import React from 'react';
 import { Grid, Row, Col, Image, Button } from 'react-bootstrap';
 
-import styles from './Section1.scss'
+import './Section1.scss'
+
 
 const Section1 = () => {
   return (
-    <Grid className={styles.section1}>
+    <Grid className="section1">
       <Row>
         <Col sm={6} md={6}></Col>
         <Col sm={6} md={6}>
           <Image src="assets/images/home/section1.png" responsive />
         </Col>
       </Row>
-      <Row className={styles.margin1}>
+      <Row className="margin1">
         <Col xsOffset={4} md={6}>
           <h2>Every interaction <br/>
             is a communication</h2>
@@ -20,7 +21,7 @@ const Section1 = () => {
       </Row> 
       <Row >
         <Col sm={6} md={5} className="text-right">  
-        <hr className={styles.imgRight} />               
+        <hr className="imgRight" />               
         </Col>
         <Col sm={6} md={5}>
           <p>We Love Making Life Easier – It's Not Just Work-life Balance. Every Hobbist Are Driven By Passion. We Merge Work And Life Together With The Joy Of Making Our Client's Life Easier.</p>

@@ -1,20 +1,20 @@
 import React from 'react';
 import { Navbar,Nav,NavItem,Image } from 'react-bootstrap';
 
-import styles from './Navbar.scss'
+import './Navbar.scss'
 
 const NavbarHeader = () => {
   return (
-    <div className={styles.header}>
-      <Navbar className={styles.navbarDefault}>      
+    <div className="header">
+      <Navbar className="navbarDefault">      
         <Navbar.Brand>
-            <Image src="assets/images/logo.png" className={styles.Brand}/>
+            <Image src="assets/images/logo.png" className="Brand"/>
         </Navbar.Brand>       
 
         <Navbar.Collapse>   
           <Nav pullRight>
             <NavItem  href="#">TH</NavItem>
-            <NavItem  href="#">EN</NavItem>
+            <NavItem  href="#" className="nav-right">EN</NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
