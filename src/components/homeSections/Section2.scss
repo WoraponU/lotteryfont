@@ -12,16 +12,32 @@
     
     .slick-arrow {
       @extend .buttonMaterial;
-        position: absolute;
-        width: 80px;
-        top: -28px;
-        z-index: 1;
+      position: absolute;
+      width: 50px;
+      top: -28px;
+      z-index: 1;
+      color: transparent;
 
       &.slick-prev {
         right: 160px;
+        
+        &::after { 
+          font-family: FontAwesome;
+          content: "\F177";
+          color: $black;
+          font-size: 16px;
+          right: 18px;
+          top: 1px;
+          position: absolute;
+        }
       }
       &.slick-next {
-        right: 50px;
+        @extend .slick-prev;
+        right: 87px;
+
+        &::after { 
+          content: "\f178";
+        }
       }
     }
 
