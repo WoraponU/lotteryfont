@@ -20,4 +20,7 @@ $navbarColor: $white;
   li:first-child {
     border-right: 1px solid $black;
   }
+  .nav-right {
+    padding-left: 15px;
+  }
 }

@@ -1,0 +1,42 @@
+@import '~Theme/colors';
+
+$pColor: $pink;
+
+.sections3 {
+  .heading {
+    text-align: center !important;
+
+    .bigHead {
+      font-size: 38px;
+      font-weight: bold;
+      line-height: 1.11;
+      letter-spacing: 1.9px;
+      color: #4a4a4a;
+
+    }
+  }
+
+  .img{    
+    padding-left: 0px;
+    padding-right: 0px;
+    .imgfull{
+      width: 100%;
+    }
+  }
+
+
+}
+  .imgfull{
+      width: 100%;
+    }
+  .p{
+    padding-top: 70px;
+    padding-left: 20px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 2;
+    text-align: left;
+    color: $pColor;
+    text-shadow: 2.1px 3.4px 5.7px rgba(0, 0, 0, 0.1);
+
+  }
