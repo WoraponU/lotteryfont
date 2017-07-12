@@ -2,9 +2,6 @@
 @import '~Theme/common';
 
 .section2 {
-   textarea:focus, input:focus, button:focus {
-    outline: none;
-  }
   .ourWork {
     text-align: center;
     margin-bottom: 50px;
@@ -15,11 +12,11 @@
     
     .slick-arrow {
       @extend .buttonMaterial;
-        position: absolute;
-        width: 50px;
-        top: -28px;
-        z-index: 1;
-        color: transparent;
+      position: absolute;
+      width: 50px;
+      top: -28px;
+      z-index: 1;
+      color: transparent;
 
       &.slick-prev {
         right: 160px;
@@ -35,16 +32,11 @@
         }
       }
       &.slick-next {
+        @extend .slick-prev;
         right: 87px;
 
         &::after { 
-          font-family: FontAwesome;
           content: "\f178";
-          color: $black;
-          font-size: 16px;
-          right: 18px;
-          top: 1px;
-          position: absolute;
         }
       }
     }
