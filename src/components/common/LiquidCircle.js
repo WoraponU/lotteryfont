@@ -17,8 +17,16 @@ class liquidButton extends Component {
   }
 
   render() {
+    const [ top, right, bottom, left ] = this.props.position;
+    const styles = {
+      top,
+      right,
+      bottom,
+      left,
+    } 
+    
     return (
-      <canvas id={`liquidButton${this.props.id}`}></canvas>
+      <canvas id={`liquidButton${this.props.id}`} style={styles}></canvas>
     );
   }
 }
@@ -27,6 +35,7 @@ liquidButton.propTypes = {
   id: PropTypes.number,
   radius: PropTypes.number,
   color: PropTypes.string,
+  position: PropTypes.array,
 };
 
 export default liquidButton;
