@@ -4,30 +4,73 @@ $HeaderColor: $pink;
 .section4 {
   margin-bottom: 50px;
   position: relative;
-
+  
   h1 {
     color: $HeaderColor;
 
   }
-  img {
-   width: 100%;
-   
-    .imgW355 {
-      width: 355px;
-      
+
+  .text-right {
+    p {
+      padding-top: 25%;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 2;
+      text-align: right;
+      color: #000000;
+      text-shadow: 2.1px 3.4px 5.7px rgba(0, 0, 0, 0.1);
+
     }
   }
 
+  img {
+   width: 100%;
 
- div[class^="col-"] {    
+  }
+
+  .rowPosition {
+    position: relative;
+    padding-left: 9px;
+
+  }
+
+  div[class^="col-"] {    
     position: relative;
     padding-left: 0px;
-   padding-bottom: 15px;
+    padding-bottom: 15px;
 
- }
+  }
+  
+  .imgW355 {
+     width: 355px;
+
+  }
 
   .imgOut {
-     width: 355px;
-     float: right; 
+    @extend .imgW355;
+    float: right; 
+   
+
   }
+  .imgCard4 {
+    @extend .imgW355;
+    position: absolute;
+    bottom: 29px;
+    left: 20px;
+
+  }
+
+  .imgCard3 {
+      height: 734px;
+
+  }
+
+  .imgCard {
+    left: -118px;
+    top: 117px;
+    position: absolute;
+    z-index: -1;
+
+  }
+
 }
