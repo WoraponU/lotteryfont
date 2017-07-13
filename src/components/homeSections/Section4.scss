@@ -1,5 +1,8 @@
 @import '~Theme/colors';
+
 $HeaderColor: $pink;
+$pSection4: $black;
+$shadow: $boxshadowblack;
 
 .section4 {
   margin-bottom: 50px;
@@ -17,14 +20,14 @@ $HeaderColor: $pink;
       font-weight: bold;
       line-height: 2;
       text-align: right;
-      color: #000000;
-      text-shadow: 2.1px 3.4px 5.7px rgba(0, 0, 0, 0.1);
+      color: $pSection4;
+      text-shadow: 2.1px 3.4px 5.7px $shadow;
 
     }
   }
 
   img {
-   width: 100%;
+    width: 100%;
 
   }
 
@@ -57,11 +60,13 @@ $HeaderColor: $pink;
     position: absolute;
     bottom: 29px;
     left: 20px;
+    box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
 
   }
 
   .imgCard3 {
-      height: 734px;
+    height: 734px;
+    box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
 
   }
 
@@ -73,4 +78,10 @@ $HeaderColor: $pink;
 
   }
 
+  .imgCard2 {
+    margin-left: -8px;
+    @extend .imgW355;
+    box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
+    
+  }
 }
