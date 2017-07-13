@@ -1,6 +1,8 @@
 import React from 'react';
 import { Grid, Row, Col, Image, Button } from 'react-bootstrap';
 
+import LiquidCircle from 'Components/common/LiquidCircle';
+import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
 import './Section1.scss'
 
 
@@ -14,7 +16,13 @@ const Section1 = () => {
         </Col>
       </Row>
       <Row className="header">
-        <Col mdOffset={4} lgOffset={4} md={8} lg={8} sm={12} xs={12}>
+        <Col sm={4} md={4} lg={4}>
+          <LiquidCircle id={1} radius={300} color={blue} position={["20px", "20px", "20px", "20px"]}/>
+          <LiquidCircle id={2} radius={170} color={yellow} position={["182px", "47px", "auto", "auto"]}/>
+          <LiquidCircle id={3} radius={200} color={purple} position={["-25px", "auto", "auto", "-15px"]}/>
+          <LiquidCircle id={4} radius={170} color={pink} position={["-100px", "auto", "auto", "-77px"]}/>
+        </Col>
+        <Col sm={8} xs={8} md={8} lg={8} >
           <h2>Every interaction <br/>
             is a communication</h2>
         </Col>

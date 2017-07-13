@@ -37,10 +37,10 @@ const Section2 = () => {
       
        <Row>
         <Col smOffset={9} mdOffset={9} lgOffset={9} sm={3} md={3} lg={3} className="LiquidCircle">
-          <LiquidCircle id={1} radius={300} color={blue} position={["20px", "20px", "20px", "20px"]}/>
-          <LiquidCircle id={2} radius={170} color={yellow} position={["30px", "auto", "auto", "-10px"]}/>
-          <LiquidCircle id={3} radius={200} color={purple} position={["-25px", "140px", "auto", "auto"]}/>
-          <LiquidCircle id={4} radius={170} color={pink} position={["-80px", "auto", "auto", "auto"]}/>
+          <LiquidCircle id={5} radius={300} color={blue} position={["20px", "20px", "20px", "20px"]}/>
+          <LiquidCircle id={6} radius={170} color={yellow} position={["30px", "auto", "auto", "-10px"]}/>
+          <LiquidCircle id={7} radius={200} color={purple} position={["-25px", "140px", "auto", "auto"]}/>
+          <LiquidCircle id={8} radius={170} color={pink} position={["-80px", "auto", "auto", "auto"]}/>
         </Col>
       </Row> 
     </div>
