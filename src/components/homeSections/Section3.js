@@ -13,34 +13,34 @@ class Section3 extends Component {
           </Col>      
         </Row>
         <Row>
-          <Col sm={6} md={3}>
-          <Image src="assets/images/Home/section3/img1.png" />
+          <Col lg={3} md={3}>
+            <Image src="assets/images/Home/section3/img1.png" />
           </Col>
-          <Col sm={6} md={3}>
-          <Image src="assets/images/Home/section3/img2.png" />
+          <Col lg={3} md={3}>
+            <Image src="assets/images/Home/section3/img2.png" />
           </Col>
-          <Col sm={6} md={3}>
-          <Image src="assets/images/Home/section3/img3.png" />
+          <Col lg={3} md={3}>
+            <Image src="assets/images/Home/section3/img3.png" />
           </Col>
-          <Col sm={6} md={3}>
-          <p className="pText1">Transform brands, grow businesses and make people’s lives better.</p>
+          <Col lg={3} md={3}>
+            <p className="subHeader">Transform brands, grow businesses and make people’s lives better.</p>
           </Col> 
         </Row>
         <Row>
-          <Col md={6}>
+          <Col lg={6} md={6}>
             <Image src="assets/images/Home/section3/img4.png" />
           </Col>
-          <Col md={3}>
-            <Image src="assets/images/Home/section3/img5.png" className="imgshadow" />
+          <Col lg={3} md={3}>
+            <Image src="assets/images/Home/section3/img5.png" className="imgShadow" />
           </Col>
-          <Col sm={6} md={3}>
-          <Image src="assets/images/Home/section3/line.png" className="imgline" />
+          <Col lg={3} md={3}>
+            <Image src="assets/images/Home/section3/line.png" className="imgLine" />
           </Col> 
-          <Col  md={6}>
-          <Image src="assets/images/Home/section3/img6.png" />
+          <Col lg={6} md={6}>
+            <Image src="assets/images/Home/section3/img6.png" />
           </Col> 
         </Row>
-        <Row className="positonBotton">
+        <Row className="boxBottom">
           <Col md={6} className="paddingRight" >
             <h2 >We are a Bangkok based digital agency with global reach.</h2>
             <p>We believe brands are made by the interactions they create. We believe that beautiful and usable are complementary. We believe that everything we put in front of your customers should be interesting and useful to each one of them.</p>       

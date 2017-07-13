@@ -24,13 +24,13 @@ $imgShadow: $windWalk;
     }
   }
 
-  .positonBotton {
+  .boxBottom {
     bottom: 0px;
     position: absolute;
     padding-right: 15px;
     padding-left: 0px;
     
-    .paddingRight {
+    div[class^="col-"] {
       padding-right: 21px;
       padding-left: 0px;
     }
@@ -52,7 +52,7 @@ $imgShadow: $windWalk;
     }    
   }
 
-  .pText1 {
+  .subHeader {
       padding-top: 70px;
       padding-left: 20px;
       font-size: 21px;
@@ -68,7 +68,7 @@ $imgShadow: $windWalk;
     padding-left: 0px;
     padding-right: 0px;
 
-    .imgshadow {
+    .imgShadow {
       box-shadow: 0 9px 0px 0px $imgShadow,
       0 -9px 0px 0px $imgShadow, 
       -11px 0px 61px -1px $pText1, 
@@ -76,7 +76,7 @@ $imgShadow: $windWalk;
 
     }
 
-    .imgline {
+    .imgLine {
       position: absolute;
       top: 50px;
       left: 159px;
