@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section1, Section2, Section3 } from 'Components/HomeSections'
+import { Section1, Section2, Section3, Section4 } from 'Components/HomeSections'
 
 const Home = () => {
   return (
@@ -7,6 +7,7 @@ const Home = () => {
       <Section1 />
       <Section2 />
       <Section3 />
+      <Section4 />
     </div>
   );
 };
