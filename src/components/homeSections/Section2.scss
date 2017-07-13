@@ -6,6 +6,7 @@
     text-align: center;
     margin-bottom: 50px;
   }
+
   .slick-slider {
     left: 17%;
     margin-right: 19%;
@@ -31,6 +32,7 @@
           position: absolute;
         }
       }
+
       &.slick-next {
         @extend .slick-prev;
         right: 87px;
