@@ -10,20 +10,11 @@ $imgShadow: $windWalk;
 .section3 {
   position: relative;
 
-  .Header {
-    text-align: center !important;
-    margin: 56px 0;    
+  h1 {
+    color: $pHeader;
 
-    p {
-      font-size: 38px;
-      font-weight: bold;
-      line-height: 1.11;
-      letter-spacing: 1.9px;
-      color: $pHeader;
-
-    }
   }
-
+  
   .boxBottom {
     bottom: 0px;
     position: absolute;

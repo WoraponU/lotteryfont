@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Image} from 'react-bootstrap';
+import { Grid, Row, Col, Image, PageHeader} from 'react-bootstrap';
 
 import './Section3.scss'
 
@@ -7,11 +7,7 @@ class Section3 extends Component {
   render() {
     return (
       <Grid className="section3">
-        <Row className="Header">
-          <Col xs={12} md={12}>
-            <p>our moms said, we are the best.</p>
-          </Col>      
-        </Row>
+        <PageHeader>our moms said, we are the best.</PageHeader>
         <Row>
           <Col lg={3} md={3}>
             <Image src="assets/images/Home/section3/img1.png" />
