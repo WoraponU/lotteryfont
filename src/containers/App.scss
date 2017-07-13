@@ -1,4 +1,30 @@
+@font-face {
+  font-family: Roboto;
+  src: url('fonts/Roboto/Roboto-Regular.eot');
+  src: url('fonts/Roboto/Roboto-Regular.eot?') format('embedded-opentype'), 
+        url('fonts/Roboto/Roboto-Regular.woff') format('woff'), 
+        url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+ 
+@font-face {
+  font-family: Roboto-bold;
+  src: url('fonts/Roboto/Roboto-Bold.eot');
+  src: url('fonts/Roboto/Roboto-Bold.eot?') format('embedded-opentype'), 
+        url('fonts/Roboto/Roboto-Bold.woff') format('woff'), 
+        url('fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Italic;
+  src: url('fonts/Roboto/Roboto-Italic.eot');
+  src: url('fonts/Roboto/Roboto-Italic.eot?') format('embedded-opentype'), 
+        url('fonts/Roboto/Roboto-Italic.woff') format('woff'), 
+        url('fonts/Roboto/Roboto-Italic.ttf') format('truetype');
+}
+
 body {
+  font-family: Roboto;
+  
   textarea:focus, input:focus, button:focus {
     outline: none;
   }

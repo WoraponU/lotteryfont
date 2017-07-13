@@ -28,7 +28,7 @@ const Section2 = () => {
       </Grid>
       <div className="sliderRow">
         <Slider {...settings}>
-          <img src="assets/images/home/section2/qualy.jpg" alt="qualy"/>
+          <img src="assets/images/home/section2/qualy.png" alt="qualy"/>
           <img src="assets/images/home/section2/ygg.png" alt="ygg"/>
           <img src="assets/images/home/section2/mac5.png" alt="mac5"/>
           <img src="assets/images/home/section2/mac5.png" alt="mac5"/>
