@@ -3,3 +3,18 @@ body {
     outline: none;
   }
 }
+
+.page-header {
+  text-align: center !important;
+  margin: 56px 0;
+  border-bottom: 0px ;
+  padding-bottom: 0px; 
+
+  h1 {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.11;
+    letter-spacing: 1.9px; 
+
+  }
+}

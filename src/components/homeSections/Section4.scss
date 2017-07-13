@@ -1,0 +1,33 @@
+@import '~Theme/colors';
+$HeaderColor: $pink;
+
+.section4 {
+  margin-bottom: 50px;
+  position: relative;
+
+  h1 {
+    color: $HeaderColor;
+
+  }
+  img {
+   width: 100%;
+   
+    .imgW355 {
+      width: 355px;
+      
+    }
+  }
+
+
+ div[class^="col-"] {    
+    position: relative;
+    padding-left: 0px;
+   padding-bottom: 15px;
+
+ }
+
+  .imgOut {
+     width: 355px;
+     float: right; 
+  }
+}
