@@ -12,7 +12,7 @@ const Section1 = () => {
       <Row>
         <Col mdHidden lgHidden sm={5} className="colHight"></Col>
         <Col mdOffset={5} lgOffset={6} md={7} lg={6} sm={7}>
-          <Image src="assets/images/home/section1.png" responsive />
+          <Image src="assets/images/home/section1/watch.png" responsive />
         </Col>
       </Row>
       <Row className="header">
@@ -23,8 +23,7 @@ const Section1 = () => {
           <LiquidCircle id={4} radius={170} color={pink} position={["-100px", "auto", "auto", "-77px"]}/>
         </Col>
         <Col sm={8} xs={8} md={8} lg={8} >
-          <h2>Every interaction <br/>
-            is a communication</h2>
+          <h2>EVERY INTERACTIVE<br/>IS A COMMUNICATION</h2>
         </Col>
       </Row> 
       <Row >
