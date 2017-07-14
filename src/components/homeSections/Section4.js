@@ -1,12 +1,16 @@
 import React from 'react';
-import { PageHeader, Row, Grid, Col, Image } from 'react-bootstrap';
+import { Row, Grid, Col, Image } from 'react-bootstrap';
 import './Section4.scss'
 
 const Section4 = () => {
   return (
     <div className="section4">
       <Grid>
-        <PageHeader>Small teams working on big challenges<br/>in honest collaboration with our clients.</PageHeader>
+        <Row>         
+          <Col sm={12} md={12} lg={12} className="text-center">
+            <h1 className="header">Small teams working on big challenges<br/>in honest collaboration with our clients.</h1>
+          </Col>
+        </Row>
       </Grid>
       <Col lg={2} md={2} >
         <Image src="assets/images/Home/section4/card1.png" className="imgOut" />

@@ -1,20 +1,65 @@
+@import '~Theme/colors';
+
+///////////// Roboto
+@font-face {
+  font-family: Roboto;
+  src: url('fonts/Roboto/Roboto-Regular.eot');
+  src: url('fonts/Roboto/Roboto-Regular.eot?') format('embedded-opentype'), 
+        url('fonts/Roboto/Roboto-Regular.woff') format('woff'), 
+        url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+ 
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('fonts/Roboto/Roboto-Bold.eot');
+  src: url('fonts/Roboto/Roboto-Bold.eot?') format('embedded-opentype'), 
+        url('fonts/Roboto/Roboto-Bold.woff') format('woff'), 
+        url('fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Italic;
+  src: url('fonts/Roboto/Roboto-Italic.eot');
+  src: url('fonts/Roboto/Roboto-Italic.eot?') format('embedded-opentype'), 
+        url('fonts/Roboto/Roboto-Italic.woff') format('woff'), 
+        url('fonts/Roboto/Roboto-Italic.ttf') format('truetype');
+}
+
+///////////// Montserrat
+@font-face {
+  font-family: Montserrat;
+  src: url('fonts/Montserrat/Montserrat-Italic.eot');
+  src: url('fonts/Montserrat/Montserrat-Italic.eot?') format('embedded-opentype'), 
+        url('fonts/Montserrat/Montserrat-Italic.woff') format('woff'), 
+        url('fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('fonts/Montserrat/Montserrat-Bold.eot');
+  src: url('fonts/Montserrat/Montserrat-Bold.eot?') format('embedded-opentype'), 
+        url('fonts/Montserrat/Montserrat-Bold.woff') format('woff'), 
+        url('fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat-Italic;
+  src: url('fonts/Montserrat/Montserrat-Italic.eot');
+  src: url('fonts/Montserrat/Montserrat-Italic.eot?') format('embedded-opentype'), 
+        url('fonts/Montserrat/Montserrat-Italic.woff') format('woff'), 
+        url('fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
+}
+
 body {
+  font-family: Roboto;
+  color: $mainFontColor;
+  
   textarea:focus, input:focus, button:focus {
     outline: none;
   }
-}
 
-.page-header {
-  text-align: center !important;
-  margin: 56px 0;
-  border-bottom: 0px ;
-  padding-bottom: 0px; 
-
-  h1 {
-    font-size: 38px;
-    font-weight: bold;
-    line-height: 1.11;
-    letter-spacing: 1.9px; 
-    object-fit: contain;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat-Bold;
+    color: $black;
   }
 }

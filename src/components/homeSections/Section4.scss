@@ -8,9 +8,9 @@ $shadow: $boxshadowblack;
   margin-bottom: 50px;
   position: relative;
   
-  h1 {
+  .header {
     color: $HeaderColor;
-
+    margin-bottom: 50px;
   }
 
   .text-right {
@@ -46,7 +46,6 @@ $shadow: $boxshadowblack;
   
   .imgW355 {
      width: 355px;
-
   }
 
   .imgOut {

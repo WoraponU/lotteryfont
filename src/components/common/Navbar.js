@@ -6,9 +6,9 @@ import './Navbar.scss'
 const NavbarHeader = () => {
   return (
     <div className="header">
-      <Navbar className="navbarDefault">      
+      <Navbar>      
         <Navbar.Brand>
-            <Image src="assets/images/logo.png" className="Brand"/>
+            <Image src="assets/images/logo.png"/>
         </Navbar.Brand>       
 
         <Navbar.Collapse>   

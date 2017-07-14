@@ -1,7 +1,47 @@
 const path = require('path')
 const webpack = require('webpack')
-
 const context = path.resolve(__dirname, 'src')
+
+const customModule = {
+  css: [
+    'style-loader',
+    {
+      loader: 'css-loader',
+      options: {
+        sourceMap: true,
+      }
+    },
+    'resolve-url-loader',               
+    {
+      loader: 'postcss-loader',
+      options: {
+        sourceMap: true
+      }
+    },
+  ],
+  scss: [
+    'style-loader',
+    {
+      loader: 'css-loader',
+      options: {
+        sourceMap: true,
+      }
+    },
+    {
+      loader: 'postcss-loader',
+      options: {
+        sourceMap: true
+      }
+    },
+    'resolve-url-loader',     
+    {
+      loader: 'sass-loader',
+      options: {
+        sourceMap: true
+      }
+    },
+  ]
+};
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -32,53 +72,10 @@ module.exports = {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, enforce: 'pre', loader: 'eslint-loader' },
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.css$/, use: 
-        [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            }
-          },
-          'resolve-url-loader',               
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true
-            }
-          },
-        ]
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true
-            }
-          },
-          'resolve-url-loader',     
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true
-            }
-          },
-        ]
-      },
-      { 
-        test: /\.(jpg|png)$/, 
-        loader: "file-loader" 
-      }
+      { test: /\.css$/, use: customModule.css },
+      { test: /\.scss$/, use: customModule.scss },
+      { test: /\.(jpg|png)$/, loader: 'file-loader' },
+      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader : 'file-loader' }
     ]
   },
   plugins: [

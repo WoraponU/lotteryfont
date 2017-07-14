@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageHeader, Grid, Image, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Grid, Image, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 import './Section5.scss'
 
@@ -7,7 +7,7 @@ const componentName = () => {
   return (
     <div className="section5">
       <Grid>
-        <PageHeader>our clients</PageHeader>
+        <h1>our clients</h1>
       </Grid>
       <Grid>                  
         <ListGroup>

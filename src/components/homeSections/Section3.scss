@@ -1,21 +1,22 @@
 @import '~Theme/colors';
 
 $pColor: $pink;
-$pHeader: $gray;
+$pHeader: $grey;
 $header: $black;
-$pBottom: $gray2;
+$pBottom: $grey2;
 $pText1: $boxshadowblack;
 $imgShadow: $windWalk;
 
 .section3 {
   position: relative;
+  margin-bottom: 150px;
 
-  h1 {
-    color: $pHeader;
-
+  .header {
+    margin-bottom: 50px;
   }
-  
+
   .boxBottom {
+    text-align: left;
     bottom: 0px;
     position: absolute;
     padding-right: 15px;
