@@ -6,8 +6,8 @@ import './Section5.scss'
 const componentName = () => {
   return (
     <div className="section5">
-      <Grid className="text-center">
-        <h1>our clients</h1>
+      <Grid>
+        <h1 className="header">OUR CLIENTS</h1>
       </Grid>
       <Grid>                  
         <ListGroup>

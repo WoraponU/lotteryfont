@@ -5,12 +5,12 @@ $pSection4: $black;
 $shadow: $boxshadowblack;
 
 .section4 {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   position: relative;
   
   .header {
     color: $HeaderColor;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   .text-right {
@@ -81,6 +81,5 @@ $shadow: $boxshadowblack;
     margin-left: -8px;
     @extend .imgW355;
     box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
-    
   }
 }

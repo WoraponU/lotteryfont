@@ -13,7 +13,7 @@ const settings = {
   arrows: true,
   draggable: false,
   focusOnSelect: true,
-  lazyLoad: true,
+  lazyLoad: 'ondemand',
 };
 
 const Section2 = () => {
