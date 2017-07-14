@@ -1,3 +1,6 @@
+@import '~Theme/colors';
+
+///////////// Roboto
 @font-face {
   font-family: Roboto;
   src: url('fonts/Roboto/Roboto-Regular.eot');
@@ -7,7 +10,7 @@
 }
  
 @font-face {
-  font-family: Roboto-bold;
+  font-family: Roboto-Bold;
   src: url('fonts/Roboto/Roboto-Bold.eot');
   src: url('fonts/Roboto/Roboto-Bold.eot?') format('embedded-opentype'), 
         url('fonts/Roboto/Roboto-Bold.woff') format('woff'), 
@@ -22,10 +25,41 @@
         url('fonts/Roboto/Roboto-Italic.ttf') format('truetype');
 }
 
+///////////// Montserrat
+@font-face {
+  font-family: Montserrat;
+  src: url('fonts/Montserrat/Montserrat-Italic.eot');
+  src: url('fonts/Montserrat/Montserrat-Italic.eot?') format('embedded-opentype'), 
+        url('fonts/Montserrat/Montserrat-Italic.woff') format('woff'), 
+        url('fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('fonts/Montserrat/Montserrat-Bold.eot');
+  src: url('fonts/Montserrat/Montserrat-Bold.eot?') format('embedded-opentype'), 
+        url('fonts/Montserrat/Montserrat-Bold.woff') format('woff'), 
+        url('fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Montserrat-Italic;
+  src: url('fonts/Montserrat/Montserrat-Italic.eot');
+  src: url('fonts/Montserrat/Montserrat-Italic.eot?') format('embedded-opentype'), 
+        url('fonts/Montserrat/Montserrat-Italic.woff') format('woff'), 
+        url('fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
+}
+
 body {
   font-family: Roboto;
+  color: $mainFontColor;
   
   textarea:focus, input:focus, button:focus {
     outline: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat-Bold;
+    color: $black;
   }
 }

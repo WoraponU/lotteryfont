@@ -22,7 +22,7 @@ const Section2 = () => {
       <Grid>
         <Row>
           <Col sm={12} md={12} lg={12}>
-            <h1 className="ourWork">OUR WORK</h1>
+            <h1 className="header">OUR WORK</h1>
           </Col>
         </Row>
       </Grid>

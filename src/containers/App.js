@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import { Route, Switch } from 'react-router'
 
 import { configureStore } from 'Lib'
-import { Header } from 'Containers'
+import { Header } from 'Components/common'
 import { Home } from 'Components'
 import DevTools from './DevTools'
 

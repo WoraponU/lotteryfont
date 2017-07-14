@@ -5,22 +5,32 @@ $navbarColor: $white;
 .header {
     padding-top: 15px;
 
-  .navbarDefault { 
+  .navbar-default { 
     background-color: $navbarColor;
     border-color: $navbarColor;
-    
-  }
 
-  .Brand {
-    margin-left:0px !important;
-    height: auto; 
-    padding: 0px 0px; 
-  }
+    .navbar-brand {
+      margin-left: 0px !important;
+      height: auto; 
+      padding: 0px 0px; 
+    }
 
-  li:first-child {
-    border-right: 1px solid $black;
-  }
-  .nav-right {
-    padding-left: 15px;
+    li:first-child {
+      border-right: 1px solid $black;
+    }
+
+    .nav-right {
+      padding-left: 15px;
+    }
+
+    .navbar-nav {
+      li {
+        font-family: Roboto-Bold;
+
+        a {
+          color: $black2;
+        }
+      }
+    }
   }
 }

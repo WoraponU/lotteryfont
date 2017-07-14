@@ -1,0 +1,86 @@
+@import '~Theme/colors';
+
+$HeaderColor: $pink;
+$pSection4: $black;
+$shadow: $boxshadowblack;
+
+.section4 {
+  margin-bottom: 50px;
+  position: relative;
+  
+  .header {
+    color: $HeaderColor;
+    margin-bottom: 50px;
+  }
+
+  .text-right {
+    p {
+      padding-top: 25%;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 2;
+      text-align: right;
+      color: $pSection4;
+      text-shadow: 2.1px 3.4px 5.7px $shadow;
+
+    }
+  }
+
+  img {
+    width: 100%;
+
+  }
+
+  .rowPosition {
+    position: relative;
+    padding-left: 9px;
+
+  }
+
+  div[class^="col-"] {    
+    position: relative;
+    padding-left: 0px;
+    padding-bottom: 15px;
+
+  }
+  
+  .imgW355 {
+     width: 355px;
+  }
+
+  .imgOut {
+    @extend .imgW355;
+    float: right; 
+   
+
+  }
+  .imgCard4 {
+    @extend .imgW355;
+    position: absolute;
+    bottom: 29px;
+    left: 20px;
+    box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
+
+  }
+
+  .imgCard3 {
+    height: 734px;
+    box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
+
+  }
+
+  .imgCard {
+    left: -118px;
+    top: 117px;
+    position: absolute;
+    z-index: -1;
+
+  }
+
+  .imgCard2 {
+    margin-left: -8px;
+    @extend .imgW355;
+    box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
+    
+  }
+}

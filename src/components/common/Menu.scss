@@ -9,8 +9,13 @@ $borderColor: $pink;
   width: auto;
   position: absolute;
 }
+
 .nav{
+  color: $black2;
+
   li {
+    font-family: Roboto-Bold;
+
     a {
       padding-left: 0px;
       font-weight: bold;
