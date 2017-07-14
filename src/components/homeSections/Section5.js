@@ -3,7 +3,7 @@ import { Grid, Image, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 import './Section5.scss'
 
-const componentName = () => {
+const Section5 = () => {
   return (
     <div className="section5">
       <Grid className="text-center">
@@ -29,4 +29,4 @@ const componentName = () => {
   );
 };
 
-export default componentName;
+export default Section5;
