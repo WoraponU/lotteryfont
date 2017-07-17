@@ -13,21 +13,6 @@ class Home extends Component {
     this.setState({ showFooter: isShow });
   }
 
-  /**
-   * @return {Object}
-   */
-  _renderMessage() {
-    if (!this.state.message) {
-      return;
-    }
-
-    return (
-      <div className="basic-example__message">
-          {this.state.message}
-      </div>
-    );
-  }
-
   render() {
     return (
       <div>
