@@ -1,0 +1,82 @@
+@import '~Theme/colors';
+@import '~Theme/mixin';
+
+$hrColor: $blue2;
+$placeColor: $pink;
+$formColor: $pink;
+$borderColor:$grey2;
+$containerShadow: $black0_03;
+
+.section7 {
+  margin-bottom: 50px;
+
+  .containerShadow {
+    box-shadow: 14.8px 23.7px 21px 0 $containerShadow;
+
+  }
+
+  .text-center {
+    h1 {
+      font-size: 38px;
+      font-weight: bold;
+      line-height: 1.11;
+      letter-spacing: 1.9px;
+      text-align: center;
+      text-transform:uppercase;
+      margin-bottom: 53px;
+      margin-top: 20px;
+
+    }
+  }
+
+  hr {
+    width: 46px;
+    height: 5px;
+    object-fit: contain;
+    background-color: $hrColor;
+    margin: 5px 0;
+    float: right;
+  }
+
+  form {
+    padding: 43px;
+  
+    .btn {
+      margin-top: 30px;
+
+    }
+
+    .form-group {
+      margin: 10px 50px;
+
+      &:hover, &:focus {
+        @include placeholder;
+        
+      }
+ 
+      .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: $formColor;
+        background-image: none;
+        border-bottom: 1px solid $borderColor;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        border-radius: 0px;
+        box-shadow: inherit;
+        
+        
+        &:hover, &:focus {
+          border-bottom: 3px solid $formColor;
+          outline: 0; 
+        
+        }
+      }
+    }
+  }
+}
