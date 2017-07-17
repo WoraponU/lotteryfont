@@ -36,7 +36,7 @@ const Section1 = () => {
       </Row> 
       <Row >
         <Col mdOffset={5} lgOffset={5} lg={5} md={5} sm={12} >
-          <Button bsStyle="success">Success</Button>
+          <Button bsStyle="black" className="mt10">VIEW WORK</Button>
         </Col>
       </Row>
     </Grid>

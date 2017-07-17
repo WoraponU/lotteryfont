@@ -1,4 +1,5 @@
 @import '~Theme/colors';
+@import '~Theme/common';
 
 $hrColor : $blue2;
 $headerColor : $black2;
@@ -40,4 +41,8 @@ $headerColor : $black2;
       color: $headerColor;
     }
   } 
+
+  .btn-black {
+    @extend .btnBlack;
+  }
 }
