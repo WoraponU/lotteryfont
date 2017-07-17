@@ -11,47 +11,47 @@ const Section7 = () => {
       </Grid>
       <Grid className="text-center containerShadow">
         <Row>
-          <Col md="2">
+          <Col lg="2" md="2">
             <hr/>
           </Col>
-          <Col md="8" className="text-left">
+          <Col lg="8" md="8" className="text-left">
             <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet</p>
           </Col>
         </Row>
         <Form>  
           <Row>
-            <Col  md="6">
+            <Col lg="6" md="6">
               <FormGroup controlId="formInlineName">
                 <FormControl type="text" placeholder="Your name*" />
               </FormGroup>
             </Col>
-            <Col  md="6">
+            <Col lg="6" md="6">
               <FormGroup controlId="formInlineName">
                 <FormControl type="text" placeholder="Email*" />
               </FormGroup>
             </Col>
           </Row>
           <Row>
-            <Col  md="6">
+            <Col lg="6" md="6">
               <FormGroup controlId="formInlineName">
                 <FormControl type="text" placeholder="Phone number" />
               </FormGroup>
             </Col>
-            <Col  md="6">
+            <Col lg="6" md="6">
               <FormGroup controlId="formInlineName">
                 <FormControl type="text" placeholder="Company*" />
               </FormGroup>
             </Col>
           </Row>
           <Row>
-            <Col  md="12">
+            <Col lg="12" md="12">
               <FormGroup controlId="formInlineName">
                 <FormControl type="text" placeholder="What is on your mind?" />
               </FormGroup>
             </Col>           
           </Row>
           <Row>
-            <Col  md="12">
+            <Col lg="12" md="12">
               <Button type="submit">
                 Send Us A Message
               </Button>
