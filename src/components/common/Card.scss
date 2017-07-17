@@ -1,5 +1,13 @@
 @import '~Theme/colors';
 
+$hrColor: $pink;
+$h2Color: $black2;
+$h3Color:$grey2;
+$pColor:$grey3;
+$post-meta:$grey3;
+$card-detailsColor: $white;
+$cardHover: $black0_1;
+
 .card {
   float: left; 
   height: 450px;
@@ -29,7 +37,7 @@
     display: block;
     height: 1px;
     border: 0;
-    border-top: solid 2px #f9158b;
+    border-top: solid 2px $hrColor;
     margin: 0.5em 0;
     padding: 0; 
     width: 20%;
@@ -42,7 +50,7 @@
     font-size: 20.6px;
     font-weight: bold;
     text-align: left;
-    color: #383643;
+    color: $h2Color;
 
   }
 
@@ -52,13 +60,13 @@
     font-weight: bold;
     line-height: 1.54;
     letter-spacing: 1.9px;
-    color: #7b7b7b;
+    color: $h3Color;
     text-transform:uppercase;
     
   }
 
   p {
-    color: #666666;
+    color: $pColor;
     font-size: 15px;
     line-height: 1.8em;
     opacity: 0;
@@ -73,7 +81,7 @@
   left: 0;
   right: 0;
   background: transparent;
-  color: #999;
+  color: $grey3;
   padding: 30px;
   
   a {
@@ -87,7 +95,7 @@
 
 .card:hover,
 .card.hover {
-      box-shadow: 11px 19px 60px rgba(0, 0, 0, 0.1);
+      box-shadow: 11px 19px 60px $cardHover;
   .card-image {
     transform: scaleY(0.9);
     opacity: 0.6;
@@ -97,7 +105,7 @@
   }
   .card-details {
     top: 30%;
-    background: white;
+    background: $card-detailsColor;
     
     p {
       opacity: 1;
