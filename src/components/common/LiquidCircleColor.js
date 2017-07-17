@@ -1,4 +1,4 @@
-export const blue = '#55adf9'
-export const yellow = '#ffea82'
-export const purple = '#8f17e1'
-export const pink = '#ff77d3'
+export const blue = '#4b8bff'
+export const yellow = '#f9f615'
+export const purple = '#5b15f9'
+export const pink = '#f9158b'

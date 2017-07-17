@@ -1,0 +1,68 @@
+@import '~Theme/colors';
+@import '~Theme/mixin';
+
+$textColor: $black;
+$imgShadow: $boxshadowblack;
+$buttonColor: $pink;
+
+.section6 {
+  margin-bottom: 50px;
+  margin-top: 223px;
+
+  .text-center {
+    h1 {
+      font-size: 38px;
+      font-weight: bold;
+      line-height: 1.11;
+      letter-spacing: 1.9px;
+      text-align: center;
+      color: $textColor;
+      text-transform:uppercase;
+      margin-bottom: 53px;
+      margin-top: 20px;
+
+    }
+
+    img {
+      box-shadow: 2.1px 3.4px 5.7px 0.3px $imgShadow;
+      margin-bottom: 20px;
+
+    }
+  }
+
+  .slick-slider {
+    .slick-list {
+      cursor: pointer;
+      height: auto !important;
+
+    }
+
+    .row{
+      margin-left: -1px;
+      margin-right: 0px;
+      margin-bottom: 50px;
+
+      
+    }
+
+    .slick-dots {
+      button {
+        &::before {
+          font-size: 20px;
+          @include transition(all 500ms ease);
+
+        }
+      }
+      .slick-active {
+        button {
+          &::before {
+            font-size: 26px;
+            color: $buttonColor;
+            @include transition(all 500ms ease);
+
+          }
+        }
+      }
+    }
+  }
+}

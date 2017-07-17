@@ -17,12 +17,12 @@
       @extend .buttonMaterial;
       position: absolute;
       width: 50px;
-      top: -28px;
+      top: -11px;
       z-index: 1;
       color: transparent;
 
       &.slick-prev {
-        right: 160px;
+        left: 87%;
         
         &::after { 
           font-family: FontAwesome;
@@ -37,7 +37,7 @@
 
       &.slick-next {
         @extend .slick-prev;
-        right: 87px;
+        left: 92%;
 
         &::after { 
           content: "\f178";

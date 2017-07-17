@@ -157,10 +157,10 @@ const LiquidButton = function () {
       }
       const points = layer.points;
       this.context.fillStyle = layer.color;
-      this.context.shadowColor = 'rgba(68, 68, 68, 0.3)';
-      this.context.shadowBlur = 30;
-      this.context.shadowOffsetX = 10;
-      this.context.shadowOffsetY = 10;
+      this.context.shadowColor = 'rgba(0, 0, 0, .08)';
+      this.context.shadowBlur = 50;
+      this.context.shadowOffsetX = 20;
+      this.context.shadowOffsetY = 16;
 
       this.context.beginPath();
       this.context.moveTo(points[0].x, points[0].y);
