@@ -1,81 +1,38 @@
+@import '~Theme/colors';
+
 .card {
-  float: left; margin: 0 40px;
-  
-  width: 340px;
-  background: #111;
-  height: 480px;
+  float: left; 
+  height: 450px;
   position: relative;
-  // box-shadow: 0 1px 2px rgba(0,0,0,.4);
   transition: all .2s ease;
   overflow: hidden;
 }
 
 .card-image {
-  max-width: 100%;
-  transform: scale(1.3);
+  width: auto;
+  transform: scale(1);
   transform-origin: 0 0;
   transition: .2s all ease;
 }
-.card-meta {
-  position: absolute;
-  height: 60%;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: .2s all ease;
-  
-  .tag,
-  .date {
-    background: #E74C3C;
-    color:#fff;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 8px 12px;
-    position: absolute;
-    font-weight: bold;
-  }
-  .tag {
-    left: 0;
-    bottom: 0;
-    font-size: 14px;
-  }
-  .date {
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-    border-radius: 50%;
-    text-align: center;
-    
-    span {
-      vertical-align: -5px;
-      line-height: .8;
-    }
-    em {
-      display: block;
-      font-style: normal;
-      font-size: 70%;
-      padding-top: 2px;
-    }
-  }
-}
+
 .card-details {
-  background: #fff;
+  background: transparent;
   position: absolute;
   left: 0;
   right: 0;
-  top: 59%;
+  top: 55%;
   bottom: 0;
   padding: 20px;
   transition: .2s all ease;
   
-  hr{
-    margin-top: 0px; 
-    margin-bottom: 0px; 
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: solid 2px #f9158b;
+    margin: 0.5em 0;
+    padding: 0; 
     width: 20%;
-    float: left;
-    padding-bottom : 20px; 
 
   }
 
@@ -86,7 +43,9 @@
     font-weight: bold;
     text-align: left;
     color: #383643;
+
   }
+
   h3 {
     margin-top: 0px;
     font-size: 12.8px;
@@ -94,22 +53,26 @@
     line-height: 1.54;
     letter-spacing: 1.9px;
     color: #7b7b7b;
+    text-transform:uppercase;
+    
   }
+
   p {
     color: #666666;
     font-size: 15px;
     line-height: 1.8em;
     opacity: 0;
-    text-align: left;
     transition: .4s all ease;
+
   }
 }
+
 .post-meta {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #fff;
+  background: transparent;
   color: #999;
   padding: 30px;
   
@@ -124,16 +87,17 @@
 
 .card:hover,
 .card.hover {
-  box-shadow: 20px 16px 104px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 11px 19px 60px rgba(0, 0, 0, 0.1);
   .card-image {
-    transform: scale(1.5);
-    opacity: .6;
+    transform: scaleY(0.9);
+    opacity: 0.6;
   }
   .card-meta {
     height: 30%;
   }
   .card-details {
     top: 30%;
+    background: white;
     
     p {
       opacity: 1;
