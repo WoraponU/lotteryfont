@@ -1,6 +1,4 @@
 .section5 {
-  margin-bottom: 150px;
-
   .header {
     text-align: center;
     margin-bottom: 50px;
@@ -29,4 +27,29 @@
       }
     }
   }
+}
+
+.example-enter {
+    overflow: hidden;
+ height: 0;
+ -webkit-transition: all 2s ease;
+
+}
+
+.example-enter.example-enter-active {
+  height: auto;
+  //animation: slide 1s ease 1s forwards;
+  -webkit-transition: all 2s ease;
+}
+
+.example-leave {
+    height: auto;
+     -webkit-transition: all 2s ease;
+}
+
+.example-leave.example-leave-active {
+    height: 0;
+    overflow: hidden;
+  // animation: slide 1s ease 1s forwards;
+  -webkit-transition: all 2s ease;
 }
