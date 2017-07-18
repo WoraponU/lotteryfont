@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import ReactDOM from 'react-dom'
-
+import scrollIntoView from 'scroll-into-view';
 import Waypoint from 'react-waypoint';
 
 import { Section1, Section2, Section3, Section4, Section5 } from 'Components/homeSections'
@@ -11,24 +9,17 @@ class Home extends Component {
     showFooter: false,
   }
 
-scrollToBottom  ()  {
-  const node = ReactDOM.findDOMNode(this.messagesEnd);
-
-  node.scrollIntoView({ 
-    behavior: 'smooth', 
-    block: 'end' 
-  });
-   // ReactDOM.findDOMNode(this).scrollTop = 0
-}
-
   toggleShowContent(isShow) {
     if (isShow) {
       setTimeout(() => { 
         this.setState({ showFooter: isShow }, () => {
-          this.scrollToBottom();
+          const option = {
+            time: 250,
+          };
+          scrollIntoView(this.footer, option);
         });
         
-      }, 500);
+      }, 250);
       
     }
     else {
@@ -50,12 +41,11 @@ scrollToBottom  ()  {
             onEnter={this.toggleShowContent.bind(this, true)}
             onLeave={this.toggleShowContent.bind(this, false)}
           >
-            <div ref={(el) => { this.messagesEnd = el; }}>enter
+            <div ref={(el) => { this.footer = el; }}>footer
               {
                 this.state.showFooter &&
                 <Section5 />                
               } 
-
             </div>    
           </Waypoint>
       </div>
