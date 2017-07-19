@@ -22,10 +22,9 @@ class NavbarHeader extends Component {
     content: homeTh,
   }
 
-  onChangeLang = event => {
-    const { value } = event.target;
-
-    this.props.changeLang(value);
+  onChangeLang = (event, lang) => {
+    event.preventDefault();
+    this.props.changeLang(lang);
   }
 
   componentWillReceiveProps({ nextLang }) {
@@ -39,7 +38,7 @@ class NavbarHeader extends Component {
     }
   }
   render() {
-    const { content, lang } = this.state;
+    const { content } = this.state;
     return (
       <div className="header">
         { content.home } <br/> { content.title }
@@ -49,12 +48,8 @@ class NavbarHeader extends Component {
           </Navbar.Brand>       
 
           <Navbar.Collapse>   
-            <Nav pullRight>
-              <NavItem  href="#">TH</NavItem>
-              <NavItem  href="#" className="nav-right">EN</NavItem>
-              <input type='button' name='lang' onClick={this.onChangeLang} value='th' />
-              <input type='button' name='lang' onClick={this.onChangeLang} value='en' />
-            </Nav>
+            <a href="#" onClick={(e) => this.onChangeLang(e, 'th')}>th</a>|
+            <a href="#" onClick={(e) => this.onChangeLang(e, 'en')}>en</a>
           </Navbar.Collapse>
         </Navbar>
       </div>
