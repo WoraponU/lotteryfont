@@ -5,22 +5,22 @@ import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 
 import './Navbar.scss'
 
-const homeTh = require('../../langs/th/home.json');
-const homeEng = require('../../langs/en/home.json');
+// const homeTh = require('../../langs/th/home.json');
+// const homeEng = require('../../langs/en/home.json');
 
 class NavbarHeader extends Component {
-  constructor() {
-    super();
+  // constructor() {
+  //   super();
 
-    this.content = {
-      th: homeTh,
-      en: homeEng,
-    } 
-  }
+  //   this.content = {
+  //     th: homeTh,
+  //     en: homeEng,
+  //   } 
+  // }
 
-  state = {
-    content: homeTh,
-  }
+  // state = {
+  //   content: homeTh,
+  // }
 
   onChangeLang = (event, lang) => {
     event.preventDefault();
@@ -33,15 +33,15 @@ class NavbarHeader extends Component {
     if (nextLang.lang !== currentLang ) {
       this.setState({ 
         lang: nextLang.lang,
-        content: this.content[nextLang.lang], 
+        // content: this.content[nextLang.lang], 
       })    
     }
   }
   render() {
-    const { content } = this.state;
+    // const { content } = this.state;
     return (
       <div className="header">
-        { content.home } <br/> { content.title }
+        {/* { content.home } <br/> { content.title } */}
         <Navbar>      
           <Navbar.Brand>
             <Image src="assets/images/logo.png"/>
