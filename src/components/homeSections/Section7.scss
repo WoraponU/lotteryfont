@@ -1,5 +1,6 @@
 @import '~Theme/colors';
 @import '~Theme/mixin';
+@import '~Theme/common';
 
 $hrColor: $blue2;
 $placeColor: $pink;
@@ -43,8 +44,8 @@ $containerShadow: $black0_03;
   form {
     padding: 43px;
    
-  
-    .btn {
+    .btn-black {
+      @extend .btnBlack;
       margin-top: 30px;
 
     }

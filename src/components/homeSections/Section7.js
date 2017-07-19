@@ -55,7 +55,7 @@ const Section7 = () => {
           </Row>
           <Row>
             <Col lg={12} md={12}>
-              <Button type="submit">
+              <Button className="btn-black mt10" type="submit">
                 Send Us A Message
               </Button>
             </Col>           

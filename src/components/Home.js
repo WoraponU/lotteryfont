@@ -12,9 +12,7 @@ const Home = () => {
       <Section5 />
       <Section6 />
       <Section7 />
-      <Section8 />
-      <Section9 />      
-      <Footer />      
+    
     </div>
   );
 };

@@ -10,7 +10,7 @@ const Footer = () => {
         <Col md={11}>
           <h5 className="text-center">© 2017 HOBBIZ CO., LTD.</h5>      
         </Col>
-        <Col md={1}><Image src="assets/images/Home/hb.png"/></Col>
+        <Col md={1} className="text-right"><Image src="assets/images/Home/hb.png"/></Col>
       </Grid>
     </div>
   );
