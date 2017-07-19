@@ -1,47 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { changeLang } from 'Actions'
-import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
+import { Navbar, Image } from 'react-bootstrap';
 
-import './Navbar.scss'
-
-// const homeTh = require('../../langs/th/home.json');
-// const homeEng = require('../../langs/en/home.json');
+import './Navbar.scss';
 
 class NavbarHeader extends Component {
-  // constructor() {
-  //   super();
-
-  //   this.content = {
-  //     th: homeTh,
-  //     en: homeEng,
-  //   } 
-  // }
-
-  // state = {
-  //   content: homeTh,
-  // }
-
   onChangeLang = (event, lang) => {
     event.preventDefault();
     this.props.changeLang(lang);
   }
 
-  componentWillReceiveProps({ nextLang }) {
-    const { nextLang: { lang: currentLang } } = this.props;
-
-    if (nextLang.lang !== currentLang ) {
-      this.setState({ 
-        lang: nextLang.lang,
-        // content: this.content[nextLang.lang], 
-      })    
-    }
-  }
   render() {
-    // const { content } = this.state;
     return (
       <div className="header">
-        {/* { content.home } <br/> { content.title } */}
         <Navbar>      
           <Navbar.Brand>
             <Image src="assets/images/logo.png"/>
@@ -58,8 +30,6 @@ class NavbarHeader extends Component {
 }
 
 export default connect(
-  ({ lang: nextLang }) => ({
-    nextLang
-  }),
-  { changeLang }
+  null,
+  {changeLang}
 )(NavbarHeader)
