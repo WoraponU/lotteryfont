@@ -1,5 +1,10 @@
+@import '~Theme/colors';
+
+$backGroundColor: $pink;
+$h5Color: $white;
+
 .footer {
-  background-color: #f9158b;
+  background-color: $backGroundColor;
   padding-top: 10px;
   padding-bottom: 10px; 
 
@@ -9,7 +14,7 @@
     font-weight: bold;
     line-height: 1.54;
     letter-spacing: 2px;
-    color: #ffffff;
+    color: $h5Color;
     padding-top: 6px;
 
   } 

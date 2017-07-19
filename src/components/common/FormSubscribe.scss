@@ -43,7 +43,7 @@ $formColor: $white;
     }
   }
 
-  .btn{
+  .btn {
     @extend .btnWhite;
     font-weight: bold;
     font-size: 13px;
@@ -51,5 +51,6 @@ $formColor: $white;
     letter-spacing: 2px;
     text-transform:uppercase;    
     width: 100%;
+
   }
 }

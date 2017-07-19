@@ -36,8 +36,7 @@ $buttonColor: $pink;
       margin-left: -1px;
       margin-right: 0px;
       margin-bottom: 50px;
-
-      
+  
     }
 
     .slick-dots {
@@ -48,6 +47,7 @@ $buttonColor: $pink;
 
         }
       }
+      
       .slick-active {
         button {
           &::before {

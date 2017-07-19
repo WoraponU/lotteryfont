@@ -40,9 +40,9 @@ const Section4 = () => {
           </Col>
           <Col lg={4} md={4}>
             <Image src="assets/images/Home/section4/card3.png" className="imgCard3" />
-            <LiquidCircle id={19} radius={300} color={blue} position={["auto", "-314", "-154", "auto"]}/>
-            <LiquidCircle id={17} radius={160} color={yellow} position={["auto", "-184", "-174", "auto"]}/>
-            <LiquidCircle id={18} radius={210} color={purple} position={["auto", "auto", "0", "auto"]}/>
+            <LiquidCircle id={19} radius={300} color={blue} position={["auto", "-314px", "-154px", "auto"]}/>
+            <LiquidCircle id={17} radius={160} color={yellow} position={["auto", "-184px", "-174px", "auto"]}/>
+            <LiquidCircle id={18} radius={210} color={purple} position={["auto", "auto", "0px", "auto"]}/>
           </Col>
         </Row>
         <Row >
