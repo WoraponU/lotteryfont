@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Row, Col, Image, Button } from 'react-bootstrap';
+import { moment } from 'moment';
 
 import './FormContact.scss'
 
