@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col, Image, Button } from 'react-bootstrap';
 
-import './Section9.scss'
+import './FormContact.scss'
 
 const Section9 = () => {
   return (

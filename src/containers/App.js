@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import { Route, Switch } from 'react-router'
 
 import { configureStore } from 'Lib'
-import { Header } from 'Components/common'
+import { Header, Footer } from 'Components/common'
 import { Home } from 'Components'
 import DevTools from './DevTools'
 
@@ -26,6 +26,7 @@ export default () => (
         <Route path='/articles' component={Articles} />*/}
       </Switch>
       <DevTools />
+      <Footer />
     </div>
   </Provider>
 )

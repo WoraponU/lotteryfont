@@ -1,7 +1,8 @@
 import React from 'react';
 import { Row, Grid, Col, Image } from 'react-bootstrap';
+
 import LiquidCircle from 'Components/common/LiquidCircle';
-import { pink } from 'Components/common/LiquidCircleColor';
+import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
 import './Section4.scss'
 
 const Section4 = () => {
@@ -24,7 +25,7 @@ const Section4 = () => {
           </Col>
           <Col lg={4} md={4} className="LiquidCircle" >
             <Image src="assets/images/Home/section4/card.png" className="imgCard"/>
-             <LiquidCircle id={9} radius={200} color={pink} position={["165px", "70px", "auto", "auto"]}/>
+            <LiquidCircle id={9} radius={200} color={pink} position={["165px", "70px", "auto", "auto"]}/>
           </Col>
           <Col lg={4} md={4} className="text-right">
             <p>	Website and minisite <br/>
@@ -39,6 +40,9 @@ const Section4 = () => {
           </Col>
           <Col lg={4} md={4}>
             <Image src="assets/images/Home/section4/card3.png" className="imgCard3" />
+            <LiquidCircle id={19} radius={300} color={blue} position={["auto", "-314", "-154", "auto"]}/>
+            <LiquidCircle id={17} radius={160} color={yellow} position={["auto", "-184", "-174", "auto"]}/>
+            <LiquidCircle id={18} radius={210} color={purple} position={["auto", "auto", "0", "auto"]}/>
           </Col>
         </Row>
         <Row >

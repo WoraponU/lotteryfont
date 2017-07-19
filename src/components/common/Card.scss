@@ -85,6 +85,7 @@ $cardHover: $black0_1;
 
    .btn-white {
     @extend .btnWhite;
+    height: 31.4px;
 
     &:hover {
       border: 2px solid $buttonColor;  

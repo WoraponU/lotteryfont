@@ -20,10 +20,11 @@ const Section6 = () => {
     <div className="section6">
       <Grid className="text-center LiquidCircle">
         <LiquidCircle id={10} radius={300} color={blue} position={["-250px", "auto", "auto", "20px"]}/>
+         <LiquidCircle id={16} radius={180} color={blue} position={["auto", "276px", "-109px", "auto"]}/>
         <Image src="assets/images/Home/section6/line.png"/>
         <h1>happening<br/>in hobbiz’s nest</h1>
       </Grid>
-      <Grid>
+      <Grid >
         <Slider {...settings}>  
           <Row>
             <Col lg={3} md={3} sm={6}>           
@@ -80,6 +81,9 @@ const Section6 = () => {
             
           </Row>
         </Slider>   
+       
+        
+        
       </Grid>
     </div>
   );
