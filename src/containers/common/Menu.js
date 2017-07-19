@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import { compose } from 'recompose'
 import { Nav, NavItem, Grid, Col, Row } from 'react-bootstrap';
+
+import { withLang } from '../../hocs';
 
 import './Menu.scss'
 
@@ -54,8 +57,14 @@ class Menu extends Component {
   }
 }
 
-export default connect(
-  ({ lang: nextLang }) => ({
-    nextLang
-  })
-)(Menu)
+const enhance = compose(
+  withLang,
+  connect(
+    ({ lang: nextLang }) => ({
+      nextLang
+    })
+  )
+);
+
+export default enhance(Menu);
+
