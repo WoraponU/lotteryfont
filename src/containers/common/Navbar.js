@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { changeLang } from 'Actions'
-import { Navbar, Image } from 'react-bootstrap';
 
-import './Navbar.scss';
+import { NavbarComponent } from 'Components/common';
 
 class NavbarHeader extends Component {
   onChangeLang = (event, lang) => {
@@ -13,18 +12,7 @@ class NavbarHeader extends Component {
 
   render() {
     return (
-      <div className="header">
-        <Navbar>      
-          <Navbar.Brand>
-            <Image src="assets/images/logo.png"/>
-          </Navbar.Brand>       
-
-          <Navbar.Collapse>   
-            <a href="#" onClick={(e) => this.onChangeLang(e, 'th')}>th</a>|
-            <a href="#" onClick={(e) => this.onChangeLang(e, 'en')}>en</a>
-          </Navbar.Collapse>
-        </Navbar>
-      </div>
+      <NavbarComponent onChangeLang={this.onChangeLang}/>
     );
   }
 }
