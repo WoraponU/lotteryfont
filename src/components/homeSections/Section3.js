@@ -14,13 +14,13 @@ class Section3 extends Component {
         </Row>
         <Row>
           <Col lg={3} md={3}>
-            <Image src="assets/images/Home/section3/img1.png" />
+            <Image src="assets/images/Home/section3/baby.png" />
           </Col>
           <Col lg={3} md={3}>
-            <Image src="assets/images/Home/section3/img2.png" />
+            <Image src="assets/images/Home/section3/chair.png" />
           </Col>
           <Col lg={3} md={3}>
-            <Image src="assets/images/Home/section3/img3.png" />
+            <Image src="assets/images/Home/section3/code.png" />
           </Col>
           <Col lg={3} md={3}>
             <p className="subHeader">Transform brands, grow businesses and make people’s lives better.</p>
@@ -28,16 +28,16 @@ class Section3 extends Component {
         </Row>
         <Row>
           <Col lg={6} md={6}>
-            <Image src="assets/images/Home/section3/img4.png" />
+            <Image src="assets/images/Home/section3/room.png" />
           </Col>
           <Col lg={3} md={3}>
-            <Image src="assets/images/Home/section3/img5.png" className="imgShadow" />
+            <Image src="assets/images/Home/section3/white.png" className="imgShadow" />
           </Col>
           <Col lg={3} md={3}>
             <Image src="assets/images/Home/section3/line.png" className="imgLine" />
           </Col> 
           <Col lg={6} md={6}>
-            <Image src="assets/images/Home/section3/img6.png" />
+            <Image src="assets/images/Home/section3/form.png" />
           </Col> 
         </Row>
         <Row className="boxBottom">
