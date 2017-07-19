@@ -8,16 +8,11 @@ $buttonColor: $pink;
 .section6 {
   margin-bottom: 50px;
   margin-top: 223px;
+  position: relative;
 
   .text-center {
     h1 {
-      font-size: 38px;
-      font-weight: bold;
-      line-height: 1.11;
-      letter-spacing: 1.9px;
       text-align: center;
-      color: $textColor;
-      text-transform:uppercase;
       margin-bottom: 53px;
       margin-top: 20px;
 

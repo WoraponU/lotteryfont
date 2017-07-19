@@ -1,6 +1,8 @@
 import React from 'react';
 import { Grid, Row, Col , FormGroup, FormControl, Form, Button } from 'react-bootstrap';
 
+import LiquidCircle from 'Components/common/LiquidCircle';
+import { pink } from 'Components/common/LiquidCircleColor';
 import './Section7.scss'
 
 const Section7 = () => {
@@ -9,16 +11,17 @@ const Section7 = () => {
       <Grid className="text-center">
          <h1>ask us anything</h1>
       </Grid>
-      <Grid className="text-center containerShadow">
+      <Grid className="text-center containerShadow LiquidCircle">  
+        <LiquidCircle id={12} radius={170} color={pink} position={["auto", "auto", "-65px", "-65px"]}/>       
         <Row>
           <Col lg={2} md={2}>
             <hr/>
           </Col>
           <Col lg={8} md={8} className="text-left">
-            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet</p>
           </Col>
         </Row>
-        <Form>  
+        <Form> 
           <Row>
             <Col lg={6} md={6}>
               <FormGroup controlId="formInlineName">

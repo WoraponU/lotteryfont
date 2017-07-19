@@ -12,11 +12,11 @@ const Section9 = () => {
             <h5> @hobbizdigital </h5>
             <h1>It’s a Good <span>Friday</span><br/> To Drop Us A Line</h1>
           </Col>
-          <Col md={3}> <Image src="assets/images/Home/section9/3.png" className="img"/></Col>
-          <Col md={3}> <Image src="assets/images/Home/section9/2.png" /></Col>
+          <Col md={3}> <Image src="assets/images/Home/section9/shop.png" className="img"/></Col>
+          <Col md={3}> <Image src="assets/images/Home/section9/form.png" /></Col>
         </Row>
         <Row>   
-          <Col md={3}> <Image src="assets/images/Home/section9/4.png" /></Col>
+          <Col md={3}> <Image src="assets/images/Home/section9/room.png" /></Col>
           <Col md={3} className="contact">
             <h4>hello@hobbiz.co.th</h4>
             <h4>(+66) 89-822-1223</h4><br/>
@@ -36,7 +36,7 @@ const Section9 = () => {
             <Image src="assets/images/Home/section9/fb.png" alt="facebookHobbiz"  href="#"/>
                   
           </Col>
-          <Col md={3}> <Image src="assets/images/Home/section9/1.png" /></Col>                                        
+          <Col md={3}> <Image src="assets/images/Home/section9/girl.png" /></Col>                                        
         </Row>
       </Grid>
     </div>

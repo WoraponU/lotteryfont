@@ -4,14 +4,16 @@
 $hrColor: $blue2;
 $placeColor: $pink;
 $formColor: $pink;
-$borderColor:$grey2;
+$borderColor: $mainFontColor;
 $containerShadow: $black0_03;
 
 .section7 {
-  margin-bottom: 100px;
+  margin-top: 200px ;
+  margin-bottom: 150px;
 
   .containerShadow {
     box-shadow: 14.8px 23.7px 21px 0 $containerShadow;
+    position: relative;
 
   }
 
@@ -40,6 +42,7 @@ $containerShadow: $black0_03;
 
   form {
     padding: 43px;
+   
   
     .btn {
       margin-top: 30px;

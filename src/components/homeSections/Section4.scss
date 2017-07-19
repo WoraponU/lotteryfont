@@ -7,15 +7,17 @@ $shadow: $boxshadowblack;
 .section4 {
   margin-bottom: 150px;
   position: relative;
-  
+  margin-top: 70px;
+
   .header {
     color: $HeaderColor;
     margin-bottom: 80px;
+    text-transform: none;
   }
 
   .text-right {
     p {
-      padding-top: 25%;
+      padding-top: 44%;
       font-size: 21px;
       font-weight: bold;
       line-height: 2;

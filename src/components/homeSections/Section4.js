@@ -1,5 +1,7 @@
 import React from 'react';
 import { Row, Grid, Col, Image } from 'react-bootstrap';
+import LiquidCircle from 'Components/common/LiquidCircle';
+import { pink } from 'Components/common/LiquidCircleColor';
 import './Section4.scss'
 
 const Section4 = () => {
@@ -20,8 +22,9 @@ const Section4 = () => {
           <Col lg={4} md={4} >
             <Image src="assets/images/Home/section4/card2.png" className="imgCard2"/>
           </Col>
-          <Col lg={4} md={4} >
+          <Col lg={4} md={4} className="LiquidCircle" >
             <Image src="assets/images/Home/section4/card.png" className="imgCard"/>
+             <LiquidCircle id={9} radius={200} color={pink} position={["165px", "70px", "auto", "auto"]}/>
           </Col>
           <Col lg={4} md={4} className="text-right">
             <p>	Website and minisite <br/>

@@ -4,14 +4,14 @@ $backgroundColor: $black4;
 $h3Color: $white;
 $formColor: $white;
 
-.section8{
+.section8 {
   padding-bottom: 30px; 
   background-color: $backgroundColor;
   box-shadow:  0px 47px 86px 20px rgba(0, 0, 0, 0.13);
-  h3{
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 2;
+  position: relative;
+  
+  h3 {
+  
     text-align: left;
     color: $h3Color;
 
@@ -36,7 +36,7 @@ $formColor: $white;
     background-color: $backgroundColor;
       
     &:hover, &:focus {
-      border-bottom: 3px solid  $white;
+      border-bottom: 3px solid $white;
       outline: 0; 
     
     }
