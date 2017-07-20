@@ -21,7 +21,7 @@ const enhance = compose(
       nextLang
     })
   ),
-  withLang('Menu')
+  withLang('common/Menu')
 );
 
 export default enhance(Menu);

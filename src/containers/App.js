@@ -3,13 +3,12 @@ import { Provider } from 'react-redux'
 import { Route, Switch } from 'react-router'
 
 import { configureStore } from 'Lib'
-import { Header, Footer } from 'Components/common'
+import { Header } from 'Components/common'
+import { Footer } from 'Containers/common'
 import { Home } from 'Components'
 import DevTools from './DevTools'
 
 import './App.scss'
-
-
 
 const store = configureStore()
 

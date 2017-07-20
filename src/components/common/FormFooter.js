@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Grid, Col } from 'react-bootstrap';
-import './Footer.scss'
+import './FormFooter.scss'
 
 const FormFooter = () => {
   return (

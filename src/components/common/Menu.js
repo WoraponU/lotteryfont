@@ -3,7 +3,7 @@ import { Nav, NavItem, Grid, Col, Row } from 'react-bootstrap';
 
 import './Menu.scss'
 
-const Card = ({ lang }) => {
+const Menu = ({ lang }) => {
   return (
     <Grid>
       <Row className="show-grid">
@@ -23,4 +23,4 @@ const Card = ({ lang }) => {
   );
 };
 
-export default Card;
+export default Menu;
