@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import scrollIntoView from 'scroll-into-view';
 import Waypoint from 'react-waypoint';
+import { connect } from 'react-redux'
+import { compose } from 'recompose'
 
-import { FormContact, FormSubscribe, FormFooter } from 'Components/common'
+import { FormContact, FormSubscribeComponent, FormFooter } from 'Components/common'
+import { withLang } from '../../hocs';
 
 class Footer extends Component {
   state = {
@@ -25,6 +28,8 @@ class Footer extends Component {
   }
 
   render() {
+    const { lang } = this.props;
+
     return (
       <div>
         <Waypoint
@@ -32,9 +37,9 @@ class Footer extends Component {
           onLeave={this.hideFooter.bind(this)}
         >
           <div ref={(el) => { this.footer = el; }}>  
-            <FormSubscribe />
-            { this.state.showFooter && <FormContact /> }
-            { this.state.showFooter && <FormFooter /> } 
+            <FormSubscribeComponent lang={lang} />
+            { this.state.showFooter && <FormContact lang={lang} /> }
+            { this.state.showFooter && <FormFooter lang={lang} /> } 
           </div>    
         </Waypoint>
       </div>
@@ -42,4 +47,13 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+const enhance = compose(
+  connect(
+    ({ lang: nextLang }) => ({
+      nextLang
+    })
+  ),
+  withLang('common/Footer')
+);
+
+export default enhance(Footer);
