@@ -8,13 +8,14 @@ const NavbarComponent = ({ onChangeLang }) => {
     <div className="header">
       <Navbar>      
         <Navbar.Brand>
-            <Image src="assets/images/Common/logoHobbiz.png"/>
+            <Image src="assets/images/Common/logoHobbiz.png"/>           
         </Navbar.Brand>       
-
-        <Navbar.Collapse>   
-          <a href="#" onClick={(e) => onChangeLang(e, 'th')}>th</a>|
-          <a href="#" onClick={(e) => onChangeLang(e, 'en')}>en</a>
-        </Navbar.Collapse>
+        <div className="navMenu">  
+          <a className="active" href="#" onClick={(e) => onChangeLang(e, 'th')}>th</a>
+          <span>|</span>
+          <a href="#" onClick={(e) => onChangeLang(e, 'en')}>en</a> 
+        </div>
+       
       </Navbar>
     </div>
   );
