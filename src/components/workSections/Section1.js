@@ -36,10 +36,11 @@ const Section1 = () => {
           </Col>
            <Col lg={4} md={4} sm={4}>
             <CardWork  img='assets/images/Work/color.png' 
-              content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>
+              title='MAC-5'/>
             </Col>
            <Col lg={4} md={4} sm={4}>
-          sd
+              {/* <CardWork  img='assets/images/Work/color.png' 
+              title='MAC-5'/> */}
           </Col>
         </Grid>
     </div>
