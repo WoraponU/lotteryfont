@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 const withLang = (propName) => (WrappedComponent) => {
-  const contentTh = require(`../langs/th/home/${propName}.json`);
-  const contentEn = require(`../langs/en/home/${propName}.json`);
+  const contentTh = require(`../langs/th/${propName}.json`);
+  const contentEn = require(`../langs/en/${propName}.json`);
   
   return class extends Component {
     constructor() {

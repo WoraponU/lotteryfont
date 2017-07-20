@@ -3,7 +3,7 @@ import { Navbar, Image } from 'react-bootstrap';
 
 import './Navbar.scss';
 
-const NavbarHeader = ({ onChangeLang }) => {
+const NavbarComponent = ({ onChangeLang }) => {
   return (
     <div className="header">
       <Navbar>      
@@ -20,4 +20,4 @@ const NavbarHeader = ({ onChangeLang }) => {
   );
 };
 
-export default NavbarHeader;
+export default NavbarComponent;
