@@ -3,11 +3,11 @@ import { Grid, Image, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 import './Section5.scss'
 
-const Section5 = () => {
+const Section5 = ({ lang: { section5: content } }) => {
   return (
     <div className="section5">
       <Grid>
-        <h1 className="header">OUR CLIENTS</h1>
+        <h1 className="header">{content.header}</h1>
       </Grid>
       <Grid>                  
         <ListGroup>

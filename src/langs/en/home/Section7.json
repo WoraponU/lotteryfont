@@ -1,7 +1,14 @@
 {
-  "section1": {
-    "header": "EVERY INTERACTIVE<br/>IS A COMMUNICATION",
-    "content": "We Love Making Life Easier – It's Not Just Work-life Balance. Every Hobbist Are Driven By Passion. We Merge Work And Life Together With The Joy Of Making Our Client's Life Easier.",
-    "button": "VIEW WORK"
+  "section7": {
+    "header": "ASK US ANYTHING",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet",
+    "placeholder": {
+      "yourName": "Your name*",
+      "email": "Email*",
+      "phoneNumber": "Phone number",
+      "company": "Company*",
+      "yourMind": "What is on your mind?"
+    },
+    "sendMessage": "Send Us A Message"
   }
 }
