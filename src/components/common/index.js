@@ -5,5 +5,6 @@ export { default as MenuComponent } from './Menu'
 export { default as NavbarComponent } from './Navbar'
 export { default as Footer } from './Footer'
 export { default as FormContact } from './FormContact'
+export { default as FormFooter } from './FormFooter'
 export { default as FormSubscribe } from './FormSubscribe'
 

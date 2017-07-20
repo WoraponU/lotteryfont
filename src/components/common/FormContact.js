@@ -1,16 +1,19 @@
 import React from 'react';
 import { Grid, Row, Col, Image, Button } from 'react-bootstrap';
+import moment from 'moment';
 
-import './FormContact.scss'
+import './FormContact.scss';
 
 const Section9 = () => {
+  const day = moment().format("dddd");
+
   return (
     <div className="section9">
       <Grid>
         <Row>
           <Col lg={6} md={6} sm={6} className="title">
             <h5>@hobbizdigital </h5>
-            <h1>It’s a Good <span>Friday</span><br/>To Drop Us A Line</h1>
+            <h1>It’s a Good <span>{day}</span><br/>To Drop Us A Line</h1>
           </Col>
           <Col lg={3}  md={3} sm={3}> <Image src="assets/images/Common/Footer/shop.png" className="img"/></Col>
           <Col lg={3} md={3} sm={3}> <Image src="assets/images/Common/Footer/form.png" /></Col>

@@ -1,26 +1,45 @@
-import React from 'react';
-import { Image, Grid, Col } from 'react-bootstrap';
+import React, { Component } from 'react';
+import scrollIntoView from 'scroll-into-view';
+import Waypoint from 'react-waypoint';
 
-import { FormContact, FormSubscribe } from 'Components/common'
-import './Footer.scss'
+import { FormContact, FormSubscribe, FormFooter } from 'Components/common'
 
-const Footer = () => {
-  return (
-    <div>
-      <FormSubscribe />
-      <FormContact />
-      <div className="footer">      
-        <Grid>
-          <Col lg={11} md={11} sm={11}>
-            <h5 className="text-center">© 2017 HOBBIZ CO., LTD.</h5>      
-          </Col>
-          <Col lg={1} md={1} sm={1} className="text-right">
-            <Image src="assets/images/Common/Footer/hobbiz.png"/>
-          </Col>
-        </Grid>
+class Footer extends Component {
+  state = {
+    showFooter: false,
+  }
+
+  showFooter() {
+    setTimeout(() => { 
+      this.setState({ showFooter: true }, () => {
+        const option = {
+          time: 500,
+        };
+        scrollIntoView(this.footer, option);
+      });
+    }, 250);
+  }
+
+  hideFooter() {
+    this.setState({ showFooter: false });
+  }
+
+  render() {
+    return (
+      <div>
+        <Waypoint
+          onEnter={this.showFooter.bind(this)}
+          onLeave={this.hideFooter.bind(this)}
+        >
+          <div ref={(el) => { this.footer = el; }}>  
+            <FormSubscribe />
+            { this.state.showFooter && <FormContact /> }
+            { this.state.showFooter && <FormFooter /> } 
+          </div>    
+        </Waypoint>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Footer;
