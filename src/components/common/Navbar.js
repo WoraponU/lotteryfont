@@ -1,9 +1,9 @@
 import React from 'react';
-import { Navbar,Nav,NavItem,Image } from 'react-bootstrap';
+import { Navbar, Image } from 'react-bootstrap';
 
-import './Navbar.scss'
+import './Navbar.scss';
 
-const NavbarHeader = () => {
+const NavbarHeader = ({ onChangeLang }) => {
   return (
     <div className="header">
       <Navbar>      
@@ -12,10 +12,8 @@ const NavbarHeader = () => {
         </Navbar.Brand>       
 
         <Navbar.Collapse>   
-          <Nav pullRight>
-            <NavItem  href="#">TH</NavItem>
-            <NavItem  href="#" className="nav-right">EN</NavItem>
-          </Nav>
+          <a href="#" onClick={(e) => onChangeLang(e, 'th')}>th</a>|
+          <a href="#" onClick={(e) => onChangeLang(e, 'en')}>en</a>
         </Navbar.Collapse>
       </Navbar>
     </div>

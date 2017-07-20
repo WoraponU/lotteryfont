@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Menu, Navbar } from 'Components/common'
+
+import { Navbar, Menu } from 'Containers/common'
 
 class Header extends Component {
   render() {
