@@ -6,7 +6,9 @@ import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor'
 import './Section1.scss'
 
 
+
 const Section1 = () => {
+
   return (
     <Grid className="section1">
       <Row>
