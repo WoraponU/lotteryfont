@@ -13,7 +13,7 @@ const Card = ({ img, title, subTittle, content }) => {
         <hr/>
         <p>{content}</p>
         <div className="post-meta">
-          <Button bsStyle="default">Read ></Button>
+          <Button className="btn-white mt10">Read <i className="fa fa-angle-right" aria-hidden="true"></i></Button>
       </div>
       </div>
     </div>

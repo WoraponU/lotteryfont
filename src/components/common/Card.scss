@@ -1,10 +1,11 @@
 @import '~Theme/colors';
+@import '~Theme/common';
 
 $hrColor: $pink;
+$buttonColor: $pink;
 $h2Color: $black2;
-$h3Color:$grey2;
-$pColor:$grey3;
-$post-meta:$grey3;
+$h3Color: $mainFontColor;
+$post-meta: $grey3;
 $card-detailsColor: $white;
 $cardHover: $black0_1;
 
@@ -66,9 +67,7 @@ $cardHover: $black0_1;
   }
 
   p {
-    color: $pColor;
     font-size: 15px;
-    line-height: 1.8em;
     opacity: 0;
     transition: .4s all ease;
 
@@ -82,8 +81,26 @@ $cardHover: $black0_1;
   right: 0;
   background: transparent;
   color: $grey3;
-  padding: 30px;
+  padding: 0px 0px 25px 18px;
+
+   .btn-white {
+    @extend .btnWhite;
+    height: 31.4px;
+
+    &:hover {
+      border: 2px solid $buttonColor;  
+      background-color: white; 
+      color: $buttonColor;  
+    }
+
+    .fa{
+      padding-left: 10px; 
+      
+    }
+  }
   
+
+
   a {
     color: inherit;
     text-decoration: none;

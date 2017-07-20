@@ -6,12 +6,19 @@
   position: relative;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0.2s;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  height: 45px;
 
   &:active {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
     transition-delay: 0s;
   }
+}
+
+.btnWhite{
+  @extend .buttonHobbiz;
+  border: solid 1px #383643;
+  border-radius: 0px;  
+  color: $black;
+
 }
 .buttonMaterial {
   @extend .buttonHobbiz;

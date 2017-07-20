@@ -1,18 +1,26 @@
 @import '~Theme/colors';
 @import '~Theme/mixin';
+@import '~Theme/common';
 
 $hrColor: $blue2;
 $placeColor: $pink;
 $formColor: $pink;
-$borderColor:$grey2;
+$borderColor: $mainFontColor;
 $containerShadow: $black0_03;
 
 .section7 {
-  margin-bottom: 50px;
+  margin-top: 200px ;
+  margin-bottom: 150px;
 
   .containerShadow {
     box-shadow: 14.8px 23.7px 21px 0 $containerShadow;
+    position: relative;
 
+  }
+
+  .LiquidCircle {
+    z-index: 1;
+    
   }
 
   .text-center {
@@ -40,8 +48,9 @@ $containerShadow: $black0_03;
 
   form {
     padding: 43px;
-  
-    .btn {
+   
+    .btn-black {
+      @extend .btnBlack;
       margin-top: 30px;
 
     }
@@ -69,7 +78,7 @@ $containerShadow: $black0_03;
         border-top: 0px;
         border-radius: 0px;
         box-shadow: inherit;
-        
+        text-transform:uppercase;
         
         &:hover, &:focus {
           border-bottom: 3px solid $formColor;

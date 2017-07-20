@@ -54,6 +54,11 @@ body {
   font-family: Roboto;
   color: $mainFontColor;
   
+  button, input, optgroup, select, textarea{
+    font-family: Roboto;
+    
+  }
+
   textarea:focus, input:focus, button:focus {
     outline: none;
   }
@@ -65,8 +70,27 @@ body {
 
   h1 {
     font-size: 38px;
+    color: $black2;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.11;
+    letter-spacing: 1.9px;
+    
   }
 
+  h3 {
+    font-size: 21px;
+    font-weight: bold;
+   
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 1.47;
+    text-align: left;
+    
+  }
+  
   .mt05 {
     margin-top: 5px;
   }
@@ -74,4 +98,6 @@ body {
   .mt10 {
     margin-top: 10px;
   }
+
+ 
 }

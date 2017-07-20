@@ -8,7 +8,7 @@ const NavbarHeader = ({ onChangeLang }) => {
     <div className="header">
       <Navbar>      
         <Navbar.Brand>
-          <Image src="assets/images/logo.png"/>
+            <Image src="assets/images/Common/logoHobbiz.png"/>
         </Navbar.Brand>       
 
         <Navbar.Collapse>   

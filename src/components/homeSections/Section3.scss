@@ -3,7 +3,6 @@
 $pColor: $pink;
 $pHeader: $grey;
 $header: $black;
-$pBottom: $grey2;
 $pText1: $boxshadowblack;
 $imgShadow: $windWalk;
 
@@ -25,6 +24,7 @@ $imgShadow: $windWalk;
     div[class^="col-"] {
       padding-right: 21px;
       padding-left: 0px;
+      
     }
 
     .header {
@@ -34,13 +34,14 @@ $imgShadow: $windWalk;
       text-align: left;
       color: $header;
       padding-bottom: 20px;
+
     }
 
     p {
       font-size: 17px;
       line-height: 1.47;
       text-align: left;
-      color: $pBottom;
+     
     }    
   }
 

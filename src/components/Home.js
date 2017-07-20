@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section2, Section3, Section4, Section5, Section6, Section7, Section8 } from 'Components/homeSections'
+import { Section2, Section3, Section4, Section5, Section6, Section7 } from 'Components/homeSections'
 import { Section1 } from 'Containers/homeSections'
 
 const Home = () => {
@@ -13,7 +13,6 @@ const Home = () => {
       <Section5 />
       <Section6 />
       <Section7 />
-      <Section8 />
     </div>
   );
 };
