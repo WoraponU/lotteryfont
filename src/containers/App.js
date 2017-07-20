@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router'
 
 import { configureStore } from 'Lib'
 import { Header, Footer } from 'Components/common'
-import { Home } from 'Components'
+import { Home, Work } from 'Components'
 import DevTools from './DevTools'
 
 import './App.scss'
@@ -20,6 +20,7 @@ export default () => (
       <Header />
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/work' component={Work} />
         {/*<Route path='/test' component={Test} />
         <Route path='/login' component={Signin} />
         <Route path='/signup' component={Signup} />
