@@ -9,9 +9,12 @@ import DevTools from './DevTools'
 
 import './App.scss'
 
+
+
 const store = configureStore()
 
 export default () => (
+
   <Provider store={store}>
     <div>
       <Header />
