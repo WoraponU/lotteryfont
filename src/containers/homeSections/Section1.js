@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
 
-import { MenuComponent } from 'Components/common';
+import { Section1Component } from 'Components/homeSections'
 import { withLang } from '../../hocs';
 
-class Menu extends Component {
+
+class Section1 extends Component {
   render() {
     const { lang } = this.props;
     
     return (
-      <MenuComponent lang={lang}/>
+      <Section1Component lang={lang} />
     );
   }
 }
@@ -21,8 +22,8 @@ const enhance = compose(
       nextLang
     })
   ),
-  withLang('Menu')
+  withLang('Home')
 );
 
-export default enhance(Menu);
+export default enhance(Section1);
 

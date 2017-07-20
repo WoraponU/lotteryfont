@@ -6,7 +6,7 @@ import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor'
 import './Section1.scss'
 
 
-const Section1 = () => {
+const Section1 = ({ lang }) => {
   return (
     <Grid className="section1">
       <Row>
@@ -23,7 +23,7 @@ const Section1 = () => {
           <LiquidCircle id={4} radius={170} color={pink} position={["-100px", "auto", "auto", "-77px"]}/>
         </Col>
         <Col sm={8} xs={8} md={8} lg={8} >
-          <h2>EVERY INTERACTIVE<br/>IS A COMMUNICATION</h2>
+          <h2 dangerouslySetInnerHTML={{__html: lang.section1.header}}></h2>
         </Col>
       </Row> 
       <Row >
@@ -31,12 +31,12 @@ const Section1 = () => {
         <hr />               
         </Col>
         <Col  sm={12} md={5} lg={5}>
-          <p>We Love Making Life Easier – It's Not Just Work-life Balance. Every Hobbist Are Driven By Passion. We Merge Work And Life Together With The Joy Of Making Our Client's Life Easier.</p>
+          <p>{ lang.section1.content }</p>
         </Col>
       </Row> 
       <Row >
         <Col mdOffset={5} lgOffset={5} lg={5} md={5} sm={12} >
-          <Button className="btn-black mt10">VIEW WORK</Button>
+          <Button className="btn-black mt10">{ lang.section1.button }</Button>
         </Col>
       </Row>
     </Grid>

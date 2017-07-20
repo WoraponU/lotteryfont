@@ -2,8 +2,8 @@
   "home": "HOME",
   "ourWork": "OUR WORK",
   "aboutUs": "ABOUT US",
-  "ourService": "OUR SERVICES",
-  "ourClient": "OUR CLIENTS",
+  "client": "CLIENT",
   "blog": "BLOG",
-  "contactUs": "CONTACT US"
+  "contact": "CONTACT",
+  "career": "CAREER"
 }
