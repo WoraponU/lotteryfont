@@ -20,14 +20,15 @@ $cardHover: $black0_1;
   }
 
   .card-details {
-  
     transition: 0.5s all ease;
     z-index: 1;
 
-    h2 {
+    h2 {     
+      font-family: Roboto;
       color: $card-detailsColor;
       opacity: 0;
       transition: .4s all ease;
+      letter-spacing: 3px;
 
     }
   }
@@ -38,7 +39,7 @@ $cardHover: $black0_1;
     padding: 13px 0px 13px 18px;
     z-index: -1;
 
-    p{
+    p {
       color: $postWorkColor;
     }
 
