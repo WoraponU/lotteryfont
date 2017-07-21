@@ -11,7 +11,7 @@ const NavbarComponent = ({ onChangeLang }) => {
             <Image src="assets/images/Common/logoHobbiz.png"/>           
         </Navbar.Brand>       
         <div className="navMenu">  
-          <a className="active" href="#" onClick={(e) => onChangeLang(e, 'th')}>th</a>
+          <a href="#" onClick={(e) => onChangeLang(e, 'th')}>th</a>
           <span>|</span>
           <a href="#" onClick={(e) => onChangeLang(e, 'en')}>en</a> 
         </div>

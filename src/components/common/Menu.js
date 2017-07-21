@@ -1,5 +1,6 @@
 import React from 'react';
-import { Nav, NavItem, Grid, Col, Row } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import { Grid, Col, Row } from 'react-bootstrap';
 
 import './Menu.scss'
 
@@ -8,15 +9,13 @@ const Menu = ({ lang }) => {
     <Grid>
       <Row className="show-grid">
         <Col sm={6} md={6} className="navBar">
-          <Nav bsStyle="pills" stacked className="nav" >
-            <NavItem eventKey={1} href="/" title="Item"><span>{ lang.home }</span></NavItem>
-            <NavItem eventKey={2} href="/" title="Item"><span>{ lang.ourWork }</span></NavItem>
-            <NavItem eventKey={3} href="/" title="Item"><span>{ lang.aboutUs }</span></NavItem>
-            <NavItem eventKey={4} href="/" title="Item"><span>{ lang.client }</span></NavItem>
-            <NavItem eventKey={5} href="/" title="Item"><span>{ lang.blog }</span></NavItem>
-            <NavItem eventKey={6} href="/" title="Item"><span>{ lang.contact }</span></NavItem>
-            <NavItem eventKey={7} href="/" title="Item"><span>{ lang.career }</span></NavItem>
-          </Nav>
+          <NavLink to={'/'} activeClassName="active">{ lang.home }</NavLink>
+          <NavLink to={'/our-work'} activeClassName="active">{ lang.ourWork }</NavLink>
+          <NavLink to={'/about-us'} activeClassName="active">{ lang.aboutUs }</NavLink>
+          <NavLink to={'/client'} activeClassName="active">{ lang.client }</NavLink>
+          <NavLink to={'/blog'} activeClassName="active">{ lang.blog }</NavLink>
+          <NavLink to={'/contact'} activeClassName="active">{ lang.contact }</NavLink>
+          <NavLink to={'/career'} activeClassName="active">{ lang.career }</NavLink>
         </Col>
       </Row>
     </Grid>
