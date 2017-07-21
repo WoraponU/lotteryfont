@@ -5,7 +5,7 @@ import './CardWork.scss'
 
 const CardWork = ({ img, title, subTittle, content }) => {
   return (
-    <div className="card2">
+    <div className="cardWork">
       <img src={img} alt="" className="card-image" />
       <div className="card-details">
        
