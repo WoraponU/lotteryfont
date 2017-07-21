@@ -6,10 +6,20 @@
   background-size: contain;
   display: block;
   margin-bottom: 150px;
-
-  .test{
+  .row{
+    position: relative;
+  }
+  .Row2{
     margin-bottom: 85.9px;
     margin-top: 30px;
-    
+
+  }
+
+  hr{
+    width: 46px;
+    height: 5px;
+    object-fit: contain;
+    background-color: #4a88fa;
+    margin: 21px 0;
   }
 }
