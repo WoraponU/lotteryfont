@@ -13,7 +13,6 @@ class NavbarHeader extends Component {
     
     const { changeLang, history, location: { search, pathname } } = this.props;
     const newPathname = pathname.replace(/\/(th|en)/, '');
-
     changeLang(lang);
     history.push({
       pathname: `/${lang}${newPathname}`,
@@ -29,11 +28,11 @@ class NavbarHeader extends Component {
 }
 
 const enhance = compose(
+  withRouter,  
   connect(
     null,
     {changeLang}
-  ),
-  withRouter
+  )
 );
 
 export default enhance(NavbarHeader);

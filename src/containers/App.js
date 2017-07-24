@@ -9,8 +9,6 @@ import {
 
 import { configureStore } from 'Lib'
 import { Home } from 'Components'
-import { Header } from 'Components/common'
-import { Footer } from 'Containers/common'
 
 import DevTools from './DevTools'
 
@@ -24,18 +22,12 @@ export default () => (
     <div>
       <Router>
         <div>
-          <Redirect exact from='/' to={'/th'} />                
-          <Route path='/:lang'>
-            <div>
-              <Route path='/' component={Header} />     
-
-              <Switch>
-                <Route exact path='' component={Home} />        
-              </Switch>                  
-
-              <Route path='/' component={Footer} />        
-            </div>
-          </Route>
+          {/* <Redirect exact from='/' to={'/th'} />      */}
+          <Switch>
+            {/* <Route exact path='/' component={Home} />         */}
+            <Route path='/:lang' component={Home} />        
+            {/* <Route path='/:lang/our-work' component={Home} />         */}
+          </Switch>   
         </div>
       </Router>
       <DevTools />
