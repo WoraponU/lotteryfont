@@ -10,7 +10,7 @@ class Header extends Component {
       <Navbar className={styles.navbarDefault}>
         <Navbar.Header>
           <Navbar.Brand>
-              <Image src="assets/images/logo.png" className={styles.Brand}/>
+              <Image src="/assets/images/logo.png" className={styles.Brand}/>
           </Navbar.Brand>
          
         </Navbar.Header>

@@ -14,7 +14,7 @@ class NavbarHeader extends Component {
     const { changeLang, history, location: { search, pathname } } = this.props;
     const newPathname = pathname.replace(/\/(th|en)/, '');
 
-    changeLang(lang); 
+    changeLang(lang);
     history.push({
       pathname: `/${lang}${newPathname}`,
       search: `${search}`,

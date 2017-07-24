@@ -21,7 +21,7 @@ const Section6 = ({ lang: { section6: content } }) => {
       <Grid className="text-center LiquidCircle">
         <LiquidCircle id={10} radius={300} color={blue} position={["-250px", "auto", "auto", "20px"]}/>
          <LiquidCircle id={16} radius={180} color={blue} position={["auto", "276px", "-109px", "auto"]}/>
-        <Image src="assets/images/Home/section6/line.png"/>
+        <Image src="/assets/images/Home/section6/line.png"/>
         <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
       </Grid>
       <Grid >
@@ -30,7 +30,7 @@ const Section6 = ({ lang: { section6: content } }) => {
             <Col lg={3} md={3} sm={6}>           
               <Card 
                 read={content.read}
-                img='assets/images/Home/section6/card1.png' 
+                img='/assets/images/Home/section6/card1.png' 
                 title='How to make nacho and taco like a pro!' 
                 subTittle='lab'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>
@@ -38,7 +38,7 @@ const Section6 = ({ lang: { section6: content } }) => {
             <Col lg={3} md={3} sm={6}>             
               <Card 
                 read={content.read}
-                img='assets/images/Home/section6/card2.png' 
+                img='/assets/images/Home/section6/card2.png' 
                 title='How to make nacho and taco like a pro!' 
                 subTittle='resources'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>
@@ -46,7 +46,7 @@ const Section6 = ({ lang: { section6: content } }) => {
             <Col lg={3} md={3} sm={6}>
               <Card 
                 read={content.read}
-                img='assets/images/Home/section6/card1.png' 
+                img='/assets/images/Home/section6/card1.png' 
                 title='How to make nacho and taco like a pro!' 
                 subTittle='news &amp; updates'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>
@@ -54,7 +54,7 @@ const Section6 = ({ lang: { section6: content } }) => {
             <Col lg={3} md={3} sm={6}>
               <Card 
                 read={content.read}
-                img='assets/images/Home/section6/card1.png' 
+                img='/assets/images/Home/section6/card1.png' 
                 title='How to make nacho and taco like a pro!' 
                 subTittle='This is amazing'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>         
@@ -65,7 +65,7 @@ const Section6 = ({ lang: { section6: content } }) => {
             <Col lg={3} md={3} sm={6}>
               <Card 
                 read={content.read}
-                img='assets/images/Home/section6/card1.png' 
+                img='/assets/images/Home/section6/card1.png' 
                 title='How to make nacho and taco like a pro!' 
                 subTittle='This is amazing'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>         
@@ -73,7 +73,7 @@ const Section6 = ({ lang: { section6: content } }) => {
             <Col lg={3} md={3} sm={6}>
               <Card 
                 read={content.read}
-                img='assets/images/Home/section6/card1.png' 
+                img='/assets/images/Home/section6/card1.png' 
                 title='How to make nacho and taco like a pro!' 
                 subTittle='This is amazing'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>         
@@ -81,7 +81,7 @@ const Section6 = ({ lang: { section6: content } }) => {
             <Col lg={3} md={3} sm={6}>
               <Card 
                 read={content.read}
-                img='assets/images/Home/section6/card1.png' 
+                img='/assets/images/Home/section6/card1.png' 
                 title='How to make nacho and taco like a pro!' 
                 subTittle='This is amazing'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>         
@@ -89,7 +89,7 @@ const Section6 = ({ lang: { section6: content } }) => {
             <Col lg={3} md={3} sm={6}>
               <Card 
                 read={content.read}
-                img='assets/images/Home/section6/card1.png' 
+                img='/assets/images/Home/section6/card1.png' 
                 title='How to make nacho and taco like a pro!' 
                 subTittle='This is amazing'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>         

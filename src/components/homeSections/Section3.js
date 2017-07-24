@@ -13,13 +13,13 @@ const Section3 = ({ lang: { section3: content } }) => {
       </Row>
       <Row>
         <Col lg={3} md={3}>
-          <Image src="assets/images/Home/section3/baby.png" />
+          <Image src="/assets/images/Home/section3/baby.png" />
         </Col>
         <Col lg={3} md={3}>
-          <Image src="assets/images/Home/section3/chair.png" />
+          <Image src="/assets/images/Home/section3/chair.png" />
         </Col>
         <Col lg={3} md={3}>
-          <Image src="assets/images/Home/section3/code.png" />
+          <Image src="/assets/images/Home/section3/code.png" />
         </Col>
         <Col lg={3} md={3}>
           <p className="subHeader">{content.subHeader}</p>
@@ -27,16 +27,16 @@ const Section3 = ({ lang: { section3: content } }) => {
       </Row>
       <Row>
         <Col lg={6} md={6}>
-          <Image src="assets/images/Home/section3/room.png" />
+          <Image src="/assets/images/Home/section3/room.png" />
         </Col>
         <Col lg={3} md={3}>
-          <Image src="assets/images/Home/section3/white.png" className="imgShadow" />
+          <Image src="/assets/images/Home/section3/white.png" className="imgShadow" />
         </Col>
         <Col lg={3} md={3}>
-          <Image src="assets/images/Home/section3/line.png" className="imgLine" />
+          <Image src="/assets/images/Home/section3/line.png" className="imgLine" />
         </Col> 
         <Col lg={6} md={6}>
-          <Image src="assets/images/Home/section3/form.png" />
+          <Image src="/assets/images/Home/section3/form.png" />
         </Col> 
       </Row>
       <Row className="boxBottom">
