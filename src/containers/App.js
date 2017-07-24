@@ -24,20 +24,20 @@ export default () => (
     <div>
       <Router>
         <div>
-          <Switch>
-            <Route exact path='/'>
-              <Redirect to={'/th'} />      
-            </Route>         
-            <Route path='/:lang'>  
-              <div>
-                <Header />
+          <Route exact path='/'>
+            <Redirect to={'/th'} />      
+          </Route>         
+          <Route path='/:lang'> 
+            <div>
+              <Header />
+              <Switch>
                 <Route exact path='' component={Home} />        
                 <Route path='/our-work' component={Home} /> 
-                <Footer />
-              </div> 
-            </Route>           
-          </Switch>   
-        </div>
+              </Switch> 
+              <Footer />
+            </div> 
+          </Route>  
+        </div>  
       </Router>
       <DevTools />
     </div>
