@@ -1,5 +1,4 @@
 @import '~Theme/colors';
-$hrColor: $blue2;
 
 .worksection1 {
   margin-top: 350px;
@@ -18,8 +17,7 @@ $hrColor: $blue2;
   #Tab {
     margin: 0px 90px 56px;
     
-    .nav {
-      
+    .nav {      
       li {
         width: 20%;
         text-align: center;
@@ -52,15 +50,6 @@ $hrColor: $blue2;
   .Row2 {
     margin-bottom: 85.9px;
     margin-top: 30px;
-
-  }
-
-  hr {
-    width: 46px;
-    height: 5px;
-    object-fit: contain;
-    background-color: $hrColor;
-    margin: 21px 0;
 
   }
 }
