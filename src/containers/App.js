@@ -27,9 +27,9 @@ export default () => (
     <div>
       <Router>
         <div>
-          <Route exact path='/'>
+          {/* <Route exact path='/'>
             <Redirect to={'/th'} />      
-          </Route>         
+          </Route>          */}
           <Route path='/:lang'> 
             <div>
               <Header />
