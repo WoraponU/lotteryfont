@@ -2,6 +2,8 @@
 @import '~Theme/common';
 @import '~Theme/mixin';
 
+$textColor: $pink;
+
 .workDetail {  
   h3 {
     font-size: 24px;
@@ -11,7 +13,7 @@
     margin-top: 300px;
     margin-bottom: 119px;
     h1 {
-        color:$pink;
+        color:$textColor;
     }
     
     h3 {
@@ -68,7 +70,7 @@
   }
   .sliderRow{
     margin: 50px 0;
-    
+
     .slick-slider {
       .slick-list {
         cursor: pointer;
@@ -96,7 +98,7 @@
           button {
             &::before {
               font-size: 26px;
-              color: $pink;
+              color: $textColor;
               @include transition(all 500ms ease);
 
             }
