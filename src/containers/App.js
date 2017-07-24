@@ -22,11 +22,12 @@ export default () => (
     <div>
       <Router>
         <div>
-          {/* <Redirect exact from='/' to={'/th'} />      */}
           <Switch>
-            {/* <Route exact path='/' component={Home} />         */}
+            <Route exact path='/'>
+              <Redirect to={'/th'} />      
+            </Route>         
             <Route path='/:lang' component={Home} />        
-            {/* <Route path='/:lang/our-work' component={Home} />         */}
+             <Route path='/:lang/our-work' component={Home} />         
           </Switch>   
         </div>
       </Router>
