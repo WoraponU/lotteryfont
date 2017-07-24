@@ -10,7 +10,7 @@ const FormFooter = () => {
           <h5 className="text-center">© 2017 HOBBIZ CO., LTD.</h5>      
         </Col>
         <Col lg={1} md={1} sm={1} className="text-right">
-          <Image src="assets/images/Common/Footer/hobbiz.png"/>
+          <Image src="/assets/images/Common/Footer/hobbiz.png"/>
         </Col>
       </Grid>
     </div>
