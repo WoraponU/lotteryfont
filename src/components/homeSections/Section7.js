@@ -5,11 +5,11 @@ import LiquidCircle from 'Components/common/LiquidCircle';
 import { pink, purple, yellow } from 'Components/common/LiquidCircleColor';
 import './Section7.scss'
 
-const Section7 = () => {
+const Section7 = ({ lang: { section7: content } }) => {
   return (
     <div className="section7">
       <Grid className="text-center">
-         <h1>ask us anything</h1>
+         <h1>{content.header}</h1>
       </Grid>
       <Grid className="text-center containerShadow LiquidCircle">  
         <LiquidCircle id={12} radius={170} color={pink} position={["auto", "auto", "-65px", "-65px"]}/>   
@@ -20,7 +20,7 @@ const Section7 = () => {
             <hr/>
           </Col>
           <Col lg={8} md={8} sm={8} className="text-left">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet</p>
+            <p>{content.content}</p>
           </Col>
         </Row>
         <Form> 
@@ -58,7 +58,7 @@ const Section7 = () => {
           <Row>
             <Col lg={12} md={12} sm={12}>
               <Button className="btn-black mt10" type="submit">
-                Send Us A Message
+                {content.sendMessage}
               </Button>
             </Col>           
           </Row>

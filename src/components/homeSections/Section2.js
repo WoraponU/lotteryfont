@@ -16,13 +16,13 @@ const settings = {
   lazyLoad: true,
 };
 
-const Section2 = () => {
+const Section2 = ({ lang: { section2: content } }) => {
   return (
     <div className="section2">
       <Grid>
         <Row>
           <Col sm={12} md={12} lg={12}>
-            <h1 className="header">OUR WORK</h1>
+            <h1 className="header">{content.header}</h1>
           </Col>
         </Row>
       </Grid>

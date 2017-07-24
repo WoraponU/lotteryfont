@@ -1,7 +1,14 @@
 import React from 'react';
 
-import { Section2, Section3, Section4, Section5, Section6, Section7 } from 'Components/homeSections'
-import { Section1 } from 'Containers/homeSections'
+import { 
+  Section1, 
+  Section2, 
+  Section3, 
+  Section4, 
+  Section5, 
+  Section6, 
+  Section7 
+} from 'Containers/homeSections'
 
 const Home = () => {
   return (
