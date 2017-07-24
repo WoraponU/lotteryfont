@@ -5,7 +5,7 @@ import './CardWork.scss'
 
 const CardWork = ({ img, title, subTittle, content }) => {
   return (
-    <div className="cardWork">
+    <div className="cardWork"> <a href="/workdetail">
       <img src={img} alt="" className="card-image" />
       <div className="card-details">
        
@@ -15,6 +15,7 @@ const CardWork = ({ img, title, subTittle, content }) => {
         <span>august 08, 2017</span>
       </div>
       </div>
+      </a>
     </div>
   );
 };

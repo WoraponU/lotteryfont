@@ -19,25 +19,30 @@ $hrColor: $blue2;
     margin: 0px 90px 56px;
     
     .nav {
+      
       li {
         width: 20%;
         text-align: center;
-
-         &.active {
+      
+         &.active,&:hover {
            border-bottom: #3a85fc 2px solid; 
             border-top: 0px;
             border-left: 0px;
             border-right: 0px; 
+            color: black !important;
+           
          }
 
         a {
           padding: 10px 0px;
           border: 0px; 
-
-          &:focus,&:hover {      
+          color: black !important;
+ 
+          &.active,&:focus,&:hover {      
             border: 0px; 
             outline: 0px;
-          
+            color: red ;
+                 
           } 
         }       
       }

@@ -32,10 +32,10 @@ const Section1 = () => {
          </Row>
          <Row>
           <Col lg={6} md={6} sm={6}>
-            <CardWork  img='assets/images/Work/mac5.png' title='MAC-5'/>
+            <CardWork   img='assets/images/Work/mac5.png' title='MAC-5'/>
           </Col>
           <Col lg={6} md={6} sm={6}>
-              <CardWork  img='assets/images/Work/qualy.png' title='QUALY &amp; CO'/> 
+            <CardWork  img='assets/images/Work/chula.png' title='CHULA'/>            
           </Col>
           </Row>
         </Col>
@@ -52,7 +52,7 @@ const Section1 = () => {
         <Row>                               
           <LiquidCircle id={21} radius={170} color={yellow} position={["auto", "auto", "-68px", "-68px"]}/> 
           <Col lgOffset={4} mdOffset={4}  smOffset={4} lg={4} md={4} sm={4}>
-            <CardWork  img='assets/images/Work/chula.png' title='CHULA'/>
+            <CardWork  img='assets/images/Work/qualy.png' title='QUALY &amp; CO'/> 
           </Col>
           <Col lg={4} md={4} sm={4}>
             <CardWork  img='assets/images/Work/btr.png' title='B THREE R'/>
