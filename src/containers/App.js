@@ -1,6 +1,11 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import { Route, Switch, Redirect } from 'react-router'
+import {
+  BrowserRouter as Router,
+  Route,
+  // Redirect,
+  Switch
+} from 'react-router-dom'
 
 import { configureStore } from 'Lib'
 import { Footer } from 'Containers/common'
@@ -15,10 +20,21 @@ export default () => (
 
   <Provider store={store}>
     <div>
-      <Switch>
-        <Route path='/:lang' exact component={Home} />
-        <Redirect to="/not-found" />      
-      </Switch> 
+      <Router>
+        <Switch>
+          {/* <Redirect from='/' to="/th" />              */}
+          <Route path='/:lang' name="home" component={Home} />
+        </Switch>
+      </Router>
+
+              {/* <Route path='/:lang'>
+          <Switch>
+            <Route path='' name="home" something="foo" component={Home} />
+            {/* <Route path='/our-work' component={Home} />
+          </Switch> 
+        </Route> */}
+
+        {/* <Redirect to="/not-found" />       
      
       {/* <Switch>
       </Switch>        */}

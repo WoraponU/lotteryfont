@@ -9,14 +9,14 @@ import { NavbarComponent } from 'Components/common';
 
 class NavbarHeader extends Component {
   onChangeLang = (event, lang) => {
+    event.preventDefault();
+    
     const { changeLang, history, location: { search, pathname } } = this.props;
     const newPathname = pathname.replace(/\/(th|en)/, '');
 
     changeLang(lang); 
-    event.preventDefault();
-
     history.push({
-      pathname: `${lang}${newPathname}`,
+      pathname: `/${lang}${newPathname}`,
       search: `${search}`,
     })
   }
