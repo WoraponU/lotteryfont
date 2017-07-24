@@ -1,0 +1,116 @@
+@import '~Theme/colors';
+@import '~Theme/common';
+@import '~Theme/mixin';
+
+$textColor: $pink;
+
+.workDetail {  
+  h3 {
+    font-size: 24px;
+  } 
+
+  .detailHeader { 
+    margin-top: 300px;
+    margin-bottom: 119px;
+    h1 {
+        color:$textColor;
+    }
+    
+    h3 {
+      margin-top: 168px;
+      margin-bottom: 35px;
+
+    }
+  }
+  
+  .detailImage {
+    margin-bottom: 80.6px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+
+    }
+
+    .middle {
+      padding: 68px 0;
+    }
+  }
+
+  .detailTitle {
+    p {
+      padding: 35px 0;
+
+    }
+    p:nth-of-type(2) {
+      padding: 0px;
+
+    }
+
+    hr {
+      margin-top: 34px;
+
+    }
+
+    .btn-black {
+      @extend .btnBlack;
+      margin-bottom: 52px;
+
+    }
+  }
+
+  .tabBottom {
+    .text-right {
+      margin-bottom: 27px;
+      img {
+        padding-right: 19px;
+
+      }
+    }
+
+    .arrow {
+      padding-top: 16px;
+
+    }
+  }
+  
+  .sliderRow{
+    margin: 50px 0;
+
+    .slick-slider {
+      .slick-list {
+        cursor: pointer;
+        height: auto !important;
+
+      }
+
+      .row {
+        margin-left: -1px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    
+      }
+
+      .slick-dots {
+        button {
+          &::before {
+            font-size: 20px;
+            @include transition(all 500ms ease);
+
+          }
+        }
+        
+        .slick-active {
+          button {
+            &::before {
+              font-size: 26px;
+              color: $textColor;
+              @include transition(all 500ms ease);
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

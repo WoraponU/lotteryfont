@@ -87,8 +87,16 @@ body {
   p {
     font-size: 17px;
     line-height: 1.47;
-    text-align: left;
     
+  }
+
+  hr {
+    width: 46px;
+    height: 5px;
+    object-fit: contain;
+    background-color:  $blue2;
+    margin: 21px 0;
+
   }
   
   .mt05 {
@@ -98,6 +106,8 @@ body {
   .mt10 {
     margin-top: 10px;
   }
+
+  
 
  
 }

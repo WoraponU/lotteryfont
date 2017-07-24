@@ -6,7 +6,6 @@ import { withRouter } from 'react-router-dom';
 import './Menu.scss'
 
 const Menu = ({ lang, match: { params: { lang: paramLang } } }) => {
-// const Menu = ({ lang, match: { paramLang } }) => {
   return (
     <Grid>
       <Row className="show-grid">

@@ -10,11 +10,14 @@ import {
 import { configureStore } from 'Lib'
 import { Home } from 'Components'
 import { Header } from 'Components/common'
+import { WorkDetail, OurWorks } from 'Components/ourWorkSections'
 import { Footer } from 'Containers/common'
 
 import DevTools from './DevTools'
 
 import './App.scss'
+ 
+
 
 const store = configureStore()
 
@@ -32,7 +35,8 @@ export default () => (
               <Header />
               <Switch>
                 <Route exact path='' component={Home} />        
-                <Route path='/our-work' component={Home} /> 
+                <Route path='/our-work' component={OurWorks} /> 
+                <Route path='/workdetail' component={ WorkDetail } />
               </Switch> 
               <Footer />
             </div> 
