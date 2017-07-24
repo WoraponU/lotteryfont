@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Route,
   Redirect,
-  // Switch
+  Switch
 } from 'react-router-dom'
 
 import { configureStore } from 'Lib'
@@ -29,7 +29,9 @@ export default () => (
             <div>
               <Route path='/' component={Header} />     
 
-              <Route exact path='' component={Home} />            
+              <Switch>
+                <Route exact path='' component={Home} />        
+              </Switch>                  
 
               <Route path='/' component={Footer} />        
             </div>
