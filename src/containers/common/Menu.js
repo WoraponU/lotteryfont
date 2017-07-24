@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
+import { withRouter } from 'react-router-dom'
 
 import { MenuComponent } from 'Components/common';
 import { withLang } from '../../hocs';
@@ -16,6 +17,7 @@ class Menu extends Component {
 }
 
 const enhance = compose(
+  withRouter,
   connect(
     ({ lang: nextLang }) => ({
       nextLang

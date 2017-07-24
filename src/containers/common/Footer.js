@@ -3,6 +3,7 @@ import scrollIntoView from 'scroll-into-view';
 import Waypoint from 'react-waypoint';
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
+import { withRouter } from 'react-router-dom'
 
 import { FormContact, FormSubscribeComponent, FormFooter } from 'Components/common'
 import { withLang } from '../../hocs';
@@ -48,6 +49,7 @@ class Footer extends Component {
 }
 
 const enhance = compose(
+  withRouter,
   connect(
     ({ lang: nextLang }) => ({
       nextLang

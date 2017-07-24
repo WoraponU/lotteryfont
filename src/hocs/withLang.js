@@ -18,7 +18,9 @@ const withLang = (propName) => (WrappedComponent) => {
       content: contentTh,
     }
 
+    // componentDidUpdate
     componentWillReceiveProps({ nextLang }) {
+      console.log(this.props.match);
       const { nextLang: { lang: currentLang } } = this.props;
 
       if (nextLang.lang !== currentLang ) {
