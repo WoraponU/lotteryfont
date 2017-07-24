@@ -10,10 +10,11 @@ import {
   Section7 
 } from 'Containers/homeSections'
 
+
 const Home = () => {
   return (
     <div>
-      <Section1  />
+      <Section1 />
       <Section2 />
       <Section3 />
       <Section4 />

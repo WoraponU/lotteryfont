@@ -27,6 +27,7 @@ const withLang = (propName) => (WrappedComponent) => {
         })    
       }
     }
+    
     render() {
       return <WrappedComponent {...this.props} lang={this.state.content}/>
     }

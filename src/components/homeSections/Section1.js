@@ -12,7 +12,7 @@ const Section1 = ({ lang: { section1: content } }) => {
       <Row>
         <Col mdHidden lgHidden sm={5} className="colHight"></Col>
         <Col mdOffset={5} lgOffset={6} md={7} lg={6} sm={7}>
-          <Image src="assets/images/home/section1/watch.png" responsive />
+          <Image src="/assets/images/home/section1/watch.png" responsive />
         </Col>
       </Row>
       <Row className="header">
