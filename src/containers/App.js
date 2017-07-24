@@ -3,20 +3,16 @@ import { Provider } from 'react-redux'
 import { Route, Switch } from 'react-router'
 
 import { configureStore } from 'Lib'
-<<<<<<< HEAD
 import { Header, Footer } from 'Components/common'
 
 import { WorkDetail } from 'Components/workSections'
 
 import { Home, Work } from 'Components'
-=======
-import { Header } from 'Components/common'
-import { Footer } from 'Containers/common'
-import { Home } from 'Components'
->>>>>>> develop
 import DevTools from './DevTools'
 
 import './App.scss'
+ 
+
 
 const store = configureStore()
 
