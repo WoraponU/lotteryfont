@@ -4,11 +4,16 @@ import { Route, Switch } from 'react-router'
 
 import { configureStore } from 'Lib'
 import { Header } from 'Components/common'
-import { Footer } from 'Containers/common'
+import { WorkDetail, OurWorks } from 'Components/ourWorkSections'
 import { Home } from 'Components'
+
+import { Footer } from 'Containers/common'
+
 import DevTools from './DevTools'
 
 import './App.scss'
+ 
+
 
 const store = configureStore()
 
@@ -19,6 +24,8 @@ export default () => (
       <Header />
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/work' component={OurWorks} />
+        <Route path='/workdetail' component={ WorkDetail } />
         {/*<Route path='/test' component={Test} />
         <Route path='/login' component={Signin} />
         <Route path='/signup' component={Signup} />
