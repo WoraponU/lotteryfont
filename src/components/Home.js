@@ -9,13 +9,11 @@ import {
   Section6, 
   Section7 
 } from 'Containers/homeSections'
-import { Header } from 'Components/common'
-import { Footer } from 'Containers/common'
+
 
 const Home = () => {
   return (
     <div>
-      <Header />
       <Section1 />
       <Section2 />
       <Section3 />
@@ -23,7 +21,6 @@ const Home = () => {
       <Section5 />
       <Section6 />
       <Section7 />
-      <Footer />
     </div>
   );
 };
