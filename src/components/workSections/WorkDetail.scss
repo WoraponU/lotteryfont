@@ -49,10 +49,13 @@ $textColor: $pink;
 
     hr {
       margin-top: 34px;
+
     }
+
     .btn-black {
       @extend .btnBlack;
       margin-bottom: 52px;
+
     }
   }
 
@@ -61,13 +64,16 @@ $textColor: $pink;
       margin-bottom: 27px;
       img {
         padding-right: 19px;
+
       }
     }
 
     .arrow {
       padding-top: 16px;
+
     }
   }
+  
   .sliderRow{
     margin: 50px 0;
 
