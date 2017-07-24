@@ -21,10 +21,15 @@ $borderColor: $pink;
       font-weight: bold;
       color:$colorText;
 
+       &.active {
+         color: red;
+         text-decoration: underline;
+      }
+     
       span {
         display: inline-block;
       
-        &:after {
+       &:after {
           content: "";
           display: block;
           width: 0;
