@@ -8,7 +8,7 @@ import './OurWorks.scss'
 
 const OurWorks = () => {
   return (
-    <div className="worksection1">
+    <div className="OurWorks">
       <Grid>
         <Row>
           <Col lg={4} md={4} sm={4}>
@@ -32,10 +32,10 @@ const OurWorks = () => {
          </Row>
          <Row>
           <Col lg={6} md={6} sm={6}>
-            <CardWork   img='assets/images/Work/mac5.png' title='MAC-5'/>
+            <CardWork   img='/assets/images/Work/mac5.png' title='MAC-5'/>
           </Col>
           <Col lg={6} md={6} sm={6}>
-            <CardWork  img='assets/images/Work/chula.png' title='CHULA'/>            
+            <CardWork  img='/assets/images/Work/chula.png' title='CHULA'/>            
           </Col>
           </Row>
         </Col>
@@ -43,19 +43,19 @@ const OurWorks = () => {
 
         <Row className="Row2">
           <Col lg={4} md={4} sm={4}>
-            <CardWork  img='assets/images/Work/asap.png' title='ASAP PROJECT'/>
+            <CardWork  img='/assets/images/Work/asap.png' title='ASAP PROJECT'/>
           </Col>
           <Col lg={4} md={4} sm={4}>
-            <CardWork  img='assets/images/Work/ygg.png' title='YGGDRAZIL'/>
+            <CardWork  img='/assets/images/Work/ygg.png' title='YGGDRAZIL'/>
           </Col>
         </Row>
         <Row>                               
           <LiquidCircle id={21} radius={170} color={yellow} position={["auto", "auto", "-68px", "-68px"]}/> 
           <Col lgOffset={4} mdOffset={4}  smOffset={4} lg={4} md={4} sm={4}>
-            <CardWork  img='assets/images/Work/qualy.png' title='QUALY &amp; CO'/> 
+            <CardWork  img='/assets/images/Work/qualy.png' title='QUALY &amp; CO'/> 
           </Col>
           <Col lg={4} md={4} sm={4}>
-            <CardWork  img='assets/images/Work/btr.png' title='B THREE R'/>
+            <CardWork  img='/assets/images/Work/btr.png' title='B THREE R'/>
           </Col>
         </Row>
       </Grid>

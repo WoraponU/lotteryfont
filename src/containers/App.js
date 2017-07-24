@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router'
 
 import { configureStore } from 'Lib'
 import { Header } from 'Components/common'
-import { WorkDetail, OurWorks } from 'Components/ourWorksSections'
+import { WorkDetail, OurWorks } from 'Components/ourWorkSections'
 import { Home } from 'Components'
 
 import { Footer } from 'Containers/common'
