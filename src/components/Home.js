@@ -1,5 +1,4 @@
 import React from 'react';
-import { Header } from 'Components/common'
 
 import { 
   Section1, 
@@ -14,7 +13,6 @@ import {
 const Home = () => {
   return (
     <div>
-      <Header />
       <Section1  />
       <Section2 />
       <Section3 />
