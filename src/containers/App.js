@@ -3,11 +3,12 @@ import { Provider } from 'react-redux'
 import { Route, Switch } from 'react-router'
 
 import { configureStore } from 'Lib'
-import { Header, Footer } from 'Components/common'
+import { Header } from 'Components/common'
+import { WorkDetail, OurWorks } from 'Components/ourWorksSections'
+import { Home } from 'Components'
 
-import { WorkDetail } from 'Components/workSections'
+import { Footer } from 'Containers/common'
 
-import { Home, Work } from 'Components'
 import DevTools from './DevTools'
 
 import './App.scss'
@@ -23,8 +24,8 @@ export default () => (
       <Header />
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/work' component={Work} />
-        <Route path='/workdetail' component={WorkDetail} />
+        <Route path='/work' component={OurWorks} />
+        <Route path='/workdetail' component={ WorkDetail } />
         {/*<Route path='/test' component={Test} />
         <Route path='/login' component={Signin} />
         <Route path='/signup' component={Signup} />

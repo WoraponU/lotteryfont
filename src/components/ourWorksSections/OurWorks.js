@@ -4,9 +4,9 @@ import { Grid, Row, Col, Tabs, Tab } from 'react-bootstrap';
 import { CardWork } from 'Components/common'
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { pink, yellow } from 'Components/common/LiquidCircleColor';
-import './WorkSection1.scss'
+import './OurWorks.scss'
 
-const Section1 = () => {
+const OurWorks = () => {
   return (
     <div className="worksection1">
       <Grid>
@@ -63,4 +63,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default OurWorks;

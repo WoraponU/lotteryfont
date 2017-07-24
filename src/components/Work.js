@@ -1,10 +1,10 @@
 import React from 'react';
-import { Section1 } from 'Components/workSections'
+import { OurWorks } from 'Components/ourWorksSections'
 
 const Work = () => {
   return (
     <div>
-      <Section1 />
+      <OurWorks />
     </div>
   );
 };
