@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import {
   BrowserRouter as Router,
   Route,
-  // Redirect,
+  Redirect,
   Switch
 } from 'react-router-dom'
 
@@ -11,14 +11,13 @@ import { configureStore } from 'Lib'
 import { Home } from 'Components'
 import { Header } from 'Components/common'
 import { WorkDetail, OurWorks } from 'Components/ourWorkSections'
+// import { OurWorks } from 'Containers/ourWorkSections'
 import { Footer } from 'Containers/common'
 
 import DevTools from './DevTools'
 
 import './App.scss'
  
-
-
 const store = configureStore()
 
 export default () => (
@@ -26,21 +25,18 @@ export default () => (
     <div>
       <Router>
         <div>
-          {/* <Route exact path='/'>
-            <Redirect to={'/th'} />      
-          </Route>          */}
-          <Route path='/:lang'> 
-            <div>
-              <Header />
-              <Switch>
-                <Route exact path='' component={Home} />        
-                <Route path='/our-work' component={OurWorks} /> 
-                <Route path='/workdetail' component={ WorkDetail } />
-              </Switch> 
-              <Footer />
-            </div> 
-          </Route>  
-        </div>  
+          <Route exact path="/" render={() => (
+            <Redirect to="/th"/>
+          )}/>   
+
+          <Route path='/:lang' component={Header} />                                   
+          <Switch>
+            <Route exact path='/:lang' component={Home} />                     
+            <Route path='/:lang/our-work' component={OurWorks} /> 
+            <Route path='/:lang/workdetail' component={ WorkDetail } />
+          </Switch> 
+          <Route path='/:lang' component={Footer} /> 
+        </div>
       </Router>
       <DevTools />
     </div>
