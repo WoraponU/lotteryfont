@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { changeLang } from 'Actions'
 import { withRouter } from 'react-router-dom'
 import { compose } from 'recompose'
 
@@ -11,9 +9,8 @@ class NavbarHeader extends Component {
   onChangeLang = (event, lang) => {
     event.preventDefault();
     
-    const { changeLang, history, location: { search, pathname } } = this.props;
+    const { history, location: { search, pathname } } = this.props;
     const newPathname = pathname.replace(/\/(th|en)/, '');
-    changeLang(lang);
     history.push({
       pathname: `/${lang}${newPathname}`,
       search: `${search}`,
@@ -28,11 +25,7 @@ class NavbarHeader extends Component {
 }
 
 const enhance = compose(
-  withRouter,  
-  connect(
-    null,
-    {changeLang}
-  )
+  withRouter
 );
 
 export default enhance(NavbarHeader);
