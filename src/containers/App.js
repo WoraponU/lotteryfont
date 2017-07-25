@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import {
   BrowserRouter as Router,
   Route,
-  Redirect,
+  // Redirect,
   Switch
 } from 'react-router-dom'
 
@@ -22,14 +22,13 @@ import './App.scss'
 const store = configureStore()
 
 export default () => (
-
   <Provider store={store}>
     <div>
       <Router>
         <div>
-          <Route exact path='/'>
+          {/* <Route exact path='/'>
             <Redirect to={'/th'} />      
-          </Route>         
+          </Route>          */}
           <Route path='/:lang'> 
             <div>
               <Header />

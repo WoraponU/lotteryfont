@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
 import { compose } from 'recompose'
+import { withRouter } from 'react-router-dom'
 
 import { Section1Component } from 'Components/homeSections'
 import { withLang } from '../../hocs';
@@ -17,11 +17,7 @@ class Section1 extends Component {
 }
 
 const enhance = compose(
-  connect(
-    ({ lang: nextLang }) => ({
-      nextLang
-    })
-  ),
+  withRouter,
   withLang('home/Section1')
 );
 
