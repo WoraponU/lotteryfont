@@ -19,7 +19,7 @@ class NavbarHeader extends Component {
 
   render() {
     return (
-      <NavbarComponent onChangeLang={this.onChangeLang}/>
+      <NavbarComponent onChangeLang={this.onChangeLang} {...this.props}/>
     );
   }
 }
