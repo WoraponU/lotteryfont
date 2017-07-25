@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import scrollIntoView from 'scroll-into-view';
 import Waypoint from 'react-waypoint';
-import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
 
@@ -50,11 +49,6 @@ class Footer extends Component {
 
 const enhance = compose(
   withRouter,
-  connect(
-    ({ lang: nextLang }) => ({
-      nextLang
-    })
-  ),
   withLang('common/Footer')
 );
 
