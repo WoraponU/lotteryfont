@@ -18,35 +18,25 @@ const withLang = (propName) => (WrappedComponent) => {
       content: contentTh,
     }
 
-    // componentDidUpdate({ nextLang: { lang: currentLang } }, prevState) {
-    //   const { match: { params: { lang: nextLang } } } = this.props;
-    //   console.log('currentLang:' ,currentLang);
-    //   console.log('nextLang:' ,nextLang);
-    //   // if (currentLang !== nextLang ) {
-    //   // console.log('nextLang:' ,nextLang);
-        
-    //     // this.setState({ 
-    //     //   content: this.content[nextLang], 
-    //     // })   
-
-    //   // }
-    // }
-    componentDidMount() {
-      const { match: { params: { lang: nextLang } } } = this.props;
-      
+    changeLang(lang) {
       this.setState({ 
-        content: this.content[nextLang], 
+        content: this.content[lang], 
       })    
     }
-    
-    componentWillReceiveProps({ nextLang }) {
-      const { nextLang: { lang: currentLang } } = this.props;
 
-      if (nextLang.lang !== currentLang ) {
-        this.setState({ 
-          content: this.content[nextLang.lang], 
-        })    
+    componentDidMount() {
+      const { match: { params: { lang: nextLang } } } = this.props;
+
+      this.changeLang(nextLang);
+    }
+
+    componentWillReceiveProps({ match: { params: { lang: nextLang } } }) {
+      const { match: { params: { lang: currentLang } } } = this.props;
+
+      if (currentLang !== nextLang ) {
+        this.changeLang(nextLang);
       }
+      
     }
     
     render() {
