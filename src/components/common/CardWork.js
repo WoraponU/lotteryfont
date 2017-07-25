@@ -1,11 +1,14 @@
 import React from 'react';
-// import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import './CardWork.scss' 
 
-const CardWork = ({ img, title, subTittle, content }) => {
+const CardWork = ({ img, title, subTittle, content, match: { params: { lang: paramLang } } }) => {
   return (
-    <div className="cardWork"> <a href="/workdetail">
+    <div className="cardWork"> 
+      <Link to={`/${paramLang}/our-work/1`} activeClassName="active">
+
       <img src={img} alt="" className="card-image" />
       <div className="card-details">
        
@@ -15,9 +18,9 @@ const CardWork = ({ img, title, subTittle, content }) => {
         <span>august 08, 2017</span>
       </div>
       </div>
-      </a>
+      </Link>
     </div>
   );
 };
 
-export default CardWork;
+export default withRouter( CardWork );

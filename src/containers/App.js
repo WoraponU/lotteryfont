@@ -10,8 +10,7 @@ import {
 import { configureStore } from 'Lib'
 import { Home } from 'Components'
 import { Header } from 'Components/common'
-import { WorkDetail } from 'Components/ourWorkSections'
-import { OurWorks } from 'Containers/ourWorkSections'
+import { OurWorks, WorkDetail } from 'Containers/ourWorkSections'
 import { Footer } from 'Containers/common'
 
 import DevTools from './DevTools'
@@ -31,9 +30,9 @@ export default () => (
 
           <Route path='/:lang' component={Header} />                                   
           <Switch>
-            <Route exact path='/:lang' component={Home} />                     
+            <Route exact path='/:lang' component={Home} />    
+            <Route path='/:lang/our-work/:id' component={WorkDetail} />                             
             <Route path='/:lang/our-work' component={OurWorks} /> 
-            <Route path='/:lang/workdetail' component={ WorkDetail } />
           </Switch> 
           <Route path='/:lang' component={Footer} /> 
         </div>
