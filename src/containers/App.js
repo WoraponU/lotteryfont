@@ -33,7 +33,7 @@ export default () => (
             <div>
               <Header />
               <Switch>
-                <Route exact path='' component={WorkDetail} />        
+                <Route exact path='' component={Home} />        
                 <Route path='/our-work' component={OurWorks} /> 
                 <Route path='/workdetail' component={ WorkDetail } />
               </Switch> 

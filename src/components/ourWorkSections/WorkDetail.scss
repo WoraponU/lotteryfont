@@ -4,18 +4,18 @@
 
 $textColor: $pink;
 
-.workDetail { 
-  position: relative;
-   
+.workDetail {    
   h3 {
     font-size: 24px;
+    
   } 
 
   .detailHeader { 
+    position: relative;
     margin-top: 300px;
     margin-bottom: 119px;
     h1 {
-        color:$textColor;
+        color: $textColor;
     }
     
     h3 {
@@ -40,6 +40,8 @@ $textColor: $pink;
   }
 
   .detailTitle {
+    position: relative;
+    
     p {
       padding: 35px 0;
 
@@ -71,7 +73,7 @@ $textColor: $pink;
     }
 
     .arrow {
-      padding-top: 16px;
+      padding-top: 19px;
 
     }
   }

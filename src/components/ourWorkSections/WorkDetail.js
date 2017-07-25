@@ -3,7 +3,7 @@ import { Grid, Row, Col, Image, Button} from 'react-bootstrap';
 import Slider from 'react-slick';
 
 import LiquidCircle from 'Components/common/LiquidCircle';
-import { pink, yellow } from 'Components/common/LiquidCircleColor';
+import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
 
 import './WorkDetail.scss'
 
@@ -21,8 +21,9 @@ const WorkDetail = () => {
   return (
     <div className="workDetail">
       <Grid>
-        <LiquidCircle id={22} radius={170} color={yellow} position={["auto", "auto", "auto", "auto"]}/> 
+        <LiquidCircle id={22} radius={170} color={yellow} position={["200px", "400px", "auto", "auto"]}/> 
         <Row className="detailHeader">
+          <LiquidCircle id={23} radius={190} color={blue} position={["auto", "auto", "-108px", "-147px"]}/>           
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}><h1>Making it easier for users <br/>to find the right insurance.</h1></Col>        
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6}>
             <h3>Giving users the tools to make <br/>the best decision.</h3>
@@ -48,6 +49,8 @@ const WorkDetail = () => {
           </Col>
         </Row>
         <Row className="detailTitle">
+          <LiquidCircle id={24} radius={250} color={blue} position={["auto", "30px", "50px", "auto"]}/>    
+          <LiquidCircle id={25} radius={160} color={pink} position={["auto", "0px", "0px", "auto"]}/>    
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
             <Image src="/assets/images/Work/workDetail/mac.png"/>
             <hr/>
@@ -58,7 +61,6 @@ const WorkDetail = () => {
             </p>
           </Col>
         </Row>
-
         <div className="sliderRow">
           <Slider {...settings}>
             <img src="/assets/images/home/section2/qualy.png" alt="qualy"/>
@@ -66,8 +68,9 @@ const WorkDetail = () => {
             <img src="/assets/images/home/section2/mac5.png" alt="mac5"/>          
           </Slider>
         </div>
-
         <Row className="detailTitle">        
+          <LiquidCircle id={26} radius={250} color={blue} position={["170px", "0px", "0px", "-193px"]}/>    
+          <LiquidCircle id={27} radius={190} color={purple} position={["56px", "0px", "0px", "0px"]}/>   
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6}>
             <h3>Empowering through knowledge, seamlessly.</h3>
             <p>An iterative building process, executed in one-week sprints in collaboration with the client, produced numerous prototypes that allowed the team to validate ideas through user interaction. This approach gave the C-suite insight into progress and helped developers optimize the project as it moved forward. Most importantly, it empowered Huge and MoneySuperMarket to provide a more valuable experience to users. During testing, nine out of ten people found the new journey easier to user and feel better informed to make a decision.</p>
@@ -76,17 +79,17 @@ const WorkDetail = () => {
             <Button className="btn-black mt10">VISIT WEBSITE</Button>
           </Col>
         </Row>
-        <Row className="tabBottom">
+        <Row className="tabBottom">         
           <Col lg={1} md={1} sm={1}>
             <Image src="/assets/images/Work/workDetail/arrLeft.png" className="arrow"/>
           </Col>
-          <Col lg={10} md={10} sm={10} className="text-right">
+          <Col lg={10} md={10} sm={10} className="text-right ">
             <Image src="/assets/images/Work/workDetail/facebook.png"/>
             <Image src="/assets/images/Work/workDetail/instagram.png"/>
             <Image src="/assets/images/Work/workDetail/twitter.png"/>
           </Col>
           <Col lg={1} md={1} sm={1}>
-            <Image src="/assets/images/Work/workDetail/arrRight.png"/>
+            <Image src="/assets/images/Work/workDetail/arrRight.png" className="arrow"/>
           </Col>
         </Row>
       </Grid>
