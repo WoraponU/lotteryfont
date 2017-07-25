@@ -3,7 +3,7 @@ import { Navbar, Image } from 'react-bootstrap';
 
 import './Navbar.scss';
 
-const NavbarComponent = ({ onChangeLang }) => {
+const NavbarComponent = ({ onChangeLang, match: { params: { lang } } }) => {
   return (
     <div className="header">
       <Navbar>      
@@ -11,9 +11,9 @@ const NavbarComponent = ({ onChangeLang }) => {
             <Image src="/assets/images/Common/logoHobbiz.png"/>           
         </Navbar.Brand>       
         <div className="navMenu">  
-          <a href="#" onClick={(e) => onChangeLang(e, 'th')}>th</a>
+          <a href="#" className={lang === 'th' ? 'active' : ''} onClick={(e) => onChangeLang(e, 'th')}>th</a>
           <span>|</span>
-          <a href="#" onClick={(e) => onChangeLang(e, 'en')}>en</a> 
+          <a href="#" className={lang === 'en' ? 'active' : ''} onClick={(e) => onChangeLang(e, 'en')}>en</a> 
         </div>
        
       </Navbar>
