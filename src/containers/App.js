@@ -10,8 +10,8 @@ import {
 import { configureStore } from 'Lib'
 import { Home } from 'Components'
 import { Header } from 'Components/common'
-import { WorkDetail, OurWorks } from 'Components/ourWorkSections'
-// import { OurWorks } from 'Containers/ourWorkSections'
+import { WorkDetail } from 'Components/ourWorkSections'
+import { OurWorks } from 'Containers/ourWorkSections'
 import { Footer } from 'Containers/common'
 
 import DevTools from './DevTools'
