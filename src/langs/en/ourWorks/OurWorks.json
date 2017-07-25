@@ -1,7 +1,14 @@
 {
-  "section1": {
-    "header": "เพราะทุกการตอบสนองบนหน้าจอ<br/>สะท้อนถึงภาพลักษณ์ขององค์กร",
-    "content": "ไม่ว่าจะเป็นจุดเล็กๆ ปุ่มเล็กๆหรือความสนใจเพียงเล็กน้อยที่เกิดขึ้นบนเว็บไซต์ ก็นำไปสู่การเพิ่มยอดขายที่มากขึ้น และมูลค่าของแบรนด์ที่มากขึ้นได้ เพราะเราเห็น และรู้จักความต้องการที่แท้จริงของลูกค้าของคุณ",
-    "button": "ดูผลงานเรา"
+  "OurWorks": {
+    "header": "our<br/>work",
+    "content": "we discovered that users were easily derailed by difficult-to-answer questions during the comparison.",
+    "content1": "We saw a big opportunity to create a personalized user experience to help users attain more accuracy, as well as lower the site’s unnecessarily high abandon rate and boost brand loyalty.",
+    "tab":{
+      "tabAll": "ALL WORKK",   
+      "tabPopular": "POPULAR", 
+      "tabPublic": "PUBLIC", 
+      "tabDesktop": "DESKTOP", 
+      "tabMoblie": "MOBILE" 
+    }
   }
 }

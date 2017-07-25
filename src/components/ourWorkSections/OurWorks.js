@@ -6,27 +6,27 @@ import LiquidCircle from 'Components/common/LiquidCircle';
 import { pink, yellow } from 'Components/common/LiquidCircleColor';
 import './OurWorks.scss'
 
-const OurWorks = () => {
+const OurWorks = ({ lang: { OurWorks: content } }) => {
   return (
     <div className="OurWorks">
       <Grid>
         <Row>
           <Col lg={4} md={4} sm={4}>
-            <h1>our<br/>work</h1>
+            <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
             <hr/>
-            <p>we discovered that users were easily derailed by difficult-to-answer questions during the comparison.</p>
-            <p>We saw a big opportunity to create a personalized user experience to help users attain more accuracy, as well as lower the site’s unnecessarily high abandon rate and boost brand loyalty.</p>             
+            <p>{ content.content }</p>
+            <p>{ content.content1 }</p>
             <LiquidCircle id={20} radius={189} color={pink} position={["3px", "63px", "auto", "auto"]}/>      
           </Col>
          <Col md={8}>
          <Row>
           <Col lg={12} md={12} sm={12}>
             <Tabs defaultActiveKey={2} id="Tab">
-              <Tab eventKey={1} title="ALL WORK"></Tab>
-              <Tab eventKey={2} title="POPULAR"></Tab>
-              <Tab eventKey={3} title="PUBLIC"></Tab>
-              <Tab eventKey={4} title="DESKTOP"></Tab>
-              <Tab eventKey={5} title="MOBILE"></Tab>
+              <Tab eventKey={1} title={ content.tab.tabAll }></Tab>
+              <Tab eventKey={2} title={ content.tab.tabPopular }></Tab>
+              <Tab eventKey={3} title={ content.tab.tabPublic }></Tab>
+              <Tab eventKey={4} title={ content.tab.tabDesktop }></Tab>
+              <Tab eventKey={5} title={ content.tab.tabMoblie }></Tab>
             </Tabs>
           </Col>
          </Row>
