@@ -2,6 +2,9 @@ import React from 'react';
 import { Grid, Row, Col, Image, Button} from 'react-bootstrap';
 import Slider from 'react-slick';
 
+import LiquidCircle from 'Components/common/LiquidCircle';
+import { pink, yellow } from 'Components/common/LiquidCircleColor';
+
 import './WorkDetail.scss'
 
 const settings = {
@@ -18,6 +21,7 @@ const WorkDetail = () => {
   return (
     <div className="workDetail">
       <Grid>
+        <LiquidCircle id={22} radius={170} color={yellow} position={["auto", "auto", "auto", "auto"]}/> 
         <Row className="detailHeader">
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}><h1>Making it easier for users <br/>to find the right insurance.</h1></Col>        
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6}>

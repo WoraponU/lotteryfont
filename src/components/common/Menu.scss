@@ -8,6 +8,7 @@ $borderColor: $pink;
 .navBar {
   width: auto;
   position: absolute;
+  
 }
 
 .nav{
@@ -27,6 +28,7 @@ $borderColor: $pink;
         span {
           &:after {
             width: 100%;
+
           }
         }    
       }
@@ -41,6 +43,7 @@ $borderColor: $pink;
           height: 2px;
           background-color: $borderColor;
           @include transition(opacity .3s ease, width .3s ease);
+
         }
       }
 
@@ -50,6 +53,7 @@ $borderColor: $pink;
         span {
           &:after {
             width: 100%;
+
           }
         }
       }
