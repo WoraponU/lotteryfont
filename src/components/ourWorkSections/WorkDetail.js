@@ -17,7 +17,7 @@ const settings = {
   lazyLoad: true,
 };
 
-const WorkDetail = ({ lang: { workDetail: content } }) => {
+const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
   return (
     <div className="workDetail">
       <Grid>
@@ -25,25 +25,25 @@ const WorkDetail = ({ lang: { workDetail: content } }) => {
         <Row className="detailHeader">
           <LiquidCircle id={23} radius={190} color={blue} position={["auto", "auto", "-108px", "-147px"]}/>           
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
-            <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
+            <h1 dangerouslySetInnerHTML={{__html: contentLoaded.mainHeader}}></h1>
           </Col>        
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6}>
-            <h3 dangerouslySetInnerHTML={{__html: content.subHeader}}></h3>
-            <p>{ content.content }</p>
+            <h3 dangerouslySetInnerHTML={{__html: contentLoaded.subHeader1}}></h3>
+            <p>{ contentLoaded.content1 }</p>
           </Col>
         </Row>
         <Row className="detailImage">
           <Col lg={2} md={2} sm={2} className="text-right">
             <Row>
               <h4>{ content.detailImage.clients }</h4>
-              <p>Mac-5</p>
+              <p>{ contentLoaded.imageInfo.client }</p>
             </Row>
             <Row className="middle">
               <h4>{ content.detailImage.services }</h4>
-              <p>Design <br/> Development</p>
+              <p>{ contentLoaded.imageInfo.service }</p>
             </Row>
             <Row><h4>{ content.detailImage.year }</h4>
-              <p>2017</p>
+              <p>{ contentLoaded.imageInfo.year }</p>
             </Row>
           </Col>
           <Col lg={10} md={10} sm={10}>
@@ -56,7 +56,8 @@ const WorkDetail = ({ lang: { workDetail: content } }) => {
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
             <Image src="/assets/images/Work/workDetail/mac.png"/>
             <hr/>
-            <p dangerouslySetInnerHTML={{__html: content.content1}}></p>
+            <h3 dangerouslySetInnerHTML={{__html: contentLoaded.subHeader2}}></h3>
+            <p dangerouslySetInnerHTML={{__html: contentLoaded.content2}}></p>
           </Col>
         </Row>
         <div className="sliderRow">
@@ -70,8 +71,8 @@ const WorkDetail = ({ lang: { workDetail: content } }) => {
           <LiquidCircle id={26} radius={250} color={blue} position={["170px", "0px", "0px", "-193px"]}/>    
           <LiquidCircle id={27} radius={190} color={purple} position={["56px", "0px", "0px", "0px"]}/>   
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6}>
-            <h3>{ content.title }</h3>
-            <p>{ content.subTitle }</p>
+            <h3>{ contentLoaded.subHeader3 }</h3>
+            <p>{ contentLoaded.content3 }</p>
           </Col>
           <Col lg={12} md={12} sm={12} className="text-center">
             <Button className="btn-black mt10">{ content.button }</Button>
