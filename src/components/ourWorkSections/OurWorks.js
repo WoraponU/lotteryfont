@@ -1,9 +1,9 @@
 import React from 'react';
-import { Grid, Col, Tabs, Tab } from 'react-bootstrap';
+import { Grid, Col, Tabs, Tab, Row } from 'react-bootstrap';
 
 import { CardWork } from 'Components/common'
 import LiquidCircle from 'Components/common/LiquidCircle';
-import { pink, yellow } from 'Components/common/LiquidCircleColor';
+import { pink } from 'Components/common/LiquidCircleColor';
 import './OurWorks.scss'
 
 const OurWorks = ({ lang: { OurWorks: content } }) => {
