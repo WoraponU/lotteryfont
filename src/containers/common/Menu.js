@@ -3,7 +3,7 @@ import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
 
 import { MenuComponent } from 'Components/common';
-import { withLang } from '../../hocs';
+import { withLang } from 'Hocs';
 
 class Menu extends Component {
   render() {

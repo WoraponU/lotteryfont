@@ -42,8 +42,7 @@ $textColor: $black;
           &.active,&:focus,&:hover {      
             border: 0px; 
             outline: 0px;
-            background-color: $white;
-                            
+            background-color: $white;          
           } 
         }       
       }
@@ -53,6 +52,5 @@ $textColor: $black;
   .Row2 {
     margin-bottom: 85.9px;
     margin-top: 30px;
-
   }
 }

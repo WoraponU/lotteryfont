@@ -3,7 +3,7 @@ import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
 
 import { Section5Component } from 'Components/homeSections'
-import { withLang } from '../../hocs';
+import { withLang } from 'Hocs';
 
 class Section5 extends Component {
   render() {

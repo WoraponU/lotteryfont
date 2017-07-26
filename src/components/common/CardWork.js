@@ -7,7 +7,7 @@ import './CardWork.scss'
 const CardWork = ({ img, title, subTittle, content, match: { params: { lang: paramLang } } }) => {
   return (
     <div className="cardWork"> 
-      <Link to={`/${paramLang}/our-work/1`} activeClassName="active">
+      <Link to={`/${paramLang}/our-work/1`}>
 
       <img src={img} alt="" className="card-image" />
       <div className="card-details">
