@@ -4,10 +4,10 @@ import { withRouter } from 'react-router-dom';
 
 import './CardWork.scss' 
 
-const CardWork = ({ img, title, subTittle, content, match: { params: { lang: paramLang } } }) => {
+const CardWork = ({ img, title,  id, match: { params: { lang: paramLang } } }) => {
   return (
     <div className="cardWork"> 
-      <Link to={`/${paramLang}/our-work/1`} >
+      <Link to={`/${paramLang}/our-work/${id}`} >
         <img src={img} alt="" className="card-image" />
         <div className="card-details">          
           <h2>{title}</h2>

@@ -42,26 +42,26 @@ const OurWorks = ({ lang: { OurWorks: content } }) => {
             <div className="slider">
               <Row>
                 <Col lgOffset={4} mdOffset={4} lg={4} md={4} sm={4}>
-                  <CardWork img='/assets/images/Work/mac5.png' title='MAC-5'/>
+                  <CardWork img='/assets/images/Work/mac5.png' title='MAC-5' id="mac5"/>
                 </Col>
                 <Col lg={4} md={4} sm={4}>
-                  <CardWork img='/assets/images/Work/chula.png' title='ASAP'/>            
+                  <CardWork img='/assets/images/Work/chula.png' title='ASAP' id="asap"/>            
                 </Col>
               </Row>
               <Row>
                 <Col lg={4} md={4} sm={4}>
-                  <CardWork img='/assets/images/Work/mac5.png' title='YGG'/>
+                  <CardWork img='/assets/images/Work/mac5.png' title='YGG' id="ygg"/>
                 </Col>
                 <Col lg={4} md={4} sm={4}>
-                  <CardWork img='/assets/images/Work/chula.png' title='SPRING'/>            
+                  <CardWork img='/assets/images/Work/chula.png' title='SPRING' id="spring"/>            
                 </Col>
               </Row>
               <Row>
                 <Col lgOffset={4} mdOffset={4} lg={4} md={4} sm={4}>
-                  <CardWork img='/assets/images/Work/mac5.png' title='CHULA'/>
+                  <CardWork img='/assets/images/Work/mac5.png' title='CHULA' id="chula"/>
                 </Col>
                 <Col lg={4} md={4} sm={4}>
-                  <CardWork img='/assets/images/Work/chula.png' title='DP (Mobile)'/>            
+                  <CardWork img='/assets/images/Work/chula.png' title='DP (Mobile)' id="dp"/>            
                 </Col>
               </Row>
             </div>
