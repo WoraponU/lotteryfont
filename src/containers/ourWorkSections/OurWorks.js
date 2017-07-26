@@ -3,7 +3,7 @@ import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
 
 import { OurWorksComponent } from 'Components/ourWorkSections'
-import { withLang } from '../../hocs';
+import { withLang } from 'Hocs';
 
 
 class OurWorks extends Component {

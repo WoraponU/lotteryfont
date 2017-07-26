@@ -5,7 +5,7 @@ import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
 
 import { FormContact, FormSubscribeComponent, FormFooter } from 'Components/common'
-import { withLang } from '../../hocs';
+import { withLang } from 'Hocs';
 
 class Footer extends Component {
   state = {

@@ -6,17 +6,17 @@ import LiquidCircle from 'Components/common/LiquidCircle';
 import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
 import './Section2.scss'
 
-const settings = {
-  autoplay: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: true,
-  draggable: false,
-  focusOnSelect: true,
-  lazyLoad: true,
-};
-
 const Section2 = ({ lang: { section2: content } }) => {
+  const settings = {
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    draggable: false,
+    focusOnSelect: true,
+    lazyLoad: true,
+  };
+
   return (
     <div className="section2">
       <Grid>

@@ -7,15 +7,15 @@ import { blue } from 'Components/common/LiquidCircleColor';
 import { Card } from 'Components/common'
 import './Section6.scss'
 
-const settings = {
-  dots: true,
-  infinite: true,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  swipeToSlide: true,
-};
-
 const Section6 = ({ lang: { section6: content } }) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    swipeToSlide: true,
+  };
+  
   return (
     <div className="section6">
       <Grid className="text-center LiquidCircle">
