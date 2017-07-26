@@ -17,30 +17,32 @@ const settings = {
   lazyLoad: true,
 };
 
-const WorkDetail = () => {
+const WorkDetail = ({ lang: { workDetail: content } }) => {
   return (
     <div className="workDetail">
       <Grid>
         <LiquidCircle id={22} radius={170} color={yellow} position={["200px", "400px", "auto", "auto"]}/> 
         <Row className="detailHeader">
           <LiquidCircle id={23} radius={190} color={blue} position={["auto", "auto", "-108px", "-147px"]}/>           
-          <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}><h1>Making it easier for users <br/>to find the right insurance.</h1></Col>        
+          <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
+            <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
+          </Col>        
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6}>
-            <h3>Giving users the tools to make <br/>the best decision.</h3>
-            <p>How many miles do you drive in a year? It’s a tricky question to answer, and who knows how it might impact your car insurance if you get it wrong? Via in-home user research, we discovered that users were easily derailed by difficult-to-answer questions during the comparison. We saw a big opportunity to create a personalized user experience to help users attain more accuracy, as well as lower the site’s unnecessarily high abandon rate and boost brand loyalty.</p>
+            <h3 dangerouslySetInnerHTML={{__html: content.subHeader}}></h3>
+            <p>{ content.content }</p>
           </Col>
         </Row>
         <Row className="detailImage">
           <Col lg={2} md={2} sm={2} className="text-right">
             <Row>
-              <h4>clients</h4>
+              <h4>{ content.detailImage.clients }</h4>
               <p>Mac-5</p>
             </Row>
             <Row className="middle">
-              <h4>services</h4>
+              <h4>{ content.detailImage.services }</h4>
               <p>Design <br/> Development</p>
             </Row>
-            <Row><h4>year</h4>
+            <Row><h4>{ content.detailImage.year }</h4>
               <p>2017</p>
             </Row>
           </Col>
@@ -54,11 +56,7 @@ const WorkDetail = () => {
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
             <Image src="/assets/images/Work/workDetail/mac.png"/>
             <hr/>
-            <p>we discovered that users were easily derailed by difficult-to-answer <br/>questions during the comparison.</p>
-            <p>We saw a big opportunity to create a personalized user experience <br/>
-              to help users attain more accuracy, as well as lower the site’s <br/>
-              unnecessarily high abandon rate and boost brand loyalty.
-            </p>
+            <p dangerouslySetInnerHTML={{__html: content.content1}}></p>
           </Col>
         </Row>
         <div className="sliderRow">
@@ -72,11 +70,11 @@ const WorkDetail = () => {
           <LiquidCircle id={26} radius={250} color={blue} position={["170px", "0px", "0px", "-193px"]}/>    
           <LiquidCircle id={27} radius={190} color={purple} position={["56px", "0px", "0px", "0px"]}/>   
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6}>
-            <h3>Empowering through knowledge, seamlessly.</h3>
-            <p>An iterative building process, executed in one-week sprints in collaboration with the client, produced numerous prototypes that allowed the team to validate ideas through user interaction. This approach gave the C-suite insight into progress and helped developers optimize the project as it moved forward. Most importantly, it empowered Huge and MoneySuperMarket to provide a more valuable experience to users. During testing, nine out of ten people found the new journey easier to user and feel better informed to make a decision.</p>
+            <h3>{ content.title }</h3>
+            <p>{ content.subTitle }</p>
           </Col>
           <Col lg={12} md={12} sm={12} className="text-center">
-            <Button className="btn-black mt10">VISIT WEBSITE</Button>
+            <Button className="btn-black mt10">{ content.button }</Button>
           </Col>
         </Row>
         <Row className="tabBottom">         
