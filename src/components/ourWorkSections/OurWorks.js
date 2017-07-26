@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Row, Col, Tabs, Tab } from 'react-bootstrap';
+import { Grid, Col, Tabs, Tab } from 'react-bootstrap';
 
 import { CardWork } from 'Components/common'
 import LiquidCircle from 'Components/common/LiquidCircle';
