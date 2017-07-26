@@ -1,4 +1,5 @@
 @import '~Theme/colors';
+@import '~Theme/common';
 
 $borderColor: $blue2;
 $textColor: $black;
@@ -21,6 +22,7 @@ $textColor: $black;
 
   #Tab {
     margin: 0px 90px 56px;
+    font-family: Roboto-Bold;
     
     .nav {      
       li {
@@ -54,6 +56,46 @@ $textColor: $black;
   .slider {
     .row {
       margin-bottom: 120px;
+    }
+  }
+
+  .slick-slider {
+    padding: 5px;
+
+    .slick-arrow {
+      @extend .buttonMaterial;
+      position: absolute;
+      width: 50px;
+      top: -11px;
+      z-index: 1;
+      color: transparent;
+
+      &.slick-prev {
+        left: 87%;
+        
+        &::after { 
+          font-family: FontAwesome;
+          content: "\F177";
+          color: $black;
+          font-size: 16px;
+          right: 18px;
+          top: 1px;
+          position: absolute;
+        }
+      }
+
+      &.slick-next {
+        @extend .slick-prev;
+        left: 92%;
+
+        &::after { 
+          content: "\f178";
+        }
+      }
+    }
+
+    .slick-list {
+      cursor: pointer;
     }
   }
 }

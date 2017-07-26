@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Row, Col, Tabs, Tab } from 'react-bootstrap';
+import Slider from 'react-slick';
 
 import { CardWork } from 'Components/common'
 import LiquidCircle from 'Components/common/LiquidCircle';
@@ -7,6 +8,14 @@ import { pink, yellow } from 'Components/common/LiquidCircleColor';
 import './OurWorks.scss'
 
 const OurWorks = ({ lang: { OurWorks: content } }) => {
+  const settings = {
+    useCSS: true
+    // infinite: true,
+    // arrows: true,
+    // slidesToShow: 6,
+    // adaptiveHeight: true,
+    // swipeToSlide: true,
+  };
   return (
     <div className="OurWorks">
       <Grid>
@@ -32,32 +41,34 @@ const OurWorks = ({ lang: { OurWorks: content } }) => {
             <LiquidCircle id={20} radius={189} color={pink} position={["3px", "63px", "auto", "auto"]}/>      
           </Col>
 
-          <div className="slider">
-            <Row>
-              <Col lgOffset={4} mdOffset={4} lg={4} md={4} sm={4}>
-                <CardWork img='/assets/images/Work/mac5.png' title='MAC-5'/>
-              </Col>
-              <Col lg={4} md={4} sm={4}>
-                <CardWork img='/assets/images/Work/chula.png' title='CHULA'/>            
-              </Col>
-            </Row>
-            <Row>
-              <Col lg={4} md={4} sm={4}>
-                <CardWork img='/assets/images/Work/mac5.png' title='MAC-5'/>
-              </Col>
-              <Col lg={4} md={4} sm={4}>
-                <CardWork img='/assets/images/Work/chula.png' title='CHULA'/>            
-              </Col>
-            </Row>
-            <Row>
-              <Col lgOffset={4} mdOffset={4} lg={4} md={4} sm={4}>
-                <CardWork img='/assets/images/Work/mac5.png' title='MAC-5'/>
-              </Col>
-              <Col lg={4} md={4} sm={4}>
-                <CardWork img='/assets/images/Work/chula.png' title='CHULA'/>            
-              </Col>
-            </Row>
-          </div>
+          <Slider {...settings}>   
+            <div className="slider">
+              <Row>
+                <Col lgOffset={4} mdOffset={4} lg={4} md={4} sm={4}>
+                  <CardWork img='/assets/images/Work/mac5.png' title='MAC-5'/>
+                </Col>
+                <Col lg={4} md={4} sm={4}>
+                  <CardWork img='/assets/images/Work/chula.png' title='CHULA'/>            
+                </Col>
+              </Row>
+              <Row>
+                <Col lg={4} md={4} sm={4}>
+                  <CardWork img='/assets/images/Work/mac5.png' title='MAC-5'/>
+                </Col>
+                <Col lg={4} md={4} sm={4}>
+                  <CardWork img='/assets/images/Work/chula.png' title='CHULA'/>            
+                </Col>
+              </Row>
+              <Row>
+                <Col lgOffset={4} mdOffset={4} lg={4} md={4} sm={4}>
+                  <CardWork img='/assets/images/Work/mac5.png' title='MAC-5'/>
+                </Col>
+                <Col lg={4} md={4} sm={4}>
+                  <CardWork img='/assets/images/Work/chula.png' title='CHULA'/>            
+                </Col>
+              </Row>
+            </div>
+           </Slider>    
         </Row>
       </Grid>
     </div>
