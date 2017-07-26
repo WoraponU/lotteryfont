@@ -50,9 +50,17 @@ $textColor: $black;
     }
   }
 
-  .Row2 {
-    margin-bottom: 85.9px;
-    margin-top: 30px;
+  .rowTop {  
+    div[class^="col-"] {  
+       margin-bottom: 165px;
+       
+    }
+  }
 
+  .rowMiddle {
+    div[class^="col-"] {  
+       margin-bottom: 86px;
+
+    }
   }
 }

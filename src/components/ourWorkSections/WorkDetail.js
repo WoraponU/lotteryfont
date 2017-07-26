@@ -17,7 +17,7 @@ const settings = {
   lazyLoad: true,
 };
 
-const WorkDetail = () => {
+const WorkDetail = ({ lang: { WorkDetail: content } }) => {
   return (
     <div className="workDetail">
       <Grid>
