@@ -84,9 +84,12 @@ $textColor: $pink;
     .slick-slider {
       .slick-list {
         cursor: pointer;
-        height: auto !important;
+           height: 329px !important;
+
 
         img {
+          margin: 10px 20px;
+           box-shadow: 6.9px 11px 20px 0 rgba(0, 0, 0, 0.2);
           user-drag: none; 
           user-select: none;
           -moz-user-select: none;

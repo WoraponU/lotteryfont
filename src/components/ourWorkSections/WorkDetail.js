@@ -50,8 +50,8 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
           </Col>
         </Row>
         <Row className="detailTitle">
-          <LiquidCircle id={24} radius={250} color={blue} position={["auto", "30px", "50px", "auto"]}/>    
-          <LiquidCircle id={25} radius={160} color={pink} position={["auto", "0px", "0px", "auto"]}/>    
+          <LiquidCircle id={24} radius={250} color={blue} position={["auto", "-130px", "50px", "auto"]}/>    
+          <LiquidCircle id={25} radius={160} color={pink} position={["auto", "-150px", "0px", "auto"]}/>    
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
                <Image src={`/assets/images/Work/workDetail/${contentLoaded.imageInfo.logo.path}`}/>   
             <hr/>
