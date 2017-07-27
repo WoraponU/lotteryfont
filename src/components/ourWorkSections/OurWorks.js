@@ -9,12 +9,9 @@ import './OurWorks.scss'
 
 const OurWorks = ({ lang: { OurWorks: content } }) => {
   const settings = {
-    useCSS: true
-    // infinite: true,
-    // arrows: true,
-    // slidesToShow: 6,
-    // adaptiveHeight: true,
-    // swipeToSlide: true,
+    useCSS: true,
+    lazyLoad: true,
+    draggable: false
   };
   return (
     <div className="OurWorks">
