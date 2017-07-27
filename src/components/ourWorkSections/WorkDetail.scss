@@ -71,8 +71,9 @@ $textColor: $pink;
     .text-right {
       margin-bottom: 27px;
       img {
-        padding-right: 19px;
-
+        margin-right: 19px;
+        box-shadow: 0px 2px 84px 1px rgba(0, 0, 0, 0.24);
+        border-radius: 100px;
       }
     }
 
