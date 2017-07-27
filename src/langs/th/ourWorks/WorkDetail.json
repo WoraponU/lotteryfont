@@ -1,13 +1,10 @@
 {
   "workDetail": {
     "detailImage":{
-      "clients":"clients",
-      "services":"services",
+      "clients":"ลูกค้า",
+      "services":"แท็ก",
       "year":"ปี"
     },
-    "content1":"เทส",
-    "title":"เทส",
-    "subTitle":"เทส",
     "button":"เยี่ยม"
   }
 }

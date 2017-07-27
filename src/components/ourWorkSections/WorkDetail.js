@@ -54,14 +54,14 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
             </Row>
           </Col>
           <Col lg={10} md={10} sm={10}>
-                <Image src={`/assets/images/Work/workDetail/${contentLoaded.imageInfo.webScreenShot.path}`}/>    
+                <Image src={`/assets/images/work/workDetail/${contentLoaded.imageInfo.webScreenShot.path}`}/>    
           </Col>
         </Row>
         <Row className="detailTitle">
-          <LiquidCircle id={24} radius={250} color={blue} position={["auto", "30px", "50px", "auto"]}/>    
-          <LiquidCircle id={25} radius={160} color={pink} position={["auto", "0px", "0px", "auto"]}/>    
+          <LiquidCircle id={24} radius={250} color={blue} position={["auto", "-130px", "50px", "auto"]}/>    
+          <LiquidCircle id={25} radius={160} color={pink} position={["auto", "-150px", "0px", "auto"]}/>    
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
-               <Image src={`/assets/images/Work/workDetail/${contentLoaded.imageInfo.logo.path}`}/>   
+               <Image src={`/assets/images/work/workDetail/${contentLoaded.imageInfo.logo.path}`}/>   
             <hr/>
             <h3 dangerouslySetInnerHTML={{__html: contentLoaded.subHeader2}}></h3>
             <p dangerouslySetInnerHTML={{__html: contentLoaded.content2}}></p>
@@ -91,15 +91,15 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
         </Row>
         <Row className="tabBottom">         
           <Col lg={1} md={1} sm={1}>
-            <Image src="/assets/images/Work/workDetail/arrLeft.png" className="arrow"/>
+            <Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/>
           </Col>
           <Col lg={10} md={10} sm={10} className="text-right ">
-            <Image src="/assets/images/Work/workDetail/facebook.png"/>
-            <Image src="/assets/images/Work/workDetail/instagram.png"/>
-            <Image src="/assets/images/Work/workDetail/twitter.png"/>
+            <Image src="/assets/images/work/workDetail/facebook.png"/>
+            <Image src="/assets/images/work/workDetail/instagram.png"/>
+            <Image src="/assets/images/work/workDetail/twitter.png"/>
           </Col>
           <Col lg={1} md={1} sm={1}>
-            <Image src="/assets/images/Work/workDetail/arrRight.png" className="arrow"/>
+            <Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/>
           </Col>
         </Row>
       </Grid>

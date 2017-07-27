@@ -11,18 +11,18 @@ const Section5 = ({ lang: { section5: content } }) => {
       </Grid>
       <Grid>                  
         <ListGroup>
-          <ListGroupItem><Image src="/assets/images/Home/section5/chula.png"/></ListGroupItem>
-          <ListGroupItem><Image src="/assets/images/Home/section5/double.png"/></ListGroupItem>
-          <ListGroupItem><Image src="/assets/images/Home/section5/qualy.png"/></ListGroupItem> 
-          <ListGroupItem><Image src="/assets/images/Home/section5/mac.png" /></ListGroupItem>
-          <ListGroupItem><Image src="/assets/images/Home/section5/bps.png"/></ListGroupItem>
+          <ListGroupItem><Image src="/assets/images/home/section5/chula.png"/></ListGroupItem>
+          <ListGroupItem><Image src="/assets/images/home/section5/double.png"/></ListGroupItem>
+          <ListGroupItem><Image src="/assets/images/home/section5/qualy.png"/></ListGroupItem> 
+          <ListGroupItem><Image src="/assets/images/home/section5/mac.png" /></ListGroupItem>
+          <ListGroupItem><Image src="/assets/images/home/section5/bps.png"/></ListGroupItem>
         </ListGroup>
         <ListGroup>
-          <ListGroupItem><Image src="/assets/images/Home/section5/bsu.png"/></ListGroupItem>
-          <ListGroupItem><Image src="/assets/images/Home/section5/plastic.png"/></ListGroupItem>
-          <ListGroupItem><Image src="/assets/images/Home/section5/ygg.png"/></ListGroupItem>
-          <ListGroupItem><Image src="/assets/images/Home/section5/spring.png"/></ListGroupItem>
-          <ListGroupItem><Image src="/assets/images/Home/section5/layer.png"/></ListGroupItem>
+          <ListGroupItem><Image src="/assets/images/home/section5/bsu.png"/></ListGroupItem>
+          <ListGroupItem><Image src="/assets/images/home/section5/plastic.png"/></ListGroupItem>
+          <ListGroupItem><Image src="/assets/images/home/section5/ygg.png"/></ListGroupItem>
+          <ListGroupItem><Image src="/assets/images/home/section5/spring.png"/></ListGroupItem>
+          <ListGroupItem><Image src="/assets/images/home/section5/layer.png"/></ListGroupItem>
         </ListGroup>        
       </Grid> 
     </div>
