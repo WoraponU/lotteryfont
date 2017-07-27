@@ -14,9 +14,7 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
     dots: true,
     infinite: true,
     slidesToShow: 3,
-    adaptiveHeight: true,
     slidesToScroll: 2,
-    lazyLoad: true,
   };
 
   return (
@@ -91,7 +89,7 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
         </Row>
         <Row className="tabBottom">         
           <Col lg={1} md={1} sm={1}>
-            <Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/>
+            <LinkContainer to={`/${lang}/our-work/chula`}><Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/></LinkContainer>
           </Col>
           <Col lg={10} md={10} sm={10} className="text-right ">
             <Image src="/assets/images/work/workDetail/facebook.png"/>
@@ -99,7 +97,8 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
             <Image src="/assets/images/work/workDetail/twitter.png"/>
           </Col>
           <Col lg={1} md={1} sm={1}>
-            <Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/>
+            
+            <LinkContainer to={`/${lang}/our-work/dp`}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></LinkContainer>            
           </Col>
         </Row>
       </Grid>

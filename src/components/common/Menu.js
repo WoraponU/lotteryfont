@@ -13,11 +13,10 @@ const Menu = ({ lang, match: { params: { lang: paramLang } } }) => {
           <ul>
             <li><NavLink exact to={`/${paramLang}`} activeClassName="active"><span>{ lang.home }</span></NavLink> </li>
             <li><NavLink to={`/${paramLang}/our-work`} activeClassName="active"><span>{ lang.ourWork }</span></NavLink></li>
-            {/* <li><NavLink to={`/${paramLang}/about-us`} activeClassName="active"><span>{ lang.aboutUs }</span></NavLink></li>
-            <li><NavLink to={`/${paramLang}/client`} activeClassName="active"><span>{ lang.client }</span></NavLink></li>
-            <li><NavLink to={`/${paramLang}/blog`} activeClassName="active"><span>{ lang.blog }</span></NavLink></li>
-            <li><NavLink to={`/${paramLang}/contact`} activeClassName="active"><span>{ lang.contact }</span></NavLink></li>
-            <li><NavLink to={`/${paramLang}/career`} activeClassName="active"><span>{ lang.career }</span></NavLink> </li>  */}
+            <li><a disabled className="disabled"><span>{ lang.client }</span></a></li>
+            <li><a disabled className="disabled"><span>{ lang.blog }</span></a></li>
+            <li><a disabled className="disabled"><span>{ lang.contact }</span></a></li>
+            <li><a disabled className="disabled"><span>{ lang.career }</span></a> </li>  
           </ul>
         </Col>
       </Row>
