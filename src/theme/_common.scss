@@ -26,13 +26,13 @@
   width: 120px;
   height: 32px;
   line-height: 32px;
-  border-radius: 2px;
+  border-radius: 5px;
   font-size: 0.9em;
   background-color: #fff;
   color: #646464;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0.2s;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 7px 6px 20px 0px rgba(0, 0, 0, 0.11);
 
   &:active {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
