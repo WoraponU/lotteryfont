@@ -165,7 +165,7 @@
     } 
   } 
 
-  li+li:before { 
+  li + li:before { 
     font-family: FontAwesome; 
     padding: 0 10px; 
     color: $black; 
