@@ -27,9 +27,20 @@ $borderColor: $pink;
           span {
             &:after {
               width: 100%;
-
             }
           }    
+        }
+
+        &.disabled {
+          color: $grey3;
+          pointer-events: none;
+          cursor: default;
+
+          span {
+            &:after {
+              width: 0;
+            }
+          }   
         }
       
         span {
