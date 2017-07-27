@@ -88,18 +88,11 @@ $textColor: $pink;
     .slick-slider {
       .slick-list {
         cursor: pointer;
-           height: 329px !important;
-
+        height: 329px !important;
 
         img {
           margin: 10px 20px;
-           box-shadow: 6.9px 11px 20px 0 rgba(0, 0, 0, 0.2);
-          user-drag: none; 
-          user-select: none;
-          -moz-user-select: none;
-          -webkit-user-drag: none;
-          -webkit-user-select: none;
-          -ms-user-select: none;
+          box-shadow: 6.9px 11px 20px 0 rgba(0, 0, 0, 0.2);
         }
       }
 
@@ -107,7 +100,6 @@ $textColor: $pink;
         margin-left: -1px;
         margin-right: 0px;
         margin-bottom: 50px;
-    
       }
 
       .slick-dots {
@@ -115,7 +107,6 @@ $textColor: $pink;
           &::before {
             font-size: 20px;
             @include transition(all 500ms ease);
-
           }
         }
         
@@ -125,7 +116,6 @@ $textColor: $pink;
               font-size: 26px;
               color: $textColor;
               @include transition(all 500ms ease);
-
             }
           }
         }
