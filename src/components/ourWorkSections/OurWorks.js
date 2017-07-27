@@ -42,12 +42,12 @@ const OurWorks = ({ lang: { OurWorks: content } }) => {
                   <CardWork img='/assets/images/work/ourWork/mac5.png' title='MAC-5' id="mac5"/>
                 </Col>
                 <Col lg={4} md={4} sm={4}>
-                  <CardWork img='/assets/images/work/ourWork/chula.png' title='ASAP' id="asap"/>            
+                  <CardWork img='/assets/images/work/ourWork/asap.png' title='ASAP' id="asap"/>            
                 </Col>
               </Row>
               <Row>
                 <Col lg={4} md={4} sm={4}>
-                  <CardWork img='/assets/images/work/ourWork/mac5.png' title='YGG' id="ygg"/>
+                  <CardWork img='/assets/images/work/ourWork/ygg.png' title='YGG' id="ygg"/>
                 </Col>
                 <Col lg={4} md={4} sm={4}>
                   <CardWork img='/assets/images/work/ourWork/chula.png' title='SPRING' id="spring"/>            
@@ -55,7 +55,7 @@ const OurWorks = ({ lang: { OurWorks: content } }) => {
               </Row>
               <Row>
                 <Col lgOffset={4} mdOffset={4} lg={4} md={4} sm={4}>
-                  <CardWork img='/assets/images/work/ourWork/mac5.png' title='CHULA' id="chula"/>
+                  <CardWork img='/assets/images/work/ourWork/chula.png' title='CHULA' id="chula"/>
                 </Col>
                 <Col lg={4} md={4} sm={4}>
                   <CardWork img='/assets/images/work/ourWork/chula.png' title='DP (Mobile)' id="dp"/>            

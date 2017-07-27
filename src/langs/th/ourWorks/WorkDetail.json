@@ -5,6 +5,9 @@
       "services":"แท็ก",
       "year":"ปี"
     },
-    "button":"เยี่ยม"
+     "breadCrumb":{
+      "home":"หน้าหลัก",
+      "ourWork":"งานของเรา"
+    }  
   }
 }
