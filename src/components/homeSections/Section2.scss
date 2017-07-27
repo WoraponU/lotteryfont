@@ -18,12 +18,12 @@
       position: absolute;
       width: 50px;
       height: 49px;
-      top: -11px;
+      top: -18px;
       z-index: 1;
       color: transparent;
 
       &.slick-prev {
-        left: 87%;
+        left: 85%;
         
         &::after { 
           font-family: FontAwesome;
@@ -38,7 +38,7 @@
 
       &.slick-next {
         @extend .slick-prev;
-        left: 92%;
+        left: 89.5%;
 
         &::after { 
           content: url(/assets/images/home/section2/right.png);
