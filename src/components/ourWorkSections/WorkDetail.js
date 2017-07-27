@@ -29,21 +29,21 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
           </Col>        
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6}>
             <h3 dangerouslySetInnerHTML={{__html: contentLoaded.subHeader1}}></h3>
-            <p>{ contentLoaded.content1 }</p>
+            <p dangerouslySetInnerHTML={{__html: contentLoaded.content1}}></p>
           </Col>
         </Row>
         <Row className="detailImage">
           <Col lg={2} md={2} sm={2} className="text-right">
             <Row>
               <h4>{ content.detailImage.clients }</h4>
-              <p>{ contentLoaded.imageInfo.client }</p>
+              <p dangerouslySetInnerHTML={{__html: contentLoaded.imageInfo.client}}></p>
             </Row>
             <Row className="middle">
               <h4>{ content.detailImage.services }</h4>
-              <p>{ contentLoaded.imageInfo.service }</p>
+              <p dangerouslySetInnerHTML={{__html: contentLoaded.imageInfo.service}}></p>
             </Row>
             <Row><h4>{ content.detailImage.year }</h4>
-              <p>{ contentLoaded.imageInfo.year }</p>
+              <p dangerouslySetInnerHTML={{__html: contentLoaded.imageInfo.year}}></p>
             </Row>
           </Col>
           <Col lg={10} md={10} sm={10}>
@@ -54,7 +54,7 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
           <LiquidCircle id={24} radius={250} color={blue} position={["auto", "30px", "50px", "auto"]}/>    
           <LiquidCircle id={25} radius={160} color={pink} position={["auto", "0px", "0px", "auto"]}/>    
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
-            <Image src="/assets/images/Work/workDetail/mac.png"/>
+            <Image src={contentLoaded.logoPath}/>
             <hr/>
             <h3 dangerouslySetInnerHTML={{__html: contentLoaded.subHeader2}}></h3>
             <p dangerouslySetInnerHTML={{__html: contentLoaded.content2}}></p>
@@ -71,8 +71,8 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
           <LiquidCircle id={26} radius={250} color={blue} position={["170px", "0px", "0px", "-193px"]}/>    
           <LiquidCircle id={27} radius={190} color={purple} position={["56px", "0px", "0px", "0px"]}/>   
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6}>
-            <h3>{ contentLoaded.subHeader3 }</h3>
-            <p>{ contentLoaded.content3 }</p>
+            <h3 dangerouslySetInnerHTML={{__html: contentLoaded.subHeader3}}></h3>
+            <p dangerouslySetInnerHTML={{__html: contentLoaded.content3}}></p>
           </Col>
           <Col lg={12} md={12} sm={12} className="text-center">
             <Button className="btn-black mt10">{ content.button }</Button>
