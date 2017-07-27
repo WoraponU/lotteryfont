@@ -16,7 +16,7 @@ const Menu = ({ lang, match: { params: { lang: paramLang } } }) => {
             <li><a disabled className="disabled"><span>{ lang.client }</span></a></li>
             <li><a disabled className="disabled"><span>{ lang.blog }</span></a></li>
             <li><a disabled className="disabled"><span>{ lang.contact }</span></a></li>
-            <li><a disabled className="disabled"><span>{ lang.career }</span></a> </li>  
+            <li><a disabled className="disabled"><span>{ lang.career }</span></a></li>  
           </ul>
         </Col>
       </Row>

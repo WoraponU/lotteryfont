@@ -97,8 +97,7 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
             <Image src="/assets/images/work/workDetail/twitter.png"/>
           </Col>
           <Col lg={1} md={1} sm={1}>
-            
-            <LinkContainer to={`/${lang}/our-work/dp`}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></LinkContainer>            
+            <LinkContainer to={`/${lang}/our-work/spring`}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></LinkContainer>            
           </Col>
         </Row>
       </Grid>
