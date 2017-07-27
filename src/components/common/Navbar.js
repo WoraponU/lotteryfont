@@ -8,7 +8,7 @@ const NavbarComponent = ({ onChangeLang, match: { params: { lang } } }) => {
     <div className="header">
       <Navbar>      
         <Navbar.Brand>
-            <Image src="/assets/images/Common/logoHobbiz.png"/>           
+            <Image src="/assets/images/common/logoHobbiz.png"/>           
         </Navbar.Brand>       
         <div className="navMenu">  
           <a href="#" className={lang === 'th' ? 'active' : ''} onClick={(e) => onChangeLang(e, 'th')}>th</a>

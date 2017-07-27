@@ -15,11 +15,11 @@ const Section9 = () => {
             <h5>@hobbizdigital </h5>
             <h1>It’s a Good <span>{day}</span><br/>To Drop Us A Line</h1>
           </Col>
-          <Col lg={3}  md={3} sm={3}> <Image src="/assets/images/Common/Footer/shop.png" className="img"/></Col>
-          <Col lg={3} md={3} sm={3}> <Image src="/assets/images/Common/Footer/form.png" /></Col>
+          <Col lg={3}  md={3} sm={3}> <Image src="/assets/images/common/Footer/shop.png" className="img"/></Col>
+          <Col lg={3} md={3} sm={3}> <Image src="/assets/images/common/Footer/form.png" /></Col>
         </Row>
         <Row>   
-          <Col lg={3}  md={3} sm={3}> <Image src="/assets/images/Common/Footer/room.png" /></Col>
+          <Col lg={3}  md={3} sm={3}> <Image src="/assets/images/common/Footer/room.png" /></Col>
           <Col lg={3}  md={3} sm={3} className="contact">
             <h4>hello@hobbiz.co.th</h4>
             <h4>(+66) 89-822-1223</h4><br/>
@@ -34,12 +34,12 @@ const Section9 = () => {
             <Button>View google map</Button>
           </Col>
           <Col lg={3}  md={3} sm={3} className="socialGroup"> 
-            <Image src="/assets/images/Common/Footer/line.png" alt="facebookHobbiz"   href="/"/>       
-            <Image src="/assets/images/Common/Footer/ig.png" alt="facebookHobbiz"  href="/" className="iconIG"/>
-            <Image src="/assets/images/Common/Footer/fb.png" alt="facebookHobbiz"  href="#"/>
+            <Image src="/assets/images/common/Footer/line.png" alt="facebookHobbiz"   href="/"/>       
+            <Image src="/assets/images/common/Footer/ig.png" alt="facebookHobbiz"  href="/" className="iconIG"/>
+            <Image src="/assets/images/common/Footer/fb.png" alt="facebookHobbiz"  href="#"/>
                   
           </Col>
-          <Col lg={3}  md={3} sm={3}><Image src="/assets/images/Common/Footer/girl.png" /></Col>                                        
+          <Col lg={3}  md={3} sm={3}><Image src="/assets/images/common/Footer/girl.png" /></Col>                                        
         </Row>
       </Grid>
     </div>
