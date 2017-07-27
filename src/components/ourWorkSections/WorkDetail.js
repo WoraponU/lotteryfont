@@ -7,18 +7,16 @@ import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor'
 
 import './WorkDetail.scss'
 
-const settings = {
-  autoplay: true,
-  centerMode: true,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  dots: true, 
-  draggable: false,
-  lazyLoad: true,
-};
-
 const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
-  console.log(contentLoaded.imageInfo.logo.path);
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    adaptiveHeight: true,
+    slidesToScroll: 2,
+    lazyLoad: true,
+  };
+
   return (
     <div className="workDetail">
       <Grid>
@@ -61,11 +59,15 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
             <p dangerouslySetInnerHTML={{__html: contentLoaded.content2}}></p>
           </Col>
         </Row>
+        
         <div className="sliderRow">
           <Slider {...settings}>
             <img src="/assets/images/home/section2/qualy.png" alt="qualy"/>
             <img src="/assets/images/home/section2/ygg.png" alt="ygg"/>
-            <img src="/assets/images/home/section2/mac5.png" alt="mac5"/>          
+            <img src="/assets/images/home/section2/mac5.png" alt="mac5"/>
+            <img src="/assets/images/home/section2/qualy.png" alt="qualy"/>
+            <img src="/assets/images/home/section2/ygg.png" alt="ygg"/>
+            <img src="/assets/images/home/section2/mac5.png" alt="mac5"/>
           </Slider>
         </div>
         <Row className="detailTitle">        

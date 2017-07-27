@@ -14,6 +14,7 @@ const Section6 = ({ lang: { section6: content } }) => {
     slidesToShow: 1,
     adaptiveHeight: true,
     swipeToSlide: true,
+    lazyLoad: true,
   };
   
   return (

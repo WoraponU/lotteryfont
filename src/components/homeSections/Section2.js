@@ -12,8 +12,6 @@ const Section2 = ({ lang: { section2: content } }) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    draggable: false,
-    focusOnSelect: true,
     lazyLoad: true,
   };
 
