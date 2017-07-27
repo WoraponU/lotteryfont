@@ -18,6 +18,7 @@ const settings = {
 };
 
 const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
+  console.log(contentLoaded.imageInfo.logo.path);
   return (
     <div className="workDetail">
       <Grid>
@@ -36,25 +37,25 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
           <Col lg={2} md={2} sm={2} className="text-right">
             <Row>
               <h4>{ content.detailImage.clients }</h4>
-              <p dangerouslySetInnerHTML={{__html: contentLoaded.imageInfo.client}}></p>
+                <p dangerouslySetInnerHTML={{__html: contentLoaded.imageInfo.webScreenShot.client}}></p>  
             </Row>
             <Row className="middle">
               <h4>{ content.detailImage.services }</h4>
-              <p dangerouslySetInnerHTML={{__html: contentLoaded.imageInfo.service}}></p>
+               <p dangerouslySetInnerHTML={{__html: contentLoaded.imageInfo.webScreenShot.service}}></p> 
             </Row>
             <Row><h4>{ content.detailImage.year }</h4>
-              <p dangerouslySetInnerHTML={{__html: contentLoaded.imageInfo.year}}></p>
+               <p dangerouslySetInnerHTML={{__html: contentLoaded.imageInfo.webScreenShot.year}}></p> 
             </Row>
           </Col>
           <Col lg={10} md={10} sm={10}>
-            <Image src="/assets/images/Work/workDetail/Mac-5.png"/>
+                <Image src={`/assets/images/Work/workDetail/${contentLoaded.imageInfo.webScreenShot.path}`}/>    
           </Col>
         </Row>
         <Row className="detailTitle">
           <LiquidCircle id={24} radius={250} color={blue} position={["auto", "30px", "50px", "auto"]}/>    
           <LiquidCircle id={25} radius={160} color={pink} position={["auto", "0px", "0px", "auto"]}/>    
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
-            <Image src={contentLoaded.logoPath}/>
+               <Image src={`/assets/images/Work/workDetail/${contentLoaded.imageInfo.logo.path}`}/>   
             <hr/>
             <h3 dangerouslySetInnerHTML={{__html: contentLoaded.subHeader2}}></h3>
             <p dangerouslySetInnerHTML={{__html: contentLoaded.content2}}></p>
