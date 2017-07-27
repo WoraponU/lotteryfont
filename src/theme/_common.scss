@@ -45,7 +45,7 @@
   font-size: 13px;
   padding: 8px 22px 8px 22px;
   border-radius: 0;
-  font-family: Roboto-Bold;  
+  font-family: Roboto-Bold, Mitr-Bold;  
   background-color: $black3;
   color: $white;
   box-shadow: 4.2px 6.8px 9px 0 rgba(151, 151, 150, 0.35);
@@ -146,7 +146,7 @@
 .breadcrumbHobbiz { 
   float: right; 
   background-color: $white; 
-  font-family: Roboto-Bold; 
+  font-family: Roboto-Bold, Mitr-Bold; 
    
   .active{   
     color: $black; 

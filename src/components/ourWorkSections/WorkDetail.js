@@ -27,8 +27,9 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
           <Breadcrumb> 
             <LinkContainer to={`/${lang}`}><Breadcrumb.Item>Home</Breadcrumb.Item></LinkContainer>
             <LinkContainer to={`/${lang}/our-work`}><Breadcrumb.Item>Our Work</Breadcrumb.Item></LinkContainer>
-            <Breadcrumb.Item>{contentLoaded.name}</Breadcrumb.Item>
+            <Breadcrumb.Item active>{contentLoaded.name}</Breadcrumb.Item>
           </Breadcrumb>
+          
           <LiquidCircle id={23} radius={190} color={blue} position={["auto", "auto", "-108px", "-147px"]}/>           
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
             <h1 dangerouslySetInnerHTML={{__html: contentLoaded.mainHeader}}></h1>

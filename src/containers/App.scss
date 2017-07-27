@@ -51,13 +51,31 @@
         url('/assets/fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
 }
 
+///////////// Mitr
+@font-face {
+  font-family: Mitr;
+  src: url('/assets/fonts/Mitr/Mitr-Light.eot');
+  src: url('/assets/fonts/Mitr/Mitr-Light.eot?') format('embedded-opentype'), 
+        url('/assets/fonts/Mitr/Mitr-Light.woff') format('woff'), 
+        url('/assets/fonts/Mitr/Mitr-Light.ttf') format('truetype');
+  // unicode-range: 'U+0E00-U+0E7F';
+}
+
+@font-face {
+  font-family: Mitr-Bold;
+  src: url('/assets/fonts/Mitr/Mitr-Medium.eot');
+  src: url('/assets/fonts/Mitr/Mitr-Medium.eot?') format('embedded-opentype'), 
+        url('/assets/fonts/Mitr/Mitr-Medium.woff') format('woff'), 
+        url('/assets/fonts/Mitr/Mitr-Medium.ttf') format('truetype');
+  // unicode-range: 'U+0E00-U+0E7F';
+}
+
 body {
-  font-family: Roboto;
+  font-family: Roboto, Mitr;
   color: $mainFontColor;
   
   button, input, optgroup, select, textarea{
-    font-family: Roboto;
-    
+    font-family: Roboto, Mitr;
   }
 
   textarea:focus, input:focus, button:focus {
@@ -65,7 +83,7 @@ body {
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: Montserrat-Bold;
+    font-family: Montserrat-Bold, Mitr-Bold;
     color: $black;
   }
 
