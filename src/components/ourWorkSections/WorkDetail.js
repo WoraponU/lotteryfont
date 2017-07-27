@@ -86,7 +86,7 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
             <p dangerouslySetInnerHTML={{__html: contentLoaded.content3}}></p>
           </Col>
           <Col lg={12} md={12} sm={12} className="text-center">
-            <Button className="btn-black mt10">{ content.button }</Button>
+            <Button className="btn-black mt10">Visit Website</Button>
           </Col>
         </Row>
         <Row className="tabBottom">         
