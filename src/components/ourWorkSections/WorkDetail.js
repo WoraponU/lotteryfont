@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Row, Col, Image, Button, Breadcrumb } from 'react-bootstrap';
 import Slider from 'react-slick';
 import { withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
 
 import LiquidCircle from 'Components/common/LiquidCircle';
@@ -89,7 +90,7 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
         </Row>
         <Row className="tabBottom">         
           <Col lg={1} md={1} sm={1}>
-            <LinkContainer to={`/${lang}/our-work/chula`}><Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/></LinkContainer>
+            <Link to={`/${lang}/our-work/chula`}><Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/></Link>
           </Col>
           <Col lg={10} md={10} sm={10} className="text-right ">
             <Image src="/assets/images/work/workDetail/facebook.png"/>
@@ -97,7 +98,7 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
             <Image src="/assets/images/work/workDetail/twitter.png"/>
           </Col>
           <Col lg={1} md={1} sm={1}>
-            <LinkContainer to={`/${lang}/our-work/spring`}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></LinkContainer>            
+            <Link to={`/${lang}/our-work/spring`}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></Link>            
           </Col>
         </Row>
       </Grid>
