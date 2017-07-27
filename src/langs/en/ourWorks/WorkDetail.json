@@ -5,9 +5,10 @@
       "services":"services",
       "year":"year"
     },
-    "content1":"we discovered that users were easily derailed by difficult-to-answer <br/>questions during the comparison. <br/><br/>We saw a big opportunity to create a personalized user experience <br/> to help users attain more accuracy, as well as lower the site’s <br/>unnecessarily high abandon rate and boost brand loyalty.",
-    "title":"Empowering through knowledge, seamlessly.",
-    "subTitle":"An iterative building process, executed in one-week sprints in collaboration with the client, produced numerous prototypes that allowed the team to validate ideas through user interaction. This approach gave the C-suite insight into progress and helped developers optimize the project as it moved forward. Most importantly, it empowered Huge and MoneySuperMarket to provide a more valuable experience to users. During testing, nine out of ten people found the new journey easier to user and feel better informed to make a decision.",
-    "button":"VISIT WEBSITE"
+    "breadCrumb":{
+      "home":"Home",
+      "ourWork":"Our Work"
+    },
+   "button":"VISIT WEBSITE"
   }
 }

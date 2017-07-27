@@ -5,6 +5,10 @@
       "services":"แท็ก",
       "year":"ปี"
     },
+     "breadCrumb":{
+      "home":"หน้าหลัก",
+      "ourWork":"งานของเรา"
+    },
     "button":"เยี่ยม"
   }
 }
