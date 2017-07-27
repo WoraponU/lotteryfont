@@ -8,6 +8,7 @@ import { withLang } from 'Hocs';
 class WorkDetail extends Component {
   state = {
     contentLoaded: {
+      name: '',
       mainHeader: '',
       subHeader1: '',
       subHeader2: '',
@@ -33,6 +34,7 @@ class WorkDetail extends Component {
     const tempContent = {
       mac5: {
         th: {
+          name: 'Mac-5',          
           mainHeader: 'เว็บไซต์ซอฟต์แวร์ ที่ทันสมัย ใช้งานได้ครบทุกฟังก์ชั่น พร้อมความสวยงาม',
           subHeader1: 'เว็บไซต์ของซอฟต์แวร์ ERP ที่เนื้อหาเยอะ จะจัดการอย่างไร?',
           subHeader2: 'ดีไซน์ที่สวยงาม ทำให้ผู้ใช้งานรู้สึกแปลกตา และประทับใจ',
@@ -53,6 +55,7 @@ class WorkDetail extends Component {
           },  
         },
         en: {
+          name: 'Mac-5',          
           mainHeader: 'Content heavy website doesn’t need to be boring.',
           subHeader1: 'A beautiful website equipped with the tools that save you more sleeps',
           subHeader2: 'Forget stereotype, We make a groundbreaking design that impresses everyone.',
@@ -75,6 +78,7 @@ class WorkDetail extends Component {
       },
       asap: {
         th: {
+          name: 'ASAP PROJECT',                    
           mainHeader: 'เว็บไซต์ที่ทันสมัย แปลกใหม่ และดึงดูดผู้ใช้งาน',
           subHeader1: 'เว็บไซต์ทันสมัย ที่ต้องสื่อสารกับลูกค้าให้ได้ใน 3 วิ',
           subHeader2: 'ลูกเล่นที่ดึงดูดให้ผู้ใช้อยู่ในเว็บไซต์นานยิ่งขึ้น',
@@ -95,6 +99,7 @@ class WorkDetail extends Component {
           },    
         },
         en: {
+          name: 'ASAP PROJECT',                              
           mainHeader: 'เว็บไซต์ที่ทันสมัย แปลกใหม่ และดึงดูดผู้ใช้งาน',
           subHeader1: 'เว็บไซต์ทันสมัย ที่ต้องสื่อสารกับลูกค้าให้ได้ใน 3 วิ',
           subHeader2: 'ลูกเล่นที่ดึงดูดให้ผู้ใช้อยู่ในเว็บไซต์นานยิ่งขึ้น',
@@ -117,6 +122,7 @@ class WorkDetail extends Component {
       },
       ygg: {
         th: {
+          name: 'YGG Drazil',                                        
           mainHeader: 'เว็บไซต์โชว์ผลงานที่ดึงดูดคนให้อยู่ในเว็บทั้งวัน',
           subHeader1: 'โชว์ผลงานจำนวนมาก ในพื้นที่จำกัด และโหลดได้เร็ว',
           subHeader2: 'โหลดไวอาจยังไม่พอ หน้าตาเว็บต้องหล่อ และเท่',
@@ -137,6 +143,7 @@ class WorkDetail extends Component {
           },
         },
         en: {
+          name: 'YGG Drazil',                              
           mainHeader: 'เว็บไซต์โชว์ผลงานที่ดึงดูดคนให้อยู่ในเว็บทั้งวัน',
           subHeader1: 'โชว์ผลงานจำนวนมาก ในพื้นที่จำกัด และโหลดได้เร็ว',
           subHeader2: 'โหลดไวอาจยังไม่พอ หน้าตาเว็บต้องหล่อ และเท่',
@@ -159,6 +166,7 @@ class WorkDetail extends Component {
       },
       spring: {
         th: {
+          name: 'SPRING',                                        
           mainHeader: 'เว็บไซต์ซอฟท์แวร์ ที่เป็น E-Commerce และมีหน้าตาระดับอินเตอร์',
           subHeader1: 'เว็บไซต์ซอฟต์แวร์ ที่ไม่ใช่แค่การให้ข้อมูล แต่มีการซื้อขายโปรแกรมบนเว็บไซต์ได้ทันที',
           subHeader2: 'เว็บไซต์สวยงาม การใช้งานที่นุ่มนวล การปิดการขายที่สวยงาม',
@@ -179,6 +187,7 @@ class WorkDetail extends Component {
           },
         },
         en: {
+          name: 'SPRING',                                        
           mainHeader: 'เว็บไซต์ซอฟท์แวร์ ที่เป็น E-Commerce และมีหน้าตาระดับอินเตอร์',
           subHeader1: 'เว็บไซต์ซอฟต์แวร์ ที่ไม่ใช่แค่การให้ข้อมูล แต่มีการซื้อขายโปรแกรมบนเว็บไซต์ได้ทันที',
           subHeader2: 'เว็บไซต์สวยงาม การใช้งานที่นุ่มนวล การปิดการขายที่สวยงาม',
@@ -201,6 +210,7 @@ class WorkDetail extends Component {
       },
       chula: {
         th: {
+          name: 'CU Transparency',                                        
           mainHeader: 'เว็บไซต์หน่วยงานราชการจัดการเอกสาร พร้อมความโมเดิร์น',
           subHeader1: 'จะทำอย่างไรให้เว็บไซต์ที่นำเสนอข้อมูลจำนวนมากดูน่าอ่าน และน่าค้นหาในเวลาเดียวกัน',
           subHeader2: 'สีชมพูที่ใช่ ไม่ได้หากันง่ายๆ',
@@ -221,6 +231,7 @@ class WorkDetail extends Component {
           },
         },
         en: {
+          name: 'CU Transparency',                                                  
           mainHeader: 'เว็บไซต์หน่วยงานราชการจัดการเอกสาร พร้อมความโมเดิร์น',
           subHeader1: 'จะทำอย่างไรให้เว็บไซต์ที่นำเสนอข้อมูลจำนวนมากดูน่าอ่าน และน่าค้นหาในเวลาเดียวกัน',
           subHeader2: 'สีชมพูที่ใช่ ไม่ได้หากันง่ายๆ',

@@ -142,3 +142,34 @@
     }
   }
 }
+
+.breadcrumbHobbiz { 
+  float: right; 
+  background-color: $white; 
+  font-family: Roboto-Bold; 
+   
+  .active{   
+    color: $black; 
+
+  } 
+
+  li { 
+    a {      
+      color: $grey3; 
+
+      &:focus, &:hover{       
+        color: $black; 
+        text-decoration: none; 
+
+      } 
+    } 
+  } 
+
+  li+li:before { 
+    font-family: FontAwesome; 
+    padding: 0 10px; 
+    color: $black; 
+    content: "\f054"; 
+
+  } 
+}

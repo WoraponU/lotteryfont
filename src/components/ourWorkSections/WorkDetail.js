@@ -1,13 +1,15 @@
 import React from 'react';
-import { Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import { Grid, Row, Col, Image, Button, Breadcrumb } from 'react-bootstrap';
 import Slider from 'react-slick';
+import { withRouter } from 'react-router-dom'
+import { LinkContainer } from 'react-router-bootstrap';
 
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
 
 import './WorkDetail.scss'
 
-const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
+const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { params: { id, lang } } }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -22,6 +24,11 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
       <Grid>
         <LiquidCircle id={22} radius={170} color={yellow} position={["200px", "400px", "auto", "auto"]}/> 
         <Row className="detailHeader">
+          <Breadcrumb> 
+            <LinkContainer to={`/${lang}`}><Breadcrumb.Item>Home</Breadcrumb.Item></LinkContainer>
+            <LinkContainer to={`/${lang}/our-work`}><Breadcrumb.Item>Our Work</Breadcrumb.Item></LinkContainer>
+            <Breadcrumb.Item>{contentLoaded.name}</Breadcrumb.Item>
+          </Breadcrumb>
           <LiquidCircle id={23} radius={190} color={blue} position={["auto", "auto", "-108px", "-147px"]}/>           
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
             <h1 dangerouslySetInnerHTML={{__html: contentLoaded.mainHeader}}></h1>
@@ -99,4 +106,4 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded }) => {
   );
 };
 
-export default WorkDetail;
+export default withRouter(WorkDetail);

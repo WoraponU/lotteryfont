@@ -10,6 +10,10 @@ $textColor: $pink;
     
   } 
 
+  .breadcrumb { 
+    @extend .breadcrumbHobbiz; 
+  }
+
   .detailHeader { 
     position: relative;
     margin-top: 300px;
