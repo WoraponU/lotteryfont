@@ -4,6 +4,13 @@ import { Grid, Row, Col, FormControl, Form, Button } from 'react-bootstrap';
 import './FormSubscribe.scss'
 
 const Section8 = ({ lang: { formSubscribe } }) => {
+
+  const formProps = {
+  action: '//asapproject.us16.list-manage.com/subscribe/post?u=eec4f0a0d341a295bd0a72ec5&amp;id=d3a1beab3a',
+  method: 'post',
+  id: 'mc-embedded-subscribe-form'
+  }
+
   return (
     <div className="section8">
       <Grid>
@@ -13,12 +20,12 @@ const Section8 = ({ lang: { formSubscribe } }) => {
           </Col>
         </Row>
         <Row>
-          <Form >
+          <Form {...formProps}>
             <Col lg={5} md={5} sm={5}>
-              <FormControl type="text" placeholder={formSubscribe.placeholder.yourName}/>
+              <FormControl type="text" id="mce-FNAME"  name="FNAME" placeholder={formSubscribe.placeholder.yourName}/>
             </Col>
             <Col lg={4} md={4} sm={4}>
-              <FormControl type="email" placeholder={formSubscribe.placeholder.email}/>
+              <FormControl type="email" name="EMAIL" id="mce-EMAIL" placeholder={formSubscribe.placeholder.email}/>
             </Col>            
             <Col lg={3} md={3} sm={3}>
              <Button type="submit">{formSubscribe.button}</Button>
