@@ -50,7 +50,7 @@ module.exports = {
     app: [
       'react-hot-loader/patch',
       'normalize.css',
-      './index'
+      './client/index'
     ]
   },
   output: {
@@ -59,14 +59,14 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Lib: path.resolve(context, 'lib'),
-      Actions: path.resolve(context, 'actions'),
-      Middlewares: path.resolve(context, 'middlewares'),
-      Containers: path.resolve(context, 'containers'),
-      Components: path.resolve(context, 'components'),
-      Theme: path.resolve(context, 'theme'),
-      Langs: path.resolve(context, 'langs'),
-      Hocs: path.resolve(context, 'hocs')
+      Lib: path.resolve(context, 'common/lib'),
+      Actions: path.resolve(context, 'common/actions'),
+      Middlewares: path.resolve(context, 'common/middlewares'),
+      Containers: path.resolve(context, 'common/containers'),
+      Components: path.resolve(context, 'common/components'),
+      Theme: path.resolve(context, 'common/theme'),
+      Langs: path.resolve(context, 'common/langs'),
+      Hocs: path.resolve(context, 'common/hocs')
     },
     extensions: [".js", ".json", ".scss"]
   },
