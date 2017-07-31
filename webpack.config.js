@@ -77,7 +77,7 @@ module.exports = {
       { test: /\.css$/, use: customModule.css },
       { test: /\.scss$/, use: customModule.scss },
       { test: /\.(jpg|png)$/, loader: 'file-loader' },
-      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader : 'file-loader' }
+      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, exclude: /(node_modules)/, loader : 'file-loader' }
     ]
   },
   plugins: [

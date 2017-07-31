@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "express": "^4.15.3",
     "jsonfile": "^3.0.0",
     "moment": "^2.18.1",
     "normalize.css": "^7.0.0",
