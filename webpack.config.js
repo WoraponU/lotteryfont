@@ -40,7 +40,13 @@ const customModule = {
         sourceMap: true
       }
     },
-  ]
+  ],
+  urlLoader: [{
+    loader: 'url-loader',
+    options: {
+      limit: 100000,
+    },
+  }]
 };
 
 module.exports = {
@@ -74,10 +80,11 @@ module.exports = {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, enforce: 'pre', loader: 'eslint-loader' },
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.css$/, use: customModule.css },
+      { test: /\.css$/, exclude: /node_modules/, use: customModule.css },
+      { test: /\.css$/, include: /node_modules/, use: ['style-loader', 'css-loader', 'postcss-loader'] },
       { test: /\.scss$/, use: customModule.scss },
-      { test: /\.(jpg|png)$/, loader: 'file-loader' },
-      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, exclude: /(node_modules)/, loader : 'file-loader' }
+      { test: /\.(jpg|png|gif)$/, use: customModule.urlLoader },
+      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, use: customModule.urlLoader}
     ]
   },
   plugins: [
