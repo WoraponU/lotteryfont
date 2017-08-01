@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "server": "node src/server/index.js",
+    "build": "webpack -p",
+    "start": "npm run build && npm run server"
   },
   "devDependencies": {
     "airbnb-prop-types": "^2.5.4",
@@ -42,7 +45,10 @@
     "resolve-url-loader": "^2.1.0"
   },
   "dependencies": {
+    "babel-register": "^6.24.1",
     "classnames": "^2.2.5",
+    "css-modules-require-hook": "^4.0.6",
+    "dotenv": "^4.0.0",
     "express": "^4.15.3",
     "jsonfile": "^3.0.0",
     "moment": "^2.18.1",
