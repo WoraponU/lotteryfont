@@ -1,0 +1,86 @@
+@import '~Theme/colors';
+
+$pColor: $pink;
+$pHeader: $grey;
+$header: $black;
+$pText1: $boxshadowblack;
+$imgShadow: $windWalk;
+
+.section3 {
+  position: relative;
+  margin-bottom: 150px;
+
+  .header {
+    margin-bottom: 80px;
+  }
+
+  .boxBottom {
+    text-align: left;
+    bottom: 0px;
+    position: absolute;
+    padding-right: 15px;
+    padding-left: 0px;
+    
+    div[class^="col-"] {
+      padding-right: 21px;
+      padding-left: 0px;
+      
+    }
+
+    .header {
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1.19;
+      text-align: left;
+      color: $header;
+      padding-bottom: 20px;
+
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.47;
+      text-align: left;
+     
+    }    
+  }
+
+  .subHeader {
+      padding-top: 70px;
+      padding-left: 20px;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 2;    
+      color: $pColor;
+      text-shadow: 2.1px 3.4px 5.7px $pText1;
+
+    }  
+
+   div[class^="col-"]{    
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .imgShadow {
+      box-shadow: 0 9px 0px 0px $imgShadow,
+      0 -9px 0px 0px $imgShadow, 
+      -11px 0px 61px -1px $pText1, 
+      -12px 0 15px -4px $imgShadow;
+
+    }
+
+    .imgLine {
+      position: absolute;
+      top: 50px;
+      left: 159px;
+      max-width: 18px;
+
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+  
+ 

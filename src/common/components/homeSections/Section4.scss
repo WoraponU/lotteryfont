@@ -1,0 +1,85 @@
+@import '~Theme/colors';
+
+$HeaderColor: $pink;
+$pSection4: $black;
+$shadow: $boxshadowblack;
+
+.section4 {
+  margin-bottom: 150px;
+  position: relative;
+  margin-top: 70px;
+
+  .header {
+    color: $HeaderColor;
+    margin-bottom: 80px;
+    text-transform: none;
+  }
+
+  .text-right {
+    p {
+      padding-top: 44%;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 2;
+      text-align: right;
+      color: $pSection4;
+      text-shadow: 2.1px 3.4px 5.7px $shadow;
+
+    }
+  }
+
+  img {
+    width: 100%;
+
+  }
+
+  .rowPosition {
+    position: relative;
+    padding-left: 9px;
+
+  }
+
+  div[class^="col-"] {    
+    position: relative;
+    padding-left: 0px;
+    padding-bottom: 15px;
+
+  }
+  
+  .imgW355 {
+     width: 355px;
+  }
+
+  .imgOut {
+    @extend .imgW355;
+    
+  }
+  .imgCard4 {
+    @extend .imgW355;
+    position: absolute;
+    bottom: 29px;
+    left: 20px;
+    box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
+
+  }
+
+  .imgCard3 {
+    height: 734px;
+    box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
+
+  }
+
+  .imgCard {
+    left: -118px;
+    top: 117px;
+    position: absolute;
+    z-index: -1;
+
+  }
+
+  .imgCard2 {
+    margin-left: -8px;
+    @extend .imgW355;
+    box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
+  }
+}

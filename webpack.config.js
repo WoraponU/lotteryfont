@@ -40,6 +40,22 @@ const customModule = {
         sourceMap: true
       }
     },
+  ],
+  img: [
+    {
+      loader: 'url-loader',
+      options: {
+        limit: 100000,
+      },
+    }
+  ],
+  font: [
+    {
+      loader: 'url-loader',
+      options: {
+        limit: 100000,
+      },
+    }
   ]
 };
 
@@ -50,7 +66,7 @@ module.exports = {
     app: [
       'react-hot-loader/patch',
       'normalize.css',
-      './index'
+      './client/index'
     ]
   },
   output: {
@@ -59,14 +75,14 @@ module.exports = {
   },
   resolve: {
     alias: {
-      Lib: path.resolve(context, 'lib'),
-      Actions: path.resolve(context, 'actions'),
-      Middlewares: path.resolve(context, 'middlewares'),
-      Containers: path.resolve(context, 'containers'),
-      Components: path.resolve(context, 'components'),
-      Theme: path.resolve(context, 'theme'),
-      Langs: path.resolve(context, 'langs'),
-      Hocs: path.resolve(context, 'hocs')
+      Lib: path.resolve(context, 'common/lib'),
+      Actions: path.resolve(context, 'common/actions'),
+      Middlewares: path.resolve(context, 'common/middlewares'),
+      Containers: path.resolve(context, 'common/containers'),
+      Components: path.resolve(context, 'common/components'),
+      Theme: path.resolve(context, 'common/theme'),
+      Langs: path.resolve(context, 'common/langs'),
+      Hocs: path.resolve(context, 'common/hocs')
     },
     extensions: [".js", ".json", ".scss"]
   },
@@ -74,10 +90,11 @@ module.exports = {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, enforce: 'pre', loader: 'eslint-loader' },
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.css$/, use: customModule.css },
+      { test: /\.css$/, exclude: /node_modules/, use: customModule.css },
+      { test: /\.css$/, include: /node_modules/, use: ['style-loader', 'css-loader', 'postcss-loader'] },
       { test: /\.scss$/, use: customModule.scss },
-      { test: /\.(jpg|png)$/, loader: 'file-loader' },
-      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader : 'file-loader' }
+      { test: /\.(jpg|png|gif)$/, use: customModule.img },
+      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, use: customModule.font}
     ]
   },
   plugins: [

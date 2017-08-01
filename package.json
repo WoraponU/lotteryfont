@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "server": "node src/server/index.js",
+    "build": "webpack -p",
+    "start": "npm run build && npm run server"
   },
   "devDependencies": {
     "airbnb-prop-types": "^2.5.4",
@@ -35,14 +38,21 @@
     "redux-devtools-log-monitor": "^1.3.0",
     "redux-logger": "^3.0.6",
     "redux-slider-monitor": "^2.0.0-0",
+    "resolve-url-loader": "^2.1.0",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.17.0",
+    "url-loader": "^0.5.9",
     "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.5",
-    "resolve-url-loader": "^2.1.0"
+    "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "babel-register": "^6.24.1",
+    "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
+    "css-modules-require-hook": "^4.0.6",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "font-awesome": "^4.7.0",
     "jsonfile": "^3.0.0",
     "moment": "^2.18.1",
     "normalize.css": "^7.0.0",
