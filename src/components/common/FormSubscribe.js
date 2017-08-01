@@ -6,7 +6,7 @@ import './FormSubscribe.scss'
 const Section8 = ({ lang: { formSubscribe } }) => {
 
   const formProps = {
-  action: '//asapproject.us16.list-manage.com/subscribe/post?u=eec4f0a0d341a295bd0a72ec5&amp;id=d3a1beab3a',
+  action: '//hobbiz.us15.list-manage.com/subscribe/post?u=1b6f730f6c4d358567cae6f3a&amp;id=ed64a3b330',
   method: 'post',
   id: 'mc-embedded-subscribe-form'
   }
