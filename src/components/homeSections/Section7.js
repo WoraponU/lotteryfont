@@ -4,6 +4,7 @@ import { Grid, Row, Col , FormGroup, FormControl, Form, Button } from 'react-boo
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { pink, purple, yellow } from 'Components/common/LiquidCircleColor';
 import './Section7.scss'
+// const sendmail = require('sendmail')();
 
 const Section7 = ({ lang: { section7: content } }) => {
   return (
@@ -23,7 +24,7 @@ const Section7 = ({ lang: { section7: content } }) => {
             <p>{content.content}</p>
           </Col>
         </Row>
-        <Form> 
+        <Form > 
           <Row>
             <Col lg={6} md={6} sm={6}>
               <FormGroup controlId="formInlineName">

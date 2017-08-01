@@ -76,6 +76,7 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
       { test: /\.css$/, use: customModule.css },
       { test: /\.scss$/, use: customModule.scss },
+      { test: /\.fs$/, use: customModule.scss },
       { test: /\.(jpg|png)$/, loader: 'file-loader' },
       { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader : 'file-loader' }
     ]
@@ -83,6 +84,13 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
+  // node: {
+  //   fs: 'empty',
+  //   tls: 'empty',
+  //   net: 'empty',
+  //   child_process: 'empty',
+  //   dns: 'empty'
+  // },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     hot: true,
