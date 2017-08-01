@@ -27,7 +27,7 @@
         
         &::after { 
           font-family: FontAwesome;
-          content: url(/assets/images/home/section2/left.png);
+          content: url('/assets/images/home/section2/left.png');
           color: $black;
           font-size: 16px;
           right: 2px;
@@ -41,7 +41,7 @@
         left: 89.5%;
 
         &::after { 
-          content: url(/assets/images/home/section2/right.png);
+          content: url('/assets/images/home/section2/right.png');
         }
       }
     }
