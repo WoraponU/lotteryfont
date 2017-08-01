@@ -41,12 +41,22 @@ const customModule = {
       }
     },
   ],
-  urlLoader: [{
-    loader: 'url-loader',
-    options: {
-      limit: 100000,
-    },
-  }]
+  img: [
+    {
+      loader: 'url-loader',
+      options: {
+        limit: 100000,
+      },
+    }
+  ],
+  font: [
+    {
+      loader: 'url-loader',
+      options: {
+        limit: 100000,
+      },
+    }
+  ]
 };
 
 module.exports = {
@@ -83,8 +93,8 @@ module.exports = {
       { test: /\.css$/, exclude: /node_modules/, use: customModule.css },
       { test: /\.css$/, include: /node_modules/, use: ['style-loader', 'css-loader', 'postcss-loader'] },
       { test: /\.scss$/, use: customModule.scss },
-      { test: /\.(jpg|png|gif)$/, use: customModule.urlLoader },
-      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, use: customModule.urlLoader}
+      { test: /\.(jpg|png|gif)$/, use: customModule.img },
+      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, use: customModule.font}
     ]
   },
   plugins: [
