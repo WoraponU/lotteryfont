@@ -15,6 +15,9 @@ import { Footer } from 'Containers/common'
 
 import DevTools from './DevTools'
 
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'slick-carousel/slick/slick.css'
+// import 'slick-carousel/slick/slick-theme.css'
 import './App.scss'
  
 const store = configureStore()
