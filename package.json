@@ -44,6 +44,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "express": "^4.15.3",
+    "google-map-react": "^0.24.0",
     "jsonfile": "^3.0.0",
     "moment": "^2.18.1",
     "nodemailer": "^4.0.1",
