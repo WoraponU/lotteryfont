@@ -13,9 +13,9 @@ import './WorkDetail.scss'
 const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { params: { id, lang } } }) => {
   const settings = {
     dots: true,
-    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 2,
+    lazyLoad: true,
   };
 
   return (

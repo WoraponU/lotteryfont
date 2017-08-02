@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "server": "node src/server/index.js",
-    "build": "webpack -p",
+    "build": "NODE_ENV=production webpack -p --config webpack.prod.config.js",
     "start": "npm run build && npm run server"
   },
   "devDependencies": {
@@ -18,6 +18,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
     "css-loader": "^0.28.1",
     "eslint": "3.16.1",
     "eslint-config-react-app": "^0.6.2",
@@ -27,6 +28,7 @@
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-react": "6.4.1",
     "file-loader": "^0.11.2",
+    "lodash-webpack-plugin": "^0.11.4",
     "node-sass": "^4.5.3",
     "postcss-cssnext": "^2.10.0",
     "postcss-import": "^10.0.0",
@@ -41,12 +43,13 @@
     "resolve-url-loader": "^2.1.0",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.17.0",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "url-loader": "^0.5.9",
-    "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.4.5",
+    "webpack-merge": "^4.1.0"
   },
   "dependencies": {
-    "babel-register": "^6.24.1",
     "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
     "express": "^4.15.3",
@@ -61,6 +64,7 @@
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
+    "react-loadable": "^4.0.4",
     "react-redux": "^5.0.5",
     "react-router-bootstrap": "^0.24.2",
     "react-router-dom": "^4.1.1",
