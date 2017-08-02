@@ -93,14 +93,8 @@ module.exports = {
       { test: /\.css$/, exclude: /node_modules/, use: customModule.css },
       { test: /\.css$/, include: /node_modules/, use: ['style-loader', 'css-loader', 'postcss-loader'] },
       { test: /\.scss$/, use: customModule.scss },
-<<<<<<< HEAD
-      { test: /\.fs$/, use: customModule.scss },
-      { test: /\.(jpg|png)$/, loader: 'file-loader' },
-      { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader : 'file-loader' }
-=======
       { test: /\.(jpg|png|gif)$/, use: customModule.img },
       { test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, use: customModule.font}
->>>>>>> a6339003aee2ce52356a160185e7950a47e9a341
     ]
   },
   plugins: [
