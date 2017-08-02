@@ -69,7 +69,7 @@ module.exports = {
     app: [
       'normalize.css',
       './client/index'
-    ]
+    ],
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -118,10 +118,10 @@ module.exports = {
       'collections': true,
       'paths': true
     }),
-    // new webpack.optimize.CommonsChunkPlugin({ 
-    //   name: 'vendors', 
-    //   filename: '[name].[hash].js',
-    //   minChunks: Infinity 
-    // }),
+    new webpack.optimize.CommonsChunkPlugin({ 
+      name: 'vendors', 
+      filename: '[name].js',
+      minChunks: Infinity 
+    }),
   ],
 }

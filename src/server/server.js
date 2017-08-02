@@ -20,6 +20,7 @@ const renderHTML = () => (`
     </head>
     <body>
       <div id="root"></div>
+      <script src="/dist/vendors.js"></script>
       <script src="/dist/app.js"></script>
       <script>
         (function(h,o,t,j,a,r){
