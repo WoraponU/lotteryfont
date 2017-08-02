@@ -6,7 +6,7 @@ import './FormContact.scss';
 
 const Section9 = () => {
   const day = moment().format("dddd");
-
+ 
   return (
     <div className="section9">
       <Grid>
@@ -31,7 +31,7 @@ const Section9 = () => {
               Bangkok, Thailand 10900
             </p>
             <br/>
-            <Button>View google map</Button>
+            <Button href="https://goo.gl/maps/sE52LCbD5Po">View google map</Button>
           </Col>
           <Col lg={3}  md={3} sm={3} className="socialGroup"> 
             <Image src="/assets/images/common/Footer/line.png" alt="facebookHobbiz"   href="/"/>       

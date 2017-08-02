@@ -52,12 +52,14 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
+    "express": "^4.15.3",
+    "google-map-react": "^0.24.0",
     "css-modules-require-hook": "^4.0.6",
     "dotenv": "^4.0.0",
-    "express": "^4.15.3",
     "font-awesome": "^4.7.0",
     "jsonfile": "^3.0.0",
     "moment": "^2.18.1",
+    "nodemailer": "^4.0.1",
     "normalize.css": "^7.0.0",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
@@ -73,6 +75,8 @@
     "redux-api-middleware": "^1.0.3",
     "redux-thunk": "^2.2.0",
     "scroll-into-view": "^1.9.0",
+    "sendemail": "^3.3.0",
+    "sendmail": "^1.1.1",
     "slick-carousel": "^1.6.0"
   }
 }

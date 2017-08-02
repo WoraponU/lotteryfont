@@ -8,7 +8,7 @@ import {
 
 
 import { configureStore } from 'Lib'
-import { Home } from 'Components'
+import { Home,Contact } from 'Components'
 import { Header } from 'Components/common'
 import { OurWorks, WorkDetail } from 'Containers/ourWorkSections'
 import { Footer } from 'Containers/common'
@@ -36,6 +36,7 @@ export default () => (
           <Route exact path='/:lang' component={Home} />    
           <Route path='/:lang/our-work/:id' component={WorkDetail} />                             
           <Route path='/:lang/our-work' component={OurWorks} /> 
+          <Route path='/:lang/contact' component={Contact} /> 
         </Switch> 
         <Route path='/:lang' component={Footer} /> 
       </div>

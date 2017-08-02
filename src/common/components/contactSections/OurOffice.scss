@@ -1,0 +1,40 @@
+@import '~Theme/common';
+
+$h3color: $pink;
+
+.ourOffice {
+  h1 {
+    margin: 100px 0 80px;
+
+  }
+  h3 {
+    font-size: 23px;
+    color: $h3color
+  }
+ 
+  .imgCat {
+    margin-top: 285px;
+    box-shadow: 0px 11px 36px rgba(0, 0, 0, 0.37);
+    }
+  
+  .sectionPic {
+    background-image:  url('/assets/images/contact/card.png');
+    background-repeat: no-repeat;
+    background-position: 90% 25%;
+    background-size: auto;
+    display: block;
+    img {
+      max-width: 100%;
+      box-shadow: 0px 11px 36px rgba(0, 0, 0, 0.37);
+    }
+    .sayHello {
+      margin-left: 20px;
+    }
+    .imgWindow {
+      width: 276.5px;
+    }
+    .row{
+      padding: 8px;
+    }
+  }  
+}
