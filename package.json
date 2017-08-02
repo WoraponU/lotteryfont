@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "server": "node src/server/index.js",
-    "build": "webpack -p --config webpack.prod.config.js",
+    "build": "NODE_ENV=production webpack -p --config webpack.prod.config.js",
     "start": "npm run build && npm run server"
   },
   "devDependencies": {
@@ -28,7 +28,6 @@
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-react": "6.4.1",
     "file-loader": "^0.11.2",
-    "isomorphic-style-loader": "^3.0.0",
     "lodash-webpack-plugin": "^0.11.4",
     "node-sass": "^4.5.3",
     "postcss-cssnext": "^2.10.0",
@@ -47,7 +46,8 @@
     "uglifyjs-webpack-plugin": "^0.4.6",
     "url-loader": "^0.5.9",
     "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "webpack-merge": "^4.1.0"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
