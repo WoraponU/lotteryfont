@@ -15,13 +15,6 @@ module.exports = Merge(CommonConfig, {
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
-  // node: {
-  //   fs: 'empty',
-  //   tls: 'empty',
-  //   net: 'empty',
-  //   child_process: 'empty',
-  //   dns: 'empty'
-  // },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     hot: true,
