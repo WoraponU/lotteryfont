@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "server": "node src/server/index.js",
-    "build": "webpack -p",
+    "build": "webpack -p --config webpack.prod.config.js",
     "start": "npm run build && npm run server"
   },
   "devDependencies": {
