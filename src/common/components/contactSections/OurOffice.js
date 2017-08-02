@@ -4,7 +4,7 @@ import { Grid, Row, Col, Image } from 'react-bootstrap';
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { blue } from 'Components/common/LiquidCircleColor';
 
-import './ourOffice.scss'
+import './OurOffice.scss'
 
 const OurOffice = () => {
   return (

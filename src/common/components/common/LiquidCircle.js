@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import LiquidButton from 'Lib/liquidButton';
+import { LiquidButton } from 'Lib';
 import './LiquidCircle.scss'
 
 class liquidButton extends Component {
