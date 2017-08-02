@@ -1,0 +1,48 @@
+@import '~Theme/colors';
+@import '~Theme/common';
+
+$hrColor: $blue2;
+$headerColor: $black2;
+
+.section1 {
+  background-image: url('/assets/images/home/section1/box.png');
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+  background-size: contain;
+  display: block;
+  margin-bottom: 150px;
+
+  .colHight {
+    height: 320px;
+  }
+
+  p {
+    text-align: justify;
+  }
+ 
+  hr {
+    width: 32px;
+    height: 5px;
+    object-fit: contain;
+    background-color: $hrColor;
+    margin: 5px 0;
+    float: right;
+  }
+
+  .header {
+    margin: 80px 0 20px 0;
+    
+    h2 {
+      font-size: 38px;
+      font-weight: bold;
+      line-height: 1.11;
+      letter-spacing: 1.9px;
+      text-align: left;
+      color: $headerColor;
+    }
+  } 
+
+  .btn-black {
+    @extend .btnBlack;
+  }
+}
