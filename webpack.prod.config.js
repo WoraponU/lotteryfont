@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const context = path.resolve(__dirname, 'src')
 
 const customModule = {
@@ -66,7 +67,6 @@ module.exports = {
   context,
   entry: {
     app: [
-      // 'react-hot-loader/patch',
       'normalize.css',
       './client/index'
     ]
@@ -105,18 +105,23 @@ module.exports = {
       debug: false
     }),
     new webpack.optimize.ModuleConcatenationPlugin(),
-    new webpack.optimize.CommonsChunkPlugin(),
-    // new webpack.optimize.UglifyJsPlugin({
-    //   beautify: false,
-    //   comments: false,
-    //   mangle: { except: ['$super', '$', 'exports', 'require', 'window', 'global', 'self', '__webpack_require__'] },
+    new UglifyJSPlugin({
+      compress: {
+        warnings: false
+      },
+      sourceMap: true,
+      comments: false,
+      minimize: false
+    }),
+    new LodashModuleReplacementPlugin({
+      'caching': true,
+      'collections': true,
+      'paths': true
+    }),
+    // new webpack.optimize.CommonsChunkPlugin({ 
+    //   name: 'vendors', 
+    //   filename: '[name].[hash].js',
+    //   minChunks: Infinity 
     // }),
-
-    // new LodashModuleReplacementPlugin({
-    //         'caching': true,
-    //         'collections': true,
-    //         'paths': true
-    //     }),
-
   ],
 }
