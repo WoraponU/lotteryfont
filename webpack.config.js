@@ -4,11 +4,12 @@ const context = path.resolve(__dirname, 'src')
 
 const customModule = {
   css: [
-    'style-loader',
+    'isomorphic-style-loader',
     {
       loader: 'css-loader',
       options: {
         sourceMap: true,
+        importLoaders: 1
       }
     },
     'resolve-url-loader',               

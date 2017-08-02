@@ -1,14 +1,16 @@
 const path = require('path')
 const webpack = require('webpack')
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const context = path.resolve(__dirname, 'src')
 
 const customModule = {
   css: [
-    'style-loader',
+    'isomorphic-style-loader',
     {
       loader: 'css-loader',
       options: {
         sourceMap: true,
+        importLoaders: 1
       }
     },
     'resolve-url-loader',               
@@ -98,14 +100,23 @@ module.exports = {
     ]
   },
   plugins: [
-    // new webpack.HotModuleReplacementPlugin()
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.optimize.CommonsChunkPlugin(),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   beautify: false,
+    //   comments: false,
+    //   mangle: { except: ['$super', '$', 'exports', 'require', 'window', 'global', 'self', '__webpack_require__'] },
+    // }),
+
+    // new LodashModuleReplacementPlugin({
+    //         'caching': true,
+    //         'collections': true,
+    //         'paths': true
+    //     }),
+
   ],
-  devServer: {
-    contentBase: path.join(__dirname, 'public'),
-    hot: true,
-    historyApiFallback: true,
-    proxy: {
-      "/api": "http://localhost:3000"
-    }
-  }
 }
