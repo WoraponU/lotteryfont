@@ -31,10 +31,10 @@ module.exports = Merge(CommonConfig, {
       'collections': true,
       'paths': true
     }),
-    new webpack.optimize.CommonsChunkPlugin({ 
-      name: 'vendors', 
-      filename: '[name].js',
-      minChunks: Infinity 
-    }),
+    // new webpack.optimize.CommonsChunkPlugin({ 
+    //   name: 'vendors', 
+    //   filename: '[name].js',
+    //   minChunks: Infinity 
+    // }),
   ],
 })
