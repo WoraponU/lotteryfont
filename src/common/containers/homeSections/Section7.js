@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
-import { createArticle }  from 'Actions'
+import { sendEmailContactUs }  from 'Actions'
 
 // import axios from 'axios'
 
@@ -20,10 +20,10 @@ class Section7 extends Component {
   //   });
   // }
   render() {
-    const { lang } = this.props;
+    const { lang, sendEmailContactUs } = this.props;
 
     return (
-      <Section7Component lang={lang} />
+      <Section7Component lang={lang} onSubmit={sendEmailContactUs} />
     );
   }
 }
@@ -33,8 +33,10 @@ const enhance = compose(
   connect(
     null,
     dispatch => ({
-      sendEmailContactUs(dataEmailForm) {
-        dispatch(createArticle(value))
+      sendEmailContactUs(value) {
+        dispatch(sendEmailContactUs(value))
+        console.log(value);
+        
       }
     }),
   ),

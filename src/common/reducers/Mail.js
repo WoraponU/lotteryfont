@@ -1,16 +1,16 @@
 import {
-  CHANGE_LANG,
+  SEND_EMAIL_CONTACT_US,
 } from 'Actions'
 
 
 const initialState = {
-  lang: 'th',
+  sendEmailContactUs: 'th',
 }
 
 export default (state = initialState, action) => {
   switch(action.type) {
-    case CHANGE_LANG:
-      return { lang: action.lang }
+    case SEND_EMAIL_CONTACT_US:
+      return { sendEmailContactUs: action.value }
     default:
       return state
   }

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import lang from './lang'
+import Mail from './Mail'
 
 export default combineReducers({
-  lang,
+  Mail,
 })
