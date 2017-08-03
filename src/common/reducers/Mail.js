@@ -4,7 +4,7 @@ import {
 
 
 const initialState = {
-  sendEmailContactUs: 'th',
+  sendEmailContactUs: '',
 }
 
 export default (state = initialState, action) => {

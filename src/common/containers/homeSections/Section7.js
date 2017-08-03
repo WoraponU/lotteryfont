@@ -35,8 +35,6 @@ const enhance = compose(
     dispatch => ({
       sendEmailContactUs(value) {
         dispatch(sendEmailContactUs(value))
-        console.log(value);
-        
       }
     }),
   ),

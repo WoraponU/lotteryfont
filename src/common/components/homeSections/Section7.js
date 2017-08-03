@@ -58,7 +58,7 @@ const Section7 = ({ lang: { section7: content }, onSubmit }) => {
           </Row>
           <Row>
             <Col lg={12} md={12} sm={12}>
-              <Button className="btn-black mt10" onClick={onSubmit}>
+              <Button className="btn-black mt10"onClick={() => onSubmit('eieieieieieiei')}>
                 {content.sendMessage}
               </Button>
             </Col>           
