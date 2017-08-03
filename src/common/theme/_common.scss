@@ -51,13 +51,21 @@
   box-shadow: 4.2px 6.8px 9px 0 rgba(151, 151, 150, 0.35);
 
   &:active {
-    box-shadow: 5.2px 7.8px 10px 0 rgba(151, 151, 150, 0.35);
+    box-shadow: 1px 0px 20px 3px  rgba(151, 151, 150, 0.35);
     transition-delay: 0s;
-    color: $white;    
+    color: $white;  
+    background-color: $black3; 
+
+    &:focus {
+      background-color: $black3;
+      color: $white;  
+      outline: none;  
+    }     
   }
 
   &:hover {
-    color: $white;    
+    color: $white;
+    background-color: $black3;    
   }
 
   &:focus {

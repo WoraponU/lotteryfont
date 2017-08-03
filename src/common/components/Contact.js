@@ -1,7 +1,7 @@
 import React from 'react';
-import { MapSection, OurOffice } from 'Components/contactSections'
-import { Section7 } from 'Containers/homeSections'
 
+import { Section7 } from 'Containers/homeSections'
+import { MapSection, OurOffice } from 'Containers/contactSections'
 
 const contact = () => {
   return (

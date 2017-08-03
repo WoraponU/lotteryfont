@@ -44,5 +44,6 @@ $headerColor: $black2;
 
   .btn-black {
     @extend .btnBlack;
+        padding: 14px 22px 8px 22px;
   }
 }

@@ -1,0 +1,33 @@
+@import '~Theme/colors';
+
+$h3Color: $pink;
+
+.HelloFriend {
+  margin-top: 280px; 
+
+  .text-center {
+    img {
+      margin-bottom: 153px;
+      margin-top: 25px;
+    }
+  }
+
+  .row {
+    .blockText{
+      padding-left: 31.6px;
+
+      h3{
+        margin-top: 0px;
+      }
+    } 
+  } 
+  
+  .textColor {
+    margin-bottom: 156px;
+  }
+
+  .row2Image {
+    margin-top: 37px;
+    margin-bottom: 96px;
+  }
+}

@@ -1,2 +1,2 @@
-export { default as MapSection } from './MapSection'
-export { default as OurOffice } from './OurOffice'
+export { default as OurOfficeComponent } from './OurOffice'
+export { default as MapComponent } from './MapSection'
