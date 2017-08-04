@@ -4,17 +4,20 @@ import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
 import axios from 'axios'
 
-import { postMailContactUsRequest, postMailContactUsSuccess }  from 'Actions'
+import { postMailContactUsRequest, postMailContactUsSuccess, postMailContactUsFailure }  from 'Actions'
 import { Section7Component } from 'Components/homeSections'
 import { withLang } from 'Hocs';
 
 class Section7 extends Component {
   state = {
-    showAlert: false,
+    alertPopup: {
+      isShow: false,
+      type: 'default',
+    },
   }
 
   OnPostMailContactUs = (value) => {
-    const { postMailContactUsRequest, postMailContactUsSuccess } = this.props;
+    const { postMailContactUsRequest, postMailContactUsSuccess, postMailContactUsFailure } = this.props;
     
     postMailContactUsRequest();
 
@@ -24,21 +27,44 @@ class Section7 extends Component {
     })
     .then((resp) => {
       postMailContactUsSuccess();
+    })
+    .catch((err) => {
+      postMailContactUsFailure();
     });
   }
   
   hideAlert = () => {
-    this.setState({ showAlert: false });    
+    this.setState({ alertPopup: { isShow: false } });    
   }
 
-  componentWillReceiveProps({ isPostMailContactUsSuccess }) {
-    this.setState({ showAlert: isPostMailContactUsSuccess });        
+  componentWillReceiveProps({ isPostMailContactUsSuccess, isPostMailContactUsFailure }) {
+    const { isPostMailContactUsSuccess: isCurrentPostMailContactUsSuccess, isPostMailContactUsFailure: isCurrentPostMailContactUsFailure } = this.props;
+    
+    if (isPostMailContactUsSuccess && (isCurrentPostMailContactUsSuccess!== isPostMailContactUsSuccess)) {
+      console.log('success');
+      this.setState({ 
+        alertPopup: { 
+          isShow: isPostMailContactUsSuccess,
+          type: 'success',
+        } 
+      });   
+    }
+    if (isPostMailContactUsFailure && (isCurrentPostMailContactUsFailure!== isPostMailContactUsFailure)) {
+      console.log('danger');
+      
+      this.setState({ 
+        alertPopup: { 
+          isShow: isPostMailContactUsFailure,
+          type: 'danger',
+        } 
+      });   
+    }
   }
 
   render() {
-    const { showAlert } = this.state
+    const { alertPopup } = this.state
     return (
-      <Section7Component {...this.props} hideAlert={this.hideAlert} showAlert={showAlert} OnPostMailContactUs={this.OnPostMailContactUs} />
+      <Section7Component {...this.props} hideAlert={this.hideAlert} alertPopup={alertPopup} OnPostMailContactUs={this.OnPostMailContactUs} />
     );
   }
 }
@@ -48,9 +74,10 @@ const enhance = compose(
   connect(
     ({ Mail: mail }) => ({
       isPostingMailContactUs: mail.isPostingMailContactUs,
-      isPostMailContactUsSuccess: mail.isPostMailContactUsSuccess
+      isPostMailContactUsSuccess: mail.isPostMailContactUsSuccess,
+      isPostMailContactUsFailure: mail.isPostMailContactUsFailure
     }),
-    { postMailContactUsRequest, postMailContactUsSuccess }
+    { postMailContactUsRequest, postMailContactUsSuccess, postMailContactUsFailure }
   ),
   withLang('home/Section7')
 );

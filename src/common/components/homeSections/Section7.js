@@ -6,7 +6,7 @@ import LiquidCircle from 'Components/common/LiquidCircle';
 import { pink, purple, yellow } from 'Components/common/LiquidCircleColor';
 import './Section7.scss'
 
-const Section7 = ({ lang: { section7: content }, OnPostMailContactUs, isPostingMailContactUs, hideAlert, showAlert }) => {
+const Section7 = ({isPostMailContactUsFailure, lang: { section7: content }, OnPostMailContactUs, isPostingMailContactUs, hideAlert, alertPopup }) => {
   return (
     <div className="section7">
       <Grid className="text-center">
@@ -64,7 +64,7 @@ const Section7 = ({ lang: { section7: content }, OnPostMailContactUs, isPostingM
               { 
                 isPostingMailContactUs && <i className="fa fa-spinner" aria-hidden="true"></i>                
               }
-               <SweetAlert title="Here's a message!" type="success" show={showAlert} onConfirm={() => hideAlert()} />               
+               <SweetAlert title="Here's a message!" type={alertPopup.type} show={alertPopup.isShow} onConfirm={() => hideAlert()} />               
             </Col>           
           </Row>
         </Form>  
