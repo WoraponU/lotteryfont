@@ -4,7 +4,7 @@ import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
 import axios from 'axios'
 
-import { postMailContactUsRequest, postMailContactUsSuccess, postMailContactUsFailure }  from 'Actions'
+import { postMailContactUs }  from 'Actions'
 import { Section7Component } from 'Components/homeSections'
 import { withLang } from 'Hocs';
 
@@ -17,44 +17,33 @@ class Section7 extends Component {
   }
 
   OnPostMailContactUs = (value) => {
-    const { postMailContactUsRequest, postMailContactUsSuccess, postMailContactUsFailure } = this.props;
-    
-    postMailContactUsRequest();
-
-    axios({
-      method: 'post',
-      url: 'http://localhost:3000/api/mail/send-mail',
-    })
-    .then((resp) => {
-      postMailContactUsSuccess();
-    })
-    .catch((err) => {
-      postMailContactUsFailure();
-    });
+    const { postMailContactUs } = this.props;
+    postMailContactUs();
   }
   
   hideAlert = () => {
     this.setState({ alertPopup: { isShow: false } });    
   }
 
-  componentWillReceiveProps({ isPostMailContactUsSuccess, isPostMailContactUsFailure }) {
-    const { isPostMailContactUsSuccess: isCurrentPostMailContactUsSuccess, isPostMailContactUsFailure: isCurrentPostMailContactUsFailure } = this.props;
+  componentWillReceiveProps({ isPostMailContactUsSuccess: isNextPostMailContactUsSuccess, isPostMailContactUsFailure: isNextPostMailContactUsFailure }) {
+    const { isPostMailContactUsSuccess, isPostMailContactUsFailure } = this.props;
+    console.log('isNextPostMailContactUsSuccess',isNextPostMailContactUsSuccess);
     
-    if (isPostMailContactUsSuccess && (isCurrentPostMailContactUsSuccess!== isPostMailContactUsSuccess)) {
+    if (isNextPostMailContactUsSuccess) {
       console.log('success');
       this.setState({ 
         alertPopup: { 
-          isShow: isPostMailContactUsSuccess,
+          isShow: isNextPostMailContactUsSuccess,
           type: 'success',
         } 
       });   
     }
-    if (isPostMailContactUsFailure && (isCurrentPostMailContactUsFailure!== isPostMailContactUsFailure)) {
+    if (isNextPostMailContactUsFailure) {
       console.log('danger');
       
       this.setState({ 
         alertPopup: { 
-          isShow: isPostMailContactUsFailure,
+          isShow: isNextPostMailContactUsFailure,
           type: 'danger',
         } 
       });   
@@ -77,7 +66,7 @@ const enhance = compose(
       isPostMailContactUsSuccess: mail.isPostMailContactUsSuccess,
       isPostMailContactUsFailure: mail.isPostMailContactUsFailure
     }),
-    { postMailContactUsRequest, postMailContactUsSuccess, postMailContactUsFailure }
+    { postMailContactUs }
   ),
   withLang('home/Section7')
 );
