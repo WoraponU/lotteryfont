@@ -1,16 +1,16 @@
 import React from 'react';
 import { Grid, Row, Col , FormGroup, FormControl, Form, Button } from 'react-bootstrap';
+import SweetAlert from 'react-bootstrap-sweetalert';
 
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { pink, purple, yellow } from 'Components/common/LiquidCircleColor';
 import './Section7.scss'
-// const sendmail = require('sendmail')();
 
-const Section7 = ({ lang: { section7: content }, onSubmit, isPostingMailContactUs }) => {
+const Section7 = ({ lang: { section7: content }, OnPostMailContactUs, isPostingMailContactUs, hideAlert, showAlert }) => {
   return (
     <div className="section7">
       <Grid className="text-center">
-         <h1>{content.header}</h1>{isPostingMailContactUs}fdsaf
+         <h1>{content.header}</h1>
       </Grid>
       <Grid className="text-center containerShadow LiquidCircle">  
         <LiquidCircle id={12} radius={170} color={pink} position={["auto", "auto", "-65px", "-65px"]}/>   
@@ -58,9 +58,13 @@ const Section7 = ({ lang: { section7: content }, onSubmit, isPostingMailContactU
           </Row>
           <Row>
             <Col lg={12} md={12} sm={12}>
-              <Button className="btn-black mt10" onClick={() => onSubmit('eieieieieieiei')}>
+              <Button className="btn-black mt10" onClick={() => OnPostMailContactUs()}>
                 {content.sendMessage}
               </Button>
+              { 
+                isPostingMailContactUs && <i className="fa fa-spinner" aria-hidden="true"></i>                
+              }
+               <SweetAlert title="Here's a message!" type="success" show={showAlert} onConfirm={() => hideAlert()} />               
             </Col>           
           </Row>
         </Form>  

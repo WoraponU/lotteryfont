@@ -9,10 +9,15 @@ import { Section7Component } from 'Components/homeSections'
 import { withLang } from 'Hocs';
 
 class Section7 extends Component {
-  a = (value) => {
+  state = {
+    showAlert: false,
+  }
+
+  OnPostMailContactUs = (value) => {
     const { postMailContactUsRequest, postMailContactUsSuccess } = this.props;
     
     postMailContactUsRequest();
+
     axios({
       method: 'post',
       url: 'http://localhost:3000/api/mail/send-mail',
@@ -22,13 +27,18 @@ class Section7 extends Component {
     });
   }
   
+  hideAlert = () => {
+    this.setState({ showAlert: false });    
+  }
 
+  componentWillReceiveProps({ isPostMailContactUsSuccess }) {
+    this.setState({ showAlert: isPostMailContactUsSuccess });        
+  }
 
   render() {
-    const { lang, isPostingMailContactUs } = this.props;
-
+    const { showAlert } = this.state
     return (
-      <Section7Component isPostingMailContactUs={isPostingMailContactUs} lang={lang} onSubmit={this.a} />
+      <Section7Component {...this.props} hideAlert={this.hideAlert} showAlert={showAlert} OnPostMailContactUs={this.OnPostMailContactUs} />
     );
   }
 }
@@ -37,14 +47,10 @@ const enhance = compose(
   withRouter,
   connect(
     ({ Mail: mail }) => ({
-      isPostingMailContactUs: mail.isPostingMailContactUs
+      isPostingMailContactUs: mail.isPostingMailContactUs,
+      isPostMailContactUsSuccess: mail.isPostMailContactUsSuccess
     }),
-    // dispatch => ({
-    //   sendEmailContactUs(value) {
-    //     dispatch(sendEmailContactUs(value))
-    //   }
-    // }),
-    {postMailContactUsRequest, postMailContactUsSuccess}
+    { postMailContactUsRequest, postMailContactUsSuccess }
   ),
   withLang('home/Section7')
 );
