@@ -2,28 +2,33 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
-import { sendEmailContactUs }  from 'Actions'
+import axios from 'axios'
 
-// import axios from 'axios'
-
+import { postMailContactUsRequest, postMailContactUsSuccess }  from 'Actions'
 import { Section7Component } from 'Components/homeSections'
 import { withLang } from 'Hocs';
 
 class Section7 extends Component {
-  // componentDidMount() {
-  //   axios({
-  //     method: 'post',
-  //     url: 'http://localhost:3000/api/mail/send-mail',
-  //   })
-  //   .then((resp) => {
-  //     console.log(resp);
-  //   });
-  // }
+  a = (value) => {
+    const { postMailContactUsRequest, postMailContactUsSuccess } = this.props;
+    
+    postMailContactUsRequest();
+    axios({
+      method: 'post',
+      url: 'http://localhost:3000/api/mail/send-mail',
+    })
+    .then((resp) => {
+      postMailContactUsSuccess();
+    });
+  }
+  
+
+
   render() {
-    const { lang, sendEmailContactUs } = this.props;
+    const { lang, isPostingMailContactUs } = this.props;
 
     return (
-      <Section7Component lang={lang} onSubmit={sendEmailContactUs} />
+      <Section7Component isPostingMailContactUs={isPostingMailContactUs} lang={lang} onSubmit={this.a} />
     );
   }
 }
@@ -31,12 +36,15 @@ class Section7 extends Component {
 const enhance = compose(
   withRouter,
   connect(
-    null,
-    dispatch => ({
-      sendEmailContactUs(value) {
-        dispatch(sendEmailContactUs(value))
-      }
+    ({ Mail: mail }) => ({
+      isPostingMailContactUs: mail.isPostingMailContactUs
     }),
+    // dispatch => ({
+    //   sendEmailContactUs(value) {
+    //     dispatch(sendEmailContactUs(value))
+    //   }
+    // }),
+    {postMailContactUsRequest, postMailContactUsSuccess}
   ),
   withLang('home/Section7')
 );

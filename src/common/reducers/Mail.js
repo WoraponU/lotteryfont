@@ -1,16 +1,19 @@
 import {
-  SEND_EMAIL_CONTACT_US,
+  POST_MAIL_CONTACT_US_REQUEST,
+  POST_MAIL_CONTACT_US_SUCCESS
 } from 'Actions'
 
 
 const initialState = {
-  sendEmailContactUs: '',
+  isPostingMailContactUs: 'false',
 }
 
 export default (state = initialState, action) => {
   switch(action.type) {
-    case SEND_EMAIL_CONTACT_US:
-      return { sendEmailContactUs: action.value }
+    case POST_MAIL_CONTACT_US_REQUEST:
+      return { isPostingMailContactUs: 'true' }
+    case POST_MAIL_CONTACT_US_SUCCESS:
+      return { isPostingMailContactUs: 'false' }
     default:
       return state
   }

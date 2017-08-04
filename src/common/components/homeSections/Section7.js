@@ -6,11 +6,11 @@ import { pink, purple, yellow } from 'Components/common/LiquidCircleColor';
 import './Section7.scss'
 // const sendmail = require('sendmail')();
 
-const Section7 = ({ lang: { section7: content }, onSubmit }) => {
+const Section7 = ({ lang: { section7: content }, onSubmit, isPostingMailContactUs }) => {
   return (
     <div className="section7">
       <Grid className="text-center">
-         <h1>{content.header}</h1>
+         <h1>{content.header}</h1>{isPostingMailContactUs}fdsaf
       </Grid>
       <Grid className="text-center containerShadow LiquidCircle">  
         <LiquidCircle id={12} radius={170} color={pink} position={["auto", "auto", "-65px", "-65px"]}/>   
@@ -58,7 +58,7 @@ const Section7 = ({ lang: { section7: content }, onSubmit }) => {
           </Row>
           <Row>
             <Col lg={12} md={12} sm={12}>
-              <Button className="btn-black mt10"onClick={() => onSubmit('eieieieieieiei')}>
+              <Button className="btn-black mt10" onClick={() => onSubmit('eieieieieieiei')}>
                 {content.sendMessage}
               </Button>
             </Col>           
