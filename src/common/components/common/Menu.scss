@@ -8,21 +8,27 @@ $borderColor: $pink;
 .navBar {
   width: auto;
   position: absolute;
-
+  
   ul {
     padding-left: 0px;
     list-style-type: none;
      position: absolute;
      
     li {
-      margin: 20px 0;
+      &.active {     
+          span {
+            &:after {
+              width: 100%;
+            }
+          }    
+        }
 
       a {
         padding-left: 0px;
         font-weight: bold;
         color:$colorText;
 
-        &.active {        
+        &.active,&:focus {        
           background-color: $backgroundNav !important;
 
           span {
