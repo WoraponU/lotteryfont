@@ -6,30 +6,25 @@ import {
   POST_MAIL_CONTACT_US_FAILURE
 } from 'Actions'
 
-export function postMailContactUsRequest() {
-  console.log('action: postMailContactUsRequest');
+function postMailContactUsRequest() {
   return {
     type: POST_MAIL_CONTACT_US_REQUEST,
   }
 }
 
-export function postMailContactUsSuccess() {
-  console.log('action: postMailContactUsSuccess');
+function postMailContactUsSuccess() {
   return {
     type: POST_MAIL_CONTACT_US_SUCCESS,
   }
 }
 
-export function postMailContactUsFailure() {
-  console.log('action: postMailContactUsFailure');
+function postMailContactUsFailure() {
   return {
     type: POST_MAIL_CONTACT_US_FAILURE,
   }
 }
 
 export function postMailContactUs() {
-  console.log('action: postMailContactUs');
-  
   return dispatch => {
     dispatch(postMailContactUsRequest())
     axios({

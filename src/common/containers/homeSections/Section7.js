@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
-import axios from 'axios'
 
 import { postMailContactUs }  from 'Actions'
 import { Section7Component } from 'Components/homeSections'
