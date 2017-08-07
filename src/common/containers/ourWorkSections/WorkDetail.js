@@ -25,7 +25,8 @@ class WorkDetail extends Component {
         },            
         logo: {
           path: '',              
-        },            
+        }, 
+        slide: []  ,         
       }, 
     }
   }
@@ -44,14 +45,34 @@ class WorkDetail extends Component {
           content3: 'อย่างที่กล่าวข้างต้นว่าเว็บไซต์ MAC-5 นั้น เน้นการให้บริการที่เข้าถึงลูกค้าทุกคน ทำให้แม้กระทั่งในมือถือลูกค้าก็สามารถจองคอร์สอบรมออนไลน์ได้ทันที และทันใจ พร้อมใช้งานฟังก์ชั่นอื่นๆ ทั้งการให้คำปรึกษา และการพูดคุยออนไลน์ได้อย่างรวดเร็วอีกเช่นกัน เพิ่มประสิทธิภาพในการมีเว็บไซต์มากขึ้นได้อย่างที่ฮ็อบบิซตั้งใจไว้ ว่าเว็บไซต์บริษัทนั้นแสดงถึงวัฒนธรรมองค์กรณ์ และการมีเว็บไซต์ที่ดีนั้นเพิ่มมูลค่าให้กับแบรนด์อย่างแท้จริง',
           imageInfo: {
             webScreenShot: {
-              path: 'Mac-5.png',
+              path: 'mac5/mac5main.jpg',
               client: 'MAC-5 Enterprise',
               service: 'Web Development<br/>Corporate<br/>Modern',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
-            },            
+              path: 'mac5/mac.png',            
+            },   
+             slide: [
+               {
+                 path:'/assets/images/work/workDetail/asap/asapsub_01.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_02.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_03.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_04.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_05.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_06.jpg'
+               }
+             ],    
           },  
         },
         en: {
@@ -65,14 +86,34 @@ class WorkDetail extends Component {
           content3: '<br>Why say design for everyone if still neglecting users on small devices?</br> Mac-5 website takes care every move on mobile, including viewing features by modules or booking a webinar class. The website is not only adaptive, but responsive to different screen sizes. Users can still do everything just like they browse on Desktop computer. No need to shift between browsers. No magnifying glass either.',
           imageInfo: {
             webScreenShot: {
-              path: 'Mac-5.png',
+              path: 'mac5/mac5main.jpg',
               client: 'MAC-5 Enterprise',
               service: 'Web Development<br/>Corporate<br/>Modern',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
-            },            
+              path: 'mac5/mac.png',             
+            },
+             slide: [
+               {
+                 path:'/assets/images/work/workDetail/asap/asapsub_01.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_02.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_03.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_04.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_05.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_06.jpg'
+               }
+             ],             
           },  
         },
       },
@@ -88,34 +129,42 @@ class WorkDetail extends Component {
           content3: 'นอกจากการคำนึงถึงหน้าบ้านที่สวยงาม หลังบ้านที่ใช้งานง่ายก็สำคัญเช่นกัน หากการใช้งานหลังบ้านค่อนข้างยุ่งยาก อาจจะทำให้การสร้างเนื้อหาบนเว็บไซต์ได้ไม่ดีอย่างที่ต้องการ ดังนั้นฮ็อบบิซจึงทำหลังบ้านให้ลูกค้าใช้งานได้ง่ายที่สุด และมีหน้าตาที่สะอาดตาอยู่เสมอ กับเว็บไซต์ ASAP PROJECT ก็เช่นกัน เราเลือกหน้าตาที่ง่ายต่อการอัพเดทหลังบ้าน และด้วยการเป็นผู้เชี่ยวชาญเกี่ยวกับแอพพลิเคชั่น และปลั๊กอินต่างๆ ทำให้อาจะมีการเล่นและลองปลั๊กอินบนเว็บไซต์ได้อยู่เสมอ การทำหลังบ้านที่ซัพพอร์ตเรื่องนี้ก็เป็นอีกสิ่งหนึ่งที่สำคัญ',
           imageInfo: {
             webScreenShot: {
-              path: 'Mac-5.png',
+              path: 'asap/asap_main.jpg',
               client: 'ASAP<br/>PROJECT',
               service: 'เว็บไซต์',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
+              path: 'asap/asaplogo.png',              
             },            
-          },    
+          },
+          // imageSlider: {
+          //   img1: '',     
+          //   img2: '',     
+          //   img3: '',     
+          //   img4: '',     
+          //   img5: '',     
+          //   img6: '',    
+          // },   
         },
         en: {
           name: 'ASAP PROJECT',                              
           mainHeader: 'เว็บไซต์ที่ทันสมัย แปลกใหม่ และดึงดูดผู้ใช้งาน',
-          subHeader1: 'เว็บไซต์ทันสมัย ที่ต้องสื่อสารกับลูกค้าให้ได้ใน 3 วิ',
-          subHeader2: 'ลูกเล่นที่ดึงดูดให้ผู้ใช้อยู่ในเว็บไซต์นานยิ่งขึ้น',
-          subHeader3: 'เว็บไซต์ที่เน้นการเขียนบล็อก และการให้ความรู้ มาพร้อมการใช้งานหลังบ้านที่ง่ายดาย',
-          content1: 'หากเป็นเว็บไซต์ทั่วไป ส่วนใหญ่แล้วมักจะเป็นการขายสินค้า หรือการแนะนำบริษัท ซึ่งในทางดีไซน์เราถือว่าเป็นการมีสินค้าที่ช่วยในการกำหนด Mood & Tone ของเว็บไซต์ได้ แต่โจทย์ที่น่าสนใจในการทำเว็บไซต์ ASAP PROJECT คือการที่เราต้องสื่อให้ลูกค้าเข้าใจว่าเราทำอะไรภายใน 3 วินาทีที่เข้ามาเว็บไซต์ โดยลูกค้าต้องรู้ว่าเราเป็นใคร ทำอะไร ที่ไหน อย่างไร แล้วเขาสามารถใช้บริการ หรือได้ประโยชน์อย่างไรจากเราได้บ้าง ทำให้ฮ็อบบิซต้องแก้ไข Landing Page กันหลายครั้งเพื่อการแสดงคำอธิบายเกี่ยวกับทีม ASAP PROJECT ไว้ใน 1 Landing Page ท้าทายทีมฮ็อบบิซได้เป็นอย่างดี',
-          content2: 'การที่ลูกค้าอยู่ในเว็บไซต์นานขึ้น ทำให้คะแนนของเว็บไซต์ดีขึ้น โอกาสติดการค้นหาใน Google มากขึ้น และทำให้การทำ SEO ง่ายขึ้น เพราะฉะนั้นการมีลูกเล่นที่ทำให้ลูกค้าอยู่ในเว็บไซต์นานขึ้นก็เป็นสิ่งที่สำคัญที่ฮ็อบบิซคำนึงถึงเป็นอันดับแรกๆ ในการทำโปรเจ็คต์นี้เราใช้การสื่อความเร็วของ ASAP PROJECT เป็นเครื่องบินกระดาษ แต่หากเป็นเครื่องบินกระดาษทั่วไปก็คงจะไม่เร็วพอ เราจึงแสดงคลื่นความเร็วออกมาในรูปแบบต่างๆ เพื่อเป็นการเน้นย้ำถึงการทำงานของ ASAP PROJECT ที่ให้คำปรึกษาได้อย่างรวดเร็วทันใจ ทันการใช้งาน อีกทั้งสีเหลืองและสีน้ำเงินก็แสดงถึงการเคลื่อนไหว และการทำงานอย่างเป็นระบบได้อย่างดี',
-          content3: 'นอกจากการคำนึงถึงหน้าบ้านที่สวยงาม หลังบ้านที่ใช้งานง่ายก็สำคัญเช่นกัน หากการใช้งานหลังบ้านค่อนข้างยุ่งยาก อาจจะทำให้การสร้างเนื้อหาบนเว็บไซต์ได้ไม่ดีอย่างที่ต้องการ ดังนั้นฮ็อบบิซจึงทำหลังบ้านให้ลูกค้าใช้งานได้ง่ายที่สุด และมีหน้าตาที่สะอาดตาอยู่เสมอ กับเว็บไซต์ ASAP PROJECT ก็เช่นกัน เราเลือกหน้าตาที่ง่ายต่อการอัพเดทหลังบ้าน และด้วยการเป็นผู้เชี่ยวชาญเกี่ยวกับแอพพลิเคชั่น และปลั๊กอินต่างๆ ทำให้อาจะมีการเล่นและลองปลั๊กอินบนเว็บไซต์ได้อยู่เสมอ การทำหลังบ้านที่ซัพพอร์ตเรื่องนี้ก็เป็นอีกสิ่งหนึ่งที่สำคัญ',
+          subHeader1: 'Eye catching interface that communicates within 3 seconds',
+          subHeader2: 'Magnetize your audiences with interactive elements',
+          subHeader3: 'Powered by Wordpress. Extend unlimited functionality with over 10,000 plugins.',
+          content1: 'At Hobbiz, every brand needs to communicate from the inside out. To put it simply, most companies tell people who they are, what they sell as well as the benefits the product has to offer; but what would resonate the audiences the most is why you do what you do. Your passion to create a brand is where connection between your brand and your audiences happens. And this also is where we can help you bring the best out of the brand and simplify to the content that is most relevant to the website – the content and the visual which make your potential customers understand within the first glance they look at the website.',
+          content2: 'Talking about Google rank scoring, the more users stay, the better score is. This means if you make them stay in your website, you would have a better chance to reach the first pages of Google without having to pay. The universal rule is to have a great content or blog that is updated regularly. But what enhances it is  having a ‘fun’ element to play with. ASAP PROJECT is app researcher and implementer that focuses on speed and ease; therefore, we decided to use a paper plane which signifies that ASAP’s services are designed for every businesses and are super easy to get it up and running. Try playing with the paper plane icon at the right corner of the page, quick work for smooth work flow are exactly what ASAP does.',
+          content3: 'Love to blog? Looking for new apps to integrate with website regularly? Worry-free if you run your website on Wordpress. This content management system is easy to update with a intuitive interface similar to standard blog writing website and open for thousands third-party integration that can help you doing work like CRM, social media sharing and SEO. Most importantly, with Wordpress, you will have control of nearly every aspect of your site and can make simple changes or updates by yourself.',
           imageInfo: {
             webScreenShot: {
-              path: 'Mac-5.png',
+              path: 'asap/asap_main.jpg',
               client: 'ASAP<br/>PROJECT',
-              service: 'เว็บไซต์',
+              service: 'Web Development<br/>Corporate<br/>Modern',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
+              path: 'asap/asaplogo.png',              
             },            
           },       
         },
@@ -145,17 +194,17 @@ class WorkDetail extends Component {
         en: {
           name: 'YGG Drazil',                              
           mainHeader: 'เว็บไซต์โชว์ผลงานที่ดึงดูดคนให้อยู่ในเว็บทั้งวัน',
-          subHeader1: 'โชว์ผลงานจำนวนมาก ในพื้นที่จำกัด และโหลดได้เร็ว',
-          subHeader2: 'โหลดไวอาจยังไม่พอ หน้าตาเว็บต้องหล่อ และเท่',
+          subHeader1: 'Content heavy portfolio website that loads fast',
+          subHeader2: 'Fast page-load might not be enough, the appearance also matters',
           subHeader3: 'สีที่ใช่ ที่ไม่หนักเกินไป และไม่เบาเกินไป',
-          content1: 'ถ้าพูดถึงการได้รับบรีฟในครั้งแรกของทีมฮ็อบบิซกับเว็บไซต์นี้ คงต้องนึกถึงข้อบังคับที่เราต้องทำให้ได้คือ โหลดเว็บไซต์ได้อย่างรวดเร็ว ด้วยความที่ลูกค้ามีผลงานจำนวนมาก และเป็นวีดีโอทั้งหมด ทำให้การโหลดของหน้าเว็บไซต์เดิมนั้นไม่เร็วมากนัก บวกกับ Langing Page ที่เป็นวีดีโอสั้นๆสำหรับโชว์ผลงาน ทำให้การโหลดดิ้งนั้นหนักขึ้นไปอีก หลังได้รับโจทย์ ทีมฮ็อบบิซได้รวมตัวกันขมักเขม้น และค้นหาไอเดียที่สามารถตอบโจทย์นี้ได้ ถือว่าเป็นงานที่ท้าทายทีมเราได้ดีเลย',
+          content1: 'What to do when most of your content is video but still want to get a high score on Google test? Yggdrazil Group is an international award-winning production studio, specialised in visual effect and post-production. Hence, our challenge we needed to solve here is how to display a great selection of portfolios in the order that is best accessible by local and international potential clients. Organising and load-speed are the key.',
           content2: 'หลังจากหาหนทางที่จะนำไปสู่การโหลดดิ้งเว็บไซต์ได้รวดเร็วแล้ว เราจึงได้กลับมาถกประเด็นเกี่ยวกับ Mood & Tone ของเว็บไซต์ที่แสดงได้ถึงความเป็นตัวตนของลูกช้า เว็บไซต์ YGG Drazil เปรียบเหมือนผู้ชายคนนึงที่ทำงานเก่ง รวดเร็ว หล่อ แถมเท่ นั่นคือสิ่งที่เราได้จากการพูดคุยกัน เราจึงเน้นความเท่ที่เป็นตัวตนของ YGG Drzil ผสมกับความเป็นระเบียบเรียบร้อย เหมือนการจัดการเอกสารกองโต(ผลงาน) ให้อยู่เป็นหมวดหมู่ และง่ายต่อการค้นหาให้มากที่สุด เป็นธีมหลักในการออกแบบครั้งนี้',
           content3: 'หากดูเว็บไซต์เดิมของลูกค้า เราจะเห็นได้ว่ามีกลิ่นอายของความเป็นผู้ชายแมนๆ หนักแน่น และเคร่งขรึม ด้วยการคุมโทนสีขาว และสีดำ ทีมฮ็อบบิซจึงอยากนำความเป็น YGG Drazil ออกมาให้มากยิ่งขึ้น จึงไปปิ๊งกับสีแดงซึ่งเป็นสีหลักของโลโก้ ผสมผสานกับสีทองเล็กๆ สีเทา และสีขาวที่นำมาตัดกัน และเพิ่มลูกเล่นให้กับเว็บไซต์ด้วย element ที่ดึงมาจากบริการที่ลูกค้าเปิดอยู่ เช่น เกมส์ หรือ กล้องถ่ายวีดีโอ ทำให้เว็บไซต์นี้เป็นเว็บไซต์ที่เราทีมฮ็อบบิซสนุกกับการดึงตัวตนของแบรนด์มาร่วมออกแบบมากที่สุดอีกเว็บหนึ่ง',
           imageInfo: {
             webScreenShot: {
               path: '',
-              client: 'YGG Drazil',
-              service: 'เว็บไซต์',
+              client: 'Yggdrazil Group',
+              service: 'Web Development<br/>Content heavy<br/>Minimal  ',
               year: '2017',
             },            
             logo: {

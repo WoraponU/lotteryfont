@@ -13,7 +13,7 @@ const Menu = ({ lang, match: { params: { lang: paramLang } } }) => {
       <Row className="show-grid">
         <Col sm={6} md={6} className="navBar">
         <Navbar.Collapse>
-          <Nav  stacked className="text-right" >
+          <Nav stacked>
             <LinkContainer  exact to={`/${paramLang}`} activeClassName="active"><NavItem ><span>{ lang.home }</span></NavItem></LinkContainer>
             <LinkContainer to={`/${paramLang}/aboutUs`} activeClassName="active"><NavItem ><span>{ lang.aboutUs }</span></NavItem></LinkContainer>  
 

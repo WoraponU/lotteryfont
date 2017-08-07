@@ -13,8 +13,8 @@ import './WorkDetail.scss'
 const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { params: { id, lang } } }) => {
   const settings = {
     dots: true,
-    slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     lazyLoad: true,
   };
 
@@ -69,12 +69,14 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
         
         <div className="sliderRow">
           <Slider {...settings}>
-            <img src="/assets/images/home/section2/qualy.png" alt="qualy"/>
-            <img src="/assets/images/home/section2/ygg.png" alt="ygg"/>
-            <img src="/assets/images/home/section2/mac5.png" alt="mac5"/>
-            <img src="/assets/images/home/section2/qualy.png" alt="qualy"/>
-            <img src="/assets/images/home/section2/ygg.png" alt="ygg"/>
-            <img src="/assets/images/home/section2/mac5.png" alt="mac5"/>
+            <Image src={`/assets/images/work/workDetail/${contentLoaded.imageInfo.webScreenShot.path}`}/> 
+            
+            {
+              contentLoaded.imageInfo.slide.map(function(item,index) {
+                const rObj = [item.path].join(" ");
+                return <Image key={rObj} src={rObj}/>;
+              })
+            }
           </Slider>
         </div>
         <Row className="detailTitle">        
