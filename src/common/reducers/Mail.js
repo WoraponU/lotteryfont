@@ -11,6 +11,8 @@ const initialState = {
 }
 
 export default (state = initialState, action) => {
+    console.log('reducer',action.type);
+
   switch(action.type) {
     case POST_MAIL_CONTACT_US_REQUEST:
       return { 

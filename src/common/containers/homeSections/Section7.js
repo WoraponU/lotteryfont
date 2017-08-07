@@ -26,11 +26,7 @@ class Section7 extends Component {
   }
 
   componentWillReceiveProps({ isPostMailContactUsSuccess: isNextPostMailContactUsSuccess, isPostMailContactUsFailure: isNextPostMailContactUsFailure }) {
-    const { isPostMailContactUsSuccess, isPostMailContactUsFailure } = this.props;
-    console.log('isNextPostMailContactUsSuccess',isNextPostMailContactUsSuccess);
-    
-    if (isNextPostMailContactUsSuccess) {
-      console.log('success');
+    if (!!isNextPostMailContactUsSuccess && isNextPostMailContactUsSuccess) {
       this.setState({ 
         alertPopup: { 
           isShow: isNextPostMailContactUsSuccess,
@@ -38,9 +34,7 @@ class Section7 extends Component {
         } 
       });   
     }
-    if (isNextPostMailContactUsFailure) {
-      console.log('danger');
-      
+    if (!!isNextPostMailContactUsFailure && isNextPostMailContactUsFailure) {
       this.setState({ 
         alertPopup: { 
           isShow: isNextPostMailContactUsFailure,
