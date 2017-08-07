@@ -46,7 +46,7 @@ class Section7 extends Component {
   render() {
     const { alertPopup } = this.state
     return (
-      <Section7Component {...this.props} hideAlert={this.hideAlert} alertPopup={alertPopup} OnPostMailContactUs={this.OnPostMailContactUs} />
+      <Section7Component {...this.props} hideAlert={this.hideAlert} alertPopup={alertPopup} onSubmit={this.OnPostMailContactUs} />
     );
   }
 }

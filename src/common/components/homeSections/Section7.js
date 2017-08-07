@@ -1,12 +1,22 @@
 import React from 'react';
 import { Grid, Row, Col , FormGroup, FormControl, Form, Button } from 'react-bootstrap';
 import SweetAlert from 'react-bootstrap-sweetalert';
+import { Field, reduxForm } from 'redux-form'
 
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { pink, purple, yellow } from 'Components/common/LiquidCircleColor';
 import './Section7.scss'
 
-const Section7 = ({isPostMailContactUsFailure, lang: { section7: content }, OnPostMailContactUs, isPostingMailContactUs, hideAlert, alertPopup }) => {
+const Section7 = ({ 
+  isPostMailContactUsFailure, 
+  lang: { section7: content }, 
+  // OnPostMailContactUs, 
+  isPostingMailContactUs, 
+  hideAlert, 
+  alertPopup,
+  handleSubmit
+}) => {
+
   return (
     <div className="section7">
       <Grid className="text-center">
@@ -27,6 +37,7 @@ const Section7 = ({isPostMailContactUsFailure, lang: { section7: content }, OnPo
         <Form > 
           <Row>
             <Col lg={6} md={6} sm={6}>
+              <Field name="firstName" component="input" type="text" />
               <FormGroup controlId="formInlineName">
                 <FormControl type="text" placeholder={content.placeholder.yourName}/>
               </FormGroup>
@@ -58,7 +69,7 @@ const Section7 = ({isPostMailContactUsFailure, lang: { section7: content }, OnPo
           </Row>
           <Row>
             <Col lg={12} md={12} sm={12}>
-              <Button className="btn-black mt10" onClick={() => OnPostMailContactUs()}>
+              <Button className="btn-black mt10" onClick={() => handleSubmit()}>
                 {content.sendMessage}
               </Button>
               { 
@@ -73,4 +84,6 @@ const Section7 = ({isPostMailContactUsFailure, lang: { section7: content }, OnPo
   );
 };
 
-export default Section7;
+export default reduxForm({
+  form: 'postMailContactUs'
+})(Section7)
