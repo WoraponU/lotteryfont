@@ -1,21 +1,30 @@
 import React from 'react';
-import { Navbar, Image } from 'react-bootstrap';
+import { Navbar, Image,NavItem,Nav } from 'react-bootstrap';
+import { Menu } from 'Containers/common'
 
 import './Navbar.scss';
 
 const NavbarComponent = ({ onChangeLang, match: { params: { lang } } }) => {
   return (
     <div className="header">
-      <Navbar>      
+      <Navbar collapseOnSelect>      
         <Navbar.Brand>
             <Image src="/assets/images/common/logoHobbiz.png"/>           
-        </Navbar.Brand>       
-        <div className="navMenu">  
+        </Navbar.Brand>   
+         <Navbar.Toggle />    
+        {/* <div className="navMenu">  
           <a href="#" className={lang === 'th' ? 'active' : ''} onClick={(e) => onChangeLang(e, 'th')}>th</a>
           <span>|</span>
           <a href="#" className={lang === 'en' ? 'active' : ''} onClick={(e) => onChangeLang(e, 'en')}>en</a> 
-        </div>
-       
+        </div> */}
+       <Navbar.Collapse>
+        <Nav pullRight>
+          <NavItem>
+            <Menu />
+          </NavItem>
+         
+        </Nav>
+      </Navbar.Collapse>
       </Navbar>
     </div>
   );
