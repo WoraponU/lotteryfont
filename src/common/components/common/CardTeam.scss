@@ -1,0 +1,22 @@
+@import '~Theme/colors';
+
+$colorP: $black;
+
+.cardTeam {
+  img {
+    width: 100%;
+    box-shadow: 7.4px 11.9px 24px 0 rgba(0, 0, 0, 0.08);
+  }
+  .groupTitle {
+    p {
+      margin-top: 21px;
+      height: 160px;
+      max-width: 100%;
+      color: $colorP;
+    }
+
+    h5 {
+      font-size: 15px;
+    }
+  }
+}
