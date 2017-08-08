@@ -5,6 +5,7 @@ import { Field, reduxForm, reset } from 'redux-form'
 
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { pink, purple, yellow } from 'Components/common/LiquidCircleColor';
+import { Spinner } from 'Components/common';
 import './Section7.scss'
 
 
@@ -72,7 +73,7 @@ const Section7 = ({
                 {content.sendMessage}
               </Button>
               { 
-                isPostingMailContactUs && <i className="fa fa-spinner" aria-hidden="true"></i>                
+                isPostingMailContactUs && <Spinner width={'25px'} height={'25px'} />             
               }
               <SweetAlert title={content.alertMessage.title} type={alertPopup.type} show={alertPopup.isShow} onConfirm={() => hideAlert()}>
                 {content.alertMessage.content}
