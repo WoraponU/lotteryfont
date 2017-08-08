@@ -26,10 +26,16 @@ class WorkDetail extends Component {
         logo: {
           path: '',              
         }, 
-        slide: []  ,         
+        slides: [
+          {
+            path:''
+          }
+        ],         
       }, 
     }
   }
+
+  
 
   componentWillReceiveProps({ match: { params: { id, lang } } }) {
     const tempContent = {
@@ -53,24 +59,21 @@ class WorkDetail extends Component {
             logo: {
               path: 'mac5/mac.png',            
             },   
-             slide: [
+             slides: [
                {
-                 path:'/assets/images/work/workDetail/asap/asapsub_01.jpg'
+                 path:'/assets/images/work/workDetail/mac5/mac5sub_01.jpg'
                },
                 {
-                 path:'/assets/images/work/workDetail/asap/asapsub_02.jpg'
+                 path:'/assets/images/work/workDetail/mac5/mac5sub_02.jpg'
                },
                 {
-                 path:'/assets/images/work/workDetail/asap/asapsub_03.jpg'
+                 path:'/assets/images/work/workDetail/mac5/mac5sub_03.jpg'
                },
                 {
-                 path:'/assets/images/work/workDetail/asap/asapsub_04.jpg'
+                 path:'/assets/images/work/workDetail/mac5/mac5sub_04.jpg'
                },
                 {
-                 path:'/assets/images/work/workDetail/asap/asapsub_05.jpg'
-               },
-                {
-                 path:'/assets/images/work/workDetail/asap/asapsub_06.jpg'
+                 path:'/assets/images/work/workDetail/mac5/mac5sub_05.jpg'
                }
              ],    
           },  
@@ -94,24 +97,21 @@ class WorkDetail extends Component {
             logo: {
               path: 'mac5/mac.png',             
             },
-             slide: [
+             slides: [
                {
-                 path:'/assets/images/work/workDetail/asap/asapsub_01.jpg'
+                 path:'/assets/images/work/workDetail/mac5/mac5sub_01.jpg'
                },
                 {
-                 path:'/assets/images/work/workDetail/asap/asapsub_02.jpg'
+                 path:'/assets/images/work/workDetail/mac5/mac5sub_02.jpg'
                },
                 {
-                 path:'/assets/images/work/workDetail/asap/asapsub_03.jpg'
+                 path:'/assets/images/work/workDetail/mac5/mac5sub_03.jpg'
                },
                 {
-                 path:'/assets/images/work/workDetail/asap/asapsub_04.jpg'
+                 path:'/assets/images/work/workDetail/mac5/mac5sub_04.jpg'
                },
                 {
-                 path:'/assets/images/work/workDetail/asap/asapsub_05.jpg'
-               },
-                {
-                 path:'/assets/images/work/workDetail/asap/asapsub_06.jpg'
+                 path:'/assets/images/work/workDetail/mac5/mac5sub_05.jpg'
                }
              ],             
           },  
@@ -136,16 +136,28 @@ class WorkDetail extends Component {
             },            
             logo: {
               path: 'asap/asaplogo.png',              
-            },            
+            },
+            slides: [
+               {
+                 path:'/assets/images/work/workDetail/asap/asapsub_01.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_02.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_03.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_04.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_05.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_06.jpg'
+               }
+             ],             
           },
-          // imageSlider: {
-          //   img1: '',     
-          //   img2: '',     
-          //   img3: '',     
-          //   img4: '',     
-          //   img5: '',     
-          //   img6: '',    
-          // },   
         },
         en: {
           name: 'ASAP PROJECT',                              
@@ -165,7 +177,27 @@ class WorkDetail extends Component {
             },            
             logo: {
               path: 'asap/asaplogo.png',              
-            },            
+            },
+            slides: [
+               {
+                 path:'/assets/images/work/workDetail/asap/asapsub_01.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_02.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_03.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_04.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_05.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/asap/asapsub_06.jpg'
+               }
+             ],             
           },       
         },
       },
@@ -181,14 +213,28 @@ class WorkDetail extends Component {
           content3: 'หากดูเว็บไซต์เดิมของลูกค้า เราจะเห็นได้ว่ามีกลิ่นอายของความเป็นผู้ชายแมนๆ หนักแน่น และเคร่งขรึม ด้วยการคุมโทนสีขาว และสีดำ ทีมฮ็อบบิซจึงอยากนำความเป็น YGG Drazil ออกมาให้มากยิ่งขึ้น จึงไปปิ๊งกับสีแดงซึ่งเป็นสีหลักของโลโก้ ผสมผสานกับสีทองเล็กๆ สีเทา และสีขาวที่นำมาตัดกัน และเพิ่มลูกเล่นให้กับเว็บไซต์ด้วย element ที่ดึงมาจากบริการที่ลูกค้าเปิดอยู่ เช่น เกมส์ หรือ กล้องถ่ายวีดีโอ ทำให้เว็บไซต์นี้เป็นเว็บไซต์ที่เราทีมฮ็อบบิซสนุกกับการดึงตัวตนของแบรนด์มาร่วมออกแบบมากที่สุดอีกเว็บหนึ่ง',
           imageInfo: {
             webScreenShot: {
-              path: '',
+              path: 'ygg/ygg_main.jpg',
               client: 'YGG Drazil',
               service: 'เว็บไซต์',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
-            },            
+              path: 'ygg/ygg.png',              
+            },
+            slides: [
+               {
+                 path:'/assets/images/work/workDetail/ygg/yggsub_01.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/ygg/yggsub_02.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/ygg/yggsub_03.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/ygg/yggsub_04.jpg'
+               }
+             ],             
           },
         },
         en: {
@@ -202,14 +248,28 @@ class WorkDetail extends Component {
           content3: 'หากดูเว็บไซต์เดิมของลูกค้า เราจะเห็นได้ว่ามีกลิ่นอายของความเป็นผู้ชายแมนๆ หนักแน่น และเคร่งขรึม ด้วยการคุมโทนสีขาว และสีดำ ทีมฮ็อบบิซจึงอยากนำความเป็น YGG Drazil ออกมาให้มากยิ่งขึ้น จึงไปปิ๊งกับสีแดงซึ่งเป็นสีหลักของโลโก้ ผสมผสานกับสีทองเล็กๆ สีเทา และสีขาวที่นำมาตัดกัน และเพิ่มลูกเล่นให้กับเว็บไซต์ด้วย element ที่ดึงมาจากบริการที่ลูกค้าเปิดอยู่ เช่น เกมส์ หรือ กล้องถ่ายวีดีโอ ทำให้เว็บไซต์นี้เป็นเว็บไซต์ที่เราทีมฮ็อบบิซสนุกกับการดึงตัวตนของแบรนด์มาร่วมออกแบบมากที่สุดอีกเว็บหนึ่ง',
           imageInfo: {
             webScreenShot: {
-              path: '',
+              path: 'ygg/ygg_main.jpg',
               client: 'Yggdrazil Group',
               service: 'Web Development<br/>Content heavy<br/>Minimal  ',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
-            },            
+              path: 'ygg/ygg.png',              
+            },
+            slides: [
+               {
+                 path:'/assets/images/work/workDetail/ygg/yggsub_01.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/ygg/yggsub_02.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/ygg/yggsub_03.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/ygg/yggsub_04.jpg'
+               }
+             ],             
           },
         },
       },
@@ -225,14 +285,31 @@ class WorkDetail extends Component {
           content3: 'โชคดีของฮ็อบบิซอีกครั้งที่ SPRING มีของที่น่าลองเล่น และลงดีไซน์ได้หลายอย่าง ไม่ว่าจะเป็นสีที่เป็นเอกลักษณ์ของแบรนด์ หรือ Element ที่มีลักษณะของหยดน้ำ และคลื่นน้ำ เป็นต้น ดีไซน์ที่ออกมาจึงเป็นการเน้นความรู้สึกของผู้ใช้งานเว็บไซต์ ที่จะทำให้จะจดจำได้ว่าเว็บนี้ มีสีนี้ มีคลื่นน้ำแบบนี้ แม้จะออกจากเว็บไซต์ไปแล้วก็ตาม ซึ่งโจทย์นี้ทำให้เราละเลงไอเดียกันได้เยอะมาก และออกมาเป็นรูปแบบสุดท้ายในปัจจุบัน เนื้อหาที่เยอะจะต้องถูกจัดให้เป็นระเบียบ ง่ายต่อการอ่านข้อมูลต่อไปเรื่อยๆ และมีปุ่ม Call to Action(CTA) ที่มองเห็นง่าย และกระตุ้นให้อยากคลิ๊กเพื่อสั่งซื้อมากที่สุด',
           imageInfo: {
             webScreenShot: {
-              path: '',
+              path: 'spring/spring_main.jpg',
               client: 'SPRING',
               service: 'เว็บไซต์',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
-            },            
+              path: 'spring/spring.png',              
+            },
+            slides: [
+               {
+                 path:'/assets/images/work/workDetail/spring/springsub_01.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/spring/springsub_02.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/spring/springsub_03.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/spring/springsub_04.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/spring/springsub_05.jpg'
+               }
+             ],             
           },
         },
         en: {
@@ -246,14 +323,31 @@ class WorkDetail extends Component {
           content3: 'โชคดีของฮ็อบบิซอีกครั้งที่ SPRING มีของที่น่าลองเล่น และลงดีไซน์ได้หลายอย่าง ไม่ว่าจะเป็นสีที่เป็นเอกลักษณ์ของแบรนด์ หรือ Element ที่มีลักษณะของหยดน้ำ และคลื่นน้ำ เป็นต้น ดีไซน์ที่ออกมาจึงเป็นการเน้นความรู้สึกของผู้ใช้งานเว็บไซต์ ที่จะทำให้จะจดจำได้ว่าเว็บนี้ มีสีนี้ มีคลื่นน้ำแบบนี้ แม้จะออกจากเว็บไซต์ไปแล้วก็ตาม ซึ่งโจทย์นี้ทำให้เราละเลงไอเดียกันได้เยอะมาก และออกมาเป็นรูปแบบสุดท้ายในปัจจุบัน เนื้อหาที่เยอะจะต้องถูกจัดให้เป็นระเบียบ ง่ายต่อการอ่านข้อมูลต่อไปเรื่อยๆ และมีปุ่ม Call to Action(CTA) ที่มองเห็นง่าย และกระตุ้นให้อยากคลิ๊กเพื่อสั่งซื้อมากที่สุด',
           imageInfo: {
             webScreenShot: {
-              path: '',
+              path: 'spring/spring_main.jpg',
               client: 'SPRING',
               service: 'เว็บไซต์',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
-            },            
+              path: 'spring/spring.png',              
+            },
+            slides: [
+               {
+                 path:'/assets/images/work/workDetail/spring/springsub_01.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/spring/springsub_02.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/spring/springsub_03.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/spring/springsub_04.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/spring/springsub_05.jpg'
+               }
+             ],             
           },
         },
       },
@@ -269,14 +363,28 @@ class WorkDetail extends Component {
           content3: 'เราเพิ่มเสน่ห์ของเว็บไซต์โดยการใส่ Element อื่นๆเข้าไป หรือที่ฮ็อบบิซเรียกว่า “ของตกแต่ง” บนเว็บไซต์ ทำให้ความท้าทายเพิ่มขึ้นอีกเป็นเท่าตัว หากมองเว็บไซต์ข้อมูลที่สามารถค้นหาได้โดยทั่วไป มักจะมีกล่องสีเหลี่ยมสำหรับกรอก และคลิ๊กค้นหา แต่ครั้งนี้ เราเพิ่ม Filter ที่ลงรายละเอียดมากขึ้น ทำให้ผู้ใช้งานเว็บไซต์สามารถเข้าถึงข้อมูลได้เร็วขึ้น อีกทั้งยังสามารถแสดงความคิดเห็นบนเว็บไซต์ และติดต่อ ร้องเรียน เสนอแนะสิ่งต่างๆ ได้ง่ายขึ้น รวมทั้งเมลล์ที่จะถูกส่งถึงผู้ดูแลเว็บไซต์ได้อย่างแท้จริง',
           imageInfo: {
             webScreenShot: {
-              path: '',
+              path: 'chula/chula_main.jpg',
               client: 'CHULA <br/>TRANSPARENCY',
               service: 'เว็บไซต์',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
-            },            
+              path: 'chula/chula.png',              
+            },
+            slides: [
+               {
+                 path:'/assets/images/work/workDetail/chula/chulasub_01.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/chula/chulasub_02.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/chula/chulasub_03.jpg'
+               },
+                {
+                 path:'/assets/images/work/workDetail/chula/chulasub_04.jpg'
+               }
+            ],             
           },
         },
         en: {
@@ -290,14 +398,28 @@ class WorkDetail extends Component {
           content3: 'เราเพิ่มเสน่ห์ของเว็บไซต์โดยการใส่ Element อื่นๆเข้าไป หรือที่ฮ็อบบิซเรียกว่า “ของตกแต่ง” บนเว็บไซต์ ทำให้ความท้าทายเพิ่มขึ้นอีกเป็นเท่าตัว หากมองเว็บไซต์ข้อมูลที่สามารถค้นหาได้โดยทั่วไป มักจะมีกล่องสีเหลี่ยมสำหรับกรอก และคลิ๊กค้นหา แต่ครั้งนี้ เราเพิ่ม Filter ที่ลงรายละเอียดมากขึ้น ทำให้ผู้ใช้งานเว็บไซต์สามารถเข้าถึงข้อมูลได้เร็วขึ้น อีกทั้งยังสามารถแสดงความคิดเห็นบนเว็บไซต์ และติดต่อ ร้องเรียน เสนอแนะสิ่งต่างๆ ได้ง่ายขึ้น รวมทั้งเมลล์ที่จะถูกส่งถึงผู้ดูแลเว็บไซต์ได้อย่างแท้จริง',
           imageInfo: {
             webScreenShot: {
-              path: '',
+              path: 'chula/chula_main.jpg',
               client: 'CHULA <br/>TRANSPARENCY',
               service: 'เว็บไซต์',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
-            },            
+              path: 'chula/chula.png',              
+            },
+            slides: [
+              {
+                path:'/assets/images/work/workDetail/chula/chulasub_01.jpg'
+              },
+              {
+                path:'/assets/images/work/workDetail/chula/chulasub_02.jpg'
+              },
+              {
+                path:'/assets/images/work/workDetail/chula/chulasub_03.jpg'
+              },
+              {
+                path:'/assets/images/work/workDetail/chula/chulasub_04.jpg'
+              }
+            ],             
           },
         },
       },
@@ -312,14 +434,28 @@ class WorkDetail extends Component {
           content3: 'จากพฤติกรรมการใช้งานของลูกค้าของลูกค้า ทำให้เราทราบวิธีการที่จะอำนวยความสะดวกให้ลูกค้าในการเข้าถึงข้อมูล และสร้างความสะดวกสบายที่ง่ายแก่การซื้อขาย การนำ Widget ต่างๆ ที่สามารถกระตุ้นการขายมาผนวกกับดีไซน์และคอนเซ็ปต์ ทำให้ลูกค้าได้เว็บไซต์ขายสินค้าที่ติดเครื่องมือพร้อมขายแบบเต็มรูปแบบ โดยในครั้งนี้ เราได้ผนวกเครื่องมือแสดงตารางเวลาของคอร์สอบรมการใช้งานให้แก่ลูกค้า และปุ่มโทรออกเพื่อติดต่อบริษัท เพียงกลุ่มเป้าหมายคลิ๊กก็จะสามารถโทรออกได้ทันที',
           imageInfo: {
             webScreenShot: {
-              path: '',
+              path: 'dpMobile/dp_mobile_main.jpg',
               client: 'Double Pine',
               service: 'เว็บไซต์',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
-            },            
+              path: 'dpMobile/double.png',              
+            },          
+            slides: [
+              {
+                path:'/assets/images/work/workDetail/dpMobile/dpsub_01.jpg'
+              },
+              {
+                path:'/assets/images/work/workDetail/dpMobile/dpsub_02.jpg'
+              },
+              {
+                path:'/assets/images/work/workDetail/dpMobile/dpsub_03.jpg'
+              },
+              {
+                path:'/assets/images/work/workDetail/dpMobile/dpsub_04.jpg'
+              }
+            ],   
           },
         },
         en: {
@@ -332,14 +468,28 @@ class WorkDetail extends Component {
           content3: 'จากพฤติกรรมการใช้งานของลูกค้าของลูกค้า ทำให้เราทราบวิธีการที่จะอำนวยความสะดวกให้ลูกค้าในการเข้าถึงข้อมูล และสร้างความสะดวกสบายที่ง่ายแก่การซื้อขาย การนำ Widget ต่างๆ ที่สามารถกระตุ้นการขายมาผนวกกับดีไซน์และคอนเซ็ปต์ ทำให้ลูกค้าได้เว็บไซต์ขายสินค้าที่ติดเครื่องมือพร้อมขายแบบเต็มรูปแบบ โดยในครั้งนี้ เราได้ผนวกเครื่องมือแสดงตารางเวลาของคอร์สอบรมการใช้งานให้แก่ลูกค้า และปุ่มโทรออกเพื่อติดต่อบริษัท เพียงกลุ่มเป้าหมายคลิ๊กก็จะสามารถโทรออกได้ทันที',
           imageInfo: {
             webScreenShot: {
-              path: '',
+              path: 'dpMobile/dp_mobile_main.jpg',
               client: 'Double Pine',
               service: 'เว็บไซต์',
               year: '2017',
             },            
             logo: {
-              path: 'mac.png',              
+              path: 'dpMobile/double.png',              
             },            
+            slides: [
+              {
+                path:'/assets/images/work/workDetail/dpMobile/dpsub_01.jpg'
+              },
+              {
+                path:'/assets/images/work/workDetail/dpMobile/dpsub_02.jpg'
+              },
+              {
+                path:'/assets/images/work/workDetail/dpMobile/dpsub_03.jpg'
+              },
+              {
+                path:'/assets/images/work/workDetail/dpMobile/dpsub_04.jpg'
+              }
+            ], 
           },
         },
       },

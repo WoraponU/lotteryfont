@@ -10,13 +10,16 @@ import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor'
 
 import './WorkDetail.scss'
 
+
+
 const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { params: { id, lang } } }) => {
   const settings = {
     dots: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    lazyLoad: true,
+    lazyLoad: false,
   };
+  
 
   return (
     <div className="workDetail">
@@ -69,13 +72,11 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
         
         <div className="sliderRow">
           <Slider {...settings}>
-            <Image src={`/assets/images/work/workDetail/${contentLoaded.imageInfo.webScreenShot.path}`}/> 
             
             {
-              contentLoaded.imageInfo.slide.map(function(item,index) {
-                const rObj = [item.path].join(" ");
-                return <Image key={rObj} src={rObj}/>;
-              })
+              contentLoaded.imageInfo.slides.map((slide,index) => (
+                <Image key={index} src={slide.path}/>
+              ))
             }
           </Slider>
         </div>
@@ -109,3 +110,5 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
 };
 
 export default withRouter(WorkDetail);
+
+
