@@ -3,6 +3,7 @@ const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const Merge = require('webpack-merge');
 const CommonConfig = require('./webpack.common.js');
+require('dotenv').config();
 
 module.exports = Merge(CommonConfig, {
   devtool: 'source-map',
@@ -13,6 +14,11 @@ module.exports = Merge(CommonConfig, {
     ],
   },
   plugins: [
+    new webpack.EnvironmentPlugin({
+      NODE_ENV: 'production',
+      GOOGLE_MAP_KEY: process.env.GOOGLE_MAP_KEY,      
+      SERVICE_PREFIX_URL: process.env.SERVICE_PREFIX_URL      
+    }),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false
@@ -31,10 +37,10 @@ module.exports = Merge(CommonConfig, {
       'collections': true,
       'paths': true
     }),
-    // new webpack.optimize.CommonsChunkPlugin({ 
-    //   name: 'vendors', 
-    //   filename: '[name].js',
-    //   minChunks: Infinity 
-    // }),
+    new webpack.optimize.CommonsChunkPlugin({ 
+      name: 'vendors', 
+      filename: '[name].js',
+      minChunks: Infinity 
+    }),
   ],
 })

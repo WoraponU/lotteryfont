@@ -73,7 +73,8 @@ module.exports = {
       Components: path.resolve(context, 'common/components'),
       Theme: path.resolve(context, 'common/theme'),
       Langs: path.resolve(context, 'common/langs'),
-      Hocs: path.resolve(context, 'common/hocs')
+      Hocs: path.resolve(context, 'common/hocs'),
+      Constants: path.resolve(context, 'common/constants')
     },
     extensions: [".js", ".json", ".scss"]
   },
