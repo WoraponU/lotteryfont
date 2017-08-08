@@ -15,9 +15,9 @@ class Section7 extends Component {
     },
   }
 
-  OnPostMailContactUs = (value) => {
+  OnPostMailContactUs = (formValues) => {
     const { postMailContactUs } = this.props;
-    postMailContactUs();
+    postMailContactUs(formValues);
   }
   
   hideAlert = () => {

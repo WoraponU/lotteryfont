@@ -7,10 +7,20 @@ import LiquidCircle from 'Components/common/LiquidCircle';
 import { pink, purple, yellow } from 'Components/common/LiquidCircleColor';
 import './Section7.scss'
 
+
+const renderFormGroup = ({ input, meta: { touched, error }, ...rest }) =>
+  <FormGroup controlId="formInlineName">
+    <FormControl type="text" {...input} {...rest}/>
+    { 
+      touched && error && 
+      <span>{error}</span>
+    }
+  </FormGroup>
+;
+
 const Section7 = ({ 
   isPostMailContactUsFailure, 
   lang: { section7: content }, 
-  // OnPostMailContactUs, 
   isPostingMailContactUs, 
   hideAlert, 
   alertPopup,
@@ -37,34 +47,23 @@ const Section7 = ({
         <Form > 
           <Row>
             <Col lg={6} md={6} sm={6}>
-              <Field name="firstName" component="input" type="text" />
-              <FormGroup controlId="formInlineName">
-                <FormControl type="text" placeholder={content.placeholder.yourName}/>
-              </FormGroup>
+              <Field name="name" component={renderFormGroup} placeholder={content.placeholder.yourName}/>
             </Col>
             <Col lg={6} md={6} sm={6}>
-              <FormGroup controlId="formInlineName">
-                <FormControl type="text" placeholder={content.placeholder.email}/>
-              </FormGroup>
-            </Col>
+              <Field name="email" component={renderFormGroup} placeholder={content.placeholder.email}/>
+            </Col>            
           </Row>
           <Row>
             <Col lg={6} md={6} sm={6}>
-              <FormGroup controlId="formInlineName">
-                <FormControl type="text" placeholder={content.placeholder.phoneNumber}/>
-              </FormGroup>
-            </Col>
+              <Field name="phoneNumber" component={renderFormGroup} placeholder={content.placeholder.phoneNumber}/>
+            </Col>            
             <Col lg={6} md={6} sm={6}>
-              <FormGroup controlId="formInlineName">
-                <FormControl type="text" placeholder={content.placeholder.company}/>
-              </FormGroup>
-            </Col>
+              <Field name="company" component={renderFormGroup} placeholder={content.placeholder.company}/>
+            </Col>            
           </Row>
           <Row>
             <Col lg={12} md={12} sm={12}>
-              <FormGroup controlId="formInlineName">
-                <FormControl type="text" placeholder={content.placeholder.yourMind}/>
-              </FormGroup>
+              <Field name="yourMind" component={renderFormGroup} placeholder={content.placeholder.yourMind}/>
             </Col>           
           </Row>
           <Row>
@@ -84,6 +83,22 @@ const Section7 = ({
   );
 };
 
+
+const validate = values => {
+  const errors = {}
+  if (!values.name) errors.name = 'Required'
+  if (!values.email) {
+    errors.email = 'Required'
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = 'Invalid email address'
+  }
+  if (!values.phoneNumber) errors.phoneNumber = 'Required'
+  if (!values.yourMind) errors.yourMind = 'Required'
+    
+  return errors
+}
+
 export default reduxForm({
-  form: 'postMailContactUs'
+  form: 'postMailContactUs',
+  validate: validate,
 })(Section7)

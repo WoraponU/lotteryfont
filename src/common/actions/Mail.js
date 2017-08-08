@@ -24,13 +24,21 @@ function postMailContactUsFailure() {
   }
 }
 
-export function postMailContactUs() {
+export function postMailContactUs({ name, email, phoneNumber, company, yourMind }) {
+  const options = {
+    method: 'post',
+    url: 'http://localhost:3000/api/mail/send-mail',
+    data: {
+      name,
+      email,
+      phoneNumber,
+      company,
+      yourMind,
+    }
+  }
   return dispatch => {
     dispatch(postMailContactUsRequest())
-    axios({
-      method: 'post',
-      url: 'http://localhost:3000/api/mail/send-mail',
-    })
+    axios(options)
     .then((resp) => {
       dispatch(postMailContactUsSuccess());
     })
