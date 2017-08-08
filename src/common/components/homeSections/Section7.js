@@ -1,12 +1,32 @@
 import React from 'react';
-import { Grid, Row, Col , FormGroup, FormControl, Form, Button } from 'react-bootstrap';
+import { Grid, Row, Col, Form, Button } from 'react-bootstrap';
+import SweetAlert from 'react-bootstrap-sweetalert';
+import { Field, reduxForm, reset } from 'redux-form'
 
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { pink, purple, yellow } from 'Components/common/LiquidCircleColor';
 import './Section7.scss'
-// const sendmail = require('sendmail')();
 
-const Section7 = ({ lang: { section7: content } }) => {
+
+const renderFormGroup = ({ input, meta: { touched, error }, ...rest }) => (
+  <div className="form-group">
+    <input className="form-control" type="text" {...input} {...rest} />
+    { 
+      touched && error && 
+      <span>{error}</span>
+    }
+  </div>
+);
+
+const Section7 = ({ 
+  isPostMailContactUsFailure, 
+  lang: { section7: content }, 
+  isPostingMailContactUs, 
+  hideAlert, 
+  alertPopup,
+  handleSubmit
+}) => {
+
   return (
     <div className="section7">
       <Grid className="text-center">
@@ -27,40 +47,34 @@ const Section7 = ({ lang: { section7: content } }) => {
         <Form > 
           <Row>
             <Col lg={6} md={6} sm={6}>
-              <FormGroup controlId="formInlineName">
-                <FormControl type="text" placeholder={content.placeholder.yourName}/>
-              </FormGroup>
+              <Field name="name" component={renderFormGroup} placeholder={content.placeholder.yourName}/>
             </Col>
             <Col lg={6} md={6} sm={6}>
-              <FormGroup controlId="formInlineName">
-                <FormControl type="text" placeholder={content.placeholder.email}/>
-              </FormGroup>
-            </Col>
+              <Field name="email" component={renderFormGroup} placeholder={content.placeholder.email}/>
+            </Col>            
           </Row>
           <Row>
             <Col lg={6} md={6} sm={6}>
-              <FormGroup controlId="formInlineName">
-                <FormControl type="text" placeholder={content.placeholder.phoneNumber}/>
-              </FormGroup>
-            </Col>
+              <Field name="phoneNumber" component={renderFormGroup} placeholder={content.placeholder.phoneNumber}/>
+            </Col>            
             <Col lg={6} md={6} sm={6}>
-              <FormGroup controlId="formInlineName">
-                <FormControl type="text" placeholder={content.placeholder.company}/>
-              </FormGroup>
-            </Col>
+              <Field name="company" component={renderFormGroup} placeholder={content.placeholder.company}/>
+            </Col>            
           </Row>
           <Row>
             <Col lg={12} md={12} sm={12}>
-              <FormGroup controlId="formInlineName">
-                <FormControl type="text" placeholder={content.placeholder.yourMind}/>
-              </FormGroup>
+              <Field name="yourMind" component={renderFormGroup} placeholder={content.placeholder.yourMind}/>
             </Col>           
           </Row>
           <Row>
             <Col lg={12} md={12} sm={12}>
-              <Button className="btn-black mt10" type="submit">
+              <Button className="btn-black mt10" onClick={() => handleSubmit()}>
                 {content.sendMessage}
               </Button>
+              { 
+                isPostingMailContactUs && <i className="fa fa-spinner" aria-hidden="true"></i>                
+              }
+               <SweetAlert title="Here's a message!" type={alertPopup.type} show={alertPopup.isShow} onConfirm={() => hideAlert()} />               
             </Col>           
           </Row>
         </Form>  
@@ -69,4 +83,24 @@ const Section7 = ({ lang: { section7: content } }) => {
   );
 };
 
-export default Section7;
+const afterSubmit = (result, dispatch) => dispatch(reset('postMailContactUs'));
+
+const validate = values => {
+  const errors = {}
+  if (!values.name) errors.name = 'Required'
+  if (!values.email) {
+    errors.email = 'Required'
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = 'Invalid email address'
+  }
+  if (!values.phoneNumber) errors.phoneNumber = 'Required'
+  if (!values.yourMind) errors.yourMind = 'Required'
+    
+  return errors
+}
+
+export default reduxForm({
+  form: 'postMailContactUs',
+  validate: validate,
+  onSubmitSuccess: afterSubmit,
+})(Section7)

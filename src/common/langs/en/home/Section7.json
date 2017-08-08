@@ -3,11 +3,11 @@
     "header": "ASK US ANYTHING",
     "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet",
     "placeholder": {
-      "yourName": "Your name*",
-      "email": "Email*",
-      "phoneNumber": "Phone number",
-      "company": "Company*",
-      "yourMind": "What is on your mind?"
+      "yourName": "* Your name",
+      "email": "* Email",
+      "phoneNumber": "* Phone number",
+      "company": "Company",
+      "yourMind": "* What is on your mind?"
     },
     "sendMessage": "Send Us A Message"
   }

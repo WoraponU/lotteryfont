@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux'
-import lang from './lang'
+import { reducer as formReducer } from 'redux-form'
+import Mail from './Mail'
 
 export default combineReducers({
-  lang,
+  form: formReducer,
+  Mail,
 })
