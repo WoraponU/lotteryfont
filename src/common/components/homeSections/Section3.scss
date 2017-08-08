@@ -6,6 +6,26 @@ $header: $black;
 $pText1: $boxshadowblack;
 $imgShadow: $windWalk;
 
+@media (max-width: 480px) {
+  .section3 {
+     padding-left: 15px;
+    img {
+      padding-left: 15px;
+    }
+    .boxBottom {
+      padding-left: 15px !important;
+
+      h3 {
+        padding: 10px 0;
+      }
+      
+      p {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
 .section3 {
   position: relative;
   margin-bottom: 150px;
@@ -17,7 +37,7 @@ $imgShadow: $windWalk;
   .boxBottom {
     text-align: left;
     bottom: 0px;
-    position: absolute;
+    position: relative;
     padding-right: 15px;
     padding-left: 0px;
     

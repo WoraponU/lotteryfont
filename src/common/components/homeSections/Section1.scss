@@ -3,14 +3,16 @@
 
 $hrColor: $blue2;
 $headerColor: $black2;
+
 @media (max-width: 480px) {
   .section1 {
-  background-position: 100% 0 !important;
-  background-size: 60% !important;
-  padding-top:200px;
+    background-position: 100% 0 !important;
+    background-size: 60% !important;
+    padding-top:200px;
   
   }
 }
+
 .section1 {
   background-image: url('/assets/images/home/section1/box.png');
   background-repeat: no-repeat;
