@@ -17,6 +17,7 @@ module.exports = Merge(CommonConfig, {
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'production',
       GOOGLE_MAP_KEY: process.env.GOOGLE_MAP_KEY,      
+      SERVICE_PREFIX_URL: process.env.SERVICE_PREFIX_URL      
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
@@ -36,10 +37,10 @@ module.exports = Merge(CommonConfig, {
       'collections': true,
       'paths': true
     }),
-    // new webpack.optimize.CommonsChunkPlugin({ 
-    //   name: 'vendors', 
-    //   filename: '[name].js',
-    //   minChunks: Infinity 
-    // }),
+    new webpack.optimize.CommonsChunkPlugin({ 
+      name: 'vendors', 
+      filename: '[name].js',
+      minChunks: Infinity 
+    }),
   ],
 })

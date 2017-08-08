@@ -17,7 +17,8 @@ module.exports = Merge(CommonConfig, {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'development',
-      GOOGLE_MAP_KEY: process.env.GOOGLE_MAP_KEY,      
+      GOOGLE_MAP_KEY: process.env.GOOGLE_MAP_KEY,
+      SERVICE_PREFIX_URL: process.env.SERVICE_PREFIX_URL      
     })
   ],
   devServer: {

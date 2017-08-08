@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+import { SERVICE_POST_MAIL_CONTACT_US } from 'Constants'
 import {
   POST_MAIL_CONTACT_US_REQUEST,
   POST_MAIL_CONTACT_US_SUCCESS,
@@ -34,7 +34,7 @@ export function postMailContactUsClear() {
 export function postMailContactUs({ name, email, phoneNumber, company, yourMind }) {
   const options = {
     method: 'post',
-    url: 'http://localhost:3000/api/mail/send-mail',
+    url: SERVICE_POST_MAIL_CONTACT_US,
     data: {
       name,
       email,
