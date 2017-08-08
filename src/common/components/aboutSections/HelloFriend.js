@@ -1,17 +1,18 @@
 import React from 'react';
 import { Grid, Row, Image, Col } from 'react-bootstrap';
+import { withRouter } from 'react-router-dom'
 
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
 
 import './HelloFriend.scss' 
 
-const HelloFriend = () => {
+const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
   return (
     <div className="HelloFriend">
        <Grid >
         <Row className="text-center">
-          <h1>Hello friend!</h1>
+          <h1>{ content.header }</h1>
           <Image src="/assets/images/common/line.png"></Image>
         </Row>
         <Row>
@@ -31,17 +32,14 @@ const HelloFriend = () => {
             <Image src="/assets/images/about/helloFriend/chair.png"></Image>          
           </Col>
           <Col lg={6} className="blockText">
-            <h3>We are a Bangkok based digital agency with global reach.</h3>
-            <p>We believe brands are made by the interactions they create. We believe that beautiful and usable are complementary. We believe that everything we put in front of your customers should be interesting and useful to each one of them. 
-              <br/>
-              We are LiveArea, the PFS digital experience agency with a boutique approach and world-class capabilities. We meld strategy, creativity, and technology until they disappear beneath perfectly branded commerce experiences for core customers.</p>
+            <h3>{ content.title1 }</h3>
+            <p>{ content.subtitle1 }</p>
+            <p>{ content.subtitle2 }</p>
           </Col>
         </Row>
         <Row>
           <Col lgOffset={9} lg={3} className="textColor">
-            <h3 className="txPink">Transform brands, grow</h3>
-            <h3 className="txPink">businesses and make</h3>
-            <h3 className="txPink">people’s lives better.</h3>
+            <h3 className="txPink">{ content.title2 }</h3>
           </Col>
         </Row>
       </Grid>
@@ -49,4 +47,4 @@ const HelloFriend = () => {
   );
 };
 
-export default HelloFriend;
+export default withRouter(HelloFriendComponent);

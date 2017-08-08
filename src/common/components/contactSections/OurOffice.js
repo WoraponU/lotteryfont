@@ -6,7 +6,7 @@ import { blue } from 'Components/common/LiquidCircleColor';
 
 import './OurOffice.scss'
 
-const OurOfficeComponent = ({ lang: { OurOffice: content } }) => {
+const OurOfficeComponent = ({ lang: { OurOffice: content }}) => {
   return (
     <Grid className="ourOffice">
       <Row className="text-center">
