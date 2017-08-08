@@ -5,7 +5,7 @@ require('dotenv').config();
 hook({ extensions: '.scss' });
 const app = require('./server');
 
-const PORT = process.env.NODE_PORT || 3000;
+const PORT = process.env.NODE_PORT || 8081;
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);

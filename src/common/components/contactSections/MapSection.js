@@ -5,11 +5,10 @@ import { Grid, Row, Image } from 'react-bootstrap';
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { blue, yellow } from 'Components/common/LiquidCircleColor';
 import ArrowMap from 'Components/common/ArrowMap';
-// import googleKey  from '../../../config.js'
 
 import './MapSection.scss'
-// console.log(googleKey);
 const MapComponent = ({ lang: { MapSection: content }, center, greatPlaceCoords, zoom }) => {
+  console.log(process.env.GOOGLE_MAP_KEY);
   return (
     <div>
       <div className="mapSection">       
@@ -23,7 +22,7 @@ const MapComponent = ({ lang: { MapSection: content }, center, greatPlaceCoords,
         </Grid>
         <div className="map">
           <GoogleMap
-            bootstrapURLKeys={{key: "AIzaSyAnw1NTcrOmtCA46LLjkVp13psfYSduCK8", language: "th", region: "TH", types: "(cities)"}}
+            bootstrapURLKeys={{ key: process.env.GOOGLE_MAP_KEY, language: "th", region: "TH", types: "(cities)" }}
             center={center}
             zoom={zoom}
             options={{

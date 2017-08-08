@@ -1,2 +1,2 @@
-export * from './types'
-export * from './lang'
+export * from './Types'
+export * from './Mail'
