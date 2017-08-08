@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col , FormGroup, FormControl, Form, Button } from 'react-bootstrap';
 import SweetAlert from 'react-bootstrap-sweetalert';
-import { Field, reduxForm } from 'redux-form'
+import { Field, reduxForm, reset } from 'redux-form'
 
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { pink, purple, yellow } from 'Components/common/LiquidCircleColor';
@@ -83,6 +83,7 @@ const Section7 = ({
   );
 };
 
+const afterSubmit = (result, dispatch) => dispatch(reset('postMailContactUs'));
 
 const validate = values => {
   const errors = {}
@@ -101,4 +102,5 @@ const validate = values => {
 export default reduxForm({
   form: 'postMailContactUs',
   validate: validate,
+  onSubmitSuccess: afterSubmit,
 })(Section7)

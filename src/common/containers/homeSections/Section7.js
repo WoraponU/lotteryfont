@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
 
-import { postMailContactUs }  from 'Actions'
+import { postMailContactUs, postMailContactUsClear }  from 'Actions'
 import { Section7Component } from 'Components/homeSections'
 import { withLang } from 'Hocs';
 
@@ -25,7 +25,7 @@ class Section7 extends Component {
   }
 
   componentWillReceiveProps({ isPostMailContactUsSuccess: isNextPostMailContactUsSuccess, isPostMailContactUsFailure: isNextPostMailContactUsFailure }) {
-    if (!!isNextPostMailContactUsSuccess && isNextPostMailContactUsSuccess) {
+    if (isNextPostMailContactUsSuccess) {
       this.setState({ 
         alertPopup: { 
           isShow: isNextPostMailContactUsSuccess,
@@ -33,7 +33,7 @@ class Section7 extends Component {
         } 
       });   
     }
-    if (!!isNextPostMailContactUsFailure && isNextPostMailContactUsFailure) {
+    if (isNextPostMailContactUsFailure) {
       this.setState({ 
         alertPopup: { 
           isShow: isNextPostMailContactUsFailure,
@@ -59,7 +59,7 @@ const enhance = compose(
       isPostMailContactUsSuccess: mail.isPostMailContactUsSuccess,
       isPostMailContactUsFailure: mail.isPostMailContactUsFailure
     }),
-    { postMailContactUs }
+    { postMailContactUs, postMailContactUsClear }
   ),
   withLang('home/Section7')
 );

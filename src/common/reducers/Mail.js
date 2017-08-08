@@ -1,7 +1,8 @@
 import {
   POST_MAIL_CONTACT_US_REQUEST,
   POST_MAIL_CONTACT_US_SUCCESS,
-  POST_MAIL_CONTACT_US_FAILURE
+  POST_MAIL_CONTACT_US_FAILURE,
+  POST_MAIL_CONTACT_US_CLEAR,
 } from 'Actions'
 
 const initialState = {
@@ -29,6 +30,12 @@ export default (state = initialState, action) => {
         isPostingMailContactUs: false,
         isPostMailContactUsSuccess: false,
         isPostMailContactUsFailure: true        
+      }
+    case POST_MAIL_CONTACT_US_CLEAR:
+      return { 
+        isPostingMailContactUs: false,
+        isPostMailContactUsSuccess: false,
+        isPostMailContactUsFailure: false        
       }
     default:
       return state
