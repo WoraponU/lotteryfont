@@ -1,5 +1,6 @@
 @import '~Theme/colors';
 @import '~Theme/mixin';
+@import '~Theme/common';
 
 ///////////// Roboto
 @font-face {
@@ -132,6 +133,14 @@ body {
       img {
         @include notDragable;
       }
+    }
+  }
+
+  .sweet-alert {
+    font-family: Roboto, Mitr;
+    
+    button {
+      @extend .btnBlack;
     }
   }
 }

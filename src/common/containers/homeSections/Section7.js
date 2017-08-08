@@ -15,7 +15,7 @@ class Section7 extends Component {
     },
   }
 
-  OnPostMailContactUs = (formValues) => {
+  onPostMailContactUs = (formValues) => {
     const { postMailContactUs } = this.props;
     postMailContactUs(formValues);
   }
@@ -46,7 +46,7 @@ class Section7 extends Component {
   render() {
     const { alertPopup } = this.state
     return (
-      <Section7Component {...this.props} hideAlert={this.hideAlert} alertPopup={alertPopup} onSubmit={this.OnPostMailContactUs} />
+      <Section7Component {...this.props} hideAlert={this.hideAlert} alertPopup={alertPopup} onSubmit={this.onPostMailContactUs} />
     );
   }
 }

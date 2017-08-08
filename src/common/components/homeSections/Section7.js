@@ -74,7 +74,9 @@ const Section7 = ({
               { 
                 isPostingMailContactUs && <i className="fa fa-spinner" aria-hidden="true"></i>                
               }
-               <SweetAlert title="Here's a message!" type={alertPopup.type} show={alertPopup.isShow} onConfirm={() => hideAlert()} />               
+              <SweetAlert title={content.alertMessage.title} type={alertPopup.type} show={alertPopup.isShow} onConfirm={() => hideAlert()}>
+                {content.alertMessage.content}
+              </SweetAlert>
             </Col>           
           </Row>
         </Form>  

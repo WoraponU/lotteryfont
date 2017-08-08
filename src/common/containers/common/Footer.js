@@ -16,11 +16,11 @@ class Footer extends Component {
     setTimeout(() => { 
       this.setState({ showFooter: true }, () => {
         const option = {
-          time: 500,
+          time: 300,
         };
         scrollIntoView(this.footer, option);
       });
-    }, 250);
+    }, 120);
   }
 
   hideFooter() {
