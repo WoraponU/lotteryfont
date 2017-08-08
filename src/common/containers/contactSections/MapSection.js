@@ -22,10 +22,10 @@ const enhance = compose(
 export default enhance(Map);
 
 Map.propTypes = {
-    center: PropTypes.array,
-    zoom: PropTypes.number,
-    greatPlaceCoords: PropTypes.object
-  };
+  center: PropTypes.array,
+  zoom: PropTypes.number,
+  greatPlaceCoords: PropTypes.object
+};
 
 Map.defaultProps = {
   center: [13.8119366, 100.5647296],

@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const Merge = require('webpack-merge');
 const CommonConfig = require('./webpack.common.js');
+require('dotenv').config();
 
 module.exports = Merge(CommonConfig, {
   devtool: 'eval-source-map',
@@ -13,7 +14,11 @@ module.exports = Merge(CommonConfig, {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.EnvironmentPlugin({
+      NODE_ENV: 'development',
+      GOOGLE_MAP_KEY: process.env.GOOGLE_MAP_KEY,      
+    })
   ],
   devServer: {
     contentBase: path.join(__dirname, 'public'),
