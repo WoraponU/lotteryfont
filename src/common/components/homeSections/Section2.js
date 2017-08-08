@@ -12,9 +12,9 @@ const Section2 = ({ lang: { section2: content } }) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    lazyLoad: true,
+    lazyLoad: false,
   };
-
+ 
   return (
     <div className="section2">
       <Grid>

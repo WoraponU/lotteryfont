@@ -42,7 +42,7 @@ const OurWorks = ({ lang: { OurWorks: content } }) => {
                   <CardWork img='/assets/images/work/ourWork/mac5.png' title='MAC-5' id="mac5"/>
                 </Col>
                 <Col lg={4} md={4} sm={4}>
-                  <CardWork img='/assets/images/work/ourWork/asap.png' title='ASAP' id="asap"/>            
+                  <CardWork img='/assets/images/work/ourWork/asap.jpg' title='ASAP' id="asap"/>            
                 </Col>
               </Row>
               <Row>
@@ -58,7 +58,7 @@ const OurWorks = ({ lang: { OurWorks: content } }) => {
                   <CardWork img='/assets/images/work/ourWork/chula.png' title='CHULA' id="chula"/>
                 </Col>
                 <Col lg={4} md={4} sm={4}>
-                  <CardWork img='/assets/images/work/ourWork/chula.png' title='DP (Mobile)' id="dp"/>            
+                  <CardWork img='/assets/images/work/ourWork/dpmobile.jpg' title='DP (Mobile)' id="dp"/>            
                 </Col>
               </Row>
             </div>
