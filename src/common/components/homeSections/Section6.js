@@ -28,15 +28,16 @@ const Section6 = ({ lang: { section6: content } }) => {
       <Grid >
         <Slider {...settings}>  
           <Row>
-            <Col lg={3} md={3} sm={6}>           
+            <Col lg={3} md={3} sm={6} xs={12}>           
               <Card 
                 read={content.read}
                 img='/assets/images/Home/section6/card1.png' 
                 title='How to make nacho and taco like a pro!' 
                 subTittle='lab'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>
-            </Col>      
-            <Col lg={3} md={3} sm={6}>             
+            </Col>   
+               
+            <Col lg={3} md={3} sm={6} xs={12}>             
               <Card 
                 read={content.read}
                 img='/assets/images/Home/section6/card2.png' 
@@ -44,7 +45,7 @@ const Section6 = ({ lang: { section6: content } }) => {
                 subTittle='resources'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>
             </Col>    
-            <Col lg={3} md={3} sm={6}>
+            <Col lg={3} md={3} sm={6} xs={12}>
               <Card 
                 read={content.read}
                 img='/assets/images/Home/section6/card1.png' 
@@ -52,7 +53,7 @@ const Section6 = ({ lang: { section6: content } }) => {
                 subTittle='news &amp; updates'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>
             </Col>    
-            <Col lg={3} md={3} sm={6}>
+            <Col lg={3} md={3} sm={6} xs={12}>
               <Card 
                 read={content.read}
                 img='/assets/images/Home/section6/card1.png' 
@@ -63,7 +64,7 @@ const Section6 = ({ lang: { section6: content } }) => {
                      
           </Row>
           <Row>
-            <Col lg={3} md={3} sm={6}>
+            <Col lg={3} md={3} sm={6} xs={12}>
               <Card 
                 read={content.read}
                 img='/assets/images/Home/section6/card1.png' 
@@ -71,7 +72,7 @@ const Section6 = ({ lang: { section6: content } }) => {
                 subTittle='This is amazing'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>         
             </Col>
-            <Col lg={3} md={3} sm={6}>
+            <Col lg={3} md={3} sm={6} xs={12}>
               <Card 
                 read={content.read}
                 img='/assets/images/Home/section6/card1.png' 
@@ -79,7 +80,7 @@ const Section6 = ({ lang: { section6: content } }) => {
                 subTittle='This is amazing'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>         
             </Col>
-            <Col lg={3} md={3} sm={6}>
+            <Col lg={3} md={3} sm={6} xs={12}>
               <Card 
                 read={content.read}
                 img='/assets/images/Home/section6/card1.png' 
@@ -87,7 +88,7 @@ const Section6 = ({ lang: { section6: content } }) => {
                 subTittle='This is amazing'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>         
             </Col>
-            <Col lg={3} md={3} sm={6}>
+            <Col lg={3} md={3} sm={6} xs={12}>
               <Card 
                 read={content.read}
                 img='/assets/images/Home/section6/card1.png' 
