@@ -1,13 +1,15 @@
 import React from 'react';
-import { Grid, Image, Col } from 'react-bootstrap';
+import { Grid, Image, Col, Row, Button } from 'react-bootstrap';
 import Slider from 'react-slick';
+import { withRouter } from 'react-router-dom'
+import { LinkContainer } from 'react-router-bootstrap';
 
 import LiquidCircle from 'Components/common/LiquidCircle';
 import { blue } from 'Components/common/LiquidCircleColor';
 import { Card } from 'Components/common'
 import './Section6.scss'
 
-const Section6 = ({ lang: { section6: content } }) => {
+const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } } }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -78,10 +80,15 @@ const Section6 = ({ lang: { section6: content } }) => {
           </div>         
           
                        
-        </Slider>   
+        </Slider>
+        <Row>
+          <Col lgHidden mdHidden className="text-center">
+            <LinkContainer  to={`/${lang}/our-work`} className="btn-black mt10"><Button >{content.button}</Button></LinkContainer>
+          </Col>
+        </Row>
       </Grid>
     </div>
   );
 };
 
-export default Section6;
+export default withRouter(Section6);
