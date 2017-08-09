@@ -1,4 +1,5 @@
 const error = require('../message/Error');
+const { postMailContactUs: postMailContactUsAlert } = require('../message/Alert');
 
 module.exports = {
   "section7": {
@@ -12,10 +13,7 @@ module.exports = {
       "yourMind": "* เขียนสิ่งที่อยากพูดคุยกับเราได้เลย"
     },
     "sendMessage": "ส่งข้อความ",
-    "alertMessage": {
-      "title": "ขอบคุณที่ให้ความสนใจเรานะคะ",
-      "content": "เราจะรีบติดต่อกลับภายใน 24 ชั่วโมงค่ะ"
-    },
-    ...error
+    ...error,
+    ...postMailContactUsAlert
   }
 }

@@ -27,6 +27,10 @@ const Section7 = ({
   alertPopup,
   handleSubmit
 }) => {
+  const isAlertTypeSuccess = alertPopup.type === 'success';
+  const alertTitle = isAlertTypeSuccess ? content.alertSuccess.title : content.alertFailure.title;
+  const alertContent = isAlertTypeSuccess ? content.alertSuccess.content : content.alertFailure.content;
+
   return (
     <div className="section7">
       <Grid className="text-center">
@@ -47,23 +51,23 @@ const Section7 = ({
         <Form > 
           <Row>
             <Col lg={6} md={6} sm={6}>
-              <Field errMsg={content.Error} name="name" component={renderFormGroup} placeholder={content.placeholder.yourName}/>
+              <Field errMsg={content.error} name="name" component={renderFormGroup} placeholder={content.placeholder.yourName}/>
             </Col>
             <Col lg={6} md={6} sm={6}>
-              <Field errMsg={content.Error} name="email" component={renderFormGroup} placeholder={content.placeholder.email}/>
+              <Field errMsg={content.error} name="email" component={renderFormGroup} placeholder={content.placeholder.email}/>
             </Col>            
           </Row>
           <Row>
             <Col lg={6} md={6} sm={6}>
-              <Field errMsg={content.Error} name="phoneNumber" component={renderFormGroup} placeholder={content.placeholder.phoneNumber}/>
+              <Field errMsg={content.error} name="phoneNumber" component={renderFormGroup} placeholder={content.placeholder.phoneNumber}/>
             </Col>            
             <Col lg={6} md={6} sm={6}>
-              <Field errMsg={content.Error} name="company" component={renderFormGroup} placeholder={content.placeholder.company}/>
+              <Field errMsg={content.error} name="company" component={renderFormGroup} placeholder={content.placeholder.company}/>
             </Col>            
           </Row>
           <Row>
             <Col lg={12} md={12} sm={12}>
-              <Field errMsg={content.Error} name="yourMind" component={renderFormGroup} placeholder={content.placeholder.yourMind}/>
+              <Field errMsg={content.error} name="yourMind" component={renderFormGroup} placeholder={content.placeholder.yourMind}/>
             </Col>           
           </Row>
           <Row>
@@ -74,8 +78,8 @@ const Section7 = ({
               { 
                 isPostingMailContactUs && <Spinner width={'25px'} height={'25px'} />             
               }
-              <SweetAlert title={content.alertMessage.title} type={alertPopup.type} show={alertPopup.isShow} onConfirm={() => hideAlert()}>
-                {content.alertMessage.content}
+              <SweetAlert title={alertTitle} type={alertPopup.type} show={alertPopup.isShow} onConfirm={() => hideAlert()}>
+                {alertContent} 
               </SweetAlert>
             </Col>           
           </Row>
