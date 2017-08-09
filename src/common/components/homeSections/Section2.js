@@ -13,6 +13,16 @@ const Section2 = ({ lang: { section2: content } }) => {
     slidesToScroll: 1,
     arrows: true,
     lazyLoad: false,
+      responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+         arrows: false,
+      }
+    }
+  ]
   };
  
   return (

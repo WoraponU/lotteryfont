@@ -14,26 +14,28 @@ const Section4 = ({ lang: { section4: content } }) => {
             <h1 className="header" dangerouslySetInnerHTML={{__html: content.header}}></h1>
           </Col>
         </Row>
-      </Grid>
-      
+      </Grid>   
       <Grid>
         <Row className="rowPosition">         
-          <Col lg={4} md={4} >
+          <Col lg={4} md={4} xsHidden smHidden>
             <Image src="/assets/images/home/section4/creative.png" className="imgCard2"/>
           </Col>
-          <Col lg={4} mdOffset smOffset>
+          <Col lg={4} md={4} xsHidden smHidden>
             <Image src="/assets/images/home/section4/moblie.png" className="imgOut" />
           </Col>  
-          <Col lg={4} md={4} className="LiquidCircle" >
+          <Col lg={4} md={4} xsHidden smHidden className="LiquidCircle" >
             <Image src="/assets/images/home/section4/white.png" className="imgCard"/>
             <LiquidCircle id={9} radius={200} color={pink} position={["165px", "70px", "auto", "auto"]}/>
+          </Col>
+          <Col sm={12} xs={12} lgHidden mdHidden className="xsImg">
+            <Image src="/assets/images/home/section4/services.png" />
           </Col>
           <Col lg={4} md={4} className="text-right">
             <p dangerouslySetInnerHTML={{__html: content.subHeader}}></p>
           </Col>
         </Row>
          <Row >
-          <Col lg={8} md={8}  >
+          <Col lg={8} md={8} xsHidden smHidden>
             <Image src="/assets/images/home/section4/note.png" />
           </Col>
           <Col lg={4} md={4} xsHidden smHidden>
@@ -44,7 +46,7 @@ const Section4 = ({ lang: { section4: content } }) => {
           </Col>
         </Row>
         <Row >
-          <Col lg={3} md={3} mdOffset={4} lgOffset={4}>
+          <Col lg={3} md={3} mdOffset={4} lgOffset={4} xsHidden smHidden>
             <Image src="/assets/images/home/section4/web.png" className="imgCard4"/>
           </Col>         
         </Row>

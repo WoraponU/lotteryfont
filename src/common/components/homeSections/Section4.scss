@@ -3,11 +3,20 @@
 $HeaderColor: $pink;
 $pSection4: $black;
 $shadow: $boxshadowblack;
-@media (min-width: 1200px){
+@media (min-width: 420px){
   .section4 {
-    .container {
-        
+    .header {
+      text-align: left;
+    }  
+    .xsImg {
+      padding: 0px;
     }
+    .text-right {
+      p {       
+        font-size: 17px !important;
+
+      }
+    }   
   }
 }
 .section4 {

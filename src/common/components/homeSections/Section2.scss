@@ -1,6 +1,21 @@
 @import '~Theme/colors';
 @import '~Theme/common';
 
+@media (max-width: 480px) {
+  .section2 {
+    .slick-slider {
+      left: 0 !important;
+      margin-right: 0em !important;
+     
+      .slick-list{
+        padding-right: 1em;
+      }
+    } 
+    img {
+      width: 340px;
+    }
+  } 
+}
 .section2 {
   margin-bottom: 150px;
   

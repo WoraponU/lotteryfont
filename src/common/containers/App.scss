@@ -126,7 +126,7 @@ body {
   .slick-slider {
     .slick-list {
       cursor: pointer;
-      height: auto !important;
+      
 
       img {
         @include notDragable;

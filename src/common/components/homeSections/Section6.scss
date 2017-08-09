@@ -4,7 +4,24 @@
 $textColor: $black;
 $imgShadow: $boxshadowblack;
 $buttonColor: $pink;
+@media (max-width: 480px) {
+  .section6 {
+    .slick-list {
+      cursor: pointer;
+      height: 500px !important;
 
+    }
+    .slick-slider {
+      
+      left: 2em !important;
+      margin-right: 3em !important;
+       .slick-prev{
+            position: relative !important;
+      }
+      
+    } 
+  } 
+}
 .section6 {
   margin-bottom: 50px;
   margin-top: 223px;
@@ -28,7 +45,7 @@ $buttonColor: $pink;
   .slick-slider {
     .slick-list {
       cursor: pointer;
-      height: auto !important;
+      height: 500px ;
 
     }
 
