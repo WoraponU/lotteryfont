@@ -9,12 +9,12 @@ import { Spinner } from 'Components/common';
 import './Section7.scss'
 
 
-const renderFormGroup = ({ input, meta: { touched, error }, ...rest }) => (
+const renderFormGroup = ({ input, meta: { touched, error }, errMsg, ...rest }) => (
   <div className="form-group">
     <input className="form-control" type="text" {...input} {...rest} />
     { 
       touched && error && 
-      <span>{error}</span>
+      <span>{errMsg[error]}</span>
     }
   </div>
 );
@@ -27,6 +27,9 @@ const Section7 = ({
   alertPopup,
   handleSubmit
 }) => {
+  const isAlertTypeSuccess = alertPopup.type === 'success';
+  const alertTitle = isAlertTypeSuccess ? content.alertSuccess.title : content.alertFailure.title;
+  const alertContent = isAlertTypeSuccess ? content.alertSuccess.content : content.alertFailure.content;
 
   return (
     <div className="section7">
@@ -48,23 +51,23 @@ const Section7 = ({
         <Form > 
           <Row>
             <Col lg={6} md={6} sm={6}>
-              <Field name="name" component={renderFormGroup} placeholder={content.placeholder.yourName}/>
+              <Field errMsg={content.error} name="name" component={renderFormGroup} placeholder={content.placeholder.yourName}/>
             </Col>
             <Col lg={6} md={6} sm={6}>
-              <Field name="email" component={renderFormGroup} placeholder={content.placeholder.email}/>
+              <Field errMsg={content.error} name="email" component={renderFormGroup} placeholder={content.placeholder.email}/>
             </Col>            
           </Row>
           <Row>
             <Col lg={6} md={6} sm={6}>
-              <Field name="phoneNumber" component={renderFormGroup} placeholder={content.placeholder.phoneNumber}/>
+              <Field errMsg={content.error} name="phoneNumber" component={renderFormGroup} placeholder={content.placeholder.phoneNumber}/>
             </Col>            
             <Col lg={6} md={6} sm={6}>
-              <Field name="company" component={renderFormGroup} placeholder={content.placeholder.company}/>
+              <Field errMsg={content.error} name="company" component={renderFormGroup} placeholder={content.placeholder.company}/>
             </Col>            
           </Row>
           <Row>
             <Col lg={12} md={12} sm={12}>
-              <Field name="yourMind" component={renderFormGroup} placeholder={content.placeholder.yourMind}/>
+              <Field errMsg={content.error} name="yourMind" component={renderFormGroup} placeholder={content.placeholder.yourMind}/>
             </Col>           
           </Row>
           <Row>
@@ -75,8 +78,8 @@ const Section7 = ({
               { 
                 isPostingMailContactUs && <Spinner width={'25px'} height={'25px'} />             
               }
-              <SweetAlert title={content.alertMessage.title} type={alertPopup.type} show={alertPopup.isShow} onConfirm={() => hideAlert()}>
-                {content.alertMessage.content}
+              <SweetAlert title={alertTitle} type={alertPopup.type} show={alertPopup.isShow} onConfirm={() => hideAlert()}>
+                {alertContent} 
               </SweetAlert>
             </Col>           
           </Row>
@@ -90,14 +93,14 @@ const afterSubmit = (result, dispatch) => dispatch(reset('postMailContactUs'));
 
 const validate = values => {
   const errors = {}
-  if (!values.name) errors.name = 'Required'
+  if (!values.name) errors.name = 'required'
   if (!values.email) {
-    errors.email = 'Required'
+    errors.email = 'required'
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = 'Invalid email address'
+    errors.email = 'invalidEmailAddress'
   }
-  if (!values.phoneNumber) errors.phoneNumber = 'Required'
-  if (!values.yourMind) errors.yourMind = 'Required'
+  if (!values.phoneNumber) errors.phoneNumber = 'required'
+  if (!values.yourMind) errors.yourMind = 'required'
     
   return errors
 }
