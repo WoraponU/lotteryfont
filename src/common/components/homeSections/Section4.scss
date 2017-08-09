@@ -3,7 +3,13 @@
 $HeaderColor: $pink;
 $pSection4: $black;
 $shadow: $boxshadowblack;
-
+@media (min-width: 1200px){
+  .section4 {
+    .container {
+        
+    }
+  }
+}
 .section4 {
   margin-bottom: 150px;
   position: relative;
@@ -52,7 +58,8 @@ $shadow: $boxshadowblack;
 
   .imgOut {
     @extend .imgW355;
-    
+    position: absolute;
+    left: -765px;
   }
   .imgCard4 {
     @extend .imgW355;

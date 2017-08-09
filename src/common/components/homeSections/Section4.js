@@ -15,14 +15,15 @@ const Section4 = ({ lang: { section4: content } }) => {
           </Col>
         </Row>
       </Grid>
-      <Col lg={2} md={2} >
-        <Image src="/assets/images/home/section4/moblie.png" className="imgOut" />
-      </Col>  
+      
       <Grid>
         <Row className="rowPosition">         
           <Col lg={4} md={4} >
             <Image src="/assets/images/home/section4/creative.png" className="imgCard2"/>
           </Col>
+          <Col lg={4} mdOffset smOffset>
+            <Image src="/assets/images/home/section4/moblie.png" className="imgOut" />
+          </Col>  
           <Col lg={4} md={4} className="LiquidCircle" >
             <Image src="/assets/images/home/section4/white.png" className="imgCard"/>
             <LiquidCircle id={9} radius={200} color={pink} position={["165px", "70px", "auto", "auto"]}/>
