@@ -27,7 +27,7 @@ const Section8 = ({ lang: { formSubscribe } }) => {
             <Col lg={4} md={4} sm={4}>
               <FormControl type="email" name="EMAIL" id="mce-EMAIL" placeholder={formSubscribe.placeholder.email}/>
             </Col>            
-            <Col lg={3} md={3} sm={3}>
+            <Col lg={3} md={3} sm={3} className="text-center">
              <Button type="submit">{formSubscribe.button}</Button>
             </Col>
           </Form>

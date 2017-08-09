@@ -5,6 +5,22 @@ $backgroundColor: $black4;
 $h3Color: $white;
 $formColor: $white;
 
+@media (max-width: 480px) {
+  .section8 {
+    form {
+      div[class^="col-"] {    
+      margin: 40px 0;
+        
+      }  
+    
+      .btn {
+        margin-top: 10px;
+        width: 250px !important;
+      }
+    }    
+  }
+}
+
 .section8 {
   padding-bottom: 30px; 
   background-color: $backgroundColor;

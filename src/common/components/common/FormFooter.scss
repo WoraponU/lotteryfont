@@ -2,7 +2,14 @@
 
 $backGroundColor: $pink;
 $h5Color: $white;
+@media (max-width: 480px) {
+  .footer {
+    h5 {
+      float: left !important;
 
+    }
+  }
+}
 .footer {
   background-color: $backGroundColor;
   padding-top: 10px;

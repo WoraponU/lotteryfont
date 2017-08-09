@@ -3,7 +3,24 @@
 $HeaderColor: $pink;
 $pSection4: $black;
 $shadow: $boxshadowblack;
+@media (min-width: 420px){
+  .section4 {
+    .header {
+      text-align: left;
+    }  
+    .xsImg {
+      padding: 0px;
+    }
+    .text-right {
+      p {       
+        font-size: 17px !important;
+        line-height: 1.47 !important;
+        text-shadow: none !important;
 
+      }
+    }   
+  }
+}
 .section4 {
   margin-bottom: 150px;
   position: relative;
@@ -52,7 +69,8 @@ $shadow: $boxshadowblack;
 
   .imgOut {
     @extend .imgW355;
-    
+    position: absolute;
+    left: -765px;
   }
   .imgCard4 {
     @extend .imgW355;

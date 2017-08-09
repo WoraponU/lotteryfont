@@ -127,7 +127,7 @@ body {
   .slick-slider {
     .slick-list {
       cursor: pointer;
-      height: auto !important;
+      
 
       img {
         @include notDragable;
@@ -142,12 +142,21 @@ body {
       @extend .btnBlack;
     }
   }
-}
 
 
-////////////////////
-.textColor{
+
+  .textColor{
     .txPink {
       color: $pink;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+        font-size: 25px !important;
+    }
+  }
+}
+
+
+

@@ -36,15 +36,17 @@ const Section7 = ({
       <Grid className="text-center">
          <h1>{content.header}</h1>
       </Grid>
-      <Grid className="text-center containerShadow LiquidCircle">  
+      <Grid className="text-center containerShadow LiquidCircle ">  
+        <Col xsHidden smHidden>
         <LiquidCircle id={12} radius={170} color={pink} position={["auto", "auto", "-65px", "-65px"]}/>   
         <LiquidCircle id={14} radius={230} color={purple} position={["412px", "auto", "auto", "-208px"]}/>      
         <LiquidCircle id={13} radius={170} color={yellow} position={["500px", "auto", "auto", "-245px"]}/>    
+        </Col>
         <Row>
-          <Col lg={2} md={2} sm={2}>
+          <Col lg={2} md={2} sm={2} xs={2}>
             <hr/>
           </Col>
-          <Col lg={8} md={8} sm={8} className="text-left">
+          <Col lg={8} md={8} sm={8} xs={10} className="text-left">
             <p>{content.content}</p>
           </Col>
         </Row>

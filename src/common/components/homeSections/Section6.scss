@@ -1,15 +1,44 @@
 @import '~Theme/colors';
 @import '~Theme/mixin';
+@import '~Theme/common';
 
 $textColor: $black;
 $imgShadow: $boxshadowblack;
 $buttonColor: $pink;
+@media (max-width: 480px) {
+  .section6 {
+    .container {
+      padding: 0px !important;
 
+    }
+
+    .slick-list {
+      cursor: pointer;
+      height: 500px !important;
+
+    }
+
+    .slick-next {
+      position: relative !important;
+
+    }
+
+    .slick-slider {
+      width: 100%;
+      left: 0em !important;
+      margin-right: 0em !important;
+    
+      .slick-prev{
+        position: relative !important;
+      }   
+    }    
+  } 
+}
 .section6 {
   margin-bottom: 50px;
   margin-top: 223px;
   position: relative;
-
+   
   .text-center {
     h1 {
       text-align: center;
@@ -25,10 +54,15 @@ $buttonColor: $pink;
     }
   }
 
+  .btn-black {
+        @extend .btnBlack;
+        padding: 14px 22px 8px 22px;
+  }
+
   .slick-slider {
     .slick-list {
       cursor: pointer;
-      height: auto !important;
+      height: 500px ;
 
     }
 
