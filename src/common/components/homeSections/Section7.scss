@@ -64,8 +64,6 @@ $containerShadow: $black0_03;
    
     .btn-black {
       @extend .btnBlack;
-      margin-top: 30px;
-
     }
 
     .form-group {
@@ -73,7 +71,6 @@ $containerShadow: $black0_03;
 
       &:hover, &:focus {
         @include placeholder;
-        
       }
  
       .form-control {
