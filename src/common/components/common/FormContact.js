@@ -20,7 +20,7 @@ const Section9 = () => {
         </Row>
         <Row>   
           <Col lg={3}  md={3} xsHidden smHidden> <Image src="/assets/images/common/Footer/room.png" /></Col>
-          <Col lg={3}  md={3} sm={3} xs={6} className="contact">
+          <Col lg={3}  md={3} sm={3} xs={12} className="contact">
             <h4>hello@hobbiz.co.th</h4>
             <h4>(+66) 89-822-1223</h4><br/>
             <p>
