@@ -36,7 +36,7 @@ const Section6 = ({ lang: { section6: content } }) => {
                 subTittle='lab'
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>
             </Col>   
-               
+             
             <Col lg={3} md={3} sm={6} xs={12}>             
               <Card 
                 read={content.read}
@@ -62,7 +62,7 @@ const Section6 = ({ lang: { section6: content } }) => {
                 content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>         
             </Col> 
                      
-          </Row>
+            </Row>
           <Row>
             <Col lg={3} md={3} sm={6} xs={12}>
               <Card 

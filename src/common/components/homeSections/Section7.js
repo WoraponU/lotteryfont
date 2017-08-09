@@ -37,37 +37,37 @@ const Section7 = ({
         <LiquidCircle id={14} radius={230} color={purple} position={["412px", "auto", "auto", "-208px"]}/>      
         <LiquidCircle id={13} radius={170} color={yellow} position={["500px", "auto", "auto", "-245px"]}/>    
         <Row>
-          <Col lg={2} md={2} sm={2}>
+          <Col lg={2} md={2} sm={2} xs={2}>
             <hr/>
           </Col>
-          <Col lg={8} md={8} sm={8} className="text-left">
+          <Col lg={8} md={8} sm={8} xs={10} className="text-left">
             <p>{content.content}</p>
           </Col>
         </Row>
         <Form > 
           <Row>
-            <Col lg={6} md={6} sm={6}>
+            <Col lg={6} md={6} sm={6} xs={12}>
               <Field name="name" component={renderFormGroup} placeholder={content.placeholder.yourName}/>
             </Col>
-            <Col lg={6} md={6} sm={6}>
+            <Col lg={6} md={6} sm={6} xs={12}>
               <Field name="email" component={renderFormGroup} placeholder={content.placeholder.email}/>
             </Col>            
           </Row>
           <Row>
-            <Col lg={6} md={6} sm={6}>
+            <Col lg={6} md={6} sm={6} xs={12}>
               <Field name="phoneNumber" component={renderFormGroup} placeholder={content.placeholder.phoneNumber}/>
             </Col>            
-            <Col lg={6} md={6} sm={6}>
+            <Col lg={6} md={6} sm={6} xs={12}>
               <Field name="company" component={renderFormGroup} placeholder={content.placeholder.company}/>
             </Col>            
           </Row>
           <Row>
-            <Col lg={12} md={12} sm={12}>
+            <Col lg={12} md={12} sm={12} xs={12}>
               <Field name="yourMind" component={renderFormGroup} placeholder={content.placeholder.yourMind}/>
             </Col>           
           </Row>
           <Row>
-            <Col lg={12} md={12} sm={12}>
+            <Col lg={12} md={12} sm={12} xs={12}>
               <Button className="btn-black mt10" onClick={() => handleSubmit()}>
                 {content.sendMessage}
               </Button>
