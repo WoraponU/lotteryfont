@@ -3,6 +3,20 @@
 
 $h4Color: $black2;
 
+@media (max-width: 480px) {
+  .section9 {
+    img {
+      float: left !important;
+
+    }
+    .socialGroup {
+      padding-top: 25px !important;
+      padding-bottom: 43px !important;
+      
+    }
+  }
+}
+
 .section9 {
   img {
         width: 100%;

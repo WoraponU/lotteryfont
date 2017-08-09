@@ -21,7 +21,7 @@ const Section6 = ({ lang: { section6: content } }) => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1, 
-           slidesToScroll: 1, 
+          lidesToScroll: 1, 
           arrows: false,
           dots: false,
           variableWidth: true,
@@ -29,7 +29,7 @@ const Section6 = ({ lang: { section6: content } }) => {
           wipeToSlide: false
         }
       }
-  ]
+    ]
   };
   
   return (
