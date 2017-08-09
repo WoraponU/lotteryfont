@@ -1,3 +1,5 @@
+const error = require('../message/Error');
+
 module.exports = {
   "section7": {
     "header": "ASK US ANYTHING",
@@ -13,6 +15,7 @@ module.exports = {
     "alertMessage": {
       "title": "Thank you for your interest.",
       "content": "One of our friendly staff will get back to you within 24 hours."
-    }
+    },
+    ...error
   }
 }
