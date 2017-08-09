@@ -69,7 +69,7 @@ const Section7 = ({
           </Row>
           <Row>
             <Col lg={12} md={12} sm={12}>
-              <Button className="btn-black mt10" onClick={() => handleSubmit()}>
+              <Button className="btn-black mt10" disabled={isPostingMailContactUs} onClick={() => handleSubmit()}>
                 {content.sendMessage}
               </Button>
               { 
