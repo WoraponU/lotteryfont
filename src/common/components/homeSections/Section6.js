@@ -35,7 +35,7 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
           lidesToScroll: 1, 
           arrows: true,
           dots: false,
-          // variableWidth: true,
+          variableWidth: true,
           // adaptiveHeight: true,
           // wipeToSlide: false
         }

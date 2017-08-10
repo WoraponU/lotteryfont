@@ -1,26 +1,6 @@
 @import '~Theme/colors';
 @import '~Theme/common';
 
-@media (max-width: 480px) {
-  .section2 {
-    margin-bottom: 110px !important;
-    
-    .slick-slider {
-      margin-right: -4em !important;
-      left: -4em !important;
-     
-      .slick-list{
-        padding-right: 1em;
-      }
-    } 
-
-    img {
-      width: 340px;
-
-    }
-  } 
-}
-
 .section2 {
   margin-bottom: 150px;
   
@@ -71,4 +51,24 @@
       max-height: 400px;
     }
   }
+}
+
+@media (max-width: 480px) {
+  .section2 {
+    margin-bottom: 110px;
+    
+    .slick-slider {
+      margin-right: -4em;
+      left: -4em;
+     
+      .slick-list{
+        padding-right: 1em;
+      }
+    } 
+
+    img {
+      width: 340px;
+
+    }
+  } 
 }

@@ -3,30 +3,7 @@
 $HeaderColor: $pink;
 $pSection4: $black;
 $shadow: $boxshadowblack;
-@media (max-width: 480px){
-  .section4 {
-    .text-center {
-      text-align: left !important;
 
-    } 
-
-    .xsImg {
-      padding: 0px;
-
-    }
-
-    
-    .text-right {
-      p {
-        padding-top: 155% !important;
-        font-size: 17px !important;
-        line-height: 1.47 !important;
-        text-shadow: none !important;
-
-      }
-    }
-  }
-}
 .section4 {
   margin-bottom: 150px;
   position: relative;
@@ -107,5 +84,30 @@ $shadow: $boxshadowblack;
     @extend .imgW355;
     box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
 
+  }
+}
+
+@media (max-width: 480px){
+  .section4 {
+    .text-center {
+      text-align: left;
+
+    } 
+
+    .xsImg {
+      padding: 0px;
+
+    }
+
+    
+    .text-right {
+      p {
+        padding-top: 155%;
+        font-size: 17px;
+        line-height: 1.47;
+        text-shadow: none;
+
+      }
+    }
   }
 }

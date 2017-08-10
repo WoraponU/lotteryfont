@@ -6,30 +6,6 @@ $header: $black;
 $pText1: $boxshadowblack;
 $imgShadow: $windWalk;
 
-@media (max-width: 480px) {
-  .section3 {
-     padding-left: 15px;
-
-    img {
-      padding-left: 15px;
-
-    }
-
-    .boxBottom {
-      padding-left: 15px !important;
-
-      h3 {
-        padding: 10px 0;
-      }
-      
-      p {
-        padding: 10px 0;
-        
-      }
-    }
-  }
-}
-
 .section3 {
   position: relative;
   margin-bottom: 150px;
@@ -80,7 +56,7 @@ $imgShadow: $windWalk;
 
     }  
 
-   div[class^="col-"]{    
+   div[class^="col-"] {    
     position: relative;
     padding-left: 0px;
     padding-right: 0px;
@@ -106,5 +82,28 @@ $imgShadow: $windWalk;
     }
   }
 }
-  
+
+@media (max-width: 480px) {
+  .section3 {
+     padding-left: 15px;
+
+    img {
+      padding-left: 15px;
+
+    }
+
+    .boxBottom {
+      padding-left: 15px mportant;
+
+      h3 {
+        padding: 10px 0;
+      }
+      
+      p {
+        padding: 10px 0;
+        
+      }
+    }
+  }
+}
  
