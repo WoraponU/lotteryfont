@@ -50,14 +50,14 @@ $shadow: $boxshadowblack;
      width: 355px;
   }
 
-  .imgOut {
+  .imgMoblie {
     @extend .imgW355;
     position: absolute;
-    left: -765px;
+    left: -379px;
 
   }
 
-  .imgCard4 {
+  .imgWeb {
     @extend .imgW355;
     float: right;
     box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
@@ -65,21 +65,21 @@ $shadow: $boxshadowblack;
 
   }
 
-  .imgCard3 {
+  .imgMonitor {
     height: 734px;
     box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
 
   }
 
-  .imgCard {
-    left: -400px;
+  .imgWhite {
+    left: -143px;
     top: 165px;
     position: absolute;
     z-index: -1;
 
   }
 
-  .imgCard2 {
+  .imgCreative {
     margin-left: -8px;
     @extend .imgW355;
     box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);

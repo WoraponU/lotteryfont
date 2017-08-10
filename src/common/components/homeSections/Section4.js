@@ -18,13 +18,11 @@ const Section4 = ({ lang: { section4: content } }) => {
       <Grid>
         <Row className="rowPosition">         
           <Col lg={4} md={4} xsHidden smHidden>
-            <Image src="/assets/images/home/section4/creative.png" className="imgCard2"/>
+            <Image src="/assets/images/home/section4/creative.png" className="imgCreative"/>
+            <Image src="/assets/images/home/section4/moblie.png" className="imgMoblie" />
           </Col>
-          <Col lg={4} md={4} xsHidden smHidden>
-            <Image src="/assets/images/home/section4/moblie.png" className="imgOut" />
-          </Col>  
           <Col lg={4} md={4} xsHidden smHidden className="LiquidCircle" >
-            <Image src="/assets/images/home/section4/white.png" className="imgCard"/>
+            <Image src="/assets/images/home/section4/white.png" className="imgWhite"/>
             {/* <LiquidCircle id={9} radius={200} color={pink} position={["165px", "70px", "auto", "auto"]}/> */}
           </Col>
           <Col sm={12} xs={12} lgHidden mdHidden className="xsImg">
@@ -37,11 +35,11 @@ const Section4 = ({ lang: { section4: content } }) => {
          <Row >
           <Col lg={8} md={8} xsHidden smHidden>
             <Image src="/assets/images/home/section4/note.png" />
-            <Image src="/assets/images/home/section4/web.png" className="imgCard4"/>
+            <Image src="/assets/images/home/section4/web.png" className="imgWeb"/>
             
           </Col>
           <Col lg={4} md={4} xsHidden smHidden>
-            <Image src="/assets/images/home/section4/monitor.png" className="imgCard3" />
+            <Image src="/assets/images/home/section4/monitor.png" className="imgMonitor" />
           </Col>
           <Col xsHidden smHidden  mdHidden> 
              {/* <LiquidCircle id={19} radius={300} color={blue} position={["auto", "-250px", "-154px", "auto"]}/>

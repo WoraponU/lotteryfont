@@ -11,7 +11,7 @@ const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } }
     <Grid className="section1">
       <Row>
         <Col mdOffset={5} lgOffset={6} md={7} lg={6} sm={7} xsHidden>
-          <Image src="/assets/images/home/section1/watch.png" responsive />
+          <Image src="/assets/images/home/section1/watch.png" responsive className="imgWatch"/>
         </Col>
       </Row>
       <Row className="header">
@@ -29,12 +29,12 @@ const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } }
         <Col  md={5} lg={5} xs={2} sm={2} className="text-right">  
         <hr/>               
         </Col>
-        <Col md={5} lg={5} xs={10} sm={10} >
+        <Col md={6} lg={6} xs={10} sm={10} >
           <p>{ content.content }</p>
         </Col>
       </Row> 
       <Row >
-        <Col mdOffset={5} lgOffset={5}  xsOffset={4}  smOffset={4} lg={5} md={5} sm={5} xs={5} >          
+        <Col mdOffset={5} lgOffset={5}  xsOffset={4}  smOffset={4} lg={6} md={65} sm={5} xs={5} >          
           <LinkContainer  to={`/${lang}/our-work`} className="btn-black mt10"><Button >{ content.button }</Button></LinkContainer>
         </Col>
       </Row>
