@@ -89,11 +89,3 @@ var HoverButton = function (el) {
   }();
 
 export default HoverButton;
-// var btn1 = document.querySelector('li:nth-child(1) button');
-// new HoverButton(btn1);
-
-// var btn2 = document.querySelector('li:nth-child(2) button');
-// new HoverButton(btn2);
-
-// var btn3 = document.querySelector('li:nth-child(3) button');
-// new HoverButton(btn3);
