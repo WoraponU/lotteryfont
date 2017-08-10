@@ -7,6 +7,7 @@ $h3Color: $pink;
 
   .text-center {
     img {
+      width: auto;
       margin-bottom: 153px;
       margin-top: 25px;
     }
@@ -29,5 +30,20 @@ $h3Color: $pink;
   .row2Image {
     margin-top: 37px;
     margin-bottom: 96px;
+    position: relative;
+
+    .imgOut {
+      position: absolute;
+      left: -280px;
+
+    }
+  }
+
+
+
+  @media (max-width: 480px) {
+  // img {
+  //   width: 100%;
+  // }
   }
 }

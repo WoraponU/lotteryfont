@@ -1,7 +1,10 @@
 @import '~Theme/colors';
+@import '~Theme/common';
 
 $spanColor: $pink;
-
+$hrColor: $blue2;
+$allWorkColor: $black;
+$textSmallColor: $mainFontColor;
 .OurMom {
   .text-center {
     margin-bottom: 380px;
@@ -10,10 +13,26 @@ $spanColor: $pink;
   .formFreshDesign {
     .textSmall {
       font-size: 11.1px;
-      
+      color: $textSmallColor;
+      padding: 0 10px;
+      vertical-align:middle;
+
     }
+
+    p {
+      margin: 34px 0;
+
+    }
+
     .spanH1 {
       color: $spanColor;
+
+    }
+    
+    .btn-black {
+      @extend .btnBlack;
+      padding: 14px 22px 8px 22px;
+      width: 140px;
 
     }
   }
@@ -24,10 +43,19 @@ $spanColor: $pink;
     }
     .groupName {
       padding-left: 82px;
+      
+      .allWork {
+        color: $allWorkColor;
+        font-weight: bold;
+      }
+      .popular {
+        margin: 0 48px;
+      }
 
       hr {
         float: right;
         padding-right: 0px;
+        background-color: $hrColor;
 
       }
     }
@@ -43,15 +71,23 @@ $spanColor: $pink;
     .card1 {
     position: absolute;
     top: -184px;
-    left: 100px;
+    left: 74px;
     z-index: -2;
 
     }
     .card2 {
       z-index: -3;
-       position:absolute;
-       left: 34px;
+      position:absolute;
+      left: 19%;
+      top: 26%;
+
+    }
+  }
+
+  @media (max-width: 480px) {
+    .formFreshDesign {
 
     }
   }
 }
+
