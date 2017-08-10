@@ -19,6 +19,15 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
     swipeToSlide: false,
     lazyLoad: false,
     responsive: [
+       {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
       {
         breakpoint: 480,
         settings: {

@@ -14,15 +14,25 @@ const Section2 = ({ lang: { section2: content } }) => {
     arrows: true,
     lazyLoad: false,
       responsive: [
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-         arrows: false,
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
       }
-    }
-  ]
+    ]
   };
  
   return (
