@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Grid, Col, Image } from 'react-bootstrap';
 
-import LiquidCircle from 'Components/common/LiquidCircle';
-import { blue, yellow, purple } from 'Components/common/LiquidCircleColor';
+// import LiquidCircle from 'Components/common/LiquidCircle';
+// import { blue, yellow, purple } from 'Components/common/LiquidCircleColor';
 import './Section4.scss'
 
 const Section4 = ({ lang: { section4: content } }) => {
@@ -44,9 +44,9 @@ const Section4 = ({ lang: { section4: content } }) => {
             <Image src="/assets/images/home/section4/monitor.png" className="imgCard3" />
           </Col>
           <Col xsHidden smHidden  mdHidden> 
-             <LiquidCircle id={19} radius={300} color={blue} position={["auto", "-250px", "-154px", "auto"]}/>
+             {/* <LiquidCircle id={19} radius={300} color={blue} position={["auto", "-250px", "-154px", "auto"]}/>
             <LiquidCircle id={17} radius={160} color={yellow} position={["auto", "-119px", "-174px", "auto"]}/>
-            <LiquidCircle id={18} radius={210} color={purple} position={["auto", "-128px", "0px", "auto"]}/> 
+            <LiquidCircle id={18} radius={210} color={purple} position={["auto", "-128px", "0px", "auto"]}/>  */}
           </Col>
         </Row>
       </Grid>

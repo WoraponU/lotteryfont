@@ -32,12 +32,12 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
         breakpoint: 480,
         settings: {
           slidesToShow: 1, 
-          lidesToScroll: 1, 
+          // slidesToScroll: 1, 
           arrows: true,
           dots: false,
           variableWidth: true,
-          // adaptiveHeight: true,
-          // wipeToSlide: false
+          adaptiveHeight: false,
+          wipeToSlide: false
         }
       }
     ]
