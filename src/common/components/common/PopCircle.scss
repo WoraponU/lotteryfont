@@ -1,0 +1,35 @@
+ul.popCircle {
+  padding: 0;
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
+    // &:nth-child(1) button {
+    //   background: #F3FFBD;
+    // }
+    // &:nth-child(2) button {
+    //   background: #247BA0;
+    // }
+    // &:nth-child(3) button {
+    //   background: #FF1654;
+    // }
+
+    button {
+      position: relative;
+      // width: 200px;
+      // height: 200px;
+      border-radius: 50%;
+      border: 0;
+      color: white;
+      font-family: Verdana;
+      font-weight: bold;
+      font-size: 50px;
+      cursor: pointer;
+      padding: 0;
+    }
+  }
+}
+
+
+
