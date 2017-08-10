@@ -6,7 +6,6 @@ import LiquidCircle from 'Components/common/LiquidCircle';
 import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
 import './Section1.scss'
 
-
 const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } } }) => {
   return (
     <Grid className="section1">
@@ -17,7 +16,7 @@ const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } }
       </Row>
       <Row className="header">
         <Col sm={4} md={4} lg={4} xsHidden smHidden>
-           <LiquidCircle id={1} radius={300} color={blue} position={["20px", "20px", "20px", "20px"]}/>
+          <LiquidCircle id={1} radius={300} color={blue} position={["20px", "20px", "20px", "20px"]}/>
           <LiquidCircle id={2} radius={170} color={yellow} position={["182px", "47px", "auto", "auto"]}/>
           <LiquidCircle id={3} radius={200} color={purple} position={["-25px", "auto", "auto", "-15px"]}/>
           <LiquidCircle id={4} radius={170} color={pink} position={["-100px", "auto", "auto", "-77px"]}/> 

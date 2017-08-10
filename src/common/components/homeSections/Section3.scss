@@ -9,9 +9,12 @@ $imgShadow: $windWalk;
 @media (max-width: 480px) {
   .section3 {
      padding-left: 15px;
+
     img {
       padding-left: 15px;
+
     }
+
     .boxBottom {
       padding-left: 15px !important;
 
@@ -21,6 +24,7 @@ $imgShadow: $windWalk;
       
       p {
         padding: 10px 0;
+        
       }
     }
   }

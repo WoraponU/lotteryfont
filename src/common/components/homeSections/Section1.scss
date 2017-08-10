@@ -4,15 +4,7 @@
 $hrColor: $blue2;
 $headerColor: $black2;
 
-@media (max-width: 480px) {
-  .section1 {
-    background-position: 100% 0 !important;
-    background-size: 60% !important;
-    padding-top:200px;
-    margin-bottom: 80px !important;
-  
-  }
-}
+
 
 .section1 {
   background-image: url('/assets/images/home/section1/box.png');
@@ -54,5 +46,15 @@ $headerColor: $black2;
   .btn-black {
     @extend .btnBlack;
         padding: 14px 22px 8px 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section1 {
+    background-position: 100% 0;
+    background-size: 60%;
+    padding-top:200px;
+    margin-bottom: 80px;
+  
   }
 }

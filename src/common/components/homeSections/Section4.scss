@@ -12,17 +12,19 @@ $shadow: $boxshadowblack;
 
     .xsImg {
       padding: 0px;
+
     }
 
     
-  .text-right {
-    p {
-      padding-top: 155% !important;
-      font-size: 17px !important;
-      line-height: 1.47 !important;
-      text-shadow: none !important;
+    .text-right {
+      p {
+        padding-top: 155% !important;
+        font-size: 17px !important;
+        line-height: 1.47 !important;
+        text-shadow: none !important;
+
+      }
     }
-  }
   }
 }
 .section4 {
@@ -75,7 +77,9 @@ $shadow: $boxshadowblack;
     @extend .imgW355;
     position: absolute;
     left: -765px;
+
   }
+
   .imgCard4 {
     @extend .imgW355;
     float: right;
@@ -102,5 +106,6 @@ $shadow: $boxshadowblack;
     margin-left: -8px;
     @extend .imgW355;
     box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
+
   }
 }

@@ -49,11 +49,6 @@ const Section4 = ({ lang: { section4: content } }) => {
             <LiquidCircle id={18} radius={210} color={purple} position={["auto", "-128px", "0px", "auto"]}/> 
           </Col>
         </Row>
-        {/* <Row >
-          <Col lg={3} md={3} mdOffset={4} lgOffset={4} xsHidden smHidden>
-            <Image src="/assets/images/home/section4/web.png" className="imgCard4"/>
-          </Col>         
-        </Row> */}
       </Grid>
     </div>
   );
