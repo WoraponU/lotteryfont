@@ -3,24 +3,7 @@
 $HeaderColor: $pink;
 $pSection4: $black;
 $shadow: $boxshadowblack;
-@media (min-width: 420px){
-  .section4 {
-    .header {
-      text-align: left;
-    }  
-    .xsImg {
-      padding: 0px;
-    }
-    .text-right {
-      p {       
-        font-size: 17px !important;
-        line-height: 1.47 !important;
-        text-shadow: none !important;
 
-      }
-    }   
-  }
-}
 .section4 {
   margin-bottom: 150px;
   position: relative;
@@ -71,13 +54,14 @@ $shadow: $boxshadowblack;
     @extend .imgW355;
     position: absolute;
     left: -765px;
+
   }
+
   .imgCard4 {
     @extend .imgW355;
-    position: absolute;
-    bottom: 29px;
-    left: 20px;
+    float: right;
     box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
+    margin-top: 11px;
 
   }
 
@@ -88,8 +72,8 @@ $shadow: $boxshadowblack;
   }
 
   .imgCard {
-    left: -118px;
-    top: 117px;
+    left: -400px;
+    top: 165px;
     position: absolute;
     z-index: -1;
 
@@ -99,5 +83,31 @@ $shadow: $boxshadowblack;
     margin-left: -8px;
     @extend .imgW355;
     box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
+
+  }
+}
+
+@media (max-width: 480px){
+  .section4 {
+    .text-center {
+      text-align: left;
+
+    } 
+
+    .xsImg {
+      padding: 0px;
+
+    }
+
+    
+    .text-right {
+      p {
+        padding-top: 155%;
+        font-size: 17px;
+        line-height: 1.47;
+        text-shadow: none;
+
+      }
+    }
   }
 }

@@ -9,7 +9,7 @@ const Menu = ({ lang, match: { params: { lang: paramLang } } }) => {
   return (
     <Grid>
       <Row className="show-grid">
-        <Col sm={6} md={6} className="navBar">
+        <Col sm={6} md={6} className="navBar" >
           <ul>
             <li><NavLink exact to={`/${paramLang}`} activeClassName="active"><span>{ lang.home }</span></NavLink> </li>
             <li><NavLink to={`/${paramLang}/aboutUs`} activeClassName="active"><span>{ lang.aboutUs }</span></NavLink></li>

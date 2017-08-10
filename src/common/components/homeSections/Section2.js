@@ -14,15 +14,25 @@ const Section2 = ({ lang: { section2: content } }) => {
     arrows: true,
     lazyLoad: false,
       responsive: [
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-         arrows: false,
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
       }
-    }
-  ]
+    ]
   };
  
   return (
@@ -42,8 +52,7 @@ const Section2 = ({ lang: { section2: content } }) => {
           <img src="/assets/images/home/section2/mac5.png" alt="mac5"/>
         </Slider>
       </div>
-      
-      <Col smOffset={9} mdOffset={9} lgOffset={9} sm={3} md={3} lg={3} xsHidden className="LiquidCircle">
+      <Col smOffset={9} mdOffset={9} lgOffset={9} sm={3} md={3} lg={3} xsHidden mdHidden className="LiquidCircle">
         <LiquidCircle id={5} radius={300} color={blue} position={["20px", "20px", "20px", "20px"]}/>
         <LiquidCircle id={6} radius={170} color={yellow} position={["30px", "auto", "auto", "-10px"]}/>
         <LiquidCircle id={7} radius={200} color={purple} position={["-25px", "140px", "auto", "auto"]}/>
