@@ -57,17 +57,13 @@ const Section7 = ({
             </Col>
             <Col lg={6} md={6} sm={6}>
               <Field errMsg={content.error} name="email" component={renderFormGroup} placeholder={content.placeholder.email}/>
-            </Col>            
-          </Row>
-          <Row>
+            </Col>                
             <Col lg={6} md={6} sm={6}>
               <Field errMsg={content.error} name="phoneNumber" component={renderFormGroup} placeholder={content.placeholder.phoneNumber}/>
             </Col>            
             <Col lg={6} md={6} sm={6}>
               <Field errMsg={content.error} name="company" component={renderFormGroup} placeholder={content.placeholder.company}/>
             </Col>            
-          </Row>
-          <Row>
             <Col lg={12} md={12} sm={12}>
               <Field errMsg={content.error} name="yourMind" component={renderFormGroup} placeholder={content.placeholder.yourMind}/>
             </Col>           
