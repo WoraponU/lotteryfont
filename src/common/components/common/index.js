@@ -10,4 +10,5 @@ export { default as FormFooter } from './FormFooter'
 export { default as FormSubscribeComponent } from './FormSubscribe'
 export { default as ArrowMap } from './ArrowMap'
 export { default as Spinner } from './Spinner'
+export { default as PopCircle } from './PopCircle'
 

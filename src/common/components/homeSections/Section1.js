@@ -3,12 +3,14 @@ import { Grid, Row, Col, Image, Button } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
 import LiquidCircle from 'Components/common/LiquidCircle';
+import { PopCircle } from 'Components/common';
 import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
 import './Section1.scss'
 
 const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } } }) => {
   return (
     <Grid className="section1">
+      <PopCircle/>
       <Row>
         <Col mdOffset={5} lgOffset={6} md={7} lg={6} sm={7} xsHidden>
           <Image src="/assets/images/home/section1/watch.png" responsive className="imgWatch"/>
