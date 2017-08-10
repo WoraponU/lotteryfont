@@ -3,22 +3,26 @@
 $HeaderColor: $pink;
 $pSection4: $black;
 $shadow: $boxshadowblack;
-@media (min-width: 420px){
+@media (max-width: 480px){
   .section4 {
-    .header {
-      text-align: left;
-    }  
+    .text-center {
+      text-align: left !important;
+
+    } 
+
     .xsImg {
       padding: 0px;
     }
-    .text-right {
-      p {       
-        font-size: 17px !important;
-        line-height: 1.47 !important;
-        text-shadow: none !important;
 
-      }
-    }   
+    
+  .text-right {
+    p {
+      padding-top: 155% !important;
+      font-size: 17px !important;
+      line-height: 1.47 !important;
+      text-shadow: none !important;
+    }
+  }
   }
 }
 .section4 {

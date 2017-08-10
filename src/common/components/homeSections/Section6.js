@@ -24,11 +24,11 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
         settings: {
           slidesToShow: 1, 
           lidesToScroll: 1, 
-          arrows: false,
+          arrows: true,
           dots: false,
-          variableWidth: true,
-          adaptiveHeight: true,
-          wipeToSlide: false
+          // variableWidth: true,
+          // adaptiveHeight: true,
+          // wipeToSlide: false
         }
       }
     ]
