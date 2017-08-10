@@ -16,19 +16,22 @@ const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
           <Image src="/assets/images/common/line.png"></Image>
         </Row>
         <Row>
-          <Col lg={12}>
+          <Col lg={12} md={12} xsHidden smHidden>
             <LiquidCircle id={32} radius={220} color={purple} position={["-82px", "0px", "auto", "auto"]}/>
             <LiquidCircle id={33} radius={170} color={yellow} position={["-155px", "125px", "auto", "auto"]}/>
             <LiquidCircle id={34} radius={170} color={pink} position={["-6px", "-22px", "auto", "auto"]}/>
+          </Col>
+          <Col lg={12} md={12} xs={12}> 
             <Image src="/assets/images/about/helloFriend/room.png"></Image>
           </Col>
         </Row>
         <Row className="row2Image">
-          <Col lg={3}>
+          <Col lg={3} xsHidden smHidden>
+            <Image src="/assets/images/about/helloFriend/speaker.png" className="imgOut" />
             <Image src="/assets/images/about/helloFriend/work.png"></Image>          
             <LiquidCircle id={35} radius={220} color={blue} position={["auto", "-132px", "auto", "auto"]}/>                      
           </Col>
-           <Col lg={3}>
+           <Col lg={3} xsHidden smHidden>
             <Image src="/assets/images/about/helloFriend/chair.png"></Image>          
           </Col>
           <Col lg={6} className="blockText">
@@ -38,7 +41,7 @@ const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
           </Col>
         </Row>
         <Row>
-          <Col lgOffset={9} lg={3} className="textColor">
+          <Col lgOffset={9} lg={3} xsHidden smHidden className="textColor">
             <h3 className="txPink">{ content.title2 }</h3>
           </Col>
         </Row>
