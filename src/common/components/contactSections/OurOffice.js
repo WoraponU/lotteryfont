@@ -1,8 +1,9 @@
 import React from 'react';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 
-import LiquidCircle from 'Components/common/LiquidCircle';
-import { blue } from 'Components/common/LiquidCircleColor';
+
+  import { PopCircle } from 'Components/common';
+import { blue } from 'Constants';
 
 import './OurOffice.scss'
 
@@ -22,7 +23,7 @@ const OurOfficeComponent = ({ lang: { OurOffice: content }}) => {
           <Row className="sayHello">
             <h3>{ content.contactTitle }</h3>
             <p dangerouslySetInnerHTML={{ __html: content.contactSubTitle }}></p>
-            <LiquidCircle id={32} radius={180} color={blue} position={["auto", "0px", "-400px", "auto"]}/>          
+            <PopCircle color={blue} radius={83}  position={["auto", "0px", "-400px", "auto"]}/>          
           </Row>
         </Col>
         <Col lg={3} md={3} sm={3}>

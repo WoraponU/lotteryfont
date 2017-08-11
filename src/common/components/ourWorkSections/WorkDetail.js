@@ -5,8 +5,8 @@ import { withRouter } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
 
-import LiquidCircle from 'Components/common/LiquidCircle';
-import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
+import { PopCircle } from 'Components/common';
+import { blue, yellow, purple, pink } from 'Constants';
 
 import './WorkDetail.scss'
 
@@ -24,15 +24,14 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
   return (
     <div className="workDetail">
       <Grid>
-        <LiquidCircle id={22} radius={170} color={yellow} position={["200px", "400px", "auto", "auto"]}/> 
+        <PopCircle color={yellow} radius={86} position={["200px", "400px", "auto", "auto"]}/> 
         <Row className="detailHeader">
           <Breadcrumb> 
             <LinkContainer to={`/${lang}`}><Breadcrumb.Item>{ content.breadCrumb.home }</Breadcrumb.Item></LinkContainer>
             <LinkContainer to={`/${lang}/our-work`}><Breadcrumb.Item>{ content.breadCrumb.ourWork }</Breadcrumb.Item></LinkContainer>
             <Breadcrumb.Item active>{contentLoaded.name}</Breadcrumb.Item>
           </Breadcrumb>
-          
-          <LiquidCircle id={23} radius={190} color={blue} position={["auto", "auto", "-108px", "-147px"]}/>           
+          <PopCircle color={blue} radius={104} position={["auto", "auto", "-108px", "-147px"]}/>     
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
             <h1 dangerouslySetInnerHTML={{__html: contentLoaded.mainHeader}}></h1>
           </Col>        
@@ -60,8 +59,8 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
           </Col>
         </Row>
         <Row className="detailTitle">
-          <LiquidCircle id={24} radius={250} color={blue} position={["auto", "-130px", "50px", "auto"]}/>    
-          <LiquidCircle id={25} radius={160} color={pink} position={["auto", "-150px", "0px", "auto"]}/>    
+          <PopCircle color={blue} radius={137} position={["auto", "-130px", "50px", "auto"]}/>    
+          <PopCircle color={pink} radius={61} position={["auto", "-150px", "0px", "auto"]}/>     
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={8} md={8} sm={8}>
                <Image src={`/assets/images/work/workDetail/${contentLoaded.imageInfo.logo.path}`}/>   
             <hr/>
@@ -81,8 +80,8 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
           </Slider>
         </div>
         <Row className="detailTitle">        
-          <LiquidCircle id={26} radius={250} color={blue} position={["170px", "0px", "0px", "-193px"]}/>    
-          <LiquidCircle id={27} radius={190} color={purple} position={["56px", "0px", "0px", "0px"]}/>   
+          <PopCircle color={blue} radius={121} position={["170px", "0px", "0px", "-193px"]}/>   
+          <PopCircle color={purple} radius={84} position={["56px", "0px", "0px", "0px"]}/>   
           <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6}>
             <h3 dangerouslySetInnerHTML={{__html: contentLoaded.subHeader3}}></h3>
             <p dangerouslySetInnerHTML={{__html: contentLoaded.content3}}></p>
