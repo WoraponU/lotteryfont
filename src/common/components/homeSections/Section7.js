@@ -107,4 +107,5 @@ export default reduxForm({
   form: 'postMailContactUs',
   validate: validate,
   onSubmitSuccess: afterSubmit,
+  destroyOnUnmount: false,
 })(Section7)

@@ -15,7 +15,6 @@ $containerShadow: $black0_03;
   .containerShadow {
     box-shadow: 14.8px 23.7px 21px 0 $containerShadow;
     position: relative;
-
   }
 
   .text-center {
@@ -28,7 +27,6 @@ $containerShadow: $black0_03;
       text-transform:uppercase;
       margin-bottom: 53px;
       margin-top: 20px;
-
     }
   }
 
@@ -71,7 +69,7 @@ $containerShadow: $black0_03;
         border-top: 0px;
         border-radius: 0px;
         box-shadow: inherit;
-        text-transform:uppercase;
+        text-transform: uppercase;
         
         &:hover, &:focus {
           border-bottom: 3px solid $formColor;
