@@ -2,7 +2,7 @@ import {TweenMax, Power2, Elastic} from "gsap";
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var HoverButton = function (el) {
+const HoverButton = function (el) {
   function HoverButton(el) {
     _classCallCheck(this, HoverButton);
 
@@ -16,7 +16,10 @@ var HoverButton = function (el) {
   HoverButton.prototype.attachEventsListener = function attachEventsListener() {
     var _this = this;
     
-    window.addEventListener('mousemove', function (e) {
+    this.el.addEventListener('mousemove', function (e) {
+      return _this.onMouseMove(e);
+    });
+    this.el.addEventListener('click', function (e) {
       return _this.onMouseMove(e);
     });
     window.addEventListener('resize', function (e) {
@@ -24,9 +27,6 @@ var HoverButton = function (el) {
     });
     window.addEventListener('scroll', function (e) {
       return _this.calculatePosition(e);
-    });
-    window.addEventListener('click', function (e) {
-      return _this.onMouseMove(e);
     });
   };
 
