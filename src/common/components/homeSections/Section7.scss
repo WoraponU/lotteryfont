@@ -50,6 +50,16 @@ $containerShadow: $black0_03;
     .form-group {
       margin: 10px 50px;
 
+      span {
+        color: $formColor;
+        float: left;
+            color: #ff0000;
+    float: left;
+    font-size: 11px;
+    margin-left: 13px;
+    padding-top: 3px;
+      }
+
       &:hover, &:focus {
         @include placeholder;
       }

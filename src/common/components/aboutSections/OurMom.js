@@ -26,8 +26,8 @@ const OurMomComponent = ({ lang: { OurMom: content }, match: { params: { id, lan
               <LinkContainer  to={`/${lang}/our-work`} className="btn-black mt10"><Button >{ content.button }</Button></LinkContainer>
             </Col>
           </Row>
-          <PopCircle color={blue} radius={131} position={["auto", "auto", "-252px", "-210px"]}/>      
-          <PopCircle color={yellow} radius={86} position={["autox", "auto", "auto", "-143px"]}/>
+          <PopCircle color={blue} radius={131} position={["auto", "auto", "-183px", "-145px"]}/>      
+          <PopCircle color={yellow} radius={86} position={["auto", "auto", "-100px", "-77px"]}/>
         </Col>
         <Col  lg={6} md={6} sm={6} className="formUserInterfaces">
           <PopCircle color={pink} radius={86} position={["-216px", "0px", "auto", "auto"]}/>
