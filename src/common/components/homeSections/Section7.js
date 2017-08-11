@@ -36,7 +36,7 @@ const Section7 = ({
       <Grid className="text-center">
          <h1>{content.header}</h1>
       </Grid>
-      <Grid className="text-center containerShadow LiquidCircle ">  
+      <Grid className="text-center containerShadow ">  
         <Col xsHidden smHidden>
           <PopCircle color={purple} radius={145} position={["495px", "auto", "auto", "-208px"]}/>        
           <PopCircle color={yellow} radius={86} position={["575px", "auto", "auto", "-245px"]}/>

@@ -22,7 +22,7 @@ const Section4 = ({ lang: { section4: content } }) => {
             <Image src="/assets/images/home/section4/creative.png" className="imgCreative"/>
             <Image src="/assets/images/home/section4/moblie.png" className="imgMoblie" />
           </Col>
-          <Col lg={4} md={4} xsHidden smHidden className="LiquidCircle" >
+          <Col lg={4} md={4} xsHidden smHidden>
             <Image src="/assets/images/home/section4/white.png" className="imgWhite"/>
             <PopCircle color={pink} radius={98} position={["165px", "134px", "auto", "auto"]}/>
           </Col>

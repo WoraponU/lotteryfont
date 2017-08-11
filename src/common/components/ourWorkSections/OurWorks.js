@@ -3,8 +3,6 @@ import { Grid, Row, Col, Tabs, Tab } from 'react-bootstrap';
 import Slider from 'react-slick';
 
 import { CardWork } from 'Components/common'
-import LiquidCircle from 'Components/common/LiquidCircle';
-import { pink, yellow } from 'Components/common/LiquidCircleColor';
 import './OurWorks.scss'
 
 const OurWorks = ({ lang: { OurWorks: content } }) => {
@@ -33,7 +31,6 @@ const OurWorks = ({ lang: { OurWorks: content } }) => {
             <hr/>
             <p>{ content.content }</p>
             <p>{ content.content1 }</p>
-            <LiquidCircle id={20} radius={189} color={pink} position={["3px", "63px", "auto", "auto"]}/>    
           </Col>  
           <Slider {...settings}>   
             <div className="slider">
@@ -63,7 +60,6 @@ const OurWorks = ({ lang: { OurWorks: content } }) => {
               </Row>
             </div>
           </Slider>    
-          <LiquidCircle id={21} radius={189} color={yellow} position={["auto", "auto", "73px", "323px"]}/>    
         </Row>
       </Grid>
     </div>
