@@ -29,7 +29,7 @@ const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
           <Col lg={3} xsHidden smHidden>
             <Image src="/assets/images/about/helloFriend/speaker.png" className="imgOut" />
             <Image src="/assets/images/about/helloFriend/work.png"></Image>   
-            <PopCircle color={blue} radius={131} position={["auto", "-132px", "auto", "auto"]}/>           
+            <PopCircle color={blue} radius={131} position={["auto", "-74px", "auto", "auto"]}/>           
           </Col>
            <Col lg={3} xsHidden smHidden>
             <Image src="/assets/images/about/helloFriend/chair.png"></Image>          
@@ -41,7 +41,7 @@ const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
           </Col>
         </Row>
         <Row>
-          <Col lgOffset={9} lg={3} xsHidden smHidden className="textColor">
+          <Col lgOffset={8} lg={3} xsHidden smHidden className="textColor">
             <h3 className="txPink">{ content.title2 }</h3>
           </Col>
         </Row>
