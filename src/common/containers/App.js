@@ -5,7 +5,7 @@ import {
   Redirect,
   Switch
 } from 'react-router-dom'
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import { configureStore } from 'Lib'
 import { Home, Contact, About } from 'Components'
@@ -31,15 +31,20 @@ export default () => (
           <Redirect to="/th"/>
         )}/>   
 
-         <Route path='/:lang' component={Header} />                                    
-        <Switch>
-          <Route exact path='/:lang' component={Home} />    
-          <Route path='/:lang/our-work/:id' component={WorkDetail} />                             
-          <Route path='/:lang/our-work' component={OurWorks} /> 
-          <Route path='/:lang/aboutUs' component={About} /> 
-          <Route path='/:lang/contact' component={Contact} />  
-        </Switch> 
-         <Route path='/:lang' component={Footer} />  
+        <Route path='/:lang' component={Header} />                                    
+        <ReactCSSTransitionGroup
+          transitionName="transition"
+          transitionEnterTimeout={200}
+          transitionLeaveTimeout={100}>
+          <Switch key={location.pathname} location={location}>
+            <Route exact path='/:lang' component={Home} />    
+            <Route path='/:lang/our-work/:id' component={WorkDetail} />                             
+            <Route path='/:lang/our-work' component={OurWorks} /> 
+            <Route path='/:lang/aboutUs' component={About} /> 
+            <Route path='/:lang/contact' component={Contact} />  
+          </Switch> 
+        </ReactCSSTransitionGroup>
+        <Route path='/:lang' component={Footer} />  
       </div>
       <DevTools />
     </div>
