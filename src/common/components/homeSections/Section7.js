@@ -3,8 +3,8 @@ import { Grid, Row, Col, Form, Button } from 'react-bootstrap';
 import SweetAlert from 'react-bootstrap-sweetalert';
 import { Field, reduxForm, reset } from 'redux-form'
 
-import LiquidCircle from 'Components/common/LiquidCircle';
-import { pink, purple, yellow } from 'Components/common/LiquidCircleColor';
+import { PopCircle } from 'Components/common';
+import { yellow, purple, pink } from 'Constants';
 import { Spinner } from 'Components/common';
 import './Section7.scss'
 
@@ -38,9 +38,9 @@ const Section7 = ({
       </Grid>
       <Grid className="text-center containerShadow LiquidCircle ">  
         <Col xsHidden smHidden>
-        <LiquidCircle id={12} radius={170} color={pink} position={["auto", "auto", "-65px", "-65px"]}/>   
-        <LiquidCircle id={14} radius={230} color={purple} position={["412px", "auto", "auto", "-208px"]}/>      
-        <LiquidCircle id={13} radius={170} color={yellow} position={["500px", "auto", "auto", "-245px"]}/>    
+          <PopCircle color={purple} radius={145} position={["495px", "auto", "auto", "-208px"]}/>        
+          <PopCircle color={yellow} radius={86} position={["575px", "auto", "auto", "-245px"]}/>
+          <PopCircle color={pink} radius={86} position={["auto", "auto", "-65px", "-65px"]}/>    
         </Col>
         <Row>
           <Col lg={2} md={2} sm={2} xs={2}>

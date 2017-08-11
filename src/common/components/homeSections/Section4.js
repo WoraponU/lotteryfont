@@ -1,8 +1,9 @@
 import React from 'react';
 import { Row, Grid, Col, Image } from 'react-bootstrap';
 
-// import LiquidCircle from 'Components/common/LiquidCircle';
-// import { blue, yellow, purple } from 'Components/common/LiquidCircleColor';
+import { PopCircle } from 'Components/common';
+import { blue, yellow, purple, pink } from 'Constants';
+
 import './Section4.scss'
 
 const Section4 = ({ lang: { section4: content } }) => {
@@ -23,7 +24,7 @@ const Section4 = ({ lang: { section4: content } }) => {
           </Col>
           <Col lg={4} md={4} xsHidden smHidden className="LiquidCircle" >
             <Image src="/assets/images/home/section4/white.png" className="imgWhite"/>
-            {/* <LiquidCircle id={9} radius={200} color={pink} position={["165px", "70px", "auto", "auto"]}/> */}
+            <PopCircle color={pink} radius={98} position={["165px", "134px", "auto", "auto"]}/>
           </Col>
           <Col sm={12} xs={12} lgHidden mdHidden className="xsImg">
             <Image src="/assets/images/home/section4/services.png" />
@@ -40,12 +41,10 @@ const Section4 = ({ lang: { section4: content } }) => {
           </Col>
           <Col lg={4} md={4} xsHidden smHidden>
             <Image src="/assets/images/home/section4/monitor.png" className="imgMonitor" />
-          </Col>
-          <Col xsHidden smHidden  mdHidden> 
-             {/* <LiquidCircle id={19} radius={300} color={blue} position={["auto", "-250px", "-154px", "auto"]}/>
-            <LiquidCircle id={17} radius={160} color={yellow} position={["auto", "-119px", "-174px", "auto"]}/>
-            <LiquidCircle id={18} radius={210} color={purple} position={["auto", "-128px", "0px", "auto"]}/>  */}
-          </Col>
+             <PopCircle color={blue} radius={190} position={["auto", "-250px", "-154px", "auto"]}/>
+            <PopCircle color={yellow} radius={62} position={["auto", "-119px", "-174px", "auto"]}/>
+            <PopCircle color={purple} radius={104} position={["auto", "-128px", "0px", "auto"]}/>
+          </Col>          
         </Row>
       </Grid>
     </div>

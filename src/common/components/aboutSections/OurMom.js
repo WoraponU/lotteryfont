@@ -3,8 +3,8 @@ import { Grid, Row, Image, Col, Button } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
 
-import LiquidCircle from 'Components/common/LiquidCircle';
-import { blue, yellow, pink } from 'Components/common/LiquidCircleColor';
+import { PopCircle } from 'Components/common';
+import { blue, yellow, pink } from 'Constants';
 
 import './OurMom.scss'
 
@@ -26,11 +26,11 @@ const OurMomComponent = ({ lang: { OurMom: content }, match: { params: { id, lan
               <LinkContainer  to={`/${lang}/our-work`} className="btn-black mt10"><Button >{ content.button }</Button></LinkContainer>
             </Col>
           </Row>
-          <LiquidCircle id={37} radius={230} color={blue} position={["auto", "auto", "-252px", "-210px"]}/>                    
-          <LiquidCircle id={36} radius={180} color={yellow} position={["autox", "auto", "auto", "-143px"]}/>
+          <PopCircle color={blue} radius={131} position={["auto", "auto", "-252px", "-210px"]}/>      
+          <PopCircle color={yellow} radius={86} position={["autox", "auto", "auto", "-143px"]}/>
         </Col>
         <Col  lg={6} md={6} sm={6} className="formUserInterfaces">
-          <LiquidCircle id={38} radius={180} color={pink} position={["-216px", "0px", "auto", "auto"]}/>
+          <PopCircle color={pink} radius={86} position={["-216px", "0px", "auto", "auto"]}/>
           <Row>
             <Col>
               <h1>User Interfaces</h1>
