@@ -2,8 +2,8 @@ import React from 'react';
 import { Grid, Row, Image, Col } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom'
 
-import LiquidCircle from 'Components/common/LiquidCircle';
-import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
+import { PopCircle } from 'Components/common';
+import { blue, yellow, purple, pink } from 'Constants';
 
 import './HelloFriend.scss' 
 
@@ -17,9 +17,9 @@ const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
         </Row>
         <Row>
           <Col lg={12} md={12} xsHidden smHidden>
-            <LiquidCircle id={32} radius={220} color={purple} position={["-82px", "0px", "auto", "auto"]}/>
-            <LiquidCircle id={33} radius={170} color={yellow} position={["-155px", "125px", "auto", "auto"]}/>
-            <LiquidCircle id={34} radius={170} color={pink} position={["-6px", "-22px", "auto", "auto"]}/>
+            <PopCircle color={purple} radius={145} position={["-82px", "0px", "auto", "auto"]}/>
+            <PopCircle color={yellow} radius={86}  position={["-6px", "-22px", "auto", "auto"]}/>      
+            <PopCircle color={pink} radius={86} position={["-155px", "125px", "auto", "auto"]}/>
           </Col>
           <Col lg={12} md={12} xs={12}> 
             <Image src="/assets/images/about/helloFriend/room.png"></Image>
@@ -28,8 +28,8 @@ const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
         <Row className="row2Image">
           <Col lg={3} xsHidden smHidden>
             <Image src="/assets/images/about/helloFriend/speaker.png" className="imgOut" />
-            <Image src="/assets/images/about/helloFriend/work.png"></Image>          
-            <LiquidCircle id={35} radius={220} color={blue} position={["auto", "-132px", "auto", "auto"]}/>                      
+            <Image src="/assets/images/about/helloFriend/work.png"></Image>   
+            <PopCircle color={blue} radius={131} position={["auto", "-132px", "auto", "auto"]}/>           
           </Col>
            <Col lg={3} xsHidden smHidden>
             <Image src="/assets/images/about/helloFriend/chair.png"></Image>          

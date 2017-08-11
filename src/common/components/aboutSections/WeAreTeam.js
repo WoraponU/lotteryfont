@@ -3,8 +3,8 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom'
 
 import { CardTeam } from 'Components/common'
-import LiquidCircle from 'Components/common/LiquidCircle';
-import { blue } from 'Components/common/LiquidCircleColor';
+import { PopCircle } from 'Components/common';
+import { blue } from 'Constants';
 
 import './WeAreTeam.scss' ;
 
@@ -43,7 +43,7 @@ const WeAreTeamComponent = ({ lang: { weAreTeam: content }}) => {
             />
           </Row>
           <Row>
-            <LiquidCircle id={42} radius={200} color={blue} position={["auto", "-150px", "-110px", "auto"]}/>                
+            <PopCircle color={blue} radius={88} position={["auto", "-150px", "-110px", "auto"]}/>    
             <CardTeam 
               img='/assets/images/about/weAreTeam/yuki.png' 
               title={content.title5}

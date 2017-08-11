@@ -4,8 +4,8 @@ import Slider from 'react-slick';
 import { withRouter } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
 
-import LiquidCircle from 'Components/common/LiquidCircle';
-import { blue } from 'Components/common/LiquidCircleColor';
+import { PopCircle } from 'Components/common';
+import { blue } from 'Constants';
 import { Card } from 'Components/common'
 import './Section6.scss'
 
@@ -47,8 +47,8 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
     <div className="section6">
       <Grid className="text-center LiquidCircle xsHidden smHidden" >
         <Col xsHidden smHidden>
-          <LiquidCircle id={10} radius={300} color={blue} position={["-250px", "auto", "auto", "20px"]}/>
-          <LiquidCircle id={16} radius={180} color={blue} position={["auto", "276px", "-109px", "auto"]}/>
+          <PopCircle color={blue} radius={196} position={["-196px", "auto", "auto", "143px"]}/>
+          <PopCircle color={blue} radius={122} position={["auto", "276px", "-109px", "auto"]}/>
         </Col>
         <Image src="/assets/images/Home/section6/line.png"/>
         <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
