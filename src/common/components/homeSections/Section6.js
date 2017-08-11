@@ -12,11 +12,11 @@ import './Section6.scss'
 const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } } }) => {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    adaptiveHeight: false,
-    swipeToSlide: false,
+    // adaptiveHeight: false,
+    swipeToSlide: true,
     lazyLoad: false,
     responsive: [
        {

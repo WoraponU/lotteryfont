@@ -1,5 +1,4 @@
 import React from 'react';
-// import {  } from 'Components/aboutSections'
 import { HelloFriend, OurMom, Driven, WeAreTeam } from 'Containers/aboutSections'
 
 const About = () => {

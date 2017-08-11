@@ -8,10 +8,11 @@ import {
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import { configureStore } from 'Lib'
-import { Home, Contact, About } from 'Components'
+import { Home, Contact, About, Clients } from 'Components'
 import { Header } from 'Components/common'
 import { OurWorks, WorkDetail } from 'Containers/ourWorkSections'
 import { Footer } from 'Containers/common'
+
 
 import DevTools from './DevTools'
 
@@ -42,6 +43,8 @@ export default () => (
             <Route path='/:lang/our-work' component={OurWorks} /> 
             <Route path='/:lang/aboutUs' component={About} /> 
             <Route path='/:lang/contact' component={Contact} />  
+            <Route path='/:lang/clients' component={Clients} />  
+            
           </Switch> 
         </ReactCSSTransitionGroup>
         <Route path='/:lang' component={Footer} />  

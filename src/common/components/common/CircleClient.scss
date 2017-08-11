@@ -1,0 +1,25 @@
+@import '~Theme/colors';
+@import '~Theme/mixin';
+
+.circle {
+  width: 187px;
+  height: 187px;
+  border-radius: 320px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  box-shadow: 19.1px 30.5px 38px 0 rgba(0, 0, 0, 0.14);
+  &:hover {
+
+    width: 220px;
+    height: 220px;
+    @include animationCircle;
+    
+
+  }
+}
