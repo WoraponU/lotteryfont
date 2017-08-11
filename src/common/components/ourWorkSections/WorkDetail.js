@@ -3,6 +3,11 @@ import { Grid, Row, Col, Image, Button, Breadcrumb } from 'react-bootstrap';
 import Slider from 'react-slick';
 import { withRouter } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
+import {
+  ShareButtons,
+  ShareCounts,
+  generateShareIcon
+} from 'react-share';
 
 import { PopCircle } from 'Components/common';
 import { blue, yellow, purple, pink } from 'Constants';
@@ -18,6 +23,18 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
     slidesToScroll: 1,
     lazyLoad: false,
   };
+  const {
+    FacebookShareButton,
+    GooglePlusShareButton,
+    LinkedinShareButton,
+    TwitterShareButton,
+    TelegramShareButton,
+    WhatsappShareButton,
+    PinterestShareButton,
+    VKShareButton,
+    OKShareButton,
+    RedditShareButton,
+  } = ShareButtons;
   
 
   return (
@@ -94,6 +111,7 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
           </Col>
           <Col lg={10} md={10} sm={10} className="text-right ">
             <Image src="/assets/images/work/workDetail/facebook.png"/>
+             <FacebookShareButton url="https://pantip.com/topic/36755831" children="facebook"/> 
             <Image src="/assets/images/work/workDetail/instagram.png"/>
             <Image src="/assets/images/work/workDetail/twitter.png"/>
           </Col>
