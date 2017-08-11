@@ -2,8 +2,9 @@ import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import Slider from 'react-slick';
 
-import LiquidCircle from 'Components/common/LiquidCircle';
-import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
+import { PopCircle } from 'Components/common';
+import { blue, yellow, purple, pink } from 'Constants';
+
 import './Section2.scss'
 
 const Section2 = ({ lang: { section2: content } }) => {
@@ -53,10 +54,10 @@ const Section2 = ({ lang: { section2: content } }) => {
         </Slider>
       </div>
       <Col smOffset={9} mdOffset={9} lgOffset={9} sm={3} md={3} lg={3} xsHidden mdHidden className="LiquidCircle">
-        <LiquidCircle id={5} radius={300} color={blue} position={["20px", "20px", "20px", "20px"]}/>
-        <LiquidCircle id={6} radius={170} color={yellow} position={["30px", "auto", "auto", "-10px"]}/>
-        <LiquidCircle id={7} radius={200} color={purple} position={["-25px", "140px", "auto", "auto"]}/>
-        <LiquidCircle id={8} radius={170} color={pink} position={["-80px", "auto", "auto", "auto"]}/>
+        <PopCircle color={blue} radius={264} position={["20px", "20px", "20px", "20px"]}/>
+        <PopCircle color={yellow} radius={86} position={["30px", "auto", "auto", "-10px"]}/>
+        <PopCircle color={purple} radius={145} position={["-25px", "140px", "auto", "auto"]}/>
+        <PopCircle color={pink} radius={86} position={["-80px", "auto", "auto", "auto"]}/>
       </Col>
     </div>
   );

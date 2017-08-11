@@ -2,17 +2,14 @@ import React from 'react';
 import { Grid, Row, Col, Image, Button } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
-// import LiquidCircle from 'Components/common/LiquidCircle';
 import { PopCircle } from 'Components/common';
-// import { blue, yellow, purple, pink } from 'Components/common/LiquidCircleColor';
-import { blue } from 'Constants';
+import { blue, yellow, purple, pink } from 'Constants';
 import './Section1.scss'
 
 const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } } }) => {
   return (
     <Grid className="section1">
-      <PopCircle color={blue} radius={300} position={["20px", "20px", "20px", "20px"]}/>
-      <PopCircle color={blue} radius={200} position={["30px", "30px", "30px", "20px"]}/>
+
       <Row>
         <Col mdOffset={5} lgOffset={6} md={7} lg={6} sm={7} xsHidden>
           <Image src="/assets/images/home/section1/watch.png" responsive className="imgWatch"/>
@@ -20,10 +17,10 @@ const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } }
       </Row>
       <Row className="header">
         <Col sm={4} md={4} lg={4} xsHidden smHidden>
-          {/* <LiquidCircle id={1} radius={300} color={blue} position={["20px", "20px", "20px", "20px"]}/> */}
-          {/* <LiquidCircle id={2} radius={170} color={yellow} position={["182px", "47px", "auto", "auto"]}/> */}
-          {/* <LiquidCircle id={3} radius={200} color={purple} position={["-25px", "auto", "auto", "-15px"]}/> */}
-          {/* <LiquidCircle id={4} radius={170} color={pink} position={["-100px", "auto", "auto", "-77px"]}/>  */}
+          <PopCircle color={blue} radius={264} position={["20px", "20px", "20px", "20px"]}/>
+          <PopCircle color={yellow} radius={86} position={["182px", "47px", "auto", "auto"]}/>
+          <PopCircle color={purple} radius={145} position={["-25px", "auto", "auto", "-15px"]}/>
+          <PopCircle color={pink} radius={86} position={["-100px", "auto", "auto", "-77px"]}/>
         </Col>
         <Col sm={12} xs={12} md={8} lg={8} >
           <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
