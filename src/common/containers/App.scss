@@ -123,7 +123,7 @@ body {
   .mt10 {
     margin-top: 10px;
   }
-
+//////////////////////////////////////
   .slick-slider {
     .slick-list {
       cursor: pointer;
@@ -134,7 +134,7 @@ body {
       }
     }
   }
-
+  //////////////////////////////////  
   .sweet-alert {
     font-family: Roboto, Mitr;
     
@@ -142,18 +142,34 @@ body {
       @extend .btnBlack;
     }
   }
+  //////////////////////////////////
+  .transition-enter {
+    opacity: 0.01;
+  }
 
+  .transition-enter.transition-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
 
+  .transition-leave {
+    opacity: 1;
+  }
 
+  .transition-leave.transition-leave-active {
+    opacity: 0.01;
+    transition: opacity 200ms ease-in;
+  }
+  
   .textColor{
     .txPink {
       color: $pink;
     }
   }
-
+  //////////////////////////////////
   @media screen and (max-width: 480px) {
     h1 {
-        font-size: 25px !important;
+      font-size: 25px !important;
     }
   }
 }
