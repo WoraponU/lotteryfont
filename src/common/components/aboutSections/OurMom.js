@@ -54,7 +54,7 @@ const OurMomComponent = ({ lang: { OurMom: content }, match: { params: { id, lan
             </Col>
           </Row>
           <Row>
-            <Col lgOffset={4} mdOffset={4} smOffset={4} lg={7} md={7} sm={7}>
+            <Col lgOffset={3} mdOffset={3} smOffset={4} lg={8} md={8} sm={7}>
               <h3>Every interaction is <br/>a communication</h3>
               <p> We Love Making Life Easier – It's Not Just Work-life Balance. Every Hobbist Are Driven By Passion. We Merge Work And Life Together With The Joy Of Making Our Client's Life Easier.</p>
             </Col>

@@ -4,6 +4,11 @@ $h3Color: $pink;
 
 .HelloFriend {
   margin-top: 280px; 
+  background-image: url('/assets/images/about/helloFriend/card.png');
+  background-repeat: no-repeat;
+  background-position: 52% 84%;
+  background-size: 35%;
+  display: block;
 
   .text-center {
     img {
@@ -20,17 +25,27 @@ $h3Color: $pink;
       h3{
         margin-top: 0px;
       }
+
+      p {
+        margin-top: 30px;
+      }
     } 
   } 
-  
+
   .textColor {
-    margin-bottom: 156px;
+    padding-bottom: 250px;
+    margin-top: 15px;
+
+    .txPink {
+      color: $pink;
+      line-height: 2;
+
+    }
   }
 
   .row2Image {
     margin-top: 37px;
-    margin-bottom: 96px;
-    position: relative;
+   
 
     .imgOut {
       position: absolute;
