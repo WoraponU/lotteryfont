@@ -16,7 +16,11 @@ var HoverButton = function (el) {
   HoverButton.prototype.attachEventsListener = function attachEventsListener() {
     var _this = this;
     
-    window.addEventListener('mousemove', function (e) {
+    this.el.addEventListener('mousemove', function (e) {
+      return _this.onMouseMove(e);
+    });
+
+    this.el.addEventListener('click', function (e) {
       return _this.onMouseMove(e);
     });
     window.addEventListener('resize', function (e) {
@@ -24,9 +28,6 @@ var HoverButton = function (el) {
     });
     window.addEventListener('scroll', function (e) {
       return _this.calculatePosition(e);
-    });
-    window.addEventListener('click', function (e) {
-      return _this.onMouseMove(e);
     });
   };
 
