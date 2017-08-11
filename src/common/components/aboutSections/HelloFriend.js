@@ -17,9 +17,9 @@ const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
         </Row>
         <Row>
           <Col lg={12} md={12} xsHidden smHidden>
-            <PopCircle color={purple} radius={145} position={["-82px", "0px", "auto", "auto"]}/>
-            <PopCircle color={yellow} radius={86}  position={["-6px", "-22px", "auto", "auto"]}/>      
-            <PopCircle color={pink} radius={86} position={["-155px", "125px", "auto", "auto"]}/>
+            <PopCircle color={purple} radius={145} position={["70px", "30px", "auto", "auto"]}/>
+            <PopCircle color={yellow} radius={86}  position={["150px", "0px", "auto", "auto"]}/>      
+            <PopCircle color={pink} radius={86} position={["-28px", "164px", "auto", "auto"]}/>
           </Col>
           <Col lg={12} md={12} xs={12}> 
             <Image src="/assets/images/about/helloFriend/room.png"></Image>
@@ -29,7 +29,7 @@ const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
           <Col lg={3} xsHidden smHidden>
             <Image src="/assets/images/about/helloFriend/speaker.png" className="imgOut" />
             <Image src="/assets/images/about/helloFriend/work.png"></Image>   
-            <PopCircle color={blue} radius={131} position={["auto", "-74px", "auto", "auto"]}/>           
+            <PopCircle color={blue} radius={131} position={["auto", "-74px", "-145px", "auto"]}/>           
           </Col>
            <Col lg={3} xsHidden smHidden>
             <Image src="/assets/images/about/helloFriend/chair.png"></Image>          
