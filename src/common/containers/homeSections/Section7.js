@@ -24,6 +24,11 @@ class Section7 extends Component {
     this.setState({ alertPopup: { isShow: false } });    
   }
 
+  componentDidMount() {
+    // alert();
+    // this.forceUpdate()
+  }
+
   componentWillReceiveProps({ isPostMailContactUsSuccess: isNextPostMailContactUsSuccess, isPostMailContactUsFailure: isNextPostMailContactUsFailure }) {
     if (isNextPostMailContactUsSuccess) {
       this.setState({ 

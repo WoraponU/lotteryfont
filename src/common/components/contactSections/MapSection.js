@@ -8,7 +8,6 @@ import ArrowMap from 'Components/common/ArrowMap';
 
 import './MapSection.scss'
 const MapComponent = ({ lang: { MapSection: content }, center, greatPlaceCoords, zoom }) => {
-  console.log(process.env.GOOGLE_MAP_KEY);
   return (
     <div>
       <div className="mapSection">       

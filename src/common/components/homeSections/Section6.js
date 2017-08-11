@@ -45,7 +45,7 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
   
   return (
     <div className="section6">
-      <Grid className="text-center LiquidCircle xsHidden smHidden" >
+      <Grid className="text-center xsHidden smHidden" >
         <Col xsHidden smHidden>
           <PopCircle color={blue} radius={196} position={["-196px", "auto", "auto", "143px"]}/>
           <PopCircle color={blue} radius={122} position={["auto", "276px", "-109px", "auto"]}/>

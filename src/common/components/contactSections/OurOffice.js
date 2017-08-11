@@ -1,8 +1,7 @@
 import React from 'react';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 
-
-  import { PopCircle } from 'Components/common';
+import { PopCircle } from 'Components/common';
 import { blue } from 'Constants';
 
 import './OurOffice.scss'

@@ -34,8 +34,8 @@ export default () => (
         <Route path='/:lang' component={Header} />                                    
         <ReactCSSTransitionGroup
           transitionName="transition"
-          transitionEnterTimeout={250}
-          transitionLeaveTimeout={200}>
+          transitionEnterTimeout={200}
+          transitionLeaveTimeout={100}>
           <Switch key={location.pathname} location={location}>
             <Route exact path='/:lang' component={Home} />    
             <Route path='/:lang/our-work/:id' component={WorkDetail} />                             
