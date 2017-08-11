@@ -3,8 +3,8 @@ import { Grid, Row, Image, Col, Button } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
 
-import LiquidCircle from 'Components/common/LiquidCircle';
-import { blue, purple, yellow } from 'Components/common/LiquidCircleColor';
+import { PopCircle } from 'Components/common';
+import { blue, yellow, purple } from 'Constants';
 
 import './Driven.scss'
 
@@ -16,8 +16,8 @@ const DrivenComponent = ({ match: { params: { id, lang } }, lang: { Driven: cont
         <p dangerouslySetInnerHTML={{__html: content.subHeader}}></p>
         <LinkContainer  to={`/${lang}/our-work`} className="btn-black "><Button>DOWNLOAD</Button></LinkContainer>    
         <h3 dangerouslySetInnerHTML={{__html: content.title}}></h3> 
-        <LiquidCircle id={41} radius={250} color={blue} position={["auto", "auto", "-344px", "-142px"]}/>                
-        <LiquidCircle id={40} radius={200} color={purple} position={["auto", "auto", "-244px", "-180px"]}/>
+        <PopCircle color={blue} radius={140} position={["auto", "auto", "-344px", "-142px"]}/>
+        <PopCircle color={purple} radius={98} position={["auto", "auto", "-244px", "-180px"]}/>         
       </Col>
       <Col lg={3} md={12} sm={6} className="blogShow">
         <Row>
@@ -36,7 +36,8 @@ const DrivenComponent = ({ match: { params: { id, lang } }, lang: { Driven: cont
         </Row>
       </Col>
       <Col lg={3} md={12} sm={6} className="blogShow">
-        <LiquidCircle id={39} radius={200} color={yellow} position={["-110px", "-124px", "auto", "auto"]}/>
+      <PopCircle color={yellow} radius={104} position={["-110px", "-124px", "auto", "auto"]}/>
+
         <Row>
           <Col lg={12} md={12} sm={12} className="rowImg3">          
             <Image src="/assets/images/about/driven/keybord.png"></Image>
