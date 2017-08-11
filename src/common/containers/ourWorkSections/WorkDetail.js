@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { compose } from 'recompose'
 import { withRouter } from 'react-router-dom'
+import $ from 'jquery';
 
 import { WorkDetailComponent } from 'Components/ourWorkSections'
 import { withLang } from 'Hocs';
@@ -40,7 +41,8 @@ class WorkDetail extends Component {
     const { history, match: { params: { lang } } } = this.props;
     const ourWorks = ['mac5', 'asap', 'ygg', 'spring', 'chula', 'dp'];
     const randonOurWork = ourWorks[Math.floor(Math.random() * ourWorks.length)]
-    
+
+    $('body').animate({ scrollTop: 0 }, 'slow');
     history.push(`/${lang}/our-work/${randonOurWork}`);
   }
   
