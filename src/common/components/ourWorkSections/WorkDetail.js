@@ -2,7 +2,6 @@ import React from 'react';
 import { Grid, Row, Col, Image, Button, Breadcrumb } from 'react-bootstrap';
 import Slider from 'react-slick';
 import { withRouter } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
 
 import { PopCircle } from 'Components/common';
@@ -12,7 +11,7 @@ import './WorkDetail.scss'
 
 
 
-const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { params: { id, lang } } }) => {
+const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { params: { id, lang } }, onClickOtherWork }) => {
   const settings = {
     dots: true,
     slidesToShow: 2,
@@ -71,7 +70,6 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
         
         <div className="sliderRow">
           <Slider {...settings}>
-            
             {
               contentLoaded.imageInfo.slides.map((slide,index) => (
                 <Image key={index} src={slide.path}/>
@@ -92,7 +90,7 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
         </Row>
         <Row className="tabBottom">         
           <Col lg={1} md={1} sm={1}>
-            <Link to={`/${lang}/our-work/chula`}><Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/></Link>
+            <a href="" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/></a>            
           </Col>
           <Col lg={10} md={10} sm={10} className="text-right ">
             <Image src="/assets/images/work/workDetail/facebook.png"/>
@@ -100,7 +98,7 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
             <Image src="/assets/images/work/workDetail/twitter.png"/>
           </Col>
           <Col lg={1} md={1} sm={1}>
-            <Link to={`/${lang}/our-work/spring`}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></Link>            
+            <a href="" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></a>
           </Col>
         </Row>
       </Grid>
