@@ -36,7 +36,7 @@ const DrivenComponent = ({ match: { params: { id, lang } }, lang: { Driven: cont
         </Row>
       </Col>
       <Col lg={3} md={12} sm={6} className="blogShow">
-      <PopCircle color={yellow} radius={104} position={["-110px", "-124px", "auto", "auto"]}/>
+      <PopCircle color={yellow} radius={104} position={["0px", "-124px", "auto", "auto"]}/>
 
         <Row>
           <Col lg={12} md={12} sm={12} className="rowImg3">          

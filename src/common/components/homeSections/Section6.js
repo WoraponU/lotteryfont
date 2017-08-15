@@ -12,7 +12,7 @@ import './Section6.scss'
 const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } } }) => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     // adaptiveHeight: false,
@@ -32,9 +32,9 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
         breakpoint: 480,
         settings: {
           slidesToShow: 1, 
-          // slidesToScroll: 1, 
           arrows: true,
           dots: false,
+          infinite: false,
           variableWidth: true,
           adaptiveHeight: false,
           wipeToSlide: false
