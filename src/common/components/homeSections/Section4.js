@@ -24,7 +24,7 @@ const Section4 = ({ lang: { section4: content } }) => {
           </Col>
           <Col lg={4} md={4} xsHidden smHidden>
             <Image src="/assets/images/home/section4/white.png" className="imgWhite"/>
-            <PopCircle color={pink} radius={98} position={["165px", "134px", "auto", "auto"]}/>
+            <PopCircle color={pink} radius={98} position={["230px", "134px", "auto", "auto"]}/>
           </Col>
           <Col sm={12} xs={12} lgHidden mdHidden className="xsImg">
             <Image src="/assets/images/home/section4/services.png" />
@@ -36,15 +36,16 @@ const Section4 = ({ lang: { section4: content } }) => {
          <Row >
           <Col lg={8} md={8} xsHidden smHidden>
             <Image src="/assets/images/home/section4/note.png" />
-            <Image src="/assets/images/home/section4/web.png" className="imgWeb"/>
-            
+            <Image src="/assets/images/home/section4/web.png" className="imgWeb"/>  
           </Col>
-          <Col lg={4} md={4} xsHidden smHidden>
-            <Image src="/assets/images/home/section4/monitor.png" className="imgMonitor" />
-             <PopCircle color={blue} radius={190} position={["auto", "-250px", "-154px", "auto"]}/>
+          <Col lg={4} md={4} xsHidden smHidden >
+            <Image src="/assets/images/home/section4/monitor.png" className="imgMonitor" />  
+          </Col>   
+          <Col lg={12} mdHidden smHidden xsHidden >
+            <PopCircle color={blue} radius={190} position={["auto", "-111px", "-154px", "auto"]}/>
             <PopCircle color={yellow} radius={62} position={["auto", "-119px", "-174px", "auto"]}/>
-            <PopCircle color={purple} radius={104} position={["auto", "-128px", "0px", "auto"]}/>
-          </Col>          
+            <PopCircle color={purple} radius={104} position={["auto", "-12px", "0px", "auto"]}/>
+          </Col>       
         </Row>
       </Grid>
     </div>

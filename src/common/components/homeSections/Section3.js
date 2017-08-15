@@ -22,7 +22,7 @@ const Section3 = ({ lang: { section3: content } }) => {
           <Image src="/assets/images/home/section3/code.png" />
         </Col>
         <Col lg={3} md={3} xsHidden>
-          <p className="subHeader">{content.subHeader}</p>
+          <p className="subHeader text-left">{content.subHeader}</p>
         </Col> 
       </Row>
       <Row>

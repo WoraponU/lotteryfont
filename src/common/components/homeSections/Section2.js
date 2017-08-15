@@ -3,7 +3,7 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import Slider from 'react-slick';
 
 import { PopCircle } from 'Components/common';
-import { blue, yellow, purple, pink } from 'Constants';
+import { yellow, purple, pink } from 'Constants';
 
 import './Section2.scss'
 
@@ -53,8 +53,7 @@ const Section2 = ({ lang: { section2: content } }) => {
           <img src="/assets/images/home/section2/mac5.png" alt="mac5"/>
         </Slider>
       </div>
-      <Col smOffset={9} mdOffset={9} lgOffset={9} sm={3} md={3} lg={3} xsHidden mdHidden>
-        <PopCircle color={blue} radius={264} position={["20px", "20px", "20px", "20px"]}/>
+      <Col smOffset={9} mdOffset={9} lgOffset={9} sm={3} md={3} lg={3} xsHidden smHidden>
         <PopCircle color={yellow} radius={86} position={["30px", "auto", "auto", "-10px"]}/>
         <PopCircle color={purple} radius={145} position={["-25px", "140px", "auto", "auto"]}/>
         <PopCircle color={pink} radius={86} position={["-80px", "auto", "auto", "auto"]}/>
