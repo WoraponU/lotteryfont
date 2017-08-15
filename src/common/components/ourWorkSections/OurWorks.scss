@@ -12,7 +12,8 @@ $textColor: $black;
   background-position: 40% 50%;
   background-size: contain;
   display: block;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background: $white;
 
   .col-lg-3 ,.content {
     top: 3px;

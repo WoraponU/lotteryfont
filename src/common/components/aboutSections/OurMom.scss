@@ -40,6 +40,9 @@ $textSmallColor: $mainFontColor;
   }
 
   .formUserInterfaces {
+    position: relative;
+    z-index: 1;
+    
     h1 {
       padding-left: 64px;
     }

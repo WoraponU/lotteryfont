@@ -72,7 +72,12 @@
 body {
   font-family: Roboto, Mitr;
   color: $mainFontColor;
-  
+
+  .main {
+    z-index: 0;
+    background: $white;
+  }
+
   button, input, optgroup, select, textarea{
     font-family: Roboto, Mitr;
   }
@@ -173,6 +178,3 @@ body {
     }
   }
 }
-
-
-
