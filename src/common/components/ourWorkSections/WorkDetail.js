@@ -12,9 +12,16 @@ import { blue, yellow, purple, pink } from 'Constants';
 
 import './WorkDetail.scss'
 
-const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { params: { id, lang } }, onClickOtherWork, location: { href } }) => {
-  console.log(location);
-  const settings = {
+const WorkDetail = (props) => {
+  const { 
+    lang: { workDetail: content }, 
+    match: { params: { lang } }, 
+    contentLoaded, 
+    onClickOtherWork, 
+    location: { href } 
+  } = props;
+
+  const settingsSlick = {
     dots: true,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -75,7 +82,7 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
         </Row>
         
         <div className="sliderRow">
-          <Slider {...settings}>
+          <Slider {...settingsSlick}>
             {
               contentLoaded.imageInfo.slides.map((slide,index) => (
                 <Image key={index} src={slide.path}/>
@@ -96,15 +103,18 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
         </Row>
         <Row className="tabBottom">         
           <Col lg={1} md={1} sm={1}>
-            <a href="#" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/></a>            
+            <a href="#" onClick={(e) => onClickOtherWork(e)}>
+              <Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/>
+            </a>            
           </Col>
           <Col lg={10} md={10} sm={10} className="text-right ">
-            
             <FacebookShareButton url={href} children={<Image src="/assets/images/work/workDetail/facebook.png"/>} /> 
             <TwitterShareButton url={href} children={<Image src="/assets/images/work/workDetail/twitter.png"/>} /> 
           </Col>
           <Col lg={1} md={1} sm={1}>
-            <a href="#" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></a>
+            <a href="#" onClick={(e) => onClickOtherWork(e)}>
+              <Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/>
+            </a>
           </Col>
         </Row>
       </Grid>
