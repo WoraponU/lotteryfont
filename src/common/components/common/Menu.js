@@ -14,7 +14,7 @@ const Menu = ({ lang, match: { params: { lang: paramLang } } }) => {
             <li><NavLink exact to={`/${paramLang}`} activeClassName="active"><span>{ lang.home }</span></NavLink> </li>
             <li><NavLink to={`/${paramLang}/aboutUs`} activeClassName="active"><span>{ lang.aboutUs }</span></NavLink></li>
             <li><NavLink to={`/${paramLang}/our-work`} activeClassName="active"><span>{ lang.ourWork }</span></NavLink></li>
-            <li><a disabled className="disabled"><span>{ lang.client }</span></a></li>
+            <li><NavLink to={`/${paramLang}/clients`} activeClassName="active"><span>{ lang.client }</span></NavLink></li>
             <li><a disabled className="disabled"><span>{ lang.blog }</span></a></li>
             <li><NavLink to={`/${paramLang}/contact`} activeClassName="active"><span>{ lang.contact }</span></NavLink></li>
             <li><a disabled className="disabled"><span>{ lang.career }</span></a></li>  
