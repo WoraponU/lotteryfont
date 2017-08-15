@@ -14,9 +14,8 @@ import { blue, yellow, purple, pink } from 'Constants';
 
 import './WorkDetail.scss'
 
-
-
-const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { params: { id, lang } }, onClickOtherWork }) => {
+const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { params: { id, lang } }, onClickOtherWork, location: { href } }) => {
+  console.log(location);
   const settings = {
     dots: true,
     slidesToShow: 2,
@@ -107,16 +106,15 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
         </Row>
         <Row className="tabBottom">         
           <Col lg={1} md={1} sm={1}>
-            <a href="" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/></a>            
+            <a href="#" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/></a>            
           </Col>
           <Col lg={10} md={10} sm={10} className="text-right ">
-            <Image src="/assets/images/work/workDetail/facebook.png"/>
-             <FacebookShareButton url="https://pantip.com/topic/36755831" children="facebook"/> 
-            <Image src="/assets/images/work/workDetail/instagram.png"/>
-            <Image src="/assets/images/work/workDetail/twitter.png"/>
+            
+            <FacebookShareButton url={href} children={<Image src="/assets/images/work/workDetail/facebook.png"/>} /> 
+            <TwitterShareButton url={href} children={<Image src="/assets/images/work/workDetail/twitter.png"/>} /> 
           </Col>
           <Col lg={1} md={1} sm={1}>
-            <a href="" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></a>
+            <a href="#" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></a>
           </Col>
         </Row>
       </Grid>
