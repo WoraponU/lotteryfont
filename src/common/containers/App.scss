@@ -161,6 +161,10 @@ body {
     opacity: 0.01;
     transition: opacity 100ms ease;
   }
+  //////////////////////////////////
+  .SocialMediaShareButton {
+    display: inline-block;
+  }
 
   //////////////////////////////////
   @media screen and (max-width: 480px) {
