@@ -27,7 +27,7 @@ const store = configureStore()
 export default () => (
   <Provider store={store}>
     <div>
-      <div>
+      <div className="main">
         <Route exact path="/" render={() => (
           <Redirect to="/th"/>
         )}/>   
