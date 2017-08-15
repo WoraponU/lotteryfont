@@ -33,7 +33,7 @@ $borderColor: $pink;
         }
 
         &.disabled {
-          color: $grey3;
+          color: rgba(121, 121, 121, 0.80);
           pointer-events: none;
           cursor: default;
 
