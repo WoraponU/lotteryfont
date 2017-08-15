@@ -99,3 +99,9 @@ $shadow: $boxshadowblack;
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .imgMoblie {
+    display:none;
+  }
+}
