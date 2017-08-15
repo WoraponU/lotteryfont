@@ -15,7 +15,7 @@ const Section9 = () => {
             <h5>@hobbizdigital </h5>
             <h1>It’s a Good <span>{day}</span><br/>To Drop Us A Line</h1>
           </Col>
-          <Col lg={3}  md={3} xsHidden smHidden> <Image src="/assets/images/common/Footer/shop.png" className="img"/></Col>
+          <Col lg={3}  md={3} xsHidden smHidden> <Image src="/assets/images/common/Footer/shop.png" className="imgShop"/></Col>
           <Col lg={3} md={3} xsHidden smHidden> <Image src="/assets/images/common/Footer/form.png" /></Col>
         </Row>
         <Row>   
