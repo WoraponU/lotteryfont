@@ -5,6 +5,11 @@ $h1Color: $pink;
 .clients {
   padding-top: 250px;
   margin-bottom: 400px; 
+  
+  .row {
+    position: relative;
+
+  }
 
   .text-center {
     img {
@@ -12,15 +17,18 @@ $h1Color: $pink;
 
     }
   }
+
   .subHeader {
     h1 {
       color: $h1Color;
       margin-top: 134px;    
       text-transform: initial;
+
     }
 
     p {
       margin-top: 48px;
+
     }
   }
 
@@ -29,7 +37,8 @@ $h1Color: $pink;
     position: relative;
 
     div[class^="col-"] {    
-      padding-top: 62px 
+      padding-top: 62px;
+
     }
   } 
 }
