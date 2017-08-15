@@ -26,7 +26,7 @@ const renderHTML = () => (`
       <meta property="og:site_name" content="hobbiz.co.th" />
       <meta property="og:url" content="http://www.hobbiz.co.th" />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="http://i.imgur.com/1foKyk6.jpg" />
+      <meta property="og:image" content="http://www.hobbiz.co.th/assets/images/common/ogFacebook.png" />
       <meta property="og:image:type" content="image/jpg" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="676" />
