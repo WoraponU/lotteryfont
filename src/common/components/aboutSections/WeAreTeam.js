@@ -43,7 +43,7 @@ const WeAreTeamComponent = ({ lang: { weAreTeam: content }}) => {
             />
           </Row>
           <Row>
-            <PopCircle color={blue} radius={88} position={["auto", "10px", "-110px", "auto"]}/>    
+            <PopCircle color={blue} radius={88} position={["auto", "0px", "-110px", "auto"]}/>    
             <CardTeam 
               img='/assets/images/about/weAreTeam/yuki.png' 
               title={content.title5}
