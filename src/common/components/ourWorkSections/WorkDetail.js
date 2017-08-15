@@ -3,21 +3,37 @@ import { Grid, Row, Col, Image, Button, Breadcrumb } from 'react-bootstrap';
 import Slider from 'react-slick';
 import { withRouter } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap';
+import {
+  ShareButtons,
+  ShareCounts,
+  generateShareIcon
+} from 'react-share';
 
 import { PopCircle } from 'Components/common';
 import { blue, yellow, purple, pink } from 'Constants';
 
 import './WorkDetail.scss'
 
-
-
-const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { params: { id, lang } }, onClickOtherWork }) => {
+const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { params: { id, lang } }, onClickOtherWork, location: { href } }) => {
+  console.log(location);
   const settings = {
     dots: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     lazyLoad: false,
   };
+  const {
+    FacebookShareButton,
+    GooglePlusShareButton,
+    LinkedinShareButton,
+    TwitterShareButton,
+    TelegramShareButton,
+    WhatsappShareButton,
+    PinterestShareButton,
+    VKShareButton,
+    OKShareButton,
+    RedditShareButton,
+  } = ShareButtons;
   
 
   return (
@@ -90,15 +106,15 @@ const WorkDetail = ({ lang: { workDetail: content }, contentLoaded, match: { par
         </Row>
         <Row className="tabBottom">         
           <Col lg={1} md={1} sm={1}>
-            <a href="" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/></a>            
+            <a href="#" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrLeft.png" className="arrow"/></a>            
           </Col>
           <Col lg={10} md={10} sm={10} className="text-right ">
-            <Image src="/assets/images/work/workDetail/facebook.png"/>
-            <Image src="/assets/images/work/workDetail/instagram.png"/>
-            <Image src="/assets/images/work/workDetail/twitter.png"/>
+            
+            <FacebookShareButton url={href} children={<Image src="/assets/images/work/workDetail/facebook.png"/>} /> 
+            <TwitterShareButton url={href} children={<Image src="/assets/images/work/workDetail/twitter.png"/>} /> 
           </Col>
           <Col lg={1} md={1} sm={1}>
-            <a href="" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></a>
+            <a href="#" onClick={(e) => onClickOtherWork(e)}><Image src="/assets/images/work/workDetail/arrRight.png" className="arrow"/></a>
           </Col>
         </Row>
       </Grid>
