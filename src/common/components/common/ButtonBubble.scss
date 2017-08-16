@@ -18,6 +18,7 @@ $action-color: $green;
   .button {
     background-color: $dark-blue;
     border: none;
+    color: $white;
     display: inline-block;
     text-decoration: none;
     user-select: none;
@@ -28,7 +29,6 @@ $action-color: $green;
     font-size: 13px;
     font-family: Roboto-Bold, Mitr-Bold;  
     background-color: $black3;
-    color: $white;
 
     &:hover {
       background-color: $action-color;
@@ -101,13 +101,13 @@ $action-color: $green;
       transition: background 0.1s ease-out;
 
       &.top-left {
-          top: 40%;
-          left: 27%;
+        top: 40%;
+        left: 27%;
       }
 
       &.bottom-right {
-          bottom: 40%;
-          right: 27%;
+        bottom: 40%;
+        right: 27%;
       }
     }
   }
