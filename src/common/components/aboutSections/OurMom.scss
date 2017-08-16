@@ -25,7 +25,8 @@ $textSmallColor: $mainFontColor;
 
     p {
       margin: 34px 0;
-
+      position: relative;
+      z-index: 2;
     }
 
     .spanH1 {
@@ -89,6 +90,11 @@ $textSmallColor: $mainFontColor;
       left: 19%;
       top: 26%;
 
+    }
+  }
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .formUserInterfaces  {
+      padding-left: 300px;   
     }
   }
 

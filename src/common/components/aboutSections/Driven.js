@@ -15,7 +15,7 @@ const DrivenComponent = ({ match: { params: { id, lang } }, lang: { Driven: cont
         <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
         <p dangerouslySetInnerHTML={{__html: content.subHeader}}></p>
         <LinkContainer  to={`/${lang}/our-work`} className="btn-black "><Button>DOWNLOAD</Button></LinkContainer>    
-        <Col sm={7} smOffset={5}><h3 dangerouslySetInnerHTML={{__html: content.title}}></h3> </Col>
+        <Col md={9} sm={7} smOffset={5} mdOffset={3}><h3 dangerouslySetInnerHTML={{__html: content.title}}></h3> </Col>
         <PopCircle color={blue} radius={140} position={["auto", "auto", "-344px", "-142px"]}/>
         <PopCircle color={purple} radius={98} position={["auto", "auto", "-244px", "-180px"]}/>         
       </Col>

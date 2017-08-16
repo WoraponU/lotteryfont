@@ -17,7 +17,7 @@ const OurMomComponent = ({ lang: { OurMom: content }, match: { params: { id, lan
         </Row>
       </Grid>
       <Grid>
-        <Col lgOffset={1} lg={5} md={5} sm={6} smOffset={2} className="formFreshDesign">
+        <Col lgOffset={1} lg={5} md={5} sm={6} smOffset={2}  className="formFreshDesign">
           <Row>           
             <h1>{ content.groupTitle.text1 }<br/><span className="textSmall">{ content.groupTitle.text2 }</span><span className="spanH1">{ content.groupTitle.text3 }</span></h1>             
             <p dangerouslySetInnerHTML={{__html: content.subtitle1}}></p>
@@ -30,7 +30,7 @@ const OurMomComponent = ({ lang: { OurMom: content }, match: { params: { id, lan
           <PopCircle color={yellow} radius={86} position={["auto", "auto", "-100px", "-77px"]}/>
         </Col>
 
-        <Col  lg={6} md={6} sm={11} smOffset={1} className="formUserInterfaces">
+        <Col  lg={6} md={12} sm={11}   className="formUserInterfaces">
           <Col xsHidden><PopCircle color={pink} radius={86} position={["-216px", "0px", "auto", "auto"]}/></Col>         
           <Row>
             <Col>
