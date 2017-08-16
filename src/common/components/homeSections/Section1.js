@@ -1,15 +1,18 @@
 import React from 'react';
-import { Grid, Row, Col, Image, Button } from 'react-bootstrap';
+import { Grid, Row, Col, Image } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom'
-import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom'
+
 import { PopCircle } from 'Components/common';
 import { blue, yellow, purple, pink } from 'Constants';
+import { ButtonBubble } from 'Components/common'
+
+
 import './Section1.scss'
 
 const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } } }) => {
   return (
     <Grid className="section1">
-
       <Row>
         <Col mdOffset={5} lgOffset={6} md={7} lg={6} sm={7} xsHidden>
           <Image src="/assets/images/home/section1/watch.png" responsive className="imgWatch"/>
@@ -35,8 +38,12 @@ const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } }
         </Col>
       </Row> 
       <Row >
-        <Col mdOffset={5} lgOffset={5}  xsOffset={4}  smOffset={4} lg={6} md={65} sm={5} xs={5} >          
-          <LinkContainer  to={`/${lang}/our-work`} className="btn-black mt10"><Button >{ content.button }</Button></LinkContainer>
+        <Col mdOffset={5} lgOffset={5}  xsOffset={4}  smOffset={4} lg={6} md={65} sm={5} xs={5} >  
+          <Link to={`/${lang}/our-work`} >
+            <ButtonBubble>
+              { content.button }
+            </ButtonBubble>          
+          </Link>
         </Col>
       </Row>
     </Grid>
