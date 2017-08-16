@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const Merge = require('webpack-merge');
 const CommonConfig = require('./webpack.common.js');
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 require('dotenv').config();
 
 module.exports = Merge(CommonConfig, {
@@ -19,7 +20,8 @@ module.exports = Merge(CommonConfig, {
       NODE_ENV: 'development',
       GOOGLE_MAP_KEY: process.env.GOOGLE_MAP_KEY,
       SERVICE_PREFIX_URL: process.env.SERVICE_PREFIX_URL      
-    })
+    }),
+    // new BundleAnalyzerPlugin()
   ],
   devServer: {
     contentBase: path.join(__dirname, 'public'),
