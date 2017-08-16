@@ -2,8 +2,7 @@ import React from 'react';
 import { Grid, Row, Col, Tabs, Tab } from 'react-bootstrap';
 import Slider from 'react-slick';
 
-import { CardWork } from 'Components/common'
-import { PopCircle } from 'Components/common';
+import { CardWork, PopCircle } from 'Components/common'
 import { pink, yellow } from 'Constants';
 import './OurWorks.scss'
 

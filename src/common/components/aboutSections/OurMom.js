@@ -1,9 +1,9 @@
 import React from 'react';
-import { Grid, Row, Image, Col, Button } from 'react-bootstrap';
+import { Grid, Row, Image, Col } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom'
-import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom'
 
-import { PopCircle } from 'Components/common';
+import { PopCircle, ButtonBubble } from 'Components/common';
 import { blue, yellow, pink } from 'Constants';
 
 import './OurMom.scss'
@@ -23,7 +23,11 @@ const OurMomComponent = ({ lang: { OurMom: content }, match: { params: { id, lan
             <p dangerouslySetInnerHTML={{__html: content.subtitle1}}></p>
             <p dangerouslySetInnerHTML={{__html: content.subtitle2}}></p> 
             <Col className="text-center"> 
-              <LinkContainer  to={`/${lang}/our-work`} className="btn-black mt10"><Button >{ content.button }</Button></LinkContainer>
+              <Link to={`/${lang}/our-work`} >
+                <ButtonBubble id="bubble4">
+                  { content.button }
+                </ButtonBubble>          
+              </Link>
             </Col>
           </Row>
           <PopCircle color={blue} radius={131} position={["auto", "auto", "-183px", "-145px"]}/>      

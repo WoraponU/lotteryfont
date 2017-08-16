@@ -1,9 +1,9 @@
 import React from 'react';
-import { Grid, Row, Image, Col, Button } from 'react-bootstrap';
+import { Grid, Row, Image, Col } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom'
-import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom'
 
-import { PopCircle } from 'Components/common';
+import { PopCircle, ButtonBubble } from 'Components/common';
 import { blue, yellow, purple } from 'Constants';
 
 import './Driven.scss'
@@ -14,8 +14,12 @@ const DrivenComponent = ({ match: { params: { id, lang } }, lang: { Driven: cont
       <Col lg={6} md={6} sm={12} xs={12} className="title">       
         <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
         <p dangerouslySetInnerHTML={{__html: content.subHeader}}></p>
-        <LinkContainer  to={`/${lang}/our-work`} className="btn-black "><Button>DOWNLOAD</Button></LinkContainer>    
-        <Col md={9} sm={7} smOffset={5} mdOffset={3}><h3 dangerouslySetInnerHTML={{__html: content.title}}></h3> </Col>
+        <Link to={`/${lang}/our-work`} className="download">
+          <ButtonBubble id="bubble3">
+            DOWNLOAD
+          </ButtonBubble>          
+        </Link>   
+        <Col md={9} sm={7} smOffset={5} mdOffset={3}><h3 dangerouslySetInnerHTML={{__html: content.title}}></h3> </Col> 
         <PopCircle color={blue} radius={140} position={["auto", "auto", "-344px", "-142px"]}/>
         <PopCircle color={purple} radius={98} position={["auto", "auto", "-244px", "-180px"]}/>         
       </Col>

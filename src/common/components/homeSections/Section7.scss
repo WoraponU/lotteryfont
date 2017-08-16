@@ -42,7 +42,16 @@ $containerShadow: $black0_03;
 
   form {
     padding: 43px;
-   
+    
+    .sendMailContact {
+      display: inline-block;
+      // position: absolute;
+      // height: auto;
+      // bottom: 0;
+      // top: 0;
+      // left: 0;
+      // right: 0;
+    }
     .btn-black {
       @extend .btnBlack;
     }
@@ -53,11 +62,11 @@ $containerShadow: $black0_03;
       span {
         color: $formColor;
         float: left;
-            color: #ff0000;
-    float: left;
-    font-size: 11px;
-    margin-left: 13px;
-    padding-top: 3px;
+        color: #ff0000;
+        float: left;
+        font-size: 11px;
+        margin-left: 13px;
+        padding-top: 3px;
       }
 
       &:hover, &:focus {
