@@ -12,7 +12,7 @@ import './Section6.scss'
 const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } } }) => {
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     // adaptiveHeight: false,
@@ -32,9 +32,9 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
         breakpoint: 480,
         settings: {
           slidesToShow: 1, 
-          // slidesToScroll: 1, 
           arrows: true,
           dots: false,
+          infinite: false,
           variableWidth: true,
           adaptiveHeight: false,
           wipeToSlide: false
@@ -50,7 +50,7 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
           <PopCircle color={blue} radius={196} position={["-196px", "auto", "auto", "143px"]}/>
           <PopCircle color={blue} radius={122} position={["auto", "276px", "-109px", "auto"]}/>
         </Col>
-        <Image src="/assets/images/Home/section6/line.png"/>
+        <Image src="/assets/images/home/section6/line.png"/>
         <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
       </Grid>
       <Grid >
@@ -58,7 +58,7 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
           <div>
             <Card 
               read={content.read}
-              img='/assets/images/Home/section6/card1.png' 
+              img='/assets/images/home/section6/card1.png' 
               title='How to make nacho and taco like a pro!' 
               subTittle='lab'
               content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>
@@ -66,7 +66,7 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
           <div>
             <Card 
               read={content.read}
-              img='/assets/images/Home/section6/card1.png' 
+              img='/assets/images/home/section6/card1.png' 
               title='How to make nacho and taco like a pro!' 
               subTittle='lab'
               content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>
@@ -74,7 +74,7 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
           <div>
             <Card 
               read={content.read}
-              img='/assets/images/Home/section6/card2.png' 
+              img='/assets/images/home/section6/card2.png' 
               title='How to make nacho and taco like a pro!' 
               subTittle='resources'
               content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>
@@ -82,7 +82,7 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
           <div>
             <Card 
               read={content.read}
-              img='/assets/images/Home/section6/card1.png' 
+              img='/assets/images/home/section6/card1.png' 
               title='How to make nacho and taco like a pro!' 
               subTittle='news &amp; updates'
               content='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor '/>

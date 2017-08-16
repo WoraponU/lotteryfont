@@ -23,27 +23,22 @@ $shadow: $boxshadowblack;
       line-height: 2;
       text-align: right;
       color: $pSection4;
-      text-shadow: 2.1px 3.4px 5.7px $shadow;
-
     }
   }
 
   img {
     width: 100%;
-
   }
 
   .rowPosition {
     position: relative;
     padding-left: 9px;
-
   }
 
   div[class^="col-"] {    
     position: relative;
     padding-left: 0px;
     padding-bottom: 15px;
-
   }
   
   .imgW355 {
@@ -54,7 +49,6 @@ $shadow: $boxshadowblack;
     @extend .imgW355;
     position: absolute;
     left: -379px;
-
   }
 
   .imgWeb {
@@ -62,28 +56,26 @@ $shadow: $boxshadowblack;
     float: right;
     box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
     margin-top: 11px;
-
   }
 
   .imgMonitor {
     height: 734px;
     box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
-
   }
 
   .imgWhite {
     left: -143px;
     top: 165px;
     position: absolute;
-    z-index: -1;
-
+    z-index: 0;
   }
 
   .imgCreative {
     margin-left: -8px;
     @extend .imgW355;
     box-shadow: 7px 11px 21px 0 $shadow, 0 6px 26px 0 rgba(0, 0, 0, 0.44);
-
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -91,14 +83,11 @@ $shadow: $boxshadowblack;
   .section4 {
     .text-center {
       text-align: left;
-
     } 
 
     .xsImg {
       padding: 0px;
-
     }
-
     
     .text-right {
       p {
@@ -106,8 +95,13 @@ $shadow: $boxshadowblack;
         font-size: 17px;
         line-height: 1.47;
         text-shadow: none;
-
       }
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .imgMoblie {
+    display:none;
   }
 }
