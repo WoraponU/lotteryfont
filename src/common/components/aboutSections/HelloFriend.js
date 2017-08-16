@@ -16,13 +16,13 @@ const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
           <Image src="/assets/images/common/line.png"></Image>
         </Row>
         <Row>
-          <Col lg={12} md={12} xsHidden smHidden>
+          <Col lg={12} md={12}  xsHidden smHidden>
             <PopCircle color={purple} radius={145} position={["70px", "30px", "auto", "auto"]}/>
             <PopCircle color={yellow} radius={86}  position={["150px", "0px", "auto", "auto"]}/>      
             <PopCircle color={pink} radius={86} position={["-28px", "164px", "auto", "auto"]}/>
           </Col>
-          <Col lg={12} md={12} xs={12}> 
-            <Image src="/assets/images/about/helloFriend/room.png"></Image>
+          <Col lg={12} md={12} sm={12} xs={12}> 
+            <Image className="imgRoom" src="/assets/images/about/helloFriend/room.png"></Image>
           </Col>
         </Row>
         <Row className="row2Image">
@@ -34,7 +34,7 @@ const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
            <Col lg={3} md={3}  xsHidden smHidden>
             <Image src="/assets/images/about/helloFriend/chair.png"></Image>          
           </Col>
-          <Col lg={6} md={6}  className="blockText">
+          <Col lg={6} md={6} sm={6} xs={6}  className="blockText">
             <h3>{ content.title1 }</h3>
             <p>{ content.subtitle1 }</p>
             <p>{ content.subtitle2 }</p>

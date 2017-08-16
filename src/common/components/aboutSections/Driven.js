@@ -11,7 +11,7 @@ import './Driven.scss'
 const DrivenComponent = ({ match: { params: { id, lang } }, lang: { Driven: content } }) => {
   return (
     <Grid className="driven">
-      <Col lg={6} md={12} sm={12} className="title">       
+      <Col lg={6} md={6} sm={12} className="title">       
         <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
         <p dangerouslySetInnerHTML={{__html: content.subHeader}}></p>
         <LinkContainer  to={`/${lang}/our-work`} className="btn-black "><Button>DOWNLOAD</Button></LinkContainer>    
@@ -19,7 +19,7 @@ const DrivenComponent = ({ match: { params: { id, lang } }, lang: { Driven: cont
         <PopCircle color={blue} radius={140} position={["auto", "auto", "-344px", "-142px"]}/>
         <PopCircle color={purple} radius={98} position={["auto", "auto", "-244px", "-180px"]}/>         
       </Col>
-      <Col lg={3} md={12} sm={6} className="blogShow">
+      <Col lg={3} md={3} sm={6} className="blogShow">
         <Row>
           <Col lg={12} md={12} sm={12} className="rowImg1">
             <Image src="/assets/images/about/driven/comman.png"></Image>
@@ -35,9 +35,10 @@ const DrivenComponent = ({ match: { params: { id, lang } }, lang: { Driven: cont
           </Col>
         </Row>
       </Col>
-      <Col lg={3} md={12} sm={6} className="blogShow">
-      <PopCircle color={yellow} radius={104} position={["0px", "-124px", "auto", "auto"]}/>
-
+      <Col lg={3} md={3} sm={6} className="blogShow" >
+        <Col>
+          <PopCircle color={yellow} radius={104} position={["0px", "0px", "auto", "auto"]}/>
+        </Col>
         <Row>
           <Col lg={12} md={12} sm={12} className="rowImg3">          
             <Image src="/assets/images/about/driven/keybord.png"></Image>

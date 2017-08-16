@@ -3,25 +3,6 @@
 
 $h4Color: $black2;
 
-@media (max-width: 480px) {
-  .section9 {
-    img {
-      float: left !important;
-
-    }
-  
-    .socialGroup {
-      padding-top: 25px !important;
-      padding-bottom: 43px !important;
-
-    }
-    .btn {
-      width: 173px;
-      
-    }
-  }
-}
-
 .section9 {
   background-image: url('/assets/images/common/footer/circle.png');
   background-repeat: no-repeat;
@@ -100,5 +81,32 @@ $h4Color: $black2;
       }
     }
   }
+
+  @media (max-width: 768px) {     
+    .socialGroup {
+      padding-bottom: 20px;
+    }
+
+    .contact {
+      margin-bottom: 20px;
+    }
+  } 
+
+  @media (max-width: 480px) {    
+    img {
+      float: left;
+
+    }
+  
+    .socialGroup {
+      padding-top: 25px;
+      padding-bottom: 43px;
+
+    }
+    .btn {
+      width: 173px;
+      
+    }
+  } 
 }
    

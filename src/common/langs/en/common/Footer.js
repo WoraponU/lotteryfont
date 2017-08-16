@@ -5,6 +5,7 @@ module.exports = {
       "yourName": "Your name*",
       "email": "Email*"
     },
-    "button": "subscribe to newsletter"
+    "button": "subscribe to newsletter",
+    "buttonSm": "subscribe"
   }
 }

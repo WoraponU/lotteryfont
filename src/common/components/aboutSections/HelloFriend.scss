@@ -54,11 +54,23 @@ $h3Color: $pink;
     }
   }
 
-
+  @media (max-width: 1024px) {
+    img {
+      width: 100%;
+    }
+    
+    .imgRoom {
+      width: auto;
+    }
+  }
 
   @media (max-width: 480px) {
-  // img {
-  //   width: 100%;
-  // }
+    img {
+        width: 100%;
+    }
+
+    .imgRoom {
+      width: auto;
+    }
   }
 }

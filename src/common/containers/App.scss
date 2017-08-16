@@ -173,14 +173,22 @@ body {
   }
 
   //////////////////////////////////
-  @media screen and (max-width: 480px) {
-    h1 {
-      font-size: 25px !important;
-    }
-  }
   @media screen and (max-width: 1024px) {
     .main {
       margin: 0px auto 557px;
     }
   }
+  @media screen and (max-width: 768px) {
+    .main {
+      margin: 0px auto 500px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .main {
+      margin: 0px auto 637px;
+    }
+    h1 {
+      font-size: 25px !important;
+    }
+  } 
 }

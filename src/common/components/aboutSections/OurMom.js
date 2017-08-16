@@ -17,7 +17,7 @@ const OurMomComponent = ({ lang: { OurMom: content }, match: { params: { id, lan
         </Row>
       </Grid>
       <Grid>
-        <Col lgOffset={1} mdOffset={1} smOffset={1} lg={5} md={5} sm={5} className="formFreshDesign">
+        <Col lgOffset={1} lg={5} md={5} sm={5} className="formFreshDesign">
           <Row>
             <Col>
               <h1>{ content.groupTitle.text1 }<br/><span className="textSmall">{ content.groupTitle.text2 }</span><span className="spanH1">{ content.groupTitle.text3 }</span></h1>             
@@ -49,7 +49,9 @@ const OurMomComponent = ({ lang: { OurMom: content }, match: { params: { id, lan
           <Row className="zImg">
             <Col>
               <Image src="/assets/images/about/ourMom/beby.png" className="card0"></Image>
+            </Col><Col >
               <Image src="/assets/images/about/ourMom/cardBlue.png" className="card1"></Image>
+            </Col><Col >
               <Image src="/assets/images/about/ourMom/card.png" className="card2"></Image>
             </Col>
           </Row>
