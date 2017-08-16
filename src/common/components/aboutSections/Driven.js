@@ -11,11 +11,11 @@ import './Driven.scss'
 const DrivenComponent = ({ match: { params: { id, lang } }, lang: { Driven: content } }) => {
   return (
     <Grid className="driven">
-      <Col lg={6} md={6} sm={12} className="title">       
+      <Col lg={6} md={6} sm={12} xs={12} className="title">       
         <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
         <p dangerouslySetInnerHTML={{__html: content.subHeader}}></p>
         <LinkContainer  to={`/${lang}/our-work`} className="btn-black "><Button>DOWNLOAD</Button></LinkContainer>    
-        <h3 dangerouslySetInnerHTML={{__html: content.title}}></h3> 
+        <Col sm={7} smOffset={5}><h3 dangerouslySetInnerHTML={{__html: content.title}}></h3> </Col>
         <PopCircle color={blue} radius={140} position={["auto", "auto", "-344px", "-142px"]}/>
         <PopCircle color={purple} radius={98} position={["auto", "auto", "-244px", "-180px"]}/>         
       </Col>

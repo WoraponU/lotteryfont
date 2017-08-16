@@ -26,22 +26,22 @@ const HelloFriendComponent = ({ lang: { HelloFriend: content }}) => {
           </Col>
         </Row>
         <Row className="row2Image">
-          <Col lg={3} md={3} xsHidden smHidden>
+          <Col lg={3} md={3} xsHidden sm={3}>
             <Image src="/assets/images/about/helloFriend/speaker.png" className="imgOut" />
             <Image src="/assets/images/about/helloFriend/work.png"></Image>  
             <Col mdHidden><PopCircle color={blue} radius={131} position={["auto", "-74px", "-145px", "auto"]}/></Col>              
           </Col>
-           <Col lg={3} md={3}  xsHidden smHidden>
+           <Col lg={3} md={3}  xsHidden sm={3}>
             <Image src="/assets/images/about/helloFriend/chair.png"></Image>          
           </Col>
-          <Col lg={6} md={6} sm={6} xs={6}  className="blockText">
+          <Col lg={6} md={6} sm={6} xs={12}  className="blockText">
             <h3>{ content.title1 }</h3>
             <p>{ content.subtitle1 }</p>
             <p>{ content.subtitle2 }</p>
           </Col>
         </Row>
         <Row>
-          <Col lgOffset={8} mdOffset={8} lg={3} md={3} xsHidden smHidden className="textColor">
+          <Col lgOffset={8} mdOffset={8} smOffset={7} lg={3} md={3} sm={4} xs={12} className="textColor">
             <h3 className="txPink">{ content.title2 }</h3>
           </Col>
         </Row>
