@@ -16,13 +16,12 @@ $action-color: $green;
   }
 
   .button {
-    -webkit-font-smoothing: antialiased;
     background-color: $dark-blue;
     border: none;
     display: inline-block;
     text-decoration: none;
     user-select: none;
-    letter-spacing: 1px;
+    cursor: pointer;
     padding: 15px 35px;
     text-transform: uppercase;
     transition: all 0.1s ease-out;

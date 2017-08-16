@@ -1,11 +1,13 @@
 import React from 'react';
-import { Grid, Row, Col, Form, Button } from 'react-bootstrap';
+import { Grid, Row, Col, Form } from 'react-bootstrap';
 import SweetAlert from 'react-bootstrap-sweetalert';
 import { Field, reduxForm, reset } from 'redux-form'
 
 import { PopCircle } from 'Components/common';
 import { yellow, purple, pink } from 'Constants';
 import { Spinner } from 'Components/common';
+import { ButtonBubble } from 'Components/common'
+
 import './Section7.scss'
 
 
@@ -70,9 +72,9 @@ const Section7 = ({
           </Row>
           <Row>
             <Col lg={12} md={12} sm={12}>
-              <Button className="btn-black mt10" disabled={isPostingMailContactUs} onClick={() => handleSubmit()}>
+              <ButtonBubble disabled={isPostingMailContactUs} onClick={() => handleSubmit()}>
                 {content.sendMessage}
-              </Button>
+              </ButtonBubble>   
               { 
                 isPostingMailContactUs && <Spinner width={'25px'} height={'25px'} />             
               }

@@ -70,7 +70,7 @@ class ButtonBubble extends Component {
         </svg>
 
         <span className="button--bubble__container">
-          <span className="button button--bubble">
+          <span className="button button--bubble" {...this.props}>
             {children}
           </span>
           <span className="button--bubble__effect-container">
