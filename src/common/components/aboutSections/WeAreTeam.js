@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom'
 
 import { CardTeam } from 'Components/common'
@@ -14,9 +14,7 @@ const WeAreTeamComponent = ({ lang: { weAreTeam: content }}) => {
       <Row className="text-center">
         <h1>{ content.header }</h1>
       </Row>
-      <Row className="groupCardTeam">
-        <Col>
-          <Row>
+          <Row className="groupCardTeam">
             <CardTeam 
               img='/assets/images/about/weAreTeam/yuki.png' 
               title={content.title1}
@@ -41,9 +39,7 @@ const WeAreTeamComponent = ({ lang: { weAreTeam: content }}) => {
               name={content.name4}
               rank={content.rank4}
             />
-          </Row>
-          <Row>
-            <PopCircle color={blue} radius={88} position={["auto", "0px", "-110px", "auto"]}/>    
+            
             <CardTeam 
               img='/assets/images/about/weAreTeam/yuki.png' 
               title={content.title5}
@@ -62,9 +58,9 @@ const WeAreTeamComponent = ({ lang: { weAreTeam: content }}) => {
               name={content.name7}
               rank={content.rank7}
             />
+            <PopCircle color={blue} radius={88} position={["auto", "0px", "-110px", "auto"]}/>    
           </Row>
-        </Col>
-      </Row>
+      
     </Grid>
   );
 };

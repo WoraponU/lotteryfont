@@ -29,6 +29,19 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
         }
       },
       {
+        breakpoint: 769,
+        settings: {
+          
+          slidesToShow: 2, 
+          arrows: true,
+          dots: false,
+          infinite: false,
+          variableWidth: false,
+          adaptiveHeight: false,
+          wipeToSlide: false
+        }
+      },
+      {
         breakpoint: 480,
         settings: {
           slidesToShow: 1, 

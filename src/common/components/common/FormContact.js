@@ -11,7 +11,7 @@ const Section9 = () => {
     <div className="section9">
       <Grid>
         <Row>
-          <Col lg={6} md={6} sm={6} xs={12} className="title">
+          <Col lg={6} md={6} sm={12} xs={12} className="title">
             <h5>@hobbizdigital </h5>
             <h1>It’s a Good <span>{day}</span><br/>To Drop Us A Line</h1>
           </Col>
@@ -20,7 +20,7 @@ const Section9 = () => {
         </Row>
         <Row>   
           <Col lg={3}  md={3} xsHidden smHidden> <Image src="/assets/images/common/Footer/room.png" /></Col>
-          <Col lg={3}  md={3} sm={3} xs={12} className="contact">
+          <Col lg={3}  md={3} sm={6} xs={12} className="contact">
             <h4>hello@hobbiz.co.th</h4>
             <h4>(+66) 89-822-1223</h4><br/>
             <p>
@@ -33,11 +33,10 @@ const Section9 = () => {
             <br/>
             <Button href="https://goo.gl/maps/sE52LCbD5Po">View google map</Button>
           </Col>
-          <Col lg={3}  md={3} sm={3} xs={12} className="socialGroup"> 
-            <Image src="/assets/images/common/Footer/line.png" alt="facebookHobbiz"   href="/"/>       
-            <Image src="/assets/images/common/Footer/ig.png" alt="facebookHobbiz"  href="/" className="iconIG"/>
-            <Image src="/assets/images/common/Footer/fb.png" alt="facebookHobbiz"  href="#"/>
-                  
+          <Col lg={3}  md={3} sm={6} xs={12} className="socialGroup"> 
+            <a href="http://line.me/ti/p/~hobbizdigital"><Image src="/assets/images/common/Footer/line.png"/></a>   
+            <a href="https://www.instagram.com/hobbizdigital/"><Image src="/assets/images/common/Footer/ig.png" className="iconIG"/></a>
+            <a href="https://www.facebook.com/hobbizdigital/"><Image src="/assets/images/common/Footer/fb.png"/></a>
           </Col>
           <Col lg={3}  md={3} xsHidden smHidden><Image src="/assets/images/common/Footer/girl.png" /></Col>                                        
         </Row>

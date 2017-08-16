@@ -14,7 +14,7 @@ const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } }
   return (
     <Grid className="section1">
       <Row>
-        <Col mdOffset={5} lgOffset={6} md={7} lg={6} sm={7} xsHidden>
+        <Col smOffset={5} mdOffset={5} lgOffset={6} md={7} lg={6} sm={6} xsHidden>
           <Image src="/assets/images/home/section1/watch.png" responsive className="imgWatch"/>
         </Col>
       </Row>
@@ -25,15 +25,15 @@ const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } }
           <PopCircle color={purple} radius={145} position={["-25px", "auto", "auto", "-15px"]}/>
           <Col mdHidden><PopCircle color={pink} radius={86} position={["-100px", "auto", "auto", "-77px"]}/></Col>          
         </Col>
-        <Col sm={12} xs={12} md={8} lg={8} >
+        <Col sm={11} xs={12} md={8} lg={8} smOffset={1}>
           <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
         </Col>
       </Row> 
       <Row >
-        <Col  md={5} lg={5} xs={2} sm={2} className="text-right">  
+        <Col  md={5} lg={5} xs={2} sm={5} className="text-right">  
         <hr/>               
         </Col>
-        <Col md={6} lg={6} xs={10} sm={10} >
+        <Col md={6} lg={6} xs={10} sm={6} >
           <p>{ content.content }</p>
         </Col>
       </Row> 

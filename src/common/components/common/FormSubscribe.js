@@ -21,14 +21,17 @@ const Section8 = ({ lang: { formSubscribe } }) => {
         </Row>
         <Row>
           <Form {...formProps}>
-            <Col lg={5} md={5} sm={5}>
-              <FormControl type="text" id="mce-FNAME"  name="FNAME" placeholder={formSubscribe.placeholder.yourName}/>
+            <Col lg={5} md={5} sm={5} >
+              <FormControl type="text" id="mce-FNAME" name="FNAME" placeholder={formSubscribe.placeholder.yourName}/>
             </Col>
-            <Col lg={4} md={4} sm={4}>
-              <FormControl type="email" name="EMAIL" id="mce-EMAIL" placeholder={formSubscribe.placeholder.email}/>
+            <Col lg={4} md={4} sm={4} >
+              <FormControl type="email" id="mce-EMAIL" name="EMAIL" placeholder={formSubscribe.placeholder.email}/>
             </Col>            
-            <Col lg={3} md={3} sm={3} className="text-center">
+            <Col lg={3} md={3} sm={3} smHidden  className="text-center">
              <Button type="submit">{formSubscribe.button}</Button>
+            </Col>
+            <Col sm={3} xsHidden lgHidden mdHidden className="text-center">
+             <Button type="submit">{formSubscribe.buttonSm}</Button>
             </Col>
           </Form>
         </Row>

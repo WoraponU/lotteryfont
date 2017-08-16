@@ -55,4 +55,15 @@
       margin-top: 135px;
     }
   }
+
+ @media (max-width: 480px) {
+  .title {
+    padding-left: 15px;
+
+    p {
+      margin-top: 35px;
+      padding-right: 20px;
+    }
+  }
+ }
 }

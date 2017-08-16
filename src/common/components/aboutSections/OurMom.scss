@@ -7,7 +7,9 @@ $allWorkColor: $black;
 $textSmallColor: $mainFontColor;
 .OurMom {
   .text-center {
-    margin-bottom: 380px;
+    h1 { 
+      margin-bottom: 380px;    
+    }   
   }
 
   .formFreshDesign {
@@ -23,7 +25,8 @@ $textSmallColor: $mainFontColor;
 
     p {
       margin: 34px 0;
-
+      position: relative;
+      z-index: 2;
     }
 
     .spanH1 {
@@ -46,6 +49,7 @@ $textSmallColor: $mainFontColor;
     h1 {
       padding-left: 64px;
     }
+
     .groupName {
       padding-left: 82px;
       
@@ -71,15 +75,15 @@ $textSmallColor: $mainFontColor;
 
     .card0 {
       z-index: 3;
-      
     }
-    .card1 {
-    position: absolute;
-    top: -208px;
-    left: 74px;
-    z-index: -2;
 
+    .card1 {
+      position: absolute;
+      top: -208px;
+      left: 74px;
+      z-index: -2;
     }
+
     .card2 {
       z-index: -3;
       position:absolute;
@@ -88,9 +92,33 @@ $textSmallColor: $mainFontColor;
 
     }
   }
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .formUserInterfaces  {
+      padding-left: 300px;   
+    }
+  }
+
+  @media (max-width: 768px) {
+    .text-center {
+      h1 {       
+        margin: 200px 0;    
+      }   
+    }
+  }
 
   @media (max-width: 480px) {
-    .formFreshDesign {
+    .zImg {
+      img {
+        width: 100%;
+      }
+
+      .card0 {
+        z-index: 3;
+      }
+
+    }
+    .groupName {
+      padding: 15px 0 30px 15px !important;
 
     }
   }
