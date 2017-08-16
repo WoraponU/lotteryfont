@@ -1,35 +1,39 @@
+@import '~Theme/colors';
+
 $dark-blue: #222;
 $green: #90feb5;
 $action-color: $green;
 
-.test {
-   display: block;
-    height: 100%;
-    animation: hue-rotate 10s linear infinite;
+.buttonBubble {
+  margin-top: 23px;
+  display: block;
+  height: 100%;
+  animation: hue-rotate 10s linear infinite;
+  box-sizing: border-box;
+
   * {
-      box-sizing: border-box;
-    }
+    box-sizing: border-box;
+  }
 
   .button {
     -webkit-font-smoothing: antialiased;
     background-color: $dark-blue;
     border: none;
-    color: #fff;
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 100;
     text-decoration: none;
     user-select: none;
     letter-spacing: 1px;
-    color: white;
-    padding: 20px 40px;
+    padding: 15px 35px;
     text-transform: uppercase;
     transition: all 0.1s ease-out;
+    font-size: 13px;
+    font-family: Roboto-Bold, Mitr-Bold;  
+    background-color: $black3;
+    color: $white;
 
     &:hover {
       background-color: $action-color;
-      color: #fff;
+      color: $white;
     }
 
     &:active {
@@ -39,7 +43,7 @@ $action-color: $green;
     &--bubble {
       position: relative;
       z-index: 2;
-      color: white;
+      color: $white;
       background: none;
 
       &:hover {
@@ -116,25 +120,23 @@ $action-color: $green;
     height: 1px;
   }
 
-
-
   .button--bubble__container {
     top: 50%;
     margin-top: -25px;
   }
 
   @keyframes hue-rotate {
-        from {
-          -webkit-filter: hue-rotate(0);
-          -moz-filter: hue-rotate(0);
-          -ms-filter: hue-rotate(0);
-          filter: hue-rotate(0);
-        }
-        to {
-          -webkit-filter: hue-rotate(360deg);
-          -moz-filter: hue-rotate(360deg);
-          -ms-filter: hue-rotate(360deg);
-          filter: hue-rotate(360deg);
-        }
+    from {
+      -webkit-filter: hue-rotate(0);
+      -moz-filter: hue-rotate(0);
+      -ms-filter: hue-rotate(0);
+      filter: hue-rotate(0);
+    }
+    to {
+      -webkit-filter: hue-rotate(360deg);
+      -moz-filter: hue-rotate(360deg);
+      -ms-filter: hue-rotate(360deg);
+      filter: hue-rotate(360deg);
+    }
   }
 }
