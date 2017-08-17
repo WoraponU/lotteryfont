@@ -25,7 +25,7 @@ const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } }
           <PopCircle color={purple} radius={145} position={["-25px", "auto", "auto", "-15px"]}/>
           <Col mdHidden><PopCircle color={pink} radius={86} position={["-100px", "auto", "auto", "-77px"]}/></Col>          
         </Col>
-        <Col sm={11} xs={12} md={8} lg={8} smOffset={1}>
+        <Col sm={11} xs={12} md={8} lg={8} smOffset={1} lgOffset={4} mdOffset={4}>
           <h1 dangerouslySetInnerHTML={{__html: content.header}}></h1>
         </Col>
       </Row> 
