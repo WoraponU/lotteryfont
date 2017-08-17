@@ -18,8 +18,8 @@ $textColor: $black;
   .col-lg-3 ,.content {
     top: 3px;
     position: absolute;
-    width: 21%;
-  
+    width: auto;
+    max-width: 400px;
   }
 
   #Tab {
@@ -118,5 +118,16 @@ $textColor: $black;
     .slick-list {
       cursor: pointer;
     }
+  }
+  @media (max-width: 1199px) {
+
+  }
+
+   @media (max-width: 991px) {
+   
+  }
+
+  @media (max-width: 480px) {
+   
   }
 }

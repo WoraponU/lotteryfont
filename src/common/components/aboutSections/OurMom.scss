@@ -92,13 +92,13 @@ $textSmallColor: $mainFontColor;
 
     }
   }
-  @media (max-width: 1024px) and (min-width: 769px) {
+  @media (max-width: 1199px) and (min-width: 992px) {
     .formUserInterfaces  {
       padding-left: 300px;   
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .text-center {
       h1 {       
         margin: 200px 0;    
@@ -115,8 +115,8 @@ $textSmallColor: $mainFontColor;
       .card0 {
         z-index: 3;
       }
-
     }
+    
     .groupName {
       padding: 15px 0 30px 15px !important;
 

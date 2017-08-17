@@ -37,7 +37,8 @@ $textColor: $pink;
     img {
       display: block;
       margin: 0 auto;
-
+      width: 100%;
+      max-width: 855px;
     }
 
     .middle {
@@ -125,5 +126,21 @@ $textColor: $pink;
         }
       }
     }
+  }
+
+  @media (max-width: 1199px) {
+
+  }
+
+  @media (max-width: 991px) {
+    .detailImage {
+      .middle {
+        padding: 14px 0;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+   
   }
 }
