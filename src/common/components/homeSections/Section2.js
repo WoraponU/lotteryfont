@@ -7,7 +7,7 @@ import { yellow, purple, pink } from 'Constants';
 
 import './Section2.scss'
 
-const Section2 = ({ lang: { section2: content } }) => {
+const Section2 = ({ lang: { section2: content }, userAgent }) => {
   const settings = {
     autoplay: true,
     slidesToShow: 3,

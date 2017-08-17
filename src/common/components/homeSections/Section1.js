@@ -10,7 +10,8 @@ import { ButtonBubble } from 'Components/common'
 
 import './Section1.scss'
 
-const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } } }) => {
+const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } }, userAgent: { isPhone } }) => {
+  const positionA = isPhone ? ["20px", "20px", "20px", "20px"] : ["auto", "auto", "auto", "auto"]
   return (
     <Grid className="section1">
       <Row>
@@ -20,7 +21,7 @@ const Section1 = ({ lang: { section1: content }, match: { params: { id, lang } }
       </Row>
       <Row className="header">
         <Col sm={4} md={4} lg={4} xsHidden smHidden>
-          <PopCircle color={blue} radius={264} position={["20px", "20px", "20px", "20px"]}/>
+          <PopCircle color={blue} radius={264} position={positionA}/>
           <PopCircle color={yellow} radius={86} position={["182px", "47px", "auto", "auto"]}/>
           <PopCircle color={purple} radius={145} position={["-25px", "auto", "auto", "-15px"]}/>
           <Col mdHidden><PopCircle color={pink} radius={86} position={["-100px", "auto", "auto", "-77px"]}/></Col>          
