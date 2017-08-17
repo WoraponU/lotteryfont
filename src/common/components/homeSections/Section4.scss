@@ -1,4 +1,5 @@
 @import '~Theme/colors';
+@import '~Theme/size';
 
 $HeaderColor: $pink;
 $pSection4: $black;
@@ -79,7 +80,7 @@ $shadow: $boxshadowblack;
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: $xs){
   .section4 {
     .text-center {
       text-align: left;
@@ -100,7 +101,7 @@ $shadow: $boxshadowblack;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: $md) {
   .imgMoblie {
     display:none;
   }

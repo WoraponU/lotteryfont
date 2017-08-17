@@ -33,6 +33,7 @@ const WorkDetail = (props) => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
+          arrows: false,
           dots: true
         }
       },
@@ -40,7 +41,7 @@ const WorkDetail = (props) => {
         breakpoint: 769,
         settings: {   
           slidesToShow: 2, 
-          arrows: true,
+          arrows: false,
           dots: false,
           infinite: false,
           variableWidth: false,
@@ -130,7 +131,7 @@ const WorkDetail = (props) => {
         <Row className="detailTitle">        
           <PopCircle color={blue} radius={121} position={["170px", "0px", "0px", "-193px"]}/>   
           <PopCircle color={purple} radius={84} position={["56px", "0px", "0px", "0px"]}/>   
-          <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6} xs={12}>
+          <Col lgOffset={3} mdOffset={3} smOffset={3} lg={6} md={6} sm={6} xs={12} className="formSubheader">
             <h3 dangerouslySetInnerHTML={{__html: contentLoaded.subHeader3}}></h3>
             <p dangerouslySetInnerHTML={{__html: contentLoaded.content3}}></p>
           </Col>

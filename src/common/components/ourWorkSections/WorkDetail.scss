@@ -1,6 +1,8 @@
 @import '~Theme/colors';
 @import '~Theme/common';
 @import '~Theme/mixin';
+@import '~Theme/size';
+
 
 $textColor: $pink;
 
@@ -62,6 +64,11 @@ $textColor: $pink;
       margin-top: 34px;
       background-color: $blue2;
 
+    }
+
+    .formSubheader{
+      position: relative;
+      z-index: 1;
     }
 
     .btn-black {
@@ -128,19 +135,11 @@ $textColor: $pink;
     }
   }
 
-  @media (max-width: 1199px) {
-
-  }
-
-  @media (max-width: 991px) {
+  @media (max-width: $sm) {
     .detailImage {
       .middle {
         padding: 14px 0;
       }
     }
-  }
-
-  @media (max-width: 480px) {
-   
   }
 }

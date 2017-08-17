@@ -1,6 +1,7 @@
 @import '~Theme/colors';
 @import '~Theme/mixin';
 @import '~Theme/common';
+@import '~Theme/size';
 
 $hrColor: $blue2;
 $placeColor: $pink;
@@ -100,7 +101,7 @@ $containerShadow: $black0_03;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: $xs) {
   .section7 {
     form {
       padding: 20px 4px 75px !important;

@@ -1,11 +1,12 @@
 @import '~Theme/colors';
 @import '~Theme/common';
+@import '~Theme/size';
 
 $backgroundColor: $black4;
 $h3Color: $white;
 $formColor: $white;
 
-@media (max-width: 480px) {
+@media (max-width: $xs) {
   .section8 {
     form {
       div[class^="col-"] {    

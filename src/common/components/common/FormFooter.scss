@@ -1,8 +1,9 @@
 @import '~Theme/colors';
+@import '~Theme/size';
 
 $backGroundColor: $pink;
 $h5Color: $white;
-@media (max-width: 480px) {
+@media (max-width: $xs) {
   .footer {
     h5 {
       float: left !important;

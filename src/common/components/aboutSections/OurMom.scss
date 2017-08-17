@@ -1,5 +1,6 @@
 @import '~Theme/colors';
 @import '~Theme/common';
+@import '~Theme/size';
 
 $spanColor: $pink;
 $hrColor: $blue2;
@@ -92,13 +93,13 @@ $textSmallColor: $mainFontColor;
 
     }
   }
-  @media (max-width: 1199px) and (min-width: 992px) {
+  @media (max-width: $md) and (min-width: 992px) {
     .formUserInterfaces  {
       padding-left: 300px;   
     }
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: $sm) {
     .text-center {
       h1 {       
         margin: 200px 0;    
@@ -106,7 +107,7 @@ $textSmallColor: $mainFontColor;
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: $xs) {
     .zImg {
       img {
         width: 100%;

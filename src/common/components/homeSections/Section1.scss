@@ -1,5 +1,6 @@
 @import '~Theme/colors';
 @import '~Theme/common';
+@import '~Theme/size';
 
 $hrColor: $blue2;
 $headerColor: $black2;
@@ -52,20 +53,8 @@ $headerColor: $black2;
         padding: 14px 22px 8px 22px;
   }
 }
-// @media (max-width: 991px) {
-//   .section1 {
-//     background-position: 100% 0;
-//     background-size: 60%;
-//     padding-top:200px;
-//     margin-bottom: 80px;
-    
-//     .header {
-//       margin: 124px 0 8px 0;
-   
-//     } 
-//   }
-// }
-@media (max-width: 480px) {
+
+@media (max-width: $xs) {
   .section1 {
     background-position: 100% 0;
     background-size: 60%;
