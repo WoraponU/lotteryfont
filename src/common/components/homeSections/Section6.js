@@ -33,7 +33,7 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
         settings: {
           
           slidesToShow: 2, 
-          arrows: true,
+          arrows: false,
           dots: false,
           infinite: false,
           variableWidth: false,
@@ -45,7 +45,7 @@ const Section6 = ({ lang: { section6: content }, match: { params: { id, lang } }
         breakpoint: 480,
         settings: {
           slidesToShow: 1, 
-          arrows: true,
+          arrows: false,
           dots: false,
           infinite: false,
           variableWidth: true,

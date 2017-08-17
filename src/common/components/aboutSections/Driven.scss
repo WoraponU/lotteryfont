@@ -1,5 +1,6 @@
 @import '~Theme/colors';
 @import '~Theme/common';
+@import '~Theme/size';
 
 .driven {
   margin-top: 360px;
@@ -62,7 +63,7 @@
     }
   }
 
- @media (max-width: 480px) {
+ @media (max-width: $xs) {
   .title {
     padding-left: 15px;
 

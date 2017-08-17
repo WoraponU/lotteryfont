@@ -1,5 +1,6 @@
 @import '~Theme/colors';
 @import '~Theme/common';
+@import '~Theme/size';
 
 $hrColor: $pink;
 $buttonColor: $pink;
@@ -9,7 +10,7 @@ $post-meta: $grey3;
 $card-detailsColor: $white;
 $cardHover: $black0_1;
 
-@media (max-width: 480px) {
+@media (max-width: $xs) {
   .cardHome {
     box-shadow: 0px 36px 38px 0 rgba(0, 0, 0, 0.1);
     margin-left: 20px;
