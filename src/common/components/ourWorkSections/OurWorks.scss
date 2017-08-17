@@ -1,8 +1,11 @@
 @import '~Theme/colors';
 @import '~Theme/common';
+@import '~Theme/size';
 
 $borderColor: $blue2;
 $textColor: $black;
+$hrColor: $blue2;
+
 
 .OurWorks {
   position: relative;
@@ -18,8 +21,12 @@ $textColor: $black;
   .col-lg-3 ,.content {
     top: 3px;
     position: absolute;
-    width: 21%;
-  
+    width: auto;
+    max-width: 400px;
+    hr {
+          background-color: $hrColor;
+
+    }
   }
 
   #Tab {
@@ -117,6 +124,37 @@ $textColor: $black;
 
     .slick-list {
       cursor: pointer;
+    }
+  }
+
+  @media (max-width: $md) {
+    .content {
+      top: 3px;
+      position: absolute;
+      width: auto;
+      max-width: 324px;
+    }
+  }
+
+  @media (max-width: $sm) {
+    #Tab {
+      margin-top: 450px;
+    }
+  }
+
+  @media (max-width: $xs) {
+     #Tab {
+      margin: 440px -9px 56px;
+    }
+
+    .slider {
+      .row {
+        margin-bottom: 0px;
+      }
+    }
+    
+    .cardWork {
+      margin-bottom: 35px;
     }
   }
 }

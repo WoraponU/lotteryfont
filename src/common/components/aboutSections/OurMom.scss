@@ -1,5 +1,6 @@
 @import '~Theme/colors';
 @import '~Theme/common';
+@import '~Theme/size';
 
 $spanColor: $pink;
 $hrColor: $blue2;
@@ -92,13 +93,13 @@ $textSmallColor: $mainFontColor;
 
     }
   }
-  @media (max-width: 1024px) and (min-width: 769px) {
+  @media (max-width: $md) and (min-width: 992px) {
     .formUserInterfaces  {
       padding-left: 300px;   
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $sm) {
     .text-center {
       h1 {       
         margin: 200px 0;    
@@ -106,7 +107,7 @@ $textSmallColor: $mainFontColor;
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: $xs) {
     .zImg {
       img {
         width: 100%;
@@ -115,8 +116,8 @@ $textSmallColor: $mainFontColor;
       .card0 {
         z-index: 3;
       }
-
     }
+    
     .groupName {
       padding: 15px 0 30px 15px !important;
 

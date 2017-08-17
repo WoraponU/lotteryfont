@@ -1,4 +1,5 @@
 @import '~Theme/colors';
+@import '~Theme/size';
 
 $pColor: $pink;
 $pHeader: $grey;
@@ -81,22 +82,24 @@ $imgShadow: $windWalk;
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: $sm) {
     .subHeader {
       padding-top: 0px;
       font-size: 17px;
     }  
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: $xs) {
     .section3 {
         padding-left: 15px;
-
+      
       img {
         padding-left: 15px;
         padding-right: 15px;
 
       }
+
+    
 
       .boxBottom {
         padding-left: 15px ;
@@ -109,6 +112,15 @@ $imgShadow: $windWalk;
           padding: 10px 0;
           
         }
+      }
+    }
+    div[class^="col-"] {    
+      position: relative;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      img {
+        width: 100%;
       }
     }
   }

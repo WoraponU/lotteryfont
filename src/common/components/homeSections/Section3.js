@@ -26,7 +26,7 @@ const Section3 = ({ lang: { section3: content } }) => {
         </Col> 
       </Row>
       <Row>
-        <Col lg={6} md={6} sm={6} >
+        <Col lg={6} md={6} sm={6}  >
           <Image src="/assets/images/home/section3/room.png" />
           <Col md={12} sm={12} className="boxBottom">
           <h3>{content.headerContent}</h3>
