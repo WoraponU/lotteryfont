@@ -5,7 +5,8 @@ import './ButtonBubble.scss'
 
 class ButtonBubble extends Component {
   componentDidMount() {
-    $('.button--bubble').each(function() {
+    const { id } = this.props
+    $(`#${id}`).each(function() {
       const $circlesTopLeft = $(this).parent().find('.circle.top-left');
       const $circlesBottomRight = $(this).parent().find('.circle.bottom-right');
 
@@ -70,7 +71,7 @@ class ButtonBubble extends Component {
         </svg>
 
         <span className="button--bubble__container">
-          <span className="button button--bubble">
+          <span className="button button--bubble" {...this.props}>
             {children}
           </span>
           <span className="button--bubble__effect-container">

@@ -16,20 +16,19 @@ $action-color: $green;
   }
 
   .button {
-    -webkit-font-smoothing: antialiased;
     background-color: $dark-blue;
     border: none;
+    color: $white;
     display: inline-block;
     text-decoration: none;
     user-select: none;
-    letter-spacing: 1px;
+    cursor: pointer;
     padding: 15px 35px;
     text-transform: uppercase;
     transition: all 0.1s ease-out;
     font-size: 13px;
     font-family: Roboto-Bold, Mitr-Bold;  
     background-color: $black3;
-    color: $white;
 
     &:hover {
       background-color: $action-color;
@@ -102,13 +101,13 @@ $action-color: $green;
       transition: background 0.1s ease-out;
 
       &.top-left {
-          top: 40%;
-          left: 27%;
+        top: 40%;
+        left: 27%;
       }
 
       &.bottom-right {
-          bottom: 40%;
-          right: 27%;
+        bottom: 40%;
+        right: 27%;
       }
     }
   }
