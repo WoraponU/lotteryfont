@@ -13,11 +13,11 @@ const OurOfficeComponent = ({ lang: { OurOffice: content }}) => {
         <h1>{ content.header }</h1>
       </Row>     
       <Row className="sectionPic">
-        <Col lg={6} md={6} sm={6} className="text-right">
+        <Col lg={6} md={6} sm={6} xsHidden className="text-right">
          <Row><Image src="/assets/images/contact/window.png" className="imgWindow"/></Row>
          <Row><Image src="/assets/images/contact/condo.png"/></Row>
         </Col>
-        <Col lg={3} md={3} sm={3}>
+        <Col lg={3} md={3} sm={3} xs={12}>
           <Row><Image src="/assets/images/contact/human.png"/></Row>
           <Row className="sayHello">
             <h3>{ content.contactTitle }</h3>
@@ -25,7 +25,7 @@ const OurOfficeComponent = ({ lang: { OurOffice: content }}) => {
             <PopCircle color={blue} radius={83}  position={["auto", "0px", "-400px", "auto"]}/>          
           </Row>
         </Col>
-        <Col lg={3} md={3} sm={3}>
+        <Col lg={3} md={3} sm={3} xs={12}>
           <Row> 
             <h3>{ content.titleAddress }</h3>
             <p>{ content.subTitleAddress }</p>

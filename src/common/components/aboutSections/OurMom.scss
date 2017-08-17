@@ -120,6 +120,9 @@ $textSmallColor: $mainFontColor;
     .groupName {
       padding: 15px 0 30px 15px !important;
 
+      .popular {
+        margin: 0 15px !important;
+      }
     }
   }
 }
