@@ -9,20 +9,33 @@ import { Section1Component } from 'Components/homeSections'
 import { withLang, withUserAgent } from 'Hocs';
 
 class Section1 extends Component {
+  state = {
+    count: 0,
+    isAccess: false
+  }
   componentDidMount() {
-    axios.get('http://localhost:3000/api/mail/test')
+    const statusToAccess = this.getStatusToAccess();
+
+    statusToAccess    
     .then(function (response) {
-      console.log(response);
+      alert('เข้าได้');
     })
     .catch(function (error) {
-      console.log(error);
+      console.log('eiei');
+
+      this.getStatusToAccess();
     });
   }
+
+  getStatusToAccess = () => {
+    return axios.get('http://localhost:3000/api/mail/test')
+  }
+
   render() {
     const { lang, userAgent } = this.props;
     
     return (
-      <Section1Component lang={lang} userAgent={userAgent}/>
+      <div>jfkdslafjkdls;afjdksl;{this.state.count}</div>
     );
   }
 }
