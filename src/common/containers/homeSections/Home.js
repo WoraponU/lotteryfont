@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-
+import { Grid, Row, Col, Jumbotron, FormGroup, FormControl, InputGroup } from 'react-bootstrap'
 class Section1 extends Component {
   state = {
     attempToAccess: 0,
-    isAccessSuccess: false
+    isAccessSuccess: false,
+    value: ''
   }
 
   updateStatus = (status) => {
@@ -37,6 +38,11 @@ class Section1 extends Component {
     return axios.get('http://localhost:3000/api/mail/test')
   }
 
+  handleChange = (event) => {
+    console.log(event.target.value)
+    // this.setState({value: event.target.value});
+  }
+
   componentDidMount() {
     const statusToAccess = this.getStatusToAccess();
 
@@ -54,16 +60,35 @@ class Section1 extends Component {
     const { isAccessSuccess } = this.state;
     if (prevIsAccessSuccess !== isAccessSuccess) {
       if (isAccessSuccess) {
-        window.open('https://pantip.com/topic/36774680');
+        // window.open('https://pantip.com/topic/36774680');
       }
     }    
   }
 
   render() {
     return (
-      <div>
-        {this.state.attempToAccess}
-      </div>
+      <Grid>
+        <Row className="show-grid">
+          <Col xs={12} sm={12} md={12} lg={12} >  
+            <Jumbotron>
+              <h1>Hello, world!</h1>
+              <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            </Jumbotron>
+          </Col>
+        </Row>
+        <Row className="show-grid">
+          <Col xs={12} sm={12} md={12} lg={12} >  
+          <FormGroup bsSize="large">
+            <InputGroup>
+              <InputGroup.Addon>กดเพื่อเข้าเว็บหวย</InputGroup.Addon>
+              <input type="text" className="form-control"  onChange={(e) => this.handleChange(e)} />
+            </InputGroup>
+          </FormGroup>
+          </Col>
+        </Row>
+
+        
+      </Grid>
     );
   }
 }
