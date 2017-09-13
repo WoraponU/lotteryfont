@@ -10,32 +10,89 @@ import { withLang, withUserAgent } from 'Hocs';
 
 class Section1 extends Component {
   state = {
-    count: 0,
-    isAccess: false
+    attempToAccess: 0,
+    isAccessSuccess: false
   }
-  componentDidMount() {
-    const statusToAccess = this.getStatusToAccess();
 
-    statusToAccess    
-    .then(function (response) {
-      alert('เข้าได้');
+  updateStatus = (status) => {
+    const { attempToAccess } = this.state;
+    this.setState({
+      isAccessSuccess: (status === 'success') ? true : false,
+      attempToAccess
+    }, () => {
+      const { attempToAccess, isAccessSuccess } = this.state
+
+      if (!isAccessSuccess) {
+        const statusToAccess = this.getStatusToAccess();
+    
+        statusToAccess    
+        .then((response) => {
+          return this.updateStatus('success')
+        })
+        .catch((error) => {
+          this.setState({
+            isAccessSuccess: isAccessSuccess,
+            attempToAccess: attempToAccess + 1
+          })
+          return this.updateStatus('fail')
+        });
+      }
     })
-    .catch(function (error) {
-      console.log('eiei');
-
-      this.getStatusToAccess();
-    });
   }
 
   getStatusToAccess = () => {
     return axios.get('http://localhost:3000/api/mail/test')
   }
 
+  componentDidMount() {
+    const statusToAccess = this.getStatusToAccess();
+
+    statusToAccess    
+    .then((response) => {
+      return this.updateStatus('success')
+    })
+    .catch((error) => {
+      return this.updateStatus('fail')
+    });
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { isAccessSuccess: prevIsAccessSuccess } = prevState;
+    const { isAccessSuccess } = this.state;
+    if (prevIsAccessSuccess !== isAccessSuccess) {
+      if (isAccessSuccess) {
+        alert('yeah');
+      }
+    }    
+    // if (prevIsAccessSuccess === isAccessSuccess) {
+    //   console.log('false');
+    
+    //   this.setState({
+    //     isAccessSuccess: isAccessSuccess,
+    //     attempToAccess: attempToAccess + 1
+    //   })
+    // } else {
+    //   console.log('success');
+    // }
+   
+    // const statusToAccess = this.getStatusToAccess();
+
+    // statusToAccess    
+    // .then((response) => {
+    //   return this.updateStatus('success')
+    // })
+    // .catch((error) => {
+    //   return this.updateStatus('fail')
+    // });
+    // }
+  }
+
   render() {
-    const { lang, userAgent } = this.props;
     
     return (
-      <div>jfkdslafjkdls;afjdksl;{this.state.count}</div>
+      <div>
+        {this.state.attempToAccess}
+      </div>
     );
   }
 }
