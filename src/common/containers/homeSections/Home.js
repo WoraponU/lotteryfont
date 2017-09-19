@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import { Grid, Row, Col, Jumbotron, FormGroup, FormControl, InputGroup } from 'react-bootstrap'
-class Section1 extends Component {
+import { Grid, Row, Col, Jumbotron, FormGroup, Button, InputGroup } from 'react-bootstrap'
+
+import './Home.scss'
+
+class Home extends Component {
   state = {
     attempToAccess: 0,
     isAccessSuccess: false,
-    value: ''
+    value: 'https://www.lotto.ktbnetbank.com'
   }
 
   updateStatus = (status) => {
@@ -30,20 +33,26 @@ class Section1 extends Component {
           })
           return this.updateStatus('fail')
         });
+      } else {
+        this.setState({
+          isAccessSuccess: false,
+          attempToAccess: 0,
+        })
       }
     })
   }
 
   getStatusToAccess = () => {
-    return axios.get('http://localhost:3000/api/mail/test')
+    const { value } = this.state
+    const params = {
+      params: {
+        url: value
+      }
+    }
+    return axios.get('http://localhost:3000/api/mail/test', params)
   }
 
-  handleChange = (event) => {
-    console.log(event.target.value)
-    // this.setState({value: event.target.value});
-  }
-
-  componentDidMount() {
+  onClickToLotto = () => {
     const statusToAccess = this.getStatusToAccess();
 
     statusToAccess    
@@ -57,17 +66,19 @@ class Section1 extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     const { isAccessSuccess: prevIsAccessSuccess } = prevState;
-    const { isAccessSuccess } = this.state;
+    const { isAccessSuccess, value } = this.state;
     if (prevIsAccessSuccess !== isAccessSuccess) {
       if (isAccessSuccess) {
-        // window.open('https://pantip.com/topic/36774680');
+        window.open(value);
       }
     }    
   }
 
   render() {
+    const { attempToAccess, value } = this.state
+
     return (
-      <Grid>
+      <Grid className="home">
         <Row className="show-grid">
           <Col xs={12} sm={12} md={12} lg={12} >  
             <Jumbotron>
@@ -80,19 +91,23 @@ class Section1 extends Component {
           <Col xs={12} sm={12} md={12} lg={12} >  
           <FormGroup bsSize="large">
             <InputGroup>
-              <InputGroup.Addon>กดเพื่อเข้าเว็บหวย</InputGroup.Addon>
-              <input type="text" className="form-control"  onChange={(e) => this.handleChange(e)} />
+              <input type="text" className="form-control" value={value}/>
+              <InputGroup.Addon>ไปยังลิ้งค์เว็บกดหวย</InputGroup.Addon>
             </InputGroup>
           </FormGroup>
           </Col>
         </Row>
-
-        
+        <Row>
+          <Col xsOffset={4} smOffset={4} mdOffset={4} lgOffset={4} xs={4} sm={4} md={4} lg={4}>  
+            <Button bsStyle="primary" bsSize="large" disabled={!!attempToAccess} block onClick={() => this.onClickToLotto()}>กดหวย</Button>
+            {this.state.attempToAccess}
+          </Col>
+        </Row>
       </Grid>
     );
   }
 }
 
 
-export default Section1;
+export default Home;
 
