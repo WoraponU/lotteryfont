@@ -49,6 +49,7 @@ class Home extends Component {
         url: value
       }
     }
+    
     return axios.get('http://localhost:3000/api/mail/test', params)
   }
 
